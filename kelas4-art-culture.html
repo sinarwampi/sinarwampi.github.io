@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kelas 4 - Art & Culture</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+:root {
+  --brand-primary: #6366F1;
+  --brand-secondary: #EC4899;
+  --background-primary: #FFFBEB;--background-secondary: #FFFFFF;
+  --text-primary: #374151;--text-secondary: #6B7280;
+  --border-primary: #FBBF24;--action-primary: #34D399;--action-primary-hover: #10B981;--action-secondary: #F3F4F6;
+  --action-secondary-hover: #E5E7EB;
+  --color-sky-blue: #87CEEB;
+  --color-coral: #FF7F50;
+  --color-lime-green: #32CD32;
+  --color-violet: #EE82EE;
+  --color-gold: #FFD700;
+}
+body {
+  font-family: 'Lexend', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Fredoka One', cursive;
+}
+</style>
+</head>
+<body class="bg-[var(--background-primary)] text-[var(--text-primary)]">
+<div class="flex flex-col min-h-screen">
+<header class="bg-white shadow-md">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-[var(--color-sky-blue)] rounded-xl flex items-center justify-center transform -rotate-12">
+        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L9 9.61V16a1 1 0 001 1h2a1 1 0 001-1V9.61l6.394-2.69a1 1 0 000-1.84l-7-3zM10 8L3.394 5.31 10 2.69v5.32z"></path>
+        </svg>
+      </div>
+      <h1 class="text-xl sm:text-2xl text-[var(--text-primary)] font-bold" data-i18n="app_title">SINAR WAMPI</h1>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="language-toggle">
+        <button class="language-toggle-button active">ID</button>
+        <button class="language-toggle-button">EN</button>
+      </div>
+      <div class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfuwgYI-olVKF44AsvP7zsXtut46r76IIIbHOVhQRqZb4rg0KeVqnmfqm7yNrg4IZBmdiJ0SSQQ7JboPBpD_U4j5xrHEM53FeNseG4FQMDPIn3JZmcZju4oFuZS5vQAKyWwRXzlPebWjYVVf9Unqur0XzLipA4qFVYD3vGPv0k7oLTgihTQvseqa0kWkpmZ5z7CpuNmI3dDc9H5SY51ABcBMrMxz2J8eGAwjKxE99K1hNe2Zv6NcsxZhruyFBCOeMrph4SpjSwtO4");'></div>
+    </div>
+  </div>
+</header>
+<div class="w-full flex items-center mt-2 mb-4">
+  <a href="kelas4.html" class="flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-pink-400 to-blue-400 text-white font-medium shadow hover:from-pink-500 hover:to-blue-500 transition-colors ml-2">
+    <span class="text-base">&#8592;</span>
+    <span>Kembali</span>
+  </a>
+</div>
+<main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[var(--color-coral)] mb-4">Kelas 4 - Art & Culture</h2>
+  <p class="text-center text-base sm:text-lg md:text-xl text-[var(--text-secondary)] mb-10">Pilih subbab untuk melihat ringkasan materi:</p>
+  <div class="space-y-6">
+    <!-- Bab 1 Musik -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-pink-700 mb-2">Bab 1: Musik</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-pink-200 to-pink-100 hover:from-pink-300 hover:to-pink-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 1: Musik" data-subbab="1.1 Menyanyi Lagu Bertangga Nada Do">
+          <div class="font-semibold text-pink-800 mb-1">1.1 Menyanyi Lagu Bertangga Nada Do</div>
+          <div class="text-sm text-pink-700">Siswa belajar menyanyikan lagu dengan nada dasar "Do", mengenal tinggi rendah nada, serta melatih artikulasi dan ekspresi dalam bernyanyi.</div>
+        </button>
+
+        <button class="w-full text-left bg-gradient-to-r from-pink-200 to-pink-100 hover:from-pink-300 hover:to-pink-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 1: Musik" data-subbab="1.2 Menyanyikan Lagu Bertangga Nada La">
+          <div class="font-semibold text-pink-800 mb-1">1.2 Menyanyikan Lagu Bertangga Nada La</div>
+          <div class="text-sm text-pink-700">Pembelajaran tentang menyanyikan lagu minor dengan tangga nada La, mengenal suasana lagu, serta meningkatkan kemampuan interpretasi lagu.</div>
+        </button>
+
+        <button class="w-full text-left bg-gradient-to-r from-pink-200 to-pink-100 hover:from-pink-300 hover:to-pink-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 1: Musik" data-subbab="1.3 Mengenal Pola Irama">
+          <div class="font-semibold text-pink-800 mb-1">1.3 Mengenal Pola Irama</div>
+          <div class="text-sm text-pink-700">Siswa diperkenalkan pada pola irama sederhana seperti panjang-pendek bunyi, tempo, dan ketukan. Mengembangkan kemampuan mengikuti irama.</div>
+        </button>
+
+      </div>
+    </div>
+    <!-- Bab 2 Seni Rupa -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-yellow-700 mb-2 mt-6">Bab 2: Seni Rupa</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-yellow-200 to-yellow-100 hover:from-yellow-300 hover:to-yellow-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 2: Seni Rupa" data-subbab="2.1 Menggambar Sketsa">
+          <div class="font-semibold text-yellow-800 mb-1">2.1 Menggambar Sketsa</div>
+          <div class="text-sm text-yellow-700">Siswa mengenal sketsa dan mencoba membuat sketsa sederhana seperti pakaian formal, kasual, hingga cosplay. Fokus pada proporsi dan ekspresi imajinatif.</div>
+        </button>
+
+        <button class="w-full text-left bg-gradient-to-r from-yellow-200 to-yellow-100 hover:from-yellow-300 hover:to-yellow-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 2: Seni Rupa" data-subbab="2.2 Menelaah Karakteristik Alat dan Bahan">
+          <div class="font-semibold text-yellow-800 mb-1">2.2 Menelaah Karakteristik Alat dan Bahan</div>
+          <div class="text-sm text-yellow-700">Mengenal alat dan bahan dalam seni rupa seperti kertas, krayon, cat air, tanah liat. Siswa membandingkan karakteristik untuk memilih sesuai karya yang dibuat.</div>
+        </button>
+
+        <button class="w-full text-left bg-gradient-to-r from-yellow-200 to-yellow-100 hover:from-yellow-300 hover:to-yellow-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 2: Seni Rupa" data-subbab="2.3 Mengkreasikan Karya Dua dan Tiga Dimensi">
+          <div class="font-semibold text-yellow-800 mb-1">2.3 Mengkreasikan Karya Dua dan Tiga Dimensi</div>
+          <div class="text-sm text-yellow-700">Siswa diajak membuat karya 2D (gambar flora/fauna endemik) dan 3D (diorama, replika makanan) sebagai ekspresi kreativitas dan keterampilan visual.</div>
+        </button>
+
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="bg-white/80 backdrop-blur-sm sticky bottom-0 border-t-2 border-[var(--border-primary)] mt-8">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center">
+    <button id="ringkasanBtn" class="w-full max-w-md bg-gray-300 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full shadow-xl cursor-not-allowed">
+      <span>Buat Ringkasan Sekarang!</span>
+    </button>
+  </div>
+  <div id="hasilRingkasan" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center text-base sm:text-lg text-[var(--text-primary)]">
+    <!-- Ringkasan akan muncul di sini -->
+  </div>
+</footer>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<!-- Script translate manual -->
+<script>
+let currentLang = 'id';
+function loadLang(lang) {
+  fetch(`lang-${lang}.json`)
+    .then(res => res.json())
+    .then(dict => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) el.textContent = dict[key];
+      });
+      currentLang = lang;
+    });
+}
+
+const artCultureSummaries = {
+  "Bab 1: Musik": {
+    "1.1 Menyanyi Lagu Bertangga Nada Do": `🎶 **Melodi Ceria: Menyanyi Lagu Bertangga Nada Do (C Mayor)** 🎤\n\nSelamat datang di dunia musik! Pada bab ini, siswa akan diajak berkenalan dengan lagu-lagu bertangga nada **Do mayor (C Mayor)**. Tangga nada mayor ini punya karakter yang khas, yaitu:\n\n🎉 **Ceria:** Lagunya terasa gembira dan bersemangat.\n\n☀️ **Ringan:** Mudah didengar dan dinyanyikan, tidak terlalu rumit.\n\n👍 **Mudah Dipelajari:** Cocok sekali untuk anak-anak yang baru belajar bernyanyi!\n\nSiswa akan mulai belajar mengenali **tinggi rendah nada** dalam lagu. Ini seperti naik-turun tangga saat bernyanyi. Mereka akan diajak menyanyikan lagu-lagu sederhana dengan menggunakan metode yang seru, yaitu:\n\n🎵 **Solmisasi:** Menggunakan suku kata \"do, re, mi, fa, sol, la, si, do\" untuk setiap nada. Ini membantu kita mengenali melodi!\n\nSelain itu, pembelajaran juga akan fokus pada beberapa teknik penting dalam bernyanyi:\n\n🗣️ **Intonasi:** Bagaimana cara menyanyi dengan nada yang tepat dan tidak fals? Latihan ini membuat suara kita pas dengan melodi.\n\n enunciate **Artikulasi:** Pelafalan lirik lagu harus jelas dan benar. Setiap kata harus terdengar, agar pesan lagu tersampaikan!\n\n🎭 **Ekspresi:** Menghayati dan mengekspresikan lagu sesuai dengan isi dan suasananya. Kalau lagunya gembira, wajah kita juga harus gembira!\n\nMelalui latihan bernyanyi ini, siswa diajak untuk:\n\n✨ Membangun rasa percaya diri saat tampil atau bernyanyi di depan orang lain.\n\n🤝 Memupuk kebersamaan dalam kelompok paduan suara atau saat bernyanyi bersama.\n\n🎼 Mengenali keberagaman lagu daerah dan nasional, mencintai budaya musik Indonesia. \n\nAyo, bernyanyi dengan hati dan jadikan musik teman terbaik!`,
+    "1.2 Menyanyikan Lagu Bertangga Nada La": ` melancholic **Melodi Sendu: Menyanyi Lagu Bertangga Nada La (Minor)** 😔\n\nSetelah asyik dengan lagu ceria, sekarang kita akan \"menyelam\" ke dalam nuansa musik yang berbeda! Pada bab ini, siswa akan mempelajari lagu-lagu bertangga nada **La (minor)**. Tangga nada minor ini memberikan kesan yang khas, yaitu:\n\n🌧️ **Sendu/Sedih:** Seringkali digunakan untuk menyampaikan perasaan sedih atau haru.\n\n🧘‍♀️ **Tenang:** Memiliki nuansa yang lebih damai dan reflektif.\n\n💖 **Penuh Perasaan:** Membawa pendengar ke dalam suasana emosional yang lebih dalam.\n\nLagu minor biasanya digunakan untuk menyampaikan cerita tentang kesedihan, renungan, atau suasana hati yang khusyuk. Ini akan melatih siswa untuk lebih peka terhadap emosi dalam musik.\n\nSiswa akan:\n\n🆚 **Membandingkan Lagu Mayor dan Minor:** Belajar membedakan keduanya berdasarkan emosi dan suasana yang dihasilkan. Bagaimana rasanya lagu ceria dan lagu sedih?\n\nreathe **Melatih Teknik Pernapasan:** Mengatur napas agar suara tidak terputus dan lagu mengalir dengan indah.\n\n🎤 **Proyeksi Suara:** Mengeluarkan suara dengan kekuatan yang tepat agar terdengar jelas dan penuh.\n\n🎵 **Frase Lagu:** Memahami dan menyanyikan bagian-bagian melodi dengan tepat agar lagu lebih bermakna.\n\n✨ **Belajar Menghayati Lagu:** Tidak hanya dari suara yang dihasilkan, tetapi juga melalui ekspresi wajah dan gerakan tubuh yang sesuai dengan isi lagu. \n\nDengan membawakan lagu minor, siswa dapat melatih empati dan pemahaman terhadap makna lagu secara lebih dalam, serta mengembangkan sensitivitas musikal mereka.`,
+    "1.3 Mengenal Pola Irama": `🥁 **Jantung Musik: Mengenal Pola Irama** ⏱️\n\nSetiap musik punya \"jantung\" yang membuatnya hidup, yaitu **irama** atau **ritme**! Pada bab ini, siswa akan diperkenalkan pada konsep dasar irama dalam musik. Irama adalah pola bunyi panjang dan pendek, kuat dan lemah yang terjadi secara berulang dalam lagu. Ini yang membuat kita ingin bertepuk tangan atau menggoyangkan badan saat mendengarkan musik!\n\nSiswa akan belajar:\n\n🦶 **Mengenali Ketukan (Beat):** Ini adalah denyutan dasar dalam musik. Kita akan belajar mengenal berbagai birama, seperti:\n\n*   **Birama 2/4:** Dua ketukan dalam satu birama (seperti lagu anak-anak \"Balonku Ada Lima\").\n\n*   **Birama 3/4:** Tiga ketukan dalam satu birama (seperti lagu \"Naik Delman\").\n\n*   **Birama 4/4:** Empat ketukan dalam satu birama (paling umum, seperti lagu-lagu pop).\n\n👏 **Mengikuti Pola Ritmis:** Berlatih mengikuti ritme dengan berbagai cara yang seru:\n\n*   Menepuk tangan dengan pola tertentu.\n\n*   Bertepuk tangan.\n\n*   Memainkan alat musik ritmis sederhana seperti tamborin, triangle, atau marakas.\n\nTempo **Mengidentifikasi Tempo:** Seberapa cepat atau lambat lagu dimainkan? \n\n*   **Cepat (allegro):** Membuat lagu bersemangat.\n\n*   **Lambat (largo):** Membuat lagu terasa tenang.\n\n🔊 **Mengenal Dinamika:** Seberapa keras atau lembut suara musik? \n\n*   **Keras (forte):** Suara yang bertenaga.\n\n*   **Lembut (piano):** Suara yang halus.\n\nLatihan irama ini sangat membantu siswa untuk:\n\n🤸‍♀️ Meningkatkan koordinasi motorik, karena tubuh bergerak mengikuti musik.\n\n🎯 Meningkatkan konsentrasi dan fokus dalam mendengarkan.\n\n🤝 Mengembangkan kemampuan mengikuti instruksi dalam kelompok musik atau orkestra mini. \n\nDengan irama, musik jadi lebih hidup dan menarik!`
+  },
+  "Bab 2: Seni Rupa": {
+    "2.1 Menggambar Sketsa": `🎨 **Garis Awal Kreasi: Menggambar Sketsa** ✏️\n\nSelamat datang di dunia seni rupa! Pada bab ini, siswa akan menjadi \"arsitek\" gambar dengan belajar membuat **sketsa**. Sketsa adalah gambar awal yang dibuat dengan ringan, belum terlalu detail, dan berfungsi sebagai dasar atau kerangka sebelum karya seni akhir dibuat. Ini seperti membuat denah sebelum membangun rumah!\n\nDalam subbab ini, siswa akan belajar menggambar sketsa berbagai jenis pakaian yang bisa kita temui sehari-hari, atau bahkan yang ada dalam imajinasi:\n\n👔 **Pakaian Formal:** Seperti seragam sekolah, jas, atau gaun pesta. Bagaimana membuat lipatan kain terlihat alami?\n\n👕 **Pakaian Kasual:** Contohnya kaos, celana jins, rok, atau jaket. Bagaimana membuat gambar terasa santai dan nyaman?\n\n🧚‍♀️ **Sketsa Imajinatif (Cosplay):** Ini adalah bagian yang paling seru! Siswa bisa berimajinasi dan membuat sketsa kostum unik, seperti kostum binatang lucu, tumbuhan ajaib, atau karakter fantasi. Bebas berkreasi!\n\nPembelajaran akan difokuskan pada beberapa aspek penting:\n\n📏 **Proporsi Tubuh:** Mengenali ukuran kepala, badan, tangan, dan kaki agar gambar manusia terlihat seimbang dan alami. Ini penting agar karakter kita tidak terlihat aneh!\n\n〰️ **Garis Bentuk dan Ekspresi:** Bagaimana garis-garis yang kita buat bisa menunjukkan bentuk pakaian, bahkan ekspresi atau karakter dari orang atau tokoh yang digambar. Apakah dia terlihat gembira, sedih, atau bersemangat?\n\n✨ **Kreativitas Bebas:** Siswa diberi kebebasan penuh untuk berimajinasi dan membuat versi sendiri dari pakaian impian mereka. Tidak ada yang salah dalam berkreasi!\n\nDengan menguasai sketsa, siswa akan memiliki pondasi kuat dalam menggambar dan bisa menuangkan ide-ide mereka dengan lebih mudah ke atas kertas!`,
+    "2.2 Menelaah Karakteristik Alat dan Bahan": `🛠️ **Kenali Senjatamu: Menelaah Karakteristik Alat dan Bahan Seni Rupa** 🌈\n\nSeorang seniman hebat tahu betul alat dan bahan yang ia gunakan! Pada bab ini, siswa akan diajak menjadi \"ilmuwan seni\" yang mengenali berbagai alat dan bahan seni rupa yang digunakan untuk menggambar, melukis, dan membuat karya seni lainnya. Mereka akan belajar bagaimana setiap alat dan bahan memiliki sifat atau karakteristik uniknya sendiri.\n\nBeberapa alat dan bahan yang akan kita kenali:\n\n📝 **Kertas:** Ada kertas tebal, tipis, bertekstur, atau halus. Setiap jenis punya kegunaan masing-masing.\n\n🖍️ **Krayon:** Memberi warna yang tebal dan padat.\n\n✏️ **Pensil Warna:** Memberi warna yang lebih halus dan bisa diarsir.\n\n💧 **Cat Air:** Menghasilkan efek transparan dan lembut, cocok untuk lukisan yang ringan.\n\n🎨 **Cat Akrilik:** Memberi warna yang lebih tebal dan cepat kering, bisa digunakan di berbagai permukaan.\n\n🏺 **Tanah Liat/Plastisin:** Bahan untuk membuat karya tiga dimensi, mudah dibentuk.\n\nSiswa akan diajak membedakan karakteristik alat dan bahan, seperti:\n\n*   Apakah cat air itu menghasilkan warna yang transparan atau tebal?\n\n*   Bagaimana rasanya memegang krayon dan pensil warna? Mana yang lebih lembut?\n\n*   Apa perbedaan antara gambar yang dibuat dengan pensil dan cat?\n\nMereka juga akan mencoba langsung berbagai alat untuk memahami:\n\n🤲 **Kelembutan atau Kekerasan Bahan:** Bagaimana rasanya saat menyentuh atau menggunakan?\n\n🌈 **Warna dan Tekstur yang Dihasilkan:** Bagaimana warna terlihat di kertas, dan tekstur apa yang tercipta?\n\n🎯 **Kesesuaian Alat dan Bahan:** Mana alat yang paling cocok untuk membuat karya dua dimensi (2D) seperti gambar, dan mana yang cocok untuk karya tiga dimensi (3D) seperti patung? \n\nTujuan pembelajaran ini adalah melatih siswa menjadi seniman yang bijak dan terampil dalam memilih dan menggunakan alat serta bahan untuk berkarya seni, sehingga ide-ide mereka bisa terwujud dengan sempurna!`,
+    "2.3 Mengkreasikan Karya Dua dan Tiga Dimensi": `🖼️🏛️ **Wujudkan Ide: Mengkreasikan Karya Dua dan Tiga Dimensi** 🌟\n\nSetelah belajar sketsa dan mengenal alat bahan, sekarang saatnya melepaskan kreativitas! Bab ini mengajak siswa untuk menuangkan ide-ide brilian mereka menjadi karya seni yang nyata, baik dalam bentuk dua dimensi (2D) maupun tiga dimensi (3D).\n\n**Karya Dua Dimensi (2D):** \n\nIni adalah karya seni yang hanya memiliki panjang dan lebar (datar), seperti gambar atau lukisan. Siswa akan diajak membuat:\n\n🌿 **Gambar Flora/Fauna Endemik Indonesia:** Menggambar tumbuhan atau hewan langka yang hanya ada di Indonesia, seperti komodo, bunga rafflesia, atau orangutan. Ini juga melatih kecintaan pada alam dan budaya!\n\n🎨 Berbagai jenis gambar lain, seperti pemandangan, benda mati, atau potret.\n\n**Karya Tiga Dimensi (3D):** \n\nIni adalah karya seni yang memiliki panjang, lebar, dan tinggi (punya volume), sehingga bisa dilihat dari berbagai sisi dan disentuh! Siswa akan berkreasi dengan membuat:\n\n🏞️ **Diorama:** Membuat maket atau model kecil yang menggambarkan pemandangan atau adegan tertentu, seperti hutan, desa, atau taman.\n\n🎭 **Wayang dari Plastisin:** Membentuk karakter wayang dari plastisin, melatih keterampilan memahat dan membentuk.\n\n🍔 **Replika Makanan dari Bubur Kertas:** Membuat model makanan yang terlihat nyata dari bahan daur ulang.\n\nPembelajaran akan diarahkan pada:\n\n💡 **Proses Kreatif:** Dari mulai merencanakan ide, memilih bahan yang tepat, hingga menyusun bentuk dan detailnya.\n\n✂️ **Keterampilan Teknis:** Melatih kemampuan seperti memotong, merekatkan, mewarnai, membentuk, dan menyusun.\n\n🌏 **Konteks Budaya dan Lingkungan:** Siswa diajak membuat karya yang terinspirasi dari lingkungan sekitar mereka dan kekayaan warisan budaya Indonesia. Ini membuat karya seni lebih bermakna!\n\nMelalui kegiatan ini, siswa belajar bahwa seni rupa bukan hanya soal menggambar di kertas, tetapi juga cara mengekspresikan gagasan, perasaan, dan imajinasi dengan benda nyata yang bisa dilihat, disentuh, dan dinikmati. Ayo, berkreasi tanpa batas!`
+  }
+};
+
+let selectedSubbab = null;
+let selectedBab = null;
+
+// Tambahkan event listener ke semua tombol subbab
+function setupSubbabRingkasan() {
+  document.querySelectorAll('.subbab-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      selectedSubbab = btn.getAttribute('data-subbab');
+      selectedBab = btn.getAttribute('data-bab');
+      const ringkasanBtn = document.getElementById('ringkasanBtn');
+      ringkasanBtn.classList.remove('bg-gray-300', 'cursor-not-allowed');
+      ringkasanBtn.classList.add('bg-gradient-to-r', 'from-green-400', 'to-blue-400', 'hover:from-green-500', 'hover:to-blue-500', 'cursor-pointer');
+      ringkasanBtn.disabled = false;
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  setupSubbabRingkasan();
+  const ringkasanBtn = document.getElementById('ringkasanBtn');
+  ringkasanBtn.onclick = async function() {
+    if (!selectedSubbab || !selectedBab) return;
+
+    const summary = artCultureSummaries[selectedBab]?.[selectedSubbab] || null;
+
+    sessionStorage.setItem('ringkasan_k4_art_culture', JSON.stringify({
+      ringkasan: summary,
+      bab: selectedBab,
+      subbab: selectedSubbab
+    }));
+    window.location.href = 'ringkasan-result-kelas4-art-culture.html';
+  };
+  document.querySelectorAll('.language-toggle-button').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = btn.textContent.trim().toLowerCase();
+      loadLang(lang);
+      document.querySelectorAll('.language-toggle-button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+  loadLang(currentLang);
+});
+</script>
+
+</body></html>

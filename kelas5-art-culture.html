@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kelas 5 - Art & Culture</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+:root {
+  --brand-primary: #6366F1;
+  --brand-secondary: #EC4899;
+  --background-primary: #FFFBEB;--background-secondary: #FFFFFF;
+  --text-primary: #374151;--text-secondary: #6B7280;
+  --border-primary: #FBBF24;--action-primary: #34D399;--action-primary-hover: #10B981;--action-secondary: #F3F4F6;
+  --action-secondary-hover: #E5E7EB;
+  --color-sky-blue: #87CEEB;
+  --color-coral: #FF7F50;
+  --color-lime-green: #32CD32;
+  --color-violet: #EE82EE;
+  --color-gold: #FFD700;
+}
+body {
+  font-family: 'Lexend', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Fredoka One', cursive;
+}
+</style>
+</head>
+<body class="bg-[var(--background-primary)] text-[var(--text-primary)]">
+<div class="flex flex-col min-h-screen">
+<header class="bg-white shadow-md">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-[var(--color-sky-blue)] rounded-xl flex items-center justify-center transform -rotate-12">
+        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L9 9.61V16a1 1 0 001 1h2a1 1 0 001-1V9.61l6.394-2.69a1 1 0 000-1.84l-7-3zM10 8L3.394 5.31 10 2.69v5.32z"></path>
+        </svg>
+      </div>
+      <h1 class="text-xl sm:text-2xl text-[var(--text-primary)] font-bold" data-i18n="app_title">SINAR WAMPI</h1>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="language-toggle">
+        <button class="language-toggle-button active">ID</button>
+        <button class="language-toggle-button">EN</button>
+      </div>
+      <div class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfuwgYI-olVKF44AsvP7zsXtut46r76IIIbHOVhQRqZb4rg0KeVqnmfqm7yNrg4IZBmdiJ0SSQQ7JboPBpD_U4j5xrHEM53FeNseG4FQMDPIn3JZmcZju4oFuZS5vQAKyWwRXzlPebWjYVVf9Unqur0XzLipA4qFVYD3vGPv0k7oLTgihTQvseqa0kWkpmZ5z7CpuNmI3dDc9H5SY51ABcBMrMxz2J8eGAwjKxE99K1hNe2Zv6NcsxZhruyFBCOeMrph4SpjSwtO4");'></div>
+    </div>
+  </div>
+</header>
+<div class="w-full flex items-center mt-2 mb-4">
+  <a href="kelas5.html" class="flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-pink-400 to-blue-400 text-white font-medium shadow hover:from-pink-500 hover:to-blue-500 transition-colors ml-2">
+    <span class="text-base">&#8592;</span>
+    <span>Kembali</span>
+  </a>
+</div>
+<main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[var(--color-coral)] mb-4">Kelas 5 - Art & Culture</h2>
+  <p class="text-center text-base sm:text-lg md:text-xl text-[var(--text-secondary)] mb-10">Pilih subbab untuk melihat ringkasan materi:</p>
+  <div class="space-y-6">
+    <!-- Bab 1 Seni Rupa -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-pink-700 mb-2">Bab 1: Unsur dan Prinsip Seni Rupa di Sekitar Kita</h3>
+      <div class="grid grid-cols-1 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-pink-200 to-pink-100 hover:from-pink-300 hover:to-pink-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 1: Unsur dan Prinsip Seni Rupa di Sekitar Kita" data-subbab="1.1 Unsur dan Prinsip Seni Rupa di Sekitar Kita">
+          <div class="font-semibold text-pink-800 mb-1">1.1 Unsur dan Prinsip Seni Rupa di Sekitar Kita</div>
+          <div class="text-sm text-pink-700">Memahami unsur rupa (titik, garis, bidang, bentuk, ruang, warna, tekstur) dan prinsip ritme dalam kehidupan sehari-hari. Peserta didik belajar mengenali unsur-unsur itu pada objek di sekitar, serta menggambar dengan menggunakan prinsip ritme.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 2 Seni Rupa -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-yellow-700 mb-2 mt-6">Bab 2: Mengeksplorasi Ritme dalam Objek di Sekitar Kita</h3>
+      <div class="grid grid-cols-1 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-yellow-200 to-yellow-100 hover:from-yellow-300 hover:to-yellow-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 2: Mengeksplorasi Ritme dalam Objek di Sekitar Kita" data-subbab="2.1 Mengeksplorasi Ritme dalam Objek di Sekitar Kita">
+          <div class="font-semibold text-yellow-800 mb-1">2.1 Mengeksplorasi Ritme dalam Objek di Sekitar Kita</div>
+          <div class="text-sm text-yellow-700">Fokus pada prinsip ritme dalam seni rupa melalui pengamatan objek di sekitar, seperti susunan batu, bangunan, tanaman. Siswa menggambar objek dengan pola berulang untuk menghasilkan harmoni visual.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 3 Seni Rupa -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-lime-700 mb-2 mt-6">Bab 3: Menggambar Objek dengan Proporsi dan Komposisi</h3>
+      <div class="grid grid-cols-1 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-lime-200 to-lime-100 hover:from-lime-300 hover:to-lime-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 3: Menggambar Objek dengan Proporsi dan Komposisi" data-subbab="3.1 Menggambar Objek dengan Proporsi dan Komposisi">
+          <div class="font-semibold text-lime-800 mb-1">3.1 Menggambar Objek dengan Proporsi dan Komposisi</div>
+          <div class="text-sm text-lime-700">Menggambar dengan memperhatikan ukuran, keseimbangan, dan peletakan objek. Siswa berlatih menggambar lingkungan sekitar dengan proporsi dan komposisi yang tepat untuk menghasilkan karya yang harmonis dan komunikatif.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 1 Musik -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-blue-700 mb-2 mt-6">Bab 1: Mengenal Tangga Nada</h3>
+      <div class="grid grid-cols-1 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 1: Mengenal Tangga Nada" data-subbab="1.1 Mengenal Tangga Nada">
+          <div class="font-semibold text-blue-800 mb-1">1.1 Mengenal Tangga Nada</div>
+          <div class="text-sm text-blue-700">Peserta didik mempelajari dua jenis tangga nada: diatonis mayor (lagu bersifat ceria) dan diatonis minor (lagu bersifat sedih). Mereka diajak membedakan keduanya melalui mendengarkan lagu dan menyanyikannya.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 2 Musik -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-purple-700 mb-2 mt-6">Bab 2: Mengenal Notasi Angka</h3>
+      <div class="grid grid-cols-1 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 2: Mengenal Notasi Angka" data-subbab="2.1 Mengenal Notasi Angka">
+          <div class="font-semibold text-purple-800 mb-1">2.1 Mengenal Notasi Angka</div>
+          <div class="text-sm text-purple-700">Memahami sistem penulisan notasi angka (1–7) dan panjang pendek nada. Siswa diajak membaca, menuliskan, dan menyanyikan lagu menggunakan notasi angka, serta latihan ketukan dan tempo.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 3 Musik -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-red-700 mb-2 mt-6">Bab 3: Memainkan Alat Musik Sederhana</h3>
+      <div class="grid grid-cols-1 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-red-200 to-red-100 hover:from-red-300 hover:to-red-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 3: Memainkan Alat Musik Sederhana" data-subbab="3.1 Memainkan Alat Musik Sederhana">
+          <div class="font-semibold text-red-800 mb-1">3.1 Memainkan Alat Musik Sederhana</div>
+          <div class="text-sm text-red-700">Belajar memainkan alat musik ritmis dan melodis sederhana seperti angklung, pianika, atau rekorder. Fokus pada teknik dasar bermain, iringan lagu, dan kolaborasi dalam kelompok.</div>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="bg-white/80 backdrop-blur-sm sticky bottom-0 border-t-2 border-[var(--border-primary)] mt-8">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center">
+    <button id="ringkasanBtn" class="w-full max-w-md bg-gray-300 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full shadow-xl cursor-not-allowed">
+      <span>Buat Ringkasan Sekarang!</span>
+    </button>
+  </div>
+  <div id="hasilRingkasan" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center text-base sm:text-lg text-[var(--text-primary)]">
+    <!-- Ringkasan akan muncul di sini -->
+  </div>
+</footer>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<!-- Script translate manual -->
+<script>
+let currentLang = 'id';
+function loadLang(lang) {
+  fetch(`lang-${lang}.json`)
+    .then(res => res.json())
+    .then(dict => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) el.textContent = dict[key];
+      });
+      currentLang = lang;
+    });
+}
+
+const artCultureSummariesK5 = {
+  "Bab 1: Unsur dan Prinsip Seni Rupa di Sekitar Kita": {
+    "1.1 Unsur dan Prinsip Seni Rupa di Sekitar Kita": `🖼️ **Dunia di Sekitar Kita: Mengenal Unsur dan Prinsip Seni Rupa** ✨
+
+Selamat datang di petualangan seni rupa Kelas 5! Pada bab ini, kita akan menjelajahi bagaimana seni rupa ada di mana-mana dalam kehidupan sehari-hari kita. Sama seperti bahasa, seni rupa juga memiliki "abjad" dan "aturan"nya sendiri, yaitu **unsur rupa** dan **prinsip ritme**.
+
+Mari kita kenali unsur-unsur dasar seni rupa:
+
+*   ⚫ **Titik:** Bentuk paling dasar, awal dari segalanya! Titik bisa menjadi fokus atau membentuk pola jika digabungkan.
+
+*   ➖ **Garis:** Goresan yang menghubungkan dua titik. Garis bisa lurus, lengkung, zig-zag, tipis, tebal, dan masing-masing punya karakter uniknya.
+
+*   🔺 **Bidang:** Area datar yang dibatasi garis (contoh: persegi, lingkaran, segitiga). Bidang memberikan kesan ruang dan volume.
+
+*   📦 **Bentuk:** Objek yang memiliki dimensi (panjang, lebar, tinggi). Ada bentuk geometris (kubus, bola) dan bentuk bebas (awan, pohon).
+
+*   🌌 **Ruang:** Area di sekitar atau di dalam suatu objek. Ruang bisa kosong atau terisi, dan menciptakan ilusi kedalaman.
+
+*   🌈 **Warna:** Unsur paling menarik yang membangkitkan emosi! Ada warna primer (merah, kuning, biru), sekunder (campuran primer), dan tersier.
+
+*   🖐️ **Tekstur:** Permukaan suatu objek yang bisa dirasakan atau dilihat (contoh: halus, kasar, licin, berbulu).
+
+Selain unsur, kita juga akan belajar tentang **prinsip ritme**. Ritme dalam seni rupa itu seperti ketukan dalam musik, yaitu:
+
+🔄 **Pengulangan:** Objek atau unsur yang diulang secara teratur, menciptakan pola yang menarik.
+
+🚶 **Pergerakan:** Mata kita diajak bergerak mengikuti pola atau susunan tertentu dalam karya seni.
+
+Siswa akan diajak untuk:
+
+🔍 **Mengamati Lingkungan:** Mencari dan mengidentifikasi unsur-unsur ini pada benda-benda di sekitar mereka, seperti pada dinding rumah, motif batik, atau susunan bata.
+
+✏️ **Menggambar dengan Ritme:** Mencoba menggambar pola berulang atau mengatur objek agar terlihat memiliki irama visual yang harmonis. 
+
+Dengan memahami unsur dan prinsip ini, kita bisa melihat dunia dengan mata seniman dan lebih menghargai keindahan di sekitar kita! Mari berkarya!`
+  },
+  "Bab 2: Mengeksplorasi Ritme dalam Objek di Sekitar Kita": {
+    "2.1 Mengeksplorasi Ritme dalam Objek di Sekitar Kita": `👣 **Irama Visual: Mengeksplorasi Ritme dalam Objek Sehari-hari** 🏞️
+
+Pada bab sebelumnya kita sudah mengenal ritme, sekarang saatnya menjadi "detektif ritme"! Siswa akan diajak untuk lebih dalam memahami **prinsip ritme dalam seni rupa** melalui pengamatan langsung objek-objek yang ada di sekitar mereka. Ritme bukan hanya ada di musik, tapi juga di benda-benda yang kita lihat setiap hari!
+
+Bayangkan kita sedang berjalan-jalan di sekitar:
+
+🧱 **Susunan Batu:** Lihat bagaimana batu-batu di taman atau di dinding tersusun rapi atau membentuk pola tertentu. Ada ritme di sana!
+
+🏢 **Bangunan:** Perhatikan jendela-jendela yang berjejer, pilar-pilar yang berulang, atau bata-bata yang tersusun. Itu semua menciptakan ritme visual.
+
+🌳 **Tanaman:** Daun-daun pada dahan, bunga-bunga yang mekar berderet, atau batang pohon yang menjulang. Alam juga punya ritme indah!
+
+Siswa akan dilatih untuk:
+
+👁️ **Mengamati Detail:** Memperhatikan bagaimana elemen-elemen ini diulang, berganti ukuran, atau bervariasi dalam jarak, sehingga menciptakan pola yang teratur atau dinamis.
+
+📝 **Menganalisis Pola:** Mengidentifikasi apakah ritme tersebut teratur (seperti garis-garis zebra cross) atau tidak teratur (seperti ombak di laut).
+
+✏️ **Menggambar Pola Berulang:** Menggambar objek-objek yang memiliki pola berulang, seperti:
+
+*   Deretan pagar.
+*   Susunan buah-buahan.
+*   Motif pada kain atau lantai.
+
+Dengan fokus pada pola berulang, tujuannya adalah menghasilkan **harmoni visual**.
+
+Seni menjadi lebih hidup dan menyenangkan saat kita melihatnya sebagai bagian dari kehidupan! Mari terus menjelajahi keindahan yang tersembunyi di setiap sudut!`
+  },
+  "Bab 3: Menggambar Objek dengan Proporsi dan Komposisi": {
+    "3.1 Menggambar Objek dengan Proporsi dan Komposisi": `📏 **Keseimbangan dan Keindahan: Menggambar Objek dengan Proporsi dan Komposisi** 🎨
+
+Sekarang, mari kita tingkatkan kemampuan menggambar kita menjadi seorang "arsitek visual"! Pada bab ini, siswa akan belajar tentang dua prinsip seni rupa yang sangat penting agar gambar terlihat alami dan enak dipandang: **proporsi** dan **komposisi**.
+
+1.  **Proporsi (Ukuran yang Tepat):**
+
+    Proporsi adalah perbandingan ukuran antara satu bagian objek dengan bagian objek lainnya, atau antara objek satu dengan objek lainnya dalam sebuah gambar. Ini penting agar objek terlihat "benar" dan tidak aneh. Contohnya:
+
+    *   Jika menggambar orang, ukuran kepala tidak boleh terlalu besar dibandingkan badan, dan tangan tidak terlalu pendek.
+
+    *   Jika menggambar buah di meja, ukuran apel harus proporsional dengan pisang di sebelahnya.
+
+    Siswa akan berlatih:
+
+    👁️ **Mengamati Objek Nyata:** Membandingkan ukuran-ukuran yang ada pada objek yang diamati.
+
+    ⚖️ **Mengukur Perbandingan:** Bisa dengan bantuan pensil atau jari untuk memperkirakan ukuran.
+
+2.  **Komposisi (Penempatan yang Harmonis):**
+
+    Komposisi adalah cara kita menata atau meletakkan objek-objek dalam suatu gambar agar terlihat seimbang, menarik, dan memiliki kesatuan. Ini seperti menata piring makanan agar terlihat lezat!
+
+    Beberapa hal yang perlu diperhatikan dalam komposisi:
+
+    ✨ **Keseimbangan:** Objek tidak menumpuk di satu sisi saja, sehingga gambar tidak terasa "berat sebelah". Keseimbangan bisa simetris (sama persis di kedua sisi) atau asimetris (tidak sama persis tapi tetap seimbang).
+
+    ↔️ **Penempatan:** Di mana objek utama akan diletakkan? Bagaimana objek pendukung mengelilinginya? Apakah ada ruang kosong yang pas?
+
+    Tujuannya adalah agar karya yang dihasilkan:
+
+     harmonious **Harmonis:** Semua elemen saling berhubungan dengan baik dan menciptakan keindahan visual.
+
+    💬 **Komunikatif:** Pesan atau cerita yang ingin disampaikan melalui gambar bisa diterima dengan jelas oleh yang melihat.
+
+Siswa akan berlatih menggambar lingkungan sekitar mereka, seperti pemandangan desa, suasana kota, atau aktivitas di sekolah, dengan menerapkan proporsi dan komposisi yang tepat. Hasilnya? Karya seni yang memukau!`
+  },
+  "Bab 1: Mengenal Tangga Nada": {
+    "1.1 Mengenal Tangga Nada": `🎵 **Fondasi Harmoni: Mengenal Tangga Nada** 🎼
+
+Selamat datang kembali di dunia musik! Pada bab ini, kita akan memahami "fondasi" sebuah lagu, yaitu **tangga nada**. Tangga nada adalah susunan nada yang berurutan, dari nada rendah ke nada tinggi, atau sebaliknya. Ibaratnya, tangga nada adalah "tangga" tempat nada-nada berpijak.
+
+Ada dua jenis tangga nada utama yang akan kita pelajari:
+
+1.  **Tangga Nada Diatonis Mayor** (contoh: Do-Re-Mi-Fa-Sol-La-Si-Do):
+
+    🎉 **Karakter:** Tangga nada mayor ini punya suasana yang **ceria, gembira, terang, dan bersemangat**.
+
+    ☀️ **Contoh Lagu:** Lagu anak-anak seperti "Balonku Ada Lima", "Naik Delman", atau lagu kebangsaan "Indonesia Raya" menggunakan tangga nada mayor.
+
+    👂 **Bagaimana Membedakan:** Ketika mendengarkan lagu mayor, kita akan merasa senang, bersemangat, dan seringkali ingin ikut bernyanyi atau bergerak.
+
+2.  **Tangga Nada Diatonis Minor** (contoh: La-Si-Do-Re-Mi-Fa-Sol-La):
+
+    😔 **Karakter:** Berbeda dengan mayor, tangga nada minor memiliki suasana yang **sedih, melankolis, haru, atau tenang**.
+
+    🌧️ **Contoh Lagu:** Lagu daerah yang bernuansa sendu atau lagu tidur seringkali menggunakan tangga nada minor. Contohnya lagu "Gugur Bunga".
+
+    👂 **Bagaimana Membedakan:** Saat mendengarkan lagu minor, kita mungkin merasa tenang, terharu, atau bahkan sedikit sedih.
+
+Siswa akan diajak untuk:
+
+🎧 **Mendengarkan Lagu:** Mendengarkan berbagai contoh lagu mayor dan minor untuk melatih kepekaan telinga dalam membedakan suasana lagu.
+
+🎤 **Menyanyikan Lagu:** Mencoba menyanyikan lagu-lagu dengan kedua jenis tangga nada ini, agar merasakan langsung perbedaan nadanya.
+
+Dengan memahami tangga nada, kita bisa lebih menghargai keindahan melodi dan emosi yang disampaikan dalam setiap lagu. Mari bernyanyi dengan hati!`
+  },
+  "Bab 2: Mengenal Notasi Angka": {
+    "2.1 Mengenal Notasi Angka": `🔢 **Bahasa Angka dalam Musik: Mengenal Notasi Angka** 📝
+
+Setelah mengenal tangga nada, sekarang kita akan belajar "membaca" musik menggunakan **notasi angka**. Notasi angka adalah sistem penulisan nada yang menggunakan angka (1, 2, 3, 4, 5, 6, 7) untuk mewakili nada-nada pada tangga nada. Ini adalah cara yang lebih sederhana untuk menulis dan membaca lagu dibandingkan not balok.
+
+Angka-angka dalam notasi angka mewakili nada:
+
+*   **1** = Do
+*   **2** = Re
+*   **3** = Mi
+*   **4** = Fa
+*   **5** = Sol
+*   **6** = La
+*   **7** = Si
+*   **1̇** (angka 1 dengan titik di atas) = Do tinggi
+*   **7̣** (angka 7 dengan titik di bawah) = Si rendah
+
+Selain nada, notasi angka juga menunjukkan **panjang pendek nada**:
+
+*   Jika ada garis di atas angka (contoh: ¯1¯), nadanya lebih pendek.
+*   Jika ada titik di belakang angka (contoh: 1.), nadanya lebih panjang.
+*   Jika ada angka nol (0), itu adalah tanda diam (tidak ada suara).
+
+Siswa akan diajak untuk:
+
+📖 **Membaca Notasi Angka:** Mengidentifikasi nada dan durasi dari setiap angka yang tertulis.
+
+✍️ **Menuliskan Notasi Angka:** Mencoba menuliskan lagu sederhana dalam bentuk notasi angka.
+
+🎤 **Menyanyikan Lagu:** Mempraktikkan menyanyi lagu dengan membaca notasi angka, sambil memperhatikan tinggi rendah nada dan panjang pendeknya.
+
+🦶 **Latihan Ketukan dan Tempo:** Menjaga irama dengan mengetuk atau bertepuk tangan sesuai tempo lagu, baik cepat (allegro) atau lambat (largo).
+
+Kemampuan membaca notasi angka ini sangat berguna untuk memainkan alat musik sederhana, menyanyi dalam paduan suara, atau bahkan menciptakan melodi lagu sendiri. Mari bermain musik dengan angka!`
+  },
+  "Bab 3: Memainkan Alat Musik Sederhana": {
+    "3.1 Memainkan Alat Musik Sederhana": `🥁 **Ekspresi Melodi: Memainkan Alat Musik Sederhana** 🎺
+
+Setelah mengenal notasi dan tangga nada, sekarang saatnya "menghidupkan" musik dengan memainkan alat musik! Pada bab ini, siswa akan diajak untuk belajar memainkan berbagai **alat musik sederhana**, baik yang **ritmis** (penghasil irama) maupun **melodis** (penghasil melodi).
+
+Beberapa alat musik yang mungkin akan dipelajari:
+
+*   **Alat Musik Ritmis:**
+    *   🥁 **Tamborin:** Mengeluarkan suara gemerincing saat digoyangkan atau dipukul.
+    *    مثلث **Triangle:** Instrumen perkusi yang menghasilkan suara jernih dan berdering.
+    *   Shaker **Marakas:** Memberikan efek suara pasir atau gemericik.
+    *   Wood block **Blok Kayu:** Menghasilkan suara ketukan yang solid.
+    *   Claves **Claves:** Sepasang tongkat kayu yang dipukulkan bersama untuk suara ketukan yang tajam.
+
+*   **Alat Musik Melodis:**
+    *   Angklung **Angklung:** Alat musik tradisional Sunda yang terbuat dari bambu, menghasilkan satu nada per angklung.
+    *   🎹 **Pianika:** Alat musik tiup yang memiliki tuts seperti piano, mudah dipelajari.
+    *   Recorder **Rekorder:** Alat musik tiup sederhana dengan lubang jari.
+
+Fokus pembelajaran akan meliputi:
+
+🖐️ **Teknik Dasar Bermain:** Cara memegang alat musik, cara memukul/meniup/menggerakkan dengan benar untuk menghasilkan suara yang baik.
+
+🎶 **Iringan Lagu:** Bagaimana alat musik yang dimainkan bisa mengiringi lagu yang sedang dinyanyikan, agar musiknya semakin kaya dan indah.
+
+🤝 **Kolaborasi dalam Kelompok:** Bermain musik bersama teman-teman! Ini melatih kekompakan, kerja sama, dan kemampuan mendengarkan satu sama lain.
+
+Dengan belajar memainkan alat musik sederhana, siswa tidak hanya mengembangkan keterampilan musikal, tetapi juga meningkatkan koordinasi, ketekunan, dan rasa percaya diri. Ayo, jadikan musik sebagai bagian tak terpisahkan dari kehidupan kita!`
+  }
+};
+
+let selectedSubbab = null;
+let selectedBab = null;
+
+// Mengubah pemetaan data-bab dan data-subbab pada tombol
+function setupSubbabRingkasan() {
+  document.querySelectorAll('.subbab-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      selectedSubbab = btn.getAttribute('data-subbab');
+      selectedBab = btn.getAttribute('data-bab');
+      const ringkasanBtn = document.getElementById('ringkasanBtn');
+      ringkasanBtn.classList.remove('bg-gray-300', 'cursor-not-allowed');
+      ringkasanBtn.classList.add('bg-gradient-to-r', 'from-green-400', 'to-blue-400', 'hover:from-green-500', 'hover:to-blue-500', 'cursor-pointer');
+      ringkasanBtn.disabled = false;
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  setupSubbabRingkasan();
+  const ringkasanBtn = document.getElementById('ringkasanBtn');
+  ringkasanBtn.onclick = async function() {
+    if (!selectedSubbab || !selectedBab) return;
+
+    const summary = artCultureSummariesK5[selectedBab]?.[selectedSubbab] || null;
+
+    sessionStorage.setItem('ringkasan_k5_art_culture', JSON.stringify({
+      ringkasan: summary,
+      bab: selectedBab,
+      subbab: selectedSubbab
+    }));
+    window.location.href = 'ringkasan-result-kelas5-art-culture.html';
+  };
+  document.querySelectorAll('.language-toggle-button').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = btn.textContent.trim().toLowerCase();
+      loadLang(lang);
+      document.querySelectorAll('.language-toggle-button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+  loadLang(currentLang);
+});
+</script>
+</body>
+</html> 

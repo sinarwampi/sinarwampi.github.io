@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPKN Kelas 4 - Sinar Wampi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+        :root {
+            --brand-primary: #6366F1;
+            --brand-secondary: #EC4899;
+            --background-primary: #FFFBEB;
+            --background-secondary: #FFFFFF;
+            --text-primary: #374151;
+            --text-secondary: #6B7280;
+            --border-primary: #FBBF24;
+            --action-primary: #34D399;
+            --action-primary-hover: #10B981;
+            --action-secondary: #F3F4F6;
+            --action-secondary-hover: #E5E7EB;
+            --color-sky-blue: #87CEEB;
+            --color-coral: #FF7F50;
+            --color-lime-green: #32CD32;
+            --color-violet: #EE82EE;
+            --color-gold: #FFD700;
+        }
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Fredoka One', cursive;
+        }
+    </style>
+</head>
+<body class="bg-[var(--background-primary)] text-[var(--text-primary)]">
+    <div class="flex flex-col min-h-screen">
+        <header class="bg-white shadow-md">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-[var(--color-sky-blue)] rounded-xl flex items-center justify-center transform -rotate-12">
+                        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L9 9.61V16a1 1 0 001 1h2a1 1 0 001-1V9.61l6.394-2.69a1 1 0 000-1.84l-7-3zM10 8L3.394 5.31 10 2.69v5.32z"></path>
+                        </svg>
+                    </div>
+                    <h1 class="text-xl sm:text-2xl text-[var(--text-primary)] font-bold" data-i18n="app_title">SINAR WAMPI</h1>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="language-toggle">
+                        <button class="language-toggle-button active">ID</button>
+                        <button class="language-toggle-button">EN</button>
+                    </div>
+                    <div class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfuwgYI-olVKF44AsvP7zsXtut46r76IIIbHOVhQRqZb4rg0KeVqnmfqm7yNrg4IZBmdiJ0SSQQ7JboPBpD_U4j5xrHEM53FeNseG4FQMDPIn3JZmcZju4oFuZS5vQAKyWwRXzlPebWjYVVf9Unqur0XzLipA4qFVYD3vGPv0k7oLTgihTQvseqa0kWkpmZ5z7CpuNmI3dDc9H5SY51ABcBMrMxz2J8eGAwjKxE99K1hNe2Zv6NcsxZhruxFBCOeMrph4SpjSwtO4");'></div>
+                </div>
+            </div>
+        </header>
+        <div class="w-full flex items-center mt-2 mb-4">
+            <a href="kelas4.html" class="flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-pink-400 to-blue-400 text-white font-medium shadow hover:from-pink-500 hover:to-blue-500 transition-colors ml-2">
+                <span class="text-base">&#8592;</span>
+                <span>Kembali</span>
+            </a>
+        </div>
+        <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[var(--color-coral)] mb-4">Kelas 4 - PPKN</h2>
+            <p class="text-center text-base sm:text-lg md:text-xl text-[var(--text-secondary)] mb-10">Pilih subbab untuk melihat ringkasan materi:</p>
+            <div class="space-y-6">
+                <!-- Bab 1: Pancasila Sebagai Nilai Kehidupan -->
+                <div>
+                    <h3 class="text-lg sm:text-xl font-bold text-lime-700 mb-2">Bab 1: Pancasila Sebagai Nilai Kehidupan</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <button class="w-full text-left bg-gradient-to-r from-lime-200 to-lime-100 hover:from-lime-300 hover:to-lime-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 1" data-subbab="Pengenalan Pancasila">
+                            <div class="font-semibold text-lime-800 mb-1">Pengenalan Pancasila</div>
+                            <div class="text-sm text-lime-700">Memahami Pancasila sebagai dasar negara.</div>
+                        </button>
+                        <button class="w-full text-left bg-gradient-to-r from-lime-200 to-lime-100 hover:from-lime-300 hover:to-lime-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 1" data-subbab="Penerapan Nilai Pancasila">
+                            <div class="font-semibold text-lime-800 mb-1">Penerapan Nilai Pancasila</div>
+                            <div class="text-sm text-lime-700">Bagaimana Pancasila diterapkan dalam kehidupan sehari-hari.</div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Bab 2: Kewajiban dan Hak sebagai Warga Negara -->
+                <div>
+                    <h3 class="text-lg sm:text-xl font-bold text-violet-700 mb-2 mt-6">Bab 2: Kewajiban dan Hak sebagai Warga Negara</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <button class="w-full text-left bg-gradient-to-r from-violet-200 to-violet-100 hover:from-violet-300 hover:to-violet-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 2" data-subbab="Memahami Kewajiban dan Hak">
+                            <div class="font-semibold text-violet-800 mb-1">Memahami Kewajiban dan Hak</div>
+                            <div class="text-sm text-violet-700">Apa itu kewajiban dan hak?</div>
+                        </button>
+                        <button class="w-full text-left bg-gradient-to-r from-violet-200 to-violet-100 hover:from-violet-300 hover:to-violet-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 2" data-subbab="Pelaksanaan Kewajiban dan Hak">
+                            <div class="font-semibold text-violet-800 mb-1">Pelaksanaan Kewajiban dan Hak</div>
+                            <div class="text-sm text-violet-700">Contoh pelaksanaan kewajiban dan hak.</div>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Bab 3: Bhinneka Tunggal Ika -->
+                <div>
+                    <h3 class="text-lg sm:text-xl font-bold text-pink-700 mb-2 mt-6">Bab 3: Bhinneka Tunggal Ika</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <button class="w-full text-left bg-gradient-to-r from-pink-200 to-pink-100 hover:from-pink-300 hover:to-pink-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 3" data-subbab="Keberagaman di Indonesia">
+                            <div class="font-semibold text-pink-800 mb-1">Keberagaman di Indonesia</div>
+                            <div class="text-sm text-pink-700">Mengenal berbagai suku dan budaya.</div>
+                        </button>
+                        <button class="w-full text-left bg-gradient-to-r from-pink-200 to-pink-100 hover:from-pink-300 hover:to-pink-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 3" data-subbab="Menghargai Perbedaan">
+                            <div class="font-semibold text-pink-800 mb-1">Menghargai Perbedaan</div>
+                            <div class="text-sm text-pink-700">Pentingnya toleransi dan persatuan.</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-white/80 backdrop-blur-sm sticky bottom-0 border-t-2 border-[var(--border-primary)] mt-8">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center">
+                <button id="ringkasanBtn" class="w-full max-w-md bg-gray-300 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full shadow-xl cursor-not-allowed">
+                    <span>Buat Ringkasan Sekarang!</span>
+                </button>
+            </div>
+            <div id="hasilRingkasan" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center text-base sm:text-lg text-[var(--text-primary)]">
+                <!-- Ringkasan akan muncul di sini -->
+            </div>
+        </footer>
+    </div>
+    <script>
+        const ppknSummaries = {
+            "Bab 1": {
+                "Pengenalan Pancasila": "🌟 **Pancasila** adalah dasar negara Indonesia yang punya 5 sila. Setiap sila punya makna penting. Misalnya, sila pertama mengajarkan kita percaya pada Tuhan, sila kedua tentang kemanusiaan, sila ketiga tentang persatuan, sila keempat tentang musyawarah, dan sila kelima tentang keadilan sosial. Pancasila itu seperti kompas yang membimbing kita dalam hidup bermasyarakat! 🧭",
+                "Penerapan Nilai Pancasila": "✅ **Penerapan nilai Pancasila** bisa dilakukan setiap hari. Contohnya, rajin beribadah (sila 1), membantu teman yang kesusahan (sila 2), ikut kerja bakti (sila 3), musyawarah untuk mufakat (sila 4), dan tidak pilih kasih (sila 5). Dengan begitu, kita ikut menjaga kerukunan dan keadilan di masyarakat. Yuk, terapkan Pancasila dalam setiap langkah kita! 👣"
+            },
+            "Bab 2": {
+                "Memahami Kewajiban dan Hak": "⚖️ **Kewajiban** adalah sesuatu yang harus kita lakukan, sedangkan **hak** adalah sesuatu yang harus kita dapatkan. Keduanya saling berkaitan dan harus seimbang. Contoh kewajiban: belajar, menjaga kebersihan. Contoh hak: mendapatkan pendidikan, bermain. Ingat, sebelum menuntut hak, penuhi dulu kewajibanmu! 🧑‍🎓➡️📚",
+                "Pelaksanaan Kewajiban dan Hak": "🏡 **Pelaksanaan kewajiban dan hak** terlihat jelas di rumah, sekolah, dan masyarakat. Di rumah, kewajibanmu membantu orang tua, hakmu mendapatkan kasih sayang. Di sekolah, kewajibanmu belajar, hakmu mendapat bimbingan guru. Di masyarakat, kewajibanmu menjaga ketertiban, hakmu merasa aman. Keseimbangan ini penting agar hidup harmonis. 🌍"
+            },
+            "Bab 3": {
+                "Keberagaman di Indonesia": "🌈 **Indonesia itu kaya banget** dengan keberagaman! Ada banyak suku, bahasa, agama, dan budaya yang berbeda-beda. Dari Sabang sampai Merauke, setiap daerah punya ciri khasnya sendiri. Keberagaman ini adalah anugerah yang membuat Indonesia unik dan istimewa. Mari kita syukuri dan lestarikan! ✨",
+                "Menghargai Perbedaan": "🤝 **Menghargai perbedaan** itu penting banget! Meskipun kita berbeda-beda, kita harus tetap rukun dan saling toleransi. Jangan mengejek atau membeda-bedakan teman karena suku atau agamanya. Dengan saling menghargai, kita bisa menciptakan persatuan dan kedamaian. Ingat semboyan kita: Bhinneka Tunggal Ika, berbeda-beda tetapi tetap satu jua! 🇮🇩"
+            }
+        };
+
+        let selectedBab = null;
+        let selectedSubbab = null;
+
+        function setupSubbabRingkasan() {
+            document.querySelectorAll('.subbab-btn').forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.subbab-btn').forEach(b => b.classList.remove('selected'));
+                    this.classList.add('selected');
+
+                    selectedBab = this.dataset.bab;
+                    selectedSubbab = this.dataset.subbab;
+                    const ringkasanBtn = document.getElementById('ringkasanBtn');
+                    ringkasanBtn.classList.remove('bg-gray-300', 'cursor-not-allowed');
+                    ringkasanBtn.classList.add('bg-gradient-to-r', 'from-green-400', 'to-blue-400', 'hover:from-green-500', 'hover:to-blue-500', 'cursor-pointer');
+                    ringkasanBtn.disabled = false;
+                });
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            setupSubbabRingkasan();
+            const ringkasanBtn = document.getElementById('ringkasanBtn');
+            ringkasanBtn.onclick = async function() {
+                if (!selectedSubbab || !selectedBab) return;
+
+                const summary = ppknSummaries[selectedBab]?.[selectedSubbab] || null;
+
+                sessionStorage.setItem('ringkasan_k4_ppkn', JSON.stringify({
+                    ringkasan: summary,
+                    bab: selectedBab,
+                    subbab: selectedSubbab
+                }));
+                window.location.href = 'ringkasan-result-kelas4-ppkn.html';
+            };
+            // Language toggle functionality (if any)
+            // Example:
+            // document.querySelectorAll('.language-toggle-button').forEach(function(btn) {
+            //     btn.addEventListener('click', function() {
+            //         var lang = btn.textContent.trim().toLowerCase();
+            //         loadLang(lang); // Assuming loadLang function exists
+            //         document.querySelectorAll('.language-toggle-button').forEach(b => b.classList.remove('active'));
+            //         btn.classList.add('active');
+            //     });
+            // });
+            // loadLang('id'); // Load default language on startup
+        });
+    </script>
+</body>
+</html> 

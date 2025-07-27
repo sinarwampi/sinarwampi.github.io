@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kelas 5 - PPKN</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+:root {
+  --brand-primary: #6366F1;
+  --brand-secondary: #EC4899;
+  --background-primary: #FFFBEB;--background-secondary: #FFFFFF;
+  --text-primary: #374151;--text-secondary: #6B7280;
+  --border-primary: #FBBF24;--action-primary: #34D399;--action-primary-hover: #10B981;--action-secondary: #F3F4F6;
+  --action-secondary-hover: #E5E7EB;
+  --color-sky-blue: #87CEEB;
+  --color-coral: #FF7F50;
+  --color-lime-green: #32CD32;
+  --color-violet: #EE82EE;
+  --color-gold: #FFD700;
+}
+body {
+  font-family: 'Lexend', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Fredoka One', cursive;
+}
+</style>
+</head>
+<body class="bg-[var(--background-primary)] text-[var(--text-primary)]">
+<div class="flex flex-col min-h-screen">
+<header class="bg-white shadow-md">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-[var(--color-sky-blue)] rounded-xl flex items-center justify-center transform -rotate-12">
+        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L9 9.61V16a1 1 0 001 1h2a1 1 0 001-1V9.61l6.394-2.69a1 1 0 000-1.84l-7-3zM10 8L3.394 5.31 10 2.69v5.32z"></path>
+        </svg>
+      </div>
+      <h1 class="text-xl sm:text-2xl text-[var(--text-primary)] font-bold" data-i18n="app_title">SINAR WAMPI</h1>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="language-toggle">
+        <button class="language-toggle-button active">ID</button>
+        <button class="language-toggle-button">EN</button>
+      </div>
+      <div class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfuwgYI-olVKF44AsvP7zsXtut46r76IIIbHOVhQRqZb4rg0KeVqnmfqm7yNrg4IZBmdiJ0SSQQ7JboPBpD_U4j5xrHEM53FeNseG4FQMDPIn3JZmcZju4oFuZS5vQAKyWwRXzlPebWjYVVf9Unqur0XzLipA4qFVYD3vGPv0k7oLTgihTQvseqa0kWkpmZ5z7CpuNmI3dDc9H5SY51ABcBMrMxz2J8eGAwjKxE99K1hNe2Zv6NcsxZhruyFBCOeMrph4SpjSwtO4");'></div>
+    </div>
+  </div>
+</header>
+<div class="w-full flex items-center mt-2 mb-4">
+  <a href="kelas5.html" class="flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-pink-400 to-blue-400 text-white font-medium shadow hover:from-pink-500 hover:to-blue-500 transition-colors ml-2">
+    <span class="text-base">&#8592;</span>
+    <span>Kembali</span>
+  </a>
+</div>
+<main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[var(--color-coral)] mb-4">Kelas 5 - PPKN</h2>
+  <p class="text-center text-base sm:text-lg md:text-xl text-[var(--text-secondary)] mb-10">Pilih subbab untuk melihat ringkasan materi:</p>
+  <div class="space-y-6">
+    <!-- Bab 1 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-yellow-700 mb-2">Bab 1: Aku Cinta Pancasila</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-yellow-200 to-yellow-100 hover:from-yellow-300 hover:to-yellow-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.1 Mengenal Nilai-Nilai Pancasila" data-bab="Bab 1: Aku Cinta Pancasila">
+          <div class="font-semibold text-yellow-800 mb-1">1.1 Mengenal Nilai-Nilai Pancasila</div>
+          <div class="text-sm text-yellow-700">Dalam subbab ini, siswa belajar mengenal ciri fisik dan karakter tokoh yang beragam untuk menghargai keunikan individu.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-yellow-200 to-yellow-100 hover:from-yellow-300 hover:to-yellow-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.2 Mengamalkan Nilai Pancasila" data-bab="Bab 1: Aku Cinta Pancasila">
+          <div class="font-semibold text-yellow-800 mb-1">1.2 Mengamalkan Nilai Pancasila</div>
+          <div class="text-sm text-yellow-700">Peserta didik diberi kesempatan untuk menyusun teks deskripsi tentang dirinya sendiri, mencerminkan identitas pribadi.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 2 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-green-700 mb-2 mt-6">Bab 2: Menjaga Persatuan dan Kesatuan</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.1 Arti Penting Persatuan" data-bab="Bab 2: Menjaga Persatuan dan Kesatuan">
+          <div class="font-semibold text-green-800 mb-1">2.1 Arti Penting Persatuan</div>
+          <div class="text-sm text-green-700">Peserta didik dilatih untuk membaca teks nonfiksi dan menemukan informasi penting di dalamnya, seperti gagasan utama dan kalimat penjelas.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.2 Contoh Sikap Menjaga Persatuan" data-bab="Bab 2: Menjaga Persatuan dan Kesatuan">
+          <div class="font-semibold text-green-800 mb-1">2.2 Contoh Sikap Menjaga Persatuan</div>
+          <div class="text-sm text-green-700">Setelah memahami isi teks, siswa belajar menyampaikan kembali informasi tersebut, baik secara lisan maupun tulisan, menggunakan bahasa baku dan kalimat runtut.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 3 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-blue-700 mb-2 mt-6">Bab 3: Cinta Tanah Air dan Bangga sebagai Bangsa Indonesia</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="3.1 Makna Cinta Tanah Air" data-bab="Bab 3: Cinta Tanah Air dan Bangga sebagai Bangsa Indonesia">
+          <div class="font-semibold text-blue-800 mb-1">3.1 Makna Cinta Tanah Air</div>
+          <div class="text-sm text-blue-700">Dalam subbab ini, peserta didik dikenalkan pada teknik dasar wawancara, belajar menyusun pertanyaan dan mencatat informasi.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="3.2 Perilaku Cinta Tanah Air" data-bab="Bab 3: Cinta Tanah Air dan Bangga sebagai Bangsa Indonesia">
+          <div class="font-semibold text-blue-800 mb-1">3.2 Perilaku Cinta Tanah Air</div>
+          <div class="text-sm text-blue-700">Setelah melakukan wawancara, siswa menyusun hasilnya dalam bentuk laporan naratif yang sistematis dan mudah dipahami.</div>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="bg-white/80 backdrop-blur-sm sticky bottom-0 border-t-2 border-[var(--border-primary)] mt-8">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center">
+    <button id="ringkasanBtn" class="w-full max-w-md bg-gray-300 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full shadow-xl cursor-not-allowed">
+      <span>Buat Ringkasan Sekarang!</span>
+    </button>
+  </div>
+  <div id="hasilRingkasan" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center text-base sm:text-lg text-[var(--text-primary)]">
+    <!-- Ringkasan akan muncul di sini -->
+  </div>
+</footer>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<!-- Script translate manual -->
+<script>
+let currentLang = 'id';
+function loadLang(lang) {
+  fetch(`lang-${lang}.json`)
+    .then(res => res.json())
+    .then(dict => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) el.textContent = dict[key];
+      });
+      currentLang = lang;
+    });
+}
+
+const ppknSummariesK5 = {
+  "Bab 1: Aku Cinta Pancasila": {
+    "1.1 Mengenal Nilai-Nilai Pancasila": `📜 **Pancasila: Pilar Bangsa Indonesia** 🇮🇩
+
+Selamat datang di pelajaran PPKN Kelas 5! Pada bab ini, kita akan memperdalam kecintaan kita pada **Pancasila**, yaitu dasar negara kita tercinta, Indonesia. Pancasila bukan hanya sekadar lima sila, tetapi adalah nilai-nilai luhur yang menjadi pedoman hidup berbangsa dan bernegara bagi seluruh rakyat Indonesia.
+
+Mari kita ingat kembali dan pahami lebih dalam nilai-nilai setiap sila:
+
+1.  **Ketuhanan Yang Maha Esa (Sila ke-1):**
+    *   **Makna:** Mengajarkan kita untuk percaya dan bertakwa kepada Tuhan Yang Maha Esa sesuai agama dan kepercayaan masing-masing. Ini berarti kita harus saling **menghormati dalam beribadah**, tidak memaksakan agama kepada orang lain, dan menjunjung tinggi kerukunan antarumat beragama.
+    *   **Contoh Penerapan:** Berdoa sebelum dan sesudah belajar, menghargai teman yang sedang beribadah, tidak mengganggu ibadah orang lain.
+
+2.  **Kemanusiaan yang Adil dan Beradab (Sila ke-2):**
+    *   **Makna:** Mengajarkan kita untuk mengakui persamaan derajat, hak, dan kewajiban setiap manusia, tanpa membeda-bedakan suku, agama, ras, atau golongan. Kita diajarkan untuk bersikap **adil, tolong-menolong, tidak semena-mena**, dan menjunjung tinggi nilai-nilai kemanusiaan.
+    *   **Contoh Penerapan:** Membantu teman yang kesusahan, tidak mengejek perbedaan fisik atau suku, bersikap sopan kepada semua orang.
+
+3.  **Persatuan Indonesia (Sila ke-3):**
+    *   **Makna:** Menekankan pentingnya **menjaga persatuan dan kesatuan bangsa** di tengah keberagaman yang kita miliki. Indonesia adalah rumah bagi berbagai suku, bahasa, dan budaya, dan kita harus bangga serta menjaga keutuhannya.
+    *   **Contoh Penerapan:** Bermain dengan semua teman tanpa membedakan, bangga menggunakan produk dalam negeri, mengikuti upacara bendera dengan khidmat.
+
+4.  **Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan (Sila ke-4):**
+    *   **Makna:** Mengajarkan bahwa setiap keputusan penting harus diambil melalui **musyawarah untuk mencapai mufakat (kesepakatan bersama)**. Kita harus menghargai perbedaan pendapat dan menerima hasil musyawarah dengan lapang dada.
+    *   **Contoh Penerapan:** Berdiskusi di kelas saat memilih ketua kelas, menerima keputusan kelompok meskipun bukan ide kita.
+
+5.  **Keadilan Sosial bagi Seluruh Rakyat Indonesia (Sila ke-5):**
+    *   **Makna:** Mengajarkan kita untuk bersikap **adil terhadap sesama**, menghormati hak orang lain, tidak boros, dan ikut serta dalam mewujudkan kesejahteraan bersama bagi seluruh rakyat Indonesia. Ini berarti setiap orang berhak mendapatkan perlakuan yang sama tanpa diskriminasi.
+    *   **Contoh Penerapan:** Membagi tugas piket secara adil, tidak mengambil hak milik orang lain, membantu orang yang membutuhkan.
+
+Dengan memahami dan mengamalkan nilai-nilai Pancasila, kita akan menjadi warga negara yang baik dan turut serta membangun Indonesia yang lebih maju dan harmonis. Ayo, kita cintai Pancasila! ❤️🇮🇩`,
+    "1.2 Mengamalkan Nilai Pancasila": `🤝 **Pancasila dalam Aksi: Mengamalkan Nilai Pancasila dalam Kehidupan Sehari-hari** 🌟
+
+Setelah kita mengenal dan memahami nilai-nilai luhur Pancasila, kini saatnya yang paling penting: **mengamalkannya dalam kehidupan sehari-hari**! Pancasila bukan hanya hanya untuk dihafal, tetapi untuk dipraktikkan dalam setiap sikap dan perbuatan kita. Ini adalah bukti nyata bahwa kita **cinta Pancasila**!
+
+Mari kita lihat bagaimana kita bisa menerapkan nilai-nilai Pancasila dalam berbagai aspek kehidupan:
+
+**1. Penerapan Sila Pertama (Ketuhanan Yang Maha Esa):**
+*   **Berdoa dan Bersyukur:** Selalu ingat untuk berdoa sebelum dan sesudah melakukan kegiatan. Bersyukur atas nikmat Tuhan.
+*   **Menghargai Perbedaan Agama:** Tidak mengejek atau mengganggu teman yang berbeda agama saat beribadah. Saling menghormati hari raya keagamaan.
+*   **Menjalankan Perintah Agama:** Melaksanakan ibadah sesuai ajaran agama dan kepercayaan masing-masing dengan penuh kesadaran.
+
+**2. Penerapan Sila Kedua (Kemanusiaan yang Adil dan Beradab):**
+*   **Saling Membantu:** Menolong teman atau orang lain yang sedang kesusahan, tanpa memandang latar belakang mereka.
+*   **Berbicara Sopan:** Menggunakan bahasa yang santun dan baik kepada siapa saja, termasuk kepada orang yang lebih tua.
+*   **Tidak Membeda-bedakan:** Berteman dengan siapa saja tanpa melihat suku, warna kulit, atau status sosial. Semua manusia setara.
+
+**3. Penerapan Sila Ketiga (Persatuan Indonesia):**
+*   **Gotong Royong:** Bekerja sama membersihkan kelas, lingkungan, atau membantu sesama saat ada kesulitan.
+*   **Cinta Produk Indonesia:** Lebih memilih membeli dan menggunakan produk-produk buatan dalam negeri.
+*   **Menjaga Kerukunan:** Tidak mudah terprovokasi oleh berita bohong yang bisa memecah belah persatuan.
+*   **Bangga Berbahasa Indonesia:** Menggunakan bahasa Indonesia dengan baik dan benar dalam komunikasi sehari-hari.
+
+**4. Penerapan Sila Keempat (Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan):**
+*   **Musyawarah:** Berdiskusi untuk mencapai kesepakatan dalam kelompok atau keluarga, misalnya saat merencanakan kegiatan.
+*   **Menghargai Pendapat:** Mendengarkan pendapat teman atau orang lain dengan baik, meskipun berbeda dengan pendapat kita.
+*   **Menerima Keputusan Bersama:** Setelah musyawarah, menerima dan melaksanakan hasil keputusan dengan ikhlas.
+
+**5. Penerapan Sila Kelima (Keadilan Sosial bagi Seluruh Rakyat Indonesia):**
+*   **Bersikap Adil:** Memperlakukan semua orang dengan adil, tidak pilih kasih.
+*   **Tidak Berfoya-foya:** Menggunakan uang atau barang dengan bijak, tidak boros dan bermewah-mewahan.
+*   **Berbagi:** Suka menolong dan berbagi dengan mereka yang kurang beruntung.
+*   **Menjaga Hak Orang Lain:** Tidak mengambil atau merusak barang milik orang lain.
+
+Dengan mengamalkan nilai-nilai Pancasila ini, kita tidak hanya menjadi warga negara yang baik, tetapi juga turut serta menciptakan masyarakat yang damai, adil, dan sejahtera. Mari kita wujudkan Pancasila dalam setiap langkah hidup kita! 🇮🇩✨`
+  },
+  "Bab 2: Menjaga Persatuan dan Kesatuan": {
+    "2.1 Arti Penting Persatuan": `🤝 **Bersatu Kita Teguh: Arti Penting Persatuan dan Kesatuan** 🇮🇩
+
+Selamat datang di Bab 2 PPKN Kelas 5! Di bab ini, kita akan belajar tentang salah satu pilar utama kekuatan bangsa Indonesia: **Persatuan dan Kesatuan**. Seperti kata pepatah, **"Bersatu kita teguh, bercerai kita runtuh!"**
+
+Apa itu **Persatuan dan Kesatuan**?
+*   **Persatuan** berarti berkumpulnya berbagai macam corak yang berbeda menjadi satu kesatuan yang utuh dan serasi. Ibaratnya seperti berbagai warna benang yang disatukan menjadi kain yang indah.
+*   **Kesatuan** adalah keadaan satu, utuh, dan tidak terpecah belah. Artinya, meskipun kita berbeda-beda, kita adalah satu Indonesia.
+
+Indonesia adalah negara yang sangat kaya akan keberagaman! Kita memiliki:
+*   **Suku Bangsa:** Ribuan suku bangsa dengan bahasa, adat istiadat, dan budaya yang berbeda-beda (Jawa, Sunda, Batak, Dayak, Papua, dll).
+*   **Agama:** Islam, Kristen, Katolik, Hindu, Buddha, Konghucu.
+*   **Bahasa Daerah:** Ratusan bahasa daerah yang tersebar dari Sabang sampai Merauke.
+*   **Adat Istiadat dan Kesenian:** Tarian daerah, lagu daerah, rumah adat, pakaian tradisional yang berbeda-beda.
+
+Lalu, mengapa **persatuan dan kesatuan ini sangat penting** dalam masyarakat yang majemuk seperti Indonesia?
+
+1.  **Mencegah Perpecahan:** Tanpa persatuan, perbedaan bisa memicu pertengkaran dan perpecahan. Dengan bersatu, kita bisa hidup rukun dan damai, meskipun berbeda.
+2.  **Mewujudkan Kerukunan:** Persatuan menciptakan suasana rukun dan saling menghargai antarwarga negara.
+3.  **Memperkuat Ketahanan Bangsa:** Bangsa yang bersatu akan lebih kuat dalam menghadapi ancaman, tantangan, hambatan, dan gangguan, baik dari dalam maupun luar negeri.
+4.  **Mempercepat Pembangunan Nasional:** Jika semua elemen masyarakat bersatu dan bekerja sama, pembangunan negara akan berjalan lebih cepat dan lancar.
+5.  **Mewujudkan Cita-cita Bangsa:** Cita-cita kemerdekaan untuk menciptakan masyarakat yang adil dan makmur hanya bisa tercapai jika bangsa ini bersatu.
+
+Bayangkan jika kita semua seperti jari-jari tangan, jika sendiri kita lemah, tapi jika bersatu dalam genggaman, kita bisa melakukan banyak hal. Mari kita jaga terus persatuan dan kesatuan bangsa Indonesia! ❤️🇮🇩`,
+    "2.2 Contoh Sikap Menjaga Persatuan": `🕊️ **Harmoni di Keberagaman: Contoh Sikap Menjaga Persatuan dan Kesatuan** 🌈🤝
+
+Setelah kita memahami betapa pentingnya persatuan dan kesatuan bagi bangsa Indonesia yang beragam, kini saatnya kita melihat bagaimana **sikap-sikap konkret yang bisa kita lakukan setiap hari untuk menjaga persatuan dan kesatuan** itu. Persatuan dimulai dari diri sendiri dan lingkungan terdekat kita!
+
+Berikut adalah beberapa contoh sikap yang mencerminkan upaya menjaga persatuan dan kesatuan:
+
+1.  **Menghargai Perbedaan:**
+    *   **Tidak membeda-bedakan teman:** Berteman dengan siapa saja, baik dari suku yang berbeda, agama yang berbeda, atau latar belakang yang berbeda. Semua adalah teman.
+    *   **Menghormati Adat Istiadat Lain:** Jika ada teman yang memiliki kebiasaan atau tradisi berbeda, kita menghormatinya dan tidak mengejek.
+    *   **Saling Toleransi Beragama:** Membiarkan teman menjalankan ibadahnya dan tidak mengganggu mereka.
+
+2.  **Meningkatkan Semangat Gotong Royong:**
+    *   **Bekerja sama:** Ikut serta dalam kegiatan bersih-bersih lingkungan sekolah atau rumah, membantu teman yang kesulitan dalam belajar atau pekerjaan rumah.
+    *   **Saling membantu:** Ketika ada bencana atau musibah, kita turut membantu meringankan beban sesama.
+
+3.  **Mengutamakan Musyawarah:**
+    *   **Berdiskusi:** Jika ada perbedaan pendapat, kita tidak langsung bertengkar, tetapi berdiskusi untuk mencari jalan keluar terbaik secara bersama-sama.
+    *   **Menerima Hasil Musyawarah:** Meskipun hasil keputusan tidak sesuai keinginan kita, kita harus menerimanya dengan lapang dada demi kepentingan bersama.
+
+4.  **Menjaga Kerukunan Antarsuku dan Antarumat Beragama:**
+    *   **Tidak Menyebarkan Berita Bohong:** Berhati-hati dengan informasi yang bisa memecah belah persatuan.
+    *   **Menghindari Perkataan Kasar:** Berbicara sopan dan tidak menyinggung perasaan orang lain, terutama terkait suku, agama, dan ras.
+
+5.  **Cinta Tanah Air dan Bangga sebagai Bangsa Indonesia:**
+    *   **Menggunakan Bahasa Indonesia yang Baik dan Benar:** Ini adalah bahasa persatuan kita.
+    *   **Mencintai Produk Dalam Negeri:** Membeli dan menggunakan produk-produk hasil karya anak bangsa.
+    *   **Berpartisipasi dalam Kegiatan Nasional:** Mengikuti upacara bendera, merayakan hari-hari besar nasional.
+
+Sikap-sikap ini mungkin terlihat sederhana, tetapi dampaknya sangat besar dalam menjaga keharmonisan dan kekuatan bangsa kita. Mari kita praktikkan setiap hari dan menjadi agen persatuan! 🤝🇮🇩`
+  },
+  "Bab 3: Cinta Tanah Air dan Bangga sebagai Bangsa Indonesia": {
+    "3.1 Makna Cinta Tanah Air": `❤️ **Jantung Indonesia: Makna Cinta Tanah Air** 🇮🇩🌟
+
+Di Bab 3 PPKN Kelas 5 ini, kita akan merasakan getaran **cinta tanah air**! Apa sebenarnya arti dari "cinta tanah air"? Ini bukan hanya sekadar kata-kata, tetapi sebuah perasaan mendalam dan kesadaran untuk mencintai, menjaga, dan bangga terhadap negara kita, Indonesia.
+
+**Cinta tanah air** adalah perasaan yang tulus dan ikhlas untuk mengabdi, memelihara, dan melindungi tanah air dari berbagai ancaman dan kerusakan. Ini adalah wujud dari rasa memiliki dan tanggung jawab kita sebagai warga negara.
+
+Mari kita bedah makna cinta tanah air ini:
+
+1.  **Menjaga Lingkungan dan Sumber Daya Alam:**
+    *   Mencintai tanah air berarti peduli terhadap kelestarian alam dan lingkungan tempat kita tinggal. Ini termasuk menjaga kebersihan, tidak membuang sampah sembarangan, dan menggunakan sumber daya alam secara bijak.
+    *   **Contoh:** Ikut kegiatan membersihkan sungai, menanam pohon di lingkungan sekitar, hemat air dan listrik.
+
+2.  **Menghargai dan Melestarikan Budaya Bangsa:**
+    *   Indonesia kaya akan beragam budaya, adat istiadat, tarian, lagu, dan seni tradisional. Mencintai tanah air berarti menghargai dan berusaha melestarikan warisan budaya ini agar tidak punah atau diakui oleh bangsa lain.
+    *   **Contoh:** Belajar tarian tradisional, menyanyikan lagu daerah, memakai pakaian adat di acara tertentu, menghargai perayaan adat.
+
+3.  **Melestarikan Bahasa dan Simbol Negara:**
+    *   **Bahasa Indonesia:** Sebagai bahasa persatuan, kita wajib menggunakannya dengan baik dan benar.
+    *   **Bendera Merah Putih:** Menghormati bendera sebagai lambang kedaulatan bangsa.
+    *   **Lagu Kebangsaan Indonesia Raya:** Menyanyikan dengan khidmat.
+    *   **Lambang Negara Garuda Pancasila:** Memahami makna setiap simbolnya.
+
+4.  **Menjaga Keamanan dan Ketertiban:**
+    *   Mencintai tanah air juga berarti ikut menjaga ketertiban umum dan keamanan lingkungan. Tidak melakukan perbuatan yang merugikan orang lain atau negara.
+    *   **Contoh:** Mematuhi peraturan lalu lintas, tidak melakukan vandalisme, melaporkan tindak kejahatan.
+
+5.  **Berprestasi untuk Bangsa:**
+    *   Setiap individu bisa menunjukkan cintanya pada tanah air dengan berusaha berprestasi di bidang masing-masing, baik akademik, olahraga, seni, atau lainnya. Prestasi kita akan mengharumkan nama bangsa.
+    *   **Contoh:** Belajar dengan giat, menjadi juara lomba, menciptakan inovasi baru.
+
+Cinta tanah air adalah pondasi bagi semangat nasionalisme dan patriotisme. Dengan cinta yang tulus, kita akan selalu berusaha yang terbaik untuk kemajuan dan kesejahteraan Indonesia. Mari terus kobarkan semangat ini! 🔥💪`,
+    "3.2 Perilaku Cinta Tanah Air": `🌟 **Aksi Nyata: Perilaku Cinta Tanah Air dalam Keseharian** 🇮🇩💖
+
+Setelah kita memahami makna mendalam dari cinta tanah air, kini saatnya kita menerjemahkannya ke dalam **perilaku nyata** dalam kehidupan sehari-hari! Cinta tanah air bukanlah sekadar perasaan, tetapi adalah serangkaian tindakan yang kita lakukan untuk menunjukkan rasa bangga dan tanggung jawab kita sebagai bangsa Indonesia.
+
+Berikut adalah berbagai perilaku konkret yang mencerminkan cinta tanah air dan bangga sebagai bangsa Indonesia:
+
+1.  **Menjaga Kebersihan Lingkungan:**
+    *   **Contoh:** Tidak membuang sampah sembarangan (di sekolah, di jalan, atau di tempat umum), melakukan piket kelas dengan rajin, ikut kerja bakti membersihkan lingkungan tempat tinggal. Lingkungan yang bersih mencerminkan bangsa yang peduli.
+
+2.  **Membeli dan Menggunakan Produk Dalam Negeri:**
+    *   **Contoh:** Memilih pakaian, makanan, atau barang-barang lain yang diproduksi di Indonesia. Dengan begitu, kita turut mendukung perekonomian negara dan memberikan semangat kepada para pengusaha lokal. "Aku Cinta Produk Indonesia!"
+
+3.  **Bangga Menggunakan Bahasa Indonesia:**
+    *   **Contoh:** Berbicara bahasa Indonesia dengan baik dan benar dalam percakapan sehari-hari. Bahasa Indonesia adalah bahasa persatuan yang harus kita jaga dan lestarikan.
+
+4.  **Menghormati dan Menjaga Lambang Negara:**
+    *   **Contoh:** Mengikuti upacara bendera dengan khidmat, tidak merusak atau mencoret-coret fasilitas umum dan simbol negara, menyanyikan lagu kebangsaan "Indonesia Raya" dengan penuh semangat dan rasa hormat.
+
+5.  **Mempelajari dan Melestarikan Budaya Lokal:**
+    *   **Contoh:** Belajar tarian daerah, lagu daerah, mengenal rumah adat, dan pakaian tradisional. Mengikuti pentas seni atau festival budaya yang menampilkan kekayaan Indonesia.
+
+6.  **Disiplin dan Menaati Aturan:**
+    *   **Contoh:** Mematuhi peraturan sekolah, peraturan lalu lintas, dan semua hukum yang berlaku. Warga negara yang baik adalah warga negara yang patuh hukum.
+
+7.  **Belajar dengan Giat dan Berprestasi:**
+    *   **Contoh:** Rajin belajar, mengerjakan tugas sekolah, dan berusaha meraih prestasi di bidang akademik maupun non-akademik. Setiap prestasi yang kita raih akan mengharumkan nama Indonesia.
+
+8.  **Menjaga Persatuan dan Kerukunan:**
+    *   **Contoh:** Berteman dengan siapa saja tanpa memandang perbedaan suku, agama, atau budaya. Saling tolong-menolong dan menghargai satu sama lain.
+
+Dengan melakukan perilaku-perilaku ini, kita tidak hanya menunjukkan cinta kita pada tanah air, tetapi juga menjadi contoh bagi orang lain. Mari kita tunjukkan bahwa kita bangga menjadi bagian dari bangsa Indonesia! 🌈💪`
+  }
+};
+
+let selectedSubbab = null;
+let selectedBab = null;
+
+// Tambahkan event listener ke semua tombol subbab
+function setupSubbabRingkasan() {
+  document.querySelectorAll('.subbab-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      selectedSubbab = btn.getAttribute('data-subbab');
+      selectedBab = btn.getAttribute('data-bab');
+      const ringkasanBtn = document.getElementById('ringkasanBtn');
+      ringkasanBtn.classList.remove('bg-gray-300', 'cursor-not-allowed');
+      ringkasanBtn.classList.add('bg-gradient-to-r', 'from-green-400', 'to-blue-400', 'hover:from-green-500', 'hover:to-blue-500', 'cursor-pointer');
+      ringkasanBtn.disabled = false;
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  setupSubbabRingkasan();
+  const ringkasanBtn = document.getElementById('ringkasanBtn');
+  ringkasanBtn.onclick = async function() {
+    if (!selectedSubbab || !selectedBab) return;
+
+    const summary = ppknSummariesK5[selectedBab]?.[selectedSubbab] || null;
+
+    sessionStorage.setItem('ringkasan_k5_ppkn', JSON.stringify({
+      ringkasan: summary,
+      bab: selectedBab,
+      subbab: selectedSubbab
+    }));
+    window.location.href = 'ringkasan-result-kelas5-ppkn.html';
+  };
+  document.querySelectorAll('.language-toggle-button').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = btn.textContent.trim().toLowerCase();
+      loadLang(lang);
+      document.querySelectorAll('.language-toggle-button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+  loadLang(currentLang);
+});
+</script>
+</body>
+</html> 

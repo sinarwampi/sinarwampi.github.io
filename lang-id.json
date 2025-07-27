@@ -1,0 +1,20 @@
+{
+  "app_title": "SINAR WAMPI",
+  "select_class": "Pilih Kelas Anda",
+  "choose_class": "Pilih kelas untuk melihat mata pelajaran yang tersedia.",
+  "welcome_title": "Selamat Datang Di Aplikasi",
+  "tagline": "Solusi INteraktif AI Ramah Menyenangkan",
+  "tagline_wampi": "Bersama Wampi",
+  "select_class_prompt": "Pilihlah Kelas Sesuai Kelasmu",
+  "semangat_belajar": "Semangat Belajar!",
+  "class_4": "Kelas 4",
+  "class_5": "Kelas 5",
+  "class_6": "Kelas 6",
+  "available_subjects": "Mata Pelajaran untuk Kelas 4",
+  "subject_bahasa": "Bahasa Indonesia",
+  "subject_ipas": "IPAS",
+  "subject_math": "Matematika",
+  "subject_ppkn": "PPKn",
+  "subject_art": "Seni & Budaya",
+  "choose_subject": "Pilihlah pelajaran yang ingin kamu pelajari!!"
+} 

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kelas 5 - Bahasa Indonesia</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+:root {
+  --brand-primary: #6366F1;
+  --brand-secondary: #EC4899;
+  --background-primary: #FFFBEB;--background-secondary: #FFFFFF;
+  --text-primary: #374151;--text-secondary: #6B7280;
+  --border-primary: #FBBF24;--action-primary: #34D399;--action-primary-hover: #10B981;--action-secondary: #F3F4F6;
+  --action-secondary-hover: #E5E7EB;
+  --color-sky-blue: #87CEEB;
+  --color-coral: #FF7F50;
+  --color-lime-green: #32CD32;
+  --color-violet: #EE82EE;
+  --color-gold: #FFD700;
+}
+body {
+  font-family: 'Lexend', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Fredoka One', cursive;
+}
+</style>
+</head>
+<body class="bg-[var(--background-primary)] text-[var(--text-primary)]">
+<div class="flex flex-col min-h-screen">
+<header class="bg-white shadow-md">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-[var(--color-sky-blue)] rounded-xl flex items-center justify-center transform -rotate-12">
+        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L9 9.61V16a1 1 0 001 1h2a1 1 0 001-1V9.61l6.394-2.69a1 1 0 000-1.84l-7-3zM10 8L3.394 5.31 10 2.69v5.32z"></path>
+        </svg>
+      </div>
+      <h1 class="text-xl sm:text-2xl text-[var(--text-primary)] font-bold" data-i18n="app_title">SINAR WAMPI</h1>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="language-toggle">
+        <button class="language-toggle-button active">ID</button>
+        <button class="language-toggle-button">EN</button>
+      </div>
+      <div class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfuwgYI-olVKF44AsvP7zsXtut46r76IIIbHOVhQRqZb4rg0KeVqnmfqm7yNrg4IZBmdiJ0SSQQ7JboPBpD_U4j5xrHEM53FeNseG4FQMDPIn3JZmcZju4oFuZS5vQAKyWwRXzlPebWjYVVf9Unqur0XzLipA4qFVYD3vGPv0k7oLTgihTQvseqa0kWkpmZ5z7CpuNmI3dDc9H5SY51ABcBMrMxz2J8eGAwjKxE99K1hNe2Zv6NcsxZhruyFBCOeMrph4SpjSwtO4");'></div>
+    </div>
+  </div>
+</header>
+<div class="w-full flex items-center mt-2 mb-4">
+  <a href="kelas5.html" class="flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-pink-400 to-blue-400 text-white font-medium shadow hover:from-pink-500 hover:to-blue-500 transition-colors ml-2">
+    <span class="text-base">&#8592;</span>
+    <span>Kembali</span>
+  </a>
+</div>
+<main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[var(--color-coral)] mb-4">Kelas 5 - Bahasa Indonesia</h2>
+  <p class="text-center text-base sm:text-lg md:text-xl text-[var(--text-secondary)] mb-10">Pilih subbab untuk melihat ringkasan materi:</p>
+  <div class="space-y-6">
+    <!-- Bab 1 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-green-700 mb-2">Bab 1: Aku yang Unik</h3>
+      <div class="grid grid-cols-1 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.1 Membaca Cerita tentang Ciri Fisik dan Karakter Tokoh" data-bab="Bab 1: Aku yang Unik">
+          <div class="font-semibold text-green-800 mb-1">1.1 Membaca Cerita tentang Ciri Fisik dan Karakter Tokoh</div>
+          <div class="text-sm text-green-700">Peserta didik membaca cerita untuk mengenali ciri fisik dan karakter tokoh serta menghargai keunikan individu.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.2 Menulis Teks Deskripsi tentang Diri Sendiri" data-bab="Bab 1: Aku yang Unik">
+          <div class="font-semibold text-green-800 mb-1">1.2 Menulis Teks Deskripsi tentang Diri Sendiri</div>
+          <div class="text-sm text-green-700">Peserta didik menyusun teks deskripsi tentang diri sendiri dengan kalimat efektif dan kosakata tepat.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 2 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-blue-700 mb-2 mt-6">Bab 2: Buku Jendela Dunia</h3>
+      <div class="grid grid-cols-1 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.1 Menggali Informasi dari Teks Nonfiksi" data-bab="Bab 2: Buku Jendela Dunia">
+          <div class="font-semibold text-blue-800 mb-1">2.1 Menggali Informasi dari Teks Nonfiksi</div>
+          <div class="text-sm text-blue-700">Peserta didik dilatih menggali informasi penting dari teks nonfiksi dan menyusunnya kembali.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.2 Menyajikan Informasi dari Teks Nonfiksi" data-bab="Bab 2: Buku Jendela Dunia">
+          <div class="font-semibold text-blue-800 mb-1">2.2 Menyajikan Informasi dari Teks Nonfiksi</div>
+          <div class="text-sm text-blue-700">Setelah memahami teks, siswa belajar menyampaikan informasi kembali secara lisan maupun tulisan.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 3 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-yellow-700 mb-2 mt-6">Bab 3: Ekspresi Diri melalui Hobi</h3>
+      <div class="grid grid-cols-1 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-yellow-200 to-yellow-100 hover:from-yellow-300 hover:to-yellow-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 3: Ekspresi Diri melalui Hobi" data-subbab="3.1 Menggali Informasi dari Wawancara">
+          <div class="font-semibold text-yellow-800 mb-1">3.1 Menggali Informasi dari Wawancara</div>
+          <div class="text-sm text-yellow-700">Peserta didik dikenalkan teknik wawancara, menyusun pertanyaan, dan mencatat informasi penting.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-yellow-200 to-yellow-100 hover:from-yellow-300 hover:to-yellow-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 3: Ekspresi Diri melalui Hobi" data-subbab="3.2 Menyusun Laporan Hasil Wawancara">
+          <div class="font-semibold text-yellow-800 mb-1">3.2 Menyusun Laporan Hasil Wawancara</div>
+          <div class="text-sm text-yellow-700">Siswa menyusun laporan wawancara secara sistematis dan naratif setelah melakukan wawancara.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 4 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-purple-700 mb-2 mt-6">Bab 4: Belajar Berwirausaha</h3>
+      <div class="grid grid-cols-1 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 4: Belajar Berwirausaha" data-subbab="4.1 Membaca dan Menulis Teks Prosedur">
+          <div class="font-semibold text-purple-800 mb-1">4.1 Membaca dan Menulis Teks Prosedur</div>
+          <div class="text-sm text-purple-700">Siswa belajar membaca dan menulis teks prosedur dengan langkah yang urut dan jelas.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 4: Belajar Berwirausaha" data-subbab="4.2 Menyajikan Teks Prosedur Secara Lisan">
+          <div class="font-semibold text-purple-800 mb-1">4.2 Menyajikan Teks Prosedur Secara Lisan</div>
+          <div class="text-sm text-purple-700">Selain menulis, siswa juga belajar menyampaikan teks prosedur secara lisan di depan teman-temannya.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 5 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-pink-700 mb-2 mt-6">Bab 5: Menjadi Warga Dunia</h3>
+      <div class="grid grid-cols-1 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-pink-200 to-pink-100 hover:from-pink-300 hover:to-pink-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 5: Menjadi Warga Dunia" data-subbab="5.1 Menyampaikan Pendapat">
+          <div class="font-semibold text-pink-800 mb-1">5.1 Menyampaikan Pendapat</div>
+          <div class="text-sm text-pink-700">Siswa belajar mengemukakan pendapat secara logis dan santun dengan alasan yang mendukung.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-pink-200 to-pink-100 hover:from-pink-300 hover:to-pink-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 5: Menjadi Warga Dunia" data-subbab="5.2 Menanggapi Pendapat">
+          <div class="font-semibold text-pink-800 mb-1">5.2 Menanggapi Pendapat</div>
+          <div class="text-sm text-pink-700">Peserta didik belajar mendengarkan dan merespons pendapat orang lain secara kritis dan sopan.</div>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="bg-white/80 backdrop-blur-sm sticky bottom-0 border-t-2 border-[var(--border-primary)] mt-8">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center">
+    <button id="ringkasanBtn" class="w-full max-w-md bg-gray-300 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full shadow-xl cursor-not-allowed">
+      <span>Buat Ringkasan Sekarang!</span>
+    </button>
+  </div>
+  <div id="hasilRingkasan" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center text-base sm:text-lg text-[var(--text-primary)]">
+    <!-- Ringkasan akan muncul di sini -->
+  </div>
+</footer>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<!-- Script translate manual -->
+<script>
+let currentLang = 'id';
+function loadLang(lang) {
+  fetch(`lang-${lang}.json`)
+    .then(res => res.json())
+    .then(dict => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) el.textContent = dict[key];
+      });
+      currentLang = lang;
+    });
+}
+
+const bahasaIndonesiaSummariesK5 = {
+  "Bab 1: Aku yang Unik": {
+    "1.1 Membaca Cerita tentang Ciri Fisik dan Karakter Tokoh": `📖 **Kisah Unik: Membaca Cerita tentang Ciri Fisik dan Karakter Tokoh** 🧑‍🤝‍🧑
+
+Selamat datang di Bab 1 Bahasa Indonesia Kelas 5, di mana kita akan menjelajahi dunia cerita dan menemukan betapa **uniknya setiap individu**! Pada subbab ini, siswa akan diajak untuk membaca berbagai cerita yang seru, yang menampilkan tokoh-tokoh dengan:
+
+*   **Ciri Fisik Beragam:** Ini seperti tinggi, berat badan, warna kulit, bentuk rambut, atau bahkan gaya berpakaian. Misalnya, ada tokoh yang tinggi seperti jerapah, ada yang rambutnya keriting seperti mi, atau ada yang selalu memakai kacamata bulat!
+
+*   **Karakter/Sifat Berbeda:** Ini adalah kepribadian tokoh, seperti apakah dia pemberani, pemalu, baik hati, usil, ceria, atau pendiam. Ada tokoh yang berani seperti singa, ada yang sabar seperti kura-kura, atau ada yang selalu tersenyum seperti mentari pagi!
+
+Tujuan utama dari pembelajaran ini adalah agar siswa dapat:
+
+1.  **Mengenali Deskripsi Tokoh:** Memahami bagaimana penulis menggambarkan tokoh dengan detail, sehingga kita bisa membayangkan mereka dengan jelas.
+2.  **Mengidentifikasi Ciri Khas:** Menemukan hal-hal yang membuat setiap tokoh itu spesial dan berbeda dari yang lain.
+3.  **Menghargai Keunikan:** Belajar bahwa perbedaan itu indah dan setiap orang punya keistimewaan masing-masing. Ini juga melatih **toleransi** dan **empati** kita!
+
+Melalui cerita-cerita ini, kita akan belajar bahwa dunia ini penuh warna karena ada banyak orang dengan keunikan masing-masing. Mari kita hargai dan rayakan setiap perbedaan! 🎉`,
+    "1.2 Menulis Teks Deskripsi tentang Diri Sendiri": `✍️ **Cerminan Diri: Menulis Teks Deskripsi tentang Diri Sendiri** 🌟
+
+Setelah kita "menganalisis" tokoh-tokoh dalam cerita, sekarang giliran kita menjadi penulis! Pada subbab ini, siswa akan diberi tantangan yang seru: **menulis teks deskripsi tentang diri sendiri**.
+
+Apa itu teks deskripsi? Teks deskripsi adalah tulisan yang bertujuan menggambarkan sesuatu (dalam hal ini, diri sendiri) secara detail dan jelas, seolah-olah pembaca bisa "melihat" atau "merasakan" apa yang kita deskripsikan.
+
+Dalam proses penulisan ini, siswa akan belajar tentang:
+
+*   **Menggambarkan Ciri Fisik:** Misalnya, "Aku memiliki rambut lurus sepanjang bahu berwarna hitam legam." atau "Mataku bulat dan selalu berbinar saat melihat buku baru."
+
+*   **Menjelaskan Kepribadian/Sifat:** Contohnya, "Aku dikenal sebagai anak yang periang dan suka menolong teman." atau "Kadang aku pemalu di awal, tapi sangat cerewet kalau sudah kenal dekat."
+
+*   **Menceritakan Minat dan Hobi:** Seperti, "Aku sangat suka membaca buku fantasi dan bercita-cita jadi penulis." atau "Setiap sore, aku pasti bermain sepak bola di lapangan dekat rumah."
+
+*   **Mengungkapkan Keunikan Lainnya:** Mungkin punya tahi lalat di tempat unik, atau selalu tertawa dengan suara khas, atau pandai meniru suara hewan.
+
+Selain itu, siswa juga akan fokus pada:
+
+*   **Kalimat yang Efektif:** Menggunakan kalimat yang jelas, tidak bertele-tele, dan mudah dipahami.
+*   **Pilihan Kosakata yang Tepat:** Memilih kata-kata yang paling pas untuk menggambarkan sesuatu (contoh: bukan hanya "baik", tapi "ramah", "penyayang", "murah senyum").
+*   **Struktur Paragraf yang Padu:** Memastikan setiap kalimat saling berhubungan dan membentuk satu gagasan yang utuh.
+
+Tujuan dari kegiatan ini adalah agar siswa dapat:
+
+✨ **Mengenali Diri Sendiri:** Memahami siapa mereka, apa kelebihan, dan keunikan yang mereka miliki.
+
+🗣️ **Mengungkapkan Diri:** Mampu menyampaikan identitas pribadi mereka dengan jelas dan percaya diri melalui tulisan.
+
+Mari kita tuangkan keunikan diri kita dalam sebuah tulisan yang menarik! Siap menjadi penulis kisah dirimu sendiri? 💪`
+  },
+  "Bab 2: Buku Jendela Dunia": {
+    "2.1 Menggali Informasi dari Teks Nonfiksi": `🧠 **Jelajah Ilmu: Menggali Informasi dari Teks Nonfiksi** 🔍📚
+
+Di Bab 2 Bahasa Indonesia Kelas 5 ini, kita akan membuktikan bahwa **"Buku adalah Jendela Dunia"**! Pada subbab ini, siswa akan diajak untuk menjadi "penjelajah informasi" dengan membaca **teks nonfiksi**.
+
+Apa itu teks nonfiksi? Teks nonfiksi adalah tulisan yang berisi fakta, informasi nyata, dan pengetahuan. Contohnya seperti:
+
+*   **Artikel:** Tulisan singkat tentang topik tertentu di koran, majalah, atau internet.
+*   **Laporan Ilmiah Populer:** Penjelasan ilmiah yang disajikan dengan bahasa yang mudah dipahami.
+*   **Buku Sejarah:** Berisi fakta-fakta masa lalu.
+*   **Buku Pengetahuan Umum:** Menjelaskan tentang hewan, tumbuhan, alam semesta, atau teknologi.
+
+Tujuan utama dari kegiatan ini adalah melatih peserta didik untuk:
+
+1.  **Menemukan Informasi Penting:** Mengidentifikasi data-data kunci, fakta, atau konsep utama yang disajikan dalam teks.
+2.  **Mengidentifikasi Gagasan Utama:** Menemukan inti pembahasan dari setiap paragraf atau bagian teks.
+3.  **Mengidentifikasi Kalimat Penjelas:** Mengenali kalimat-kalimat yang mendukung atau menjelaskan gagasan utama.
+4.  **Menyusun Ulang Informasi:** Ini bagian yang seru! Setelah menemukan informasinya, siswa akan belajar menuliskannya kembali dalam berbagai bentuk yang lebih ringkas dan mudah dipahami, seperti:
+    *   📊 **Tabel:** Untuk mengorganisir data secara terstruktur.
+    *   📈 **Diagram:** Untuk visualisasi hubungan antarinformasi (misalnya, diagram alur).
+    *   📝 **Catatan Poin-Poin Penting:** Menuliskan intisari materi dalam bentuk daftar singkat.
+
+Kegiatan ini sangat penting untuk meningkatkan **kemampuan memahami teks informatif secara efektif**. Artinya, kita tidak hanya membaca, tetapi juga bisa mengambil sari pati ilmu dari setiap bacaan. Yuk, jadikan membaca sebagai petualangan mencari ilmu! 🚀`,
+    "2.2 Menyajikan Informasi dari Teks Nonfiksi": `🗣️ **Sampaikan Ilmumu: Menyajikan Informasi dari Teks Nonfiksi** 🎤📝
+
+Setelah berhasil menggali informasi dari teks nonfiksi, kini saatnya kita menjadi "pembagi ilmu"! Pada subbab ini, siswa akan belajar bagaimana **menyampaikan kembali informasi** yang telah mereka pahami, baik secara **lisan** maupun **tulisan**.
+
+Ini adalah jembatan antara pemahaman dan komunikasi. Tujuannya agar informasi yang kita dapat tidak hanya berhenti di kita, tetapi bisa dibagikan kepada orang lain dengan jelas.
+
+Dalam proses penyampaian ini, peserta didik diajak untuk memperhatikan hal-hal penting:
+
+*   **Bahasa yang Baku:** Menggunakan bahasa Indonesia yang baik dan benar, sesuai kaidah tata bahasa. Ini penting agar informasi terlihat resmi dan kredibel.
+
+*   **Kalimat yang Runtut:** Menyusun kalimat dan paragraf dengan alur yang logis dan berkesinambungan. Ini seperti menyusun puzzle agar gambarnya terlihat utuh.
+
+*   **Kesesuaian Isi:** Memastikan informasi yang disampaikan akurat dan tidak melenceng dari teks asli.
+
+Contoh kegiatan yang mungkin dilakukan:
+
+*   **Penyajian Lisan:** Siswa bisa diminta untuk menceritakan kembali isi artikel tentang siklus air di depan kelas, atau menjelaskan cara kerja gunung berapi.
+
+*   **Penyajian Tulisan:** Menulis ringkasan dari laporan ilmiah, atau membuat poster infografis yang berisi poin-poin penting dari sebuah buku sejarah.
+
+Latihan ini sangat vital untuk mengembangkan:
+
+💬 **Kemampuan Komunikasi:** Berani berbicara di depan umum dan menyampaikan ide dengan jelas.
+
+✍️ **Keterampilan Menulis:** Mampu merangkum dan menyusun informasi secara terstruktur.
+
+🎯 **Pengolahan Informasi Akurat:** Memastikan setiap fakta disampaikan tanpa kesalahan.
+
+Mari kita gunakan ilmu yang kita dapat untuk membuka jendela dunia bagi orang lain! 💡`
+  },
+  "Bab 3: Ekspresi Diri melalui Hobi": {
+    "3.1 Menggali Informasi dari Wawancara": `🎙️ **Detektif Hobi: Menggali Informasi dari Wawancara** 🕵️‍♀️
+
+Di Bab 3 ini, kita akan belajar bagaimana **mengekspresikan diri melalui hobi** dan cara seru untuk mencari tahu hobi orang lain: **wawancara**! Pada subbab ini, siswa akan diperkenalkan pada teknik dasar wawancara dan menjadi "detektif" untuk menggali informasi langsung dari narasumber.
+
+Apa itu wawancara? Wawancara adalah kegiatan tanya jawab antara pewawancara (kita) dan narasumber (orang yang memiliki informasi) untuk mendapatkan data atau keterangan tertentu.
+
+Siswa akan belajar:
+
+1.  **Menyusun Pertanyaan Terbuka:** Pertanyaan yang tidak hanya dijawab "ya" atau "tidak", tetapi mendorong narasumber untuk bercerita lebih banyak. Contohnya, daripada "Apakah kamu suka membaca?", lebih baik "Ceritakan mengapa kamu suka membaca dan buku apa saja yang pernah kamu baca!".
+
+2.  **Melakukan Wawancara:** Ini adalah bagian praktik serunya! Siswa akan berkesempatan mewawancarai narasumber, bisa teman, guru, atau bahkan anggota keluarga yang memiliki hobi unik.
+
+3.  **Mencatat Informasi Penting:** Saat wawancara, kita harus aktif mendengarkan dan mencatat poin-poin penting dari jawaban narasumber. Ini bisa berupa fakta, pengalaman, atau pendapat.
+
+Tujuan utama dari kegiatan ini adalah agar siswa mampu:
+
+*   👂 **Memperoleh Data Langsung:** Mendapatkan informasi dari "tangan pertama" yang valid dan mendalam.
+*   🗣️ **Belajar Mendengarkan Aktif:** Tidak hanya bertanya, tetapi juga menyimak jawaban narasumber dengan penuh perhatian.
+*   🤝 **Membangun Komunikasi Interpersonal:** Berlatih berbicara dan berinteraksi dengan orang lain secara efektif.
+
+Mari kita siapkan pertanyaan terbaik dan temukan hobi-hobi menarik di sekitar kita! 🤩`,
+    "3.2 Menyusun Laporan Hasil Wawancara": `📝 **Kisah Wawancara: Menyusun Laporan Hasil Wawancara** 📜
+
+Setelah menjadi "detektif hobi" dan berhasil menggali informasi melalui wawancara, kini saatnya kita menjadi "penulis kisah" dari wawancara tersebut! Pada subbab ini, siswa akan belajar **menyusun laporan hasil wawancara**.
+
+Laporan ini adalah cara kita berbagi apa yang sudah kita temukan. Tujuannya adalah agar pembaca bisa memahami siapa yang diwawancarai, apa yang dibicarakan, dan hasil penting apa yang didapat dari wawancara tersebut.
+
+Laporan hasil wawancara biasanya disusun dalam bentuk **naratif** atau cerita, dengan struktur yang sistematis, seperti:
+
+1.  **Pendahuluan:** Mengenalkan siapa narasumbernya, kapan dan di mana wawancara dilakukan, serta tujuan wawancara (misalnya, mencari tahu tentang hobi melukis).
+
+2.  **Isi Laporan:** Ini adalah bagian utama yang menceritakan kembali inti dari percakapan wawancara. Gabungkan hasil catatan dan pengamatan selama wawancara. Jangan hanya menulis ulang tanya jawabnya, tetapi ubah menjadi paragraf yang mengalir. Contoh: "Menurut Ibu Ani, melukis adalah cara terbaik baginya untuk menghilangkan stres. Ia sudah melukis sejak kecil dan sering terinspirasi dari pemandangan alam..."
+
+3.  **Penutup:** Berisi kesimpulan dari hasil wawancara atau kesan-kesan kita setelah mewawancarai narasumber.
+
+Dalam menulis laporan, peserta didik akan belajar:
+
+*   **Menyusun Laporan yang Runtut:** Mengatur informasi agar memiliki alur yang jelas dan mudah diikuti pembaca.
+*   **Menggunakan Gaya Bahasa Informatif:** Menulis dengan bahasa yang lugas, jelas, dan fokus pada fakta, bukan opini pribadi.
+*   **Mengembangkan Catatan:** Mengubah poin-poin penting dari catatan wawancara menjadi paragraf-paragraf yang lengkap.
+
+Keterampilan ini sangat berguna, tidak hanya untuk tugas sekolah, tetapi juga di masa depan saat perlu melaporkan hasil penelitian, pekerjaan, atau proyek. Mari buat laporan wawancara kita sejelas mungkin! 🌟`
+  },
+  "Bab 4: Belajar Berwirausaha": {
+    "4.1 Membaca dan Menulis Teks Prosedur": `🛠️ **Panduan Sukses: Membaca dan Menulis Teks Prosedur** 📈
+
+Di Bab 4 Bahasa Indonesia Kelas 5, kita akan menjadi "pembuat instruksi"! Kita akan belajar tentang **teks prosedur**, yaitu jenis tulisan yang sangat penting dalam kehidupan sehari-hari, terutama jika kita ingin **belajar berwirausaha**.
+
+Apa itu teks prosedur? Teks prosedur adalah tulisan yang menjelaskan langkah-langkah atau cara melakukan sesuatu secara berurutan dan jelas, sehingga pembaca dapat mengikuti instruksi tersebut dengan mudah.
+
+Contoh teks prosedur yang mungkin sering kita temui:
+
+*   Cara membuat mi instan.
+*   Cara merakit mainan.
+*   Cara menggunakan blender.
+*   Cara membuat kerajinan tangan dari barang bekas (ini cocok untuk wirausaha!).
+
+Dalam pembelajaran ini, siswa akan belajar:
+
+1.  **Membaca Teks Prosedur:** Mengidentifikasi tujuan, bahan/alat yang dibutuhkan, dan langkah-langkah yang harus diikuti.
+2.  **Menulis Teks Prosedur:** Ini bagian kreasinya! Siswa akan diminta menulis prosedur berdasarkan kegiatan nyata yang mereka lakukan atau amati, misalnya:
+    *   "Cara Membuat Jus Buah Segar."
+    *   "Langkah-langkah Membuat Origami Burung."
+    *   "Panduan Menanam Biji Kacang Hijau."
+
+Saat menulis teks prosedur, ada beberapa hal penting yang harus diperhatikan:
+
+*   **Menyusun Langkah Secara Urut:** Setiap langkah harus ditulis berurutan dari awal sampai akhir. Jangan sampai ada yang tertukar!
+*   **Menggunakan Kalimat Perintah:** Kalimat yang mengajak atau menyuruh untuk melakukan sesuatu (contoh: "Masukkan..."; "Aduk..."; "Potonglah...").
+*   **Mencantumkan Alat dan Bahan dengan Jelas:** Daftar semua yang dibutuhkan agar pembaca bisa mempersiapkan diri sebelum memulai.
+
+Keterampilan ini sangat berguna dalam kehidupan nyata, terutama jika suatu hari nanti ingin membuat resep sendiri, panduan produk, atau bahkan merintis usaha! Mari jadi ahli dalam memberikan petunjuk yang jelas dan efektif! 🚀`,
+    "4.2 Menyajikan Teks Prosedur Secara Lisan": `🗣️ **Presentasi Langkah: Menyajikan Teks Prosedur Secara Lisan** 🎤
+
+Setelah kita mahir membaca dan menulis teks prosedur, kini saatnya kita menjadi "presenter"! Pada subbab ini, siswa akan belajar **menyampaikan teks prosedur secara lisan** di depan teman-teman atau kelas.
+
+Ini adalah kemampuan yang sangat penting, terutama jika kita ingin menjelaskan cara membuat produk atau jasa yang kita jual di masa depan saat berwirausaha. Tujuannya adalah agar orang lain bisa memahami dan mengikuti instruksi yang kita berikan hanya dengan mendengarkan.
+
+Saat menyajikan teks prosedur secara lisan, ada beberapa elemen penting yang harus diperhatikan:
+
+*   **Suara yang Jelas:** Berbicara dengan volume yang cukup agar terdengar oleh semua orang di ruangan.
+*   **Artikulasi yang Tepat:** Mengucapkan setiap kata dengan jelas dan tidak terburu-buru, sehingga tidak ada yang salah dengar.
+*   **Intonasi yang Sesuai:** Mengatur naik-turunnya suara agar penjelasan tidak monoton dan terdengar menarik. Misalnya, intonasi naik saat bertanya atau menekankan poin penting.
+*   **Urutan Langkah yang Tepat:** Tetap sampaikan langkah-langkah secara berurutan agar mudah diikuti.
+*   **Gunakan Alat Bantu (jika ada):** Jika menjelaskan cara membuat sesuatu, lebih baik sambil menunjukkan alat atau bahan agar lebih visual.
+
+Contoh kegiatan yang mungkin dilakukan:
+
+*   Menjelaskan cara membuat origami.
+*   Mempresentasikan resep makanan ringan.
+*   Menjelaskan cara bermain permainan tradisional.
+
+Kegiatan ini tidak hanya melatih **keterampilan berbicara di depan umum**, tetapi juga kemampuan **menyampaikan informasi secara langsung dan efektif**. Dengan begitu, kita bisa menjadi komunikator yang handal! 🌟`
+  },
+  "Bab 5: Menjadi Warga Dunia": {
+    "5.1 Menyampaikan Pendapat": `💬 **Suara Hati: Menyampaikan Pendapat dengan Logis dan Santun** 🌍
+
+Di Bab 5 Bahasa Indonesia Kelas 5, kita akan belajar menjadi **"Warga Dunia"** yang aktif dan bertanggung jawab! Salah satu keterampilan paling penting yang akan kita asah adalah **menyampaikan pendapat**.
+
+Kenapa menyampaikan pendapat itu penting? Karena setiap orang punya pemikiran dan sudut pandang yang berbeda. Dengan berani menyampaikan pendapat, kita bisa berbagi ide, mencari solusi bersama, dan ikut serta dalam perubahan positif.
+
+Dalam subbab ini, siswa akan belajar:
+
+*   **Mengemukakan Pendapat Secara Logis:** Artinya, pendapat kita harus didukung dengan alasan-alasan yang masuk akal dan bukti (jika ada). Jangan hanya bilang "aku tidak suka", tapi "aku tidak suka karena..." atau "aku setuju dengan ini sebab...".
+
+*   **Menyampaikan Pendapat Secara Sopan:** Bahasa yang kita gunakan harus santun, tidak menyakiti perasaan orang lain, dan tidak memaksakan kehendak. Ingat, kita sedang berdiskusi, bukan bertengkar!
+
+Siswa akan diberi ruang untuk:
+
+*   **Menuliskan Opini:** Menulis esai singkat atau argumen tentang topik-topik yang relevan (misalnya, tentang pentingnya menjaga kebersihan, dampak media sosial, atau cara mengatasi masalah di sekolah).
+
+*   **Menyampaikan Secara Lisan:** Berbicara di depan kelas atau dalam kelompok diskusi untuk mengungkapkan pandangan mereka.
+
+Penekanan utama adalah pada **penyusunan alasan yang mendukung pendapat tersebut agar menjadi kuat dan meyakinkan**. Ini seperti membangun rumah, fondasinya harus kokoh agar tidak mudah roboh!
+
+Dengan kemampuan ini, kita bisa menjadi bagian dari solusi dan membuat dunia menjadi tempat yang lebih baik melalui ide-ide kita. Yuk, sampaikan suaramu dengan bijak! 🗣️`,
+    "5.2 Menanggapi Pendapat": `👂 **Jembatan Pikiran: Menanggapi Pendapat dengan Kritis dan Terbuka** 🤝
+
+Setelah belajar menyampaikan pendapat sendiri, kini saatnya kita menjadi **"pendengar dan pemikir"** yang baik! Pada subbab ini, sebagai **"Warga Dunia"**, siswa akan belajar bagaimana **mendengarkan dan merespons pendapat orang lain**.
+
+Berdiskusi itu seperti bermain bola, kita tidak hanya menendang bola sendiri, tetapi juga harus bisa menerima umpan dari teman. Kemampuan menanggapi pendapat ini sangat penting untuk membangun pemahaman, mencari kesepakatan, dan menyelesaikan masalah bersama.
+
+Dalam menanggapi pendapat, siswa diajak untuk:
+
+*   **Mendengarkan dengan Seksama:** Beri perhatian penuh saat orang lain berbicara. Jangan memotong pembicaraan atau langsung menyela.
+
+*   **Memberikan Tanggapan yang Kritis:** Artinya, kita berpikir mendalam tentang apa yang disampaikan. Kita bisa setuju, tidak setuju, atau punya pandangan lain, tetapi harus dengan dasar yang kuat.
+
+*   **Berbicara dengan Sopan dan Berbobot:** Gunakan bahasa yang menghargai. Daripada "Itu salah!", lebih baik "Saya memahami pandangan Anda, namun saya memiliki sudut pandang yang berbeda karena..." atau "Saya setuju dengan sebagian poin Anda, tetapi ada hal lain yang perlu dipertimbangkan...".
+
+*   **Menyampaikan Argumen yang Masuk Akal:** Setiap tanggapan kita harus memiliki alasan yang logis dan jelas, bukan sekadar emosi.
+
+*   **Bersikap Terbuka:** Siap untuk belajar dari orang lain, bahkan jika pendapat mereka berbeda dengan kita. Terkadang, perbedaan pandangan bisa menghasilkan ide-ide baru yang lebih baik!
+
+Kegiatan ini mendorong siswa untuk:
+
+*   **Menghargai Perbedaan Pandangan:** Memahami bahwa setiap orang berhak memiliki pendapatnya sendiri.
+*   **Berpikir Analitis:** Menganalisis pendapat orang lain sebelum memberikan tanggapan.
+*   **Berkomunikasi Efektif:** Berdiskusi dengan cara yang konstruktif dan membangun.
+
+Mari kita ciptakan diskusi yang cerdas dan saling menghargai! ✨`
+  }
+};
+
+let selectedSubbab = null;
+let selectedBab = null;
+
+// Tambahkan event listener ke semua tombol subbab
+function setupSubbabRingkasan() {
+  document.querySelectorAll('.subbab-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      selectedSubbab = btn.getAttribute('data-subbab');
+      selectedBab = btn.getAttribute('data-bab');
+      const ringkasanBtn = document.getElementById('ringkasanBtn');
+      ringkasanBtn.classList.remove('bg-gray-300', 'cursor-not-allowed');
+      ringkasanBtn.classList.add('bg-gradient-to-r', 'from-green-400', 'to-blue-400', 'hover:from-green-500', 'hover:to-blue-500', 'cursor-pointer');
+      ringkasanBtn.disabled = false;
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  setupSubbabRingkasan();
+  const ringkasanBtn = document.getElementById('ringkasanBtn');
+  ringkasanBtn.onclick = async function() {
+    if (!selectedSubbab || !selectedBab) return;
+
+    const summary = bahasaIndonesiaSummariesK5[selectedBab]?.[selectedSubbab] || null;
+
+    sessionStorage.setItem('ringkasan_k5_bi', JSON.stringify({
+      ringkasan: summary,
+      bab: selectedBab,
+      subbab: selectedSubbab
+    }));
+    window.location.href = 'ringkasan-result-kelas5-bahasa-indonesia.html';
+  };
+  document.querySelectorAll('.language-toggle-button').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = btn.textContent.trim().toLowerCase();
+      loadLang(lang);
+      document.querySelectorAll('.language-toggle-button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+  loadLang(currentLang);
+});
+</script>
+</body></html>

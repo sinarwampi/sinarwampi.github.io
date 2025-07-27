@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hasil Ringkasan - Kelas 5 Bahasa Indonesia</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <style type="text/tailwindcss">
+    :root {
+      --brand-primary: #6366F1;
+      --brand-secondary: #EC4899;
+      --background-primary: #FFFBEB;--background-secondary: #FFFFFF;
+      --text-primary: #374151;--text-secondary: #6B7280;
+      --border-primary: #FBBF24;--action-primary: #34D399;--action-primary-hover: #10B981;--action-secondary: #F3F4F6;
+      --action-secondary-hover: #E5E7EB;
+      --color-sky-blue: #87CEEB;
+      --color-coral: #FF7F50;
+      --color-lime-green: #32CD32;
+      --color-violet: #EE82EE;
+      --color-gold: #FFD700;
+    }
+    body {
+      font-family: 'Lexend', sans-serif;
+    }
+    h1, h2, h3 {
+      font-family: 'Fredoka One', cursive;
+    }
+  </style>
+</head>
+<body class="bg-[var(--background-primary)] text-[var(--text-primary)]">
+  <div class="flex flex-col min-h-screen">
+    <header class="bg-white shadow-md">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-[var(--color-sky-blue)] rounded-xl flex items-center justify-center transform -rotate-12">
+            <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L9 9.61V16a1 1 0 001 1h2a1 1 0 001-1V9.61l6.394-2.69a1 1 0 000-1.84l-7-3zM10 8L3.394 5.31 10 2.69v5.32z"></path>
+            </svg>
+          </div>
+          <h1 class="text-xl sm:text-2xl text-[var(--text-primary)] font-bold">SINAR WAMPI</h1>
+        </div>
+      </div>
+    </header>
+    <main class="flex-grow max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col items-center justify-center">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[var(--color-coral)] mb-4">Hasil Ringkasan</h2>
+      <div id="infoBabSubbab" class="mb-2 text-center text-base text-[var(--text-secondary)]"></div>
+      <div id="hasilRingkasan" class="w-full bg-blue-50 rounded-xl shadow p-6 text-base sm:text-lg text-gray-800 mb-6 min-h-[120px]"></div>
+      <a href="kelas5-bahasa-indonesia.html" class="inline-block mt-4 px-6 py-2 rounded-full bg-gradient-to-r from-pink-400 to-blue-400 text-white font-semibold shadow hover:from-pink-500 hover:to-blue-500 transition-colors">Kembali ke Mapel</a>
+    </main>
+    <footer class="w-full text-center py-3 text-xs text-gray-400 mt-8 select-none">
+      Aplikasi SINAR WAMPI V.1 2025 <br>
+      Created by Fudak Winduko
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    // Ambil data ringkasan dari sessionStorage
+    const data = JSON.parse(sessionStorage.getItem('ringkasan_k5_bi') || '{}');
+    document.getElementById('infoBabSubbab').textContent = (data.bab ? data.bab + ' - ' : '') + (data.subbab || '');
+    if (data.ringkasan) {
+      document.getElementById('hasilRingkasan').innerHTML = marked.parse(data.ringkasan);
+    } else {
+      document.getElementById('hasilRingkasan').innerHTML = '<span class="text-red-500">Ringkasan tidak tersedia.</span>';
+    }
+  </script>
+</body>
+</html> 

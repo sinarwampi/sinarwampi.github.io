@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kelas 6 - Art & Culture</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+:root {
+  --brand-primary: #6366F1;
+  --brand-secondary: #EC4899;
+  --background-primary: #FFFBEB;--background-secondary: #FFFFFF;
+  --text-primary: #374151;--text-secondary: #6B7280;
+  --border-primary: #FBBF24;--action-primary: #34D399;--action-primary-hover: #10B981;--action-secondary: #F3F4F6;
+  --action-secondary-hover: #E5E7EB;
+  --color-sky-blue: #87CEEB;
+  --color-coral: #FF7F50;
+  --color-lime-green: #32CD32;
+  --color-violet: #EE82EE;
+  --color-gold: #FFD700;
+}
+body {
+  font-family: 'Lexend', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Fredoka One', cursive;
+}
+</style>
+</head>
+<body class="bg-[var(--background-primary)] text-[var(--text-primary)]">
+<div class="flex flex-col min-h-screen">
+<header class="bg-white shadow-md">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-[var(--color-sky-blue)] rounded-xl flex items-center justify-center transform -rotate-12">
+        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L9 9.61V16a1 1 0 001 1h2a1 1 0 001-1V9.61l6.394-2.69a1 1 0 000-1.84l-7-3zM10 8L3.394 5.31 10 2.69v5.32z"></path>
+        </svg>
+      </div>
+      <h1 class="text-xl sm:text-2xl text-[var(--text-primary)] font-bold" data-i18n="app_title">SINAR WAMPI</h1>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="language-toggle">
+        <button class="language-toggle-button active">ID</button>
+        <button class="language-toggle-button">EN</button>
+      </div>
+      <div class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfuwgYI-olVKF44AsvP7zsXtut46r76IIIbHOVhQRqZb4rg0KeVqnmfqm7yNrg4IZBmdiJ0SSQQ7JboPBpD_U4j5xrHEM53FeNseG4FQMDPIn3JZmcZju4oFuZS5vQAKyWwRXzlPebWjYVVf9Unqur0XzLipA4qFVYD3vGPv0k7oLTgihTQvseqa0kWkpmZ5z7CpuNmI3dDc9H5SY51ABcBMrMxz2J8eGAwjKxE99K1hNe2Zv6NcsxZhruyFBCOeMrph4SpjSwtO4");'></div>
+    </div>
+  </div>
+</header>
+<div class="w-full flex items-center mt-2 mb-4">
+  <a href="kelas6.html" class="flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-pink-400 to-blue-400 text-white font-medium shadow hover:from-pink-500 hover:to-blue-500 transition-colors ml-2">
+    <span class="text-base">&#8592;</span>
+    <span>Kembali</span>
+  </a>
+</div>
+<main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[var(--color-coral)] mb-4">Kelas 6 - Art & Culture</h2>
+  <p class="text-center text-base sm:text-lg md:text-xl text-[var(--text-secondary)] mb-10">Pilih subbab untuk melihat ringkasan materi:</p>
+  <div class="space-y-6">
+    <!-- Bab 1 Musik -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-pink-700 mb-2">Bab 1: Musik</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-pink-200 to-pink-100 hover:from-pink-300 hover:to-pink-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.1 Cara Bernyanyi" data-bab="Bab 1: Musik">
+          <div class="font-semibold text-pink-800 mb-1">1.1 Cara Bernyanyi</div>
+          <div class="text-sm text-pink-700">Menjelaskan teknik bernyanyi yang baik seperti postur tubuh, artikulasi vokal, dan pernapasan.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-pink-200 to-pink-100 hover:from-pink-300 hover:to-pink-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.2 Menyanyikan Lagu Daerah" data-bab="Bab 1: Musik">
+          <div class="font-semibold text-pink-800 mb-1">1.2 Menyanyikan Lagu Daerah</div>
+          <div class="text-sm text-pink-700">Siswa mengenal dan menyanyikan lagu daerah dengan memperhatikan artikulasi dan ekspresi.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-pink-200 to-pink-100 hover:from-pink-300 hover:to-pink-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.3 Menyanyikan Lagu Modern" data-bab="Bab 1: Musik">
+          <div class="font-semibold text-pink-800 mb-1">1.3 Menyanyikan Lagu Modern</div>
+          <div class="text-sm text-pink-700">Siswa menyanyikan lagu modern dengan gaya yang sesuai serta teknik dasar bernyanyi yang benar.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 2 Musik -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-yellow-700 mb-2 mt-6">Bab 2: Alat Musik</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-yellow-200 to-yellow-100 hover:from-yellow-300 hover:to-yellow-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.1 Jenis dan Fungsi Alat Musik" data-bab="Bab 2: Alat Musik">
+          <div class="font-semibold text-yellow-800 mb-1">2.1 Jenis dan Fungsi Alat Musik</div>
+          <div class="text-sm text-yellow-700">Mengenal berbagai jenis alat musik (tiup, petik, pukul) dan fungsinya dalam musik tradisional dan modern.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-yellow-200 to-yellow-100 hover:from-yellow-300 hover:to-yellow-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.2 Bermain Alat Musik Tradisional" data-bab="Bab 2: Alat Musik">
+          <div class="font-semibold text-yellow-800 mb-1">2.2 Bermain Alat Musik Tradisional</div>
+          <div class="text-sm text-yellow-700">Siswa mempraktikkan bermain alat musik tradisional dari berbagai daerah.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-yellow-200 to-yellow-100 hover:from-yellow-300 hover:to-yellow-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.3 Bermain Alat Musik Modern" data-bab="Bab 2: Alat Musik">
+          <div class="font-semibold text-yellow-800 mb-1">2.3 Bermain Alat Musik Modern</div>
+          <div class="text-sm text-yellow-700">Siswa belajar memainkan alat musik modern seperti gitar atau keyboard secara sederhana.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 1 Seni Rupa -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-blue-700 mb-2 mt-6">Bab 1: Seni Rupa Dua Dimensi</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.1 Mengenal Ragam Seni Rupa Dua Dimensi" data-bab="Bab 1: Seni Rupa Dua Dimensi">
+          <div class="font-semibold text-blue-800 mb-1">1.1 Mengenal Ragam Seni Rupa Dua Dimensi</div>
+          <div class="text-sm text-blue-700">Memahami seni rupa dua dimensi (gambar, lukisan, batik), unsur rupa, dan teknik membuatnya.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.2 Membuat Karya Dua Dimensi" data-bab="Bab 1: Seni Rupa Dua Dimensi">
+          <div class="font-semibold text-blue-800 mb-1">1.2 Membuat Karya Dua Dimensi</div>
+          <div class="text-sm text-blue-700">Siswa membuat karya seperti mozaik, kolase, atau gambar dengan berbagai teknik dan media.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 2 Seni Rupa -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-purple-700 mb-2 mt-6">Bab 2: Seni Rupa Tiga Dimensi</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.1 Mengenal Ragam Seni Rupa Tiga Dimensi" data-bab="Bab 2: Seni Rupa Tiga Dimensi">
+          <div class="font-semibold text-purple-800 mb-1">2.1 Mengenal Ragam Seni Rupa Tiga Dimensi</div>
+          <div class="text-sm text-purple-700">Mengenal karya tiga dimensi seperti patung, kerajinan, dan model konstruksi sederhana.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.2 Membuat Karya Tiga Dimensi" data-bab="Bab 2: Seni Rupa Tiga Dimensi">
+          <div class="font-semibold text-purple-800 mb-1">2.2 Membuat Karya Tiga Dimensi</div>
+          <div class="text-sm text-purple-700">Siswa menciptakan karya tiga dimensi sederhana dari bahan alam atau buatan seperti tanah liat atau kertas.</div>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="bg-white/80 backdrop-blur-sm sticky bottom-0 border-t-2 border-[var(--border-primary)] mt-8">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center">
+    <button id="ringkasanBtn" class="w-full max-w-md bg-gray-300 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full shadow-xl cursor-not-allowed">
+      <span>Buat Ringkasan Sekarang!</span>
+    </button>
+  </div>
+  <div id="hasilRingkasan" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center text-base sm:text-lg text-[var(--text-primary)]">
+    <!-- Ringkasan akan muncul di sini -->
+  </div>
+</footer>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<!-- Script translate manual -->
+<script>
+let currentLang = 'id';
+function loadLang(lang) {
+  fetch(`lang-${lang}.json`)
+    .then(res => res.json())
+    .then(dict => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) el.textContent = dict[key];
+      });
+      currentLang = lang;
+    });
+}
+let selectedSubbab = null;
+let selectedBab = null;
+
+// Tambahkan event listener ke semua tombol subbab
+function setupSubbabRingkasan() {
+  document.querySelectorAll('.subbab-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      selectedSubbab = btn.getAttribute('data-subbab');
+      selectedBab = btn.getAttribute('data-bab');
+      const ringkasanBtn = document.getElementById('ringkasanBtn');
+      ringkasanBtn.classList.remove('bg-gray-300', 'cursor-not-allowed');
+      ringkasanBtn.classList.add('bg-gradient-to-r', 'from-green-400', 'to-blue-400', 'hover:from-green-500', 'hover:to-blue-500', 'cursor-pointer');
+      ringkasanBtn.disabled = false;
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  setupSubbabRingkasan();
+  const ringkasanBtn = document.getElementById('ringkasanBtn');
+  ringkasanBtn.onclick = async function() {
+    if (!selectedSubbab || !selectedBab) return;
+    // Tampilkan loading
+    const hasil = document.getElementById('hasilRingkasan'); // Ini hanya untuk indikator loading awal
+    hasil.innerHTML = '<div class="text-center text-sm text-gray-500">Meminta ringkasan ke AI...</div>';
+    try {
+      const res = await fetch('http://localhost:3000/api/ringkasan', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          kelas: '6',
+          mapel: 'Art & Culture',
+          bab: selectedBab,
+          subbab: selectedSubbab
+        })
+      });
+      let data;
+      try {
+        data = await res.json();
+      } catch {
+        data = null;
+      }
+      // Simpan hasil ringkasan dan info bab/subbab ke sessionStorage
+      sessionStorage.setItem('ringkasan_k6_art_culture', JSON.stringify({
+        ringkasan: data && data.ringkasan ? data.ringkasan : null,
+        bab: selectedBab,
+        subbab: selectedSubbab
+      }));
+      // Redirect ke halaman hasil ringkasan khusus
+      window.location.href = 'ringkasan-result-kelas6-art-culture.html';
+    } catch (e) {
+      console.error('Fetch error:', e);
+      hasil.innerHTML = '<div class="text-red-500">Gagal mengambil ringkasan dari AI.</div>';
+    }
+  };
+  document.querySelectorAll('.language-toggle-button').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = btn.textContent.trim().toLowerCase();
+      loadLang(lang);
+      document.querySelectorAll('.language-toggle-button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+  loadLang(currentLang);
+});
+</script>
+</body>
+</html> 

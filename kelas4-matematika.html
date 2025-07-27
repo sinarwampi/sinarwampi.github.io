@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Kelas 4 - Matematika</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+        :root {
+            --brand-primary: #6366F1;
+            --brand-secondary: #EC4899;
+            --background-primary: #FFFBEB;
+            --background-secondary: #FFFFFF;
+            --text-primary: #374151;
+            --text-secondary: #6B7280;
+            --border-primary: #FBBF24;
+            --action-primary: #34D399;
+            --action-primary-hover: #10B981;
+            --action-secondary: #F3F4F6;
+            --action-secondary-hover: #E5E7EB;
+            --color-sky-blue: #87CEEB;
+            --color-coral: #FF7F50;
+            --color-lime-green: #32CD32;
+            --color-violet: #EE82EE;
+            --color-gold: #FFD700;
+        }
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Fredoka One', cursive;
+        }
+    </style>
+</head>
+<body class="bg-[var(--background-primary)] text-[var(--text-primary)]">
+    <div class="flex flex-col min-h-screen">
+        <header class="bg-white shadow-md">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-[var(--color-sky-blue)] rounded-xl flex items-center justify-center transform -rotate-12">
+                        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L9 9.61V16a1 1 0 001 1h2a1 1 0 001-1V9.61l6.394-2.69a1 1 0 000-1.84l-7-3zM10 8L3.394 5.31 10 2.69v5.32z"></path>
+                        </svg>
+                    </div>
+                    <h1 class="text-xl sm:text-2xl text-[var(--text-primary)] font-bold" data-i18n="app_title">SINAR WAMPI</h1>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="language-toggle">
+                        <button class="language-toggle-button active">ID</button>
+                        <button class="language-toggle-button">EN</button>
+                    </div>
+                    <div class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfuwgYI-olVKF44AsvP7zsXtut46r76IIIbHOVhQRqZb4rg0KeVqnmfqm7yNrg4IZBmdiJ0SSQQ7JboPBpD_U4j5xrHEM53FeNseG4FQMDPIn3JZmcZju4oFuZS5vQAKyWwRXzlPebWjYVVf9Unqur0XzLipA4qFVYD3vGPv0k7oLTgihTQvseqa0kWkpmZ5z7CpuNmI3dDc9H5SY51ABcBMrMxz2J8eGAwjKxE99K1hNe2Zv6NcsxZhruyFBCOeMrph4SpjSwtO4");'></div>
+                </div>
+            </div>
+        </header>
+        <div class="w-full flex items-center mt-2 mb-4">
+            <a href="kelas4.html" class="flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-pink-400 to-blue-400 text-white font-medium shadow hover:from-pink-500 hover:to-blue-500 transition-colors ml-2">
+                <span class="text-base">&#8592;</span>
+                <span>Kembali</span>
+            </a>
+        </div>
+        <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[var(--color-coral)] mb-4">Kelas 4 - Matematika</h2>
+            <p class="text-center text-base sm:text-lg md:text-xl text-[var(--text-secondary)] mb-10">Pilih subbab untuk melihat ringkasan materi:</p>
+            <div class="space-y-6">
+                <!-- Bab 1 -->
+                <div>
+                    <h3 class="text-lg sm:text-xl font-bold text-lime-700 mb-2">Bab 1: Bilangan Cacah sampai 10.000</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <button class="w-full text-left bg-gradient-to-r from-lime-200 to-lime-100 hover:from-lime-300 hover:to-lime-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 1: Bilangan Cacah sampai 10.000" data-subbab="1.1 Membaca dan Menulis Bilangan Cacah">
+                            <div class="font-semibold text-lime-800 mb-1">1.1 Membaca dan Menulis Bilangan Cacah</div>
+                            <div class="text-sm text-lime-700">Mengenal dan menyatakan bilangan sampai 10.000 dalam bentuk angka dan kata.</div>
+                        </button>
+                        <button class="w-full text-left bg-gradient-to-r from-lime-200 to-lime-100 hover:from-lime-300 hover:to-lime-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 1: Bilangan Cacah sampai 10.000" data-subbab="1.2 Nilai Tempat Bilangan Cacah">
+                            <div class="font-semibold text-lime-800 mb-1">1.2 Nilai Tempat Bilangan Cacah</div>
+                            <div class="text-sm text-lime-700">Memahami posisi angka (satuan, puluhan, ratusan, ribuan) dalam bilangan.</div>
+                        </button>
+                        <button class="w-full text-left bg-gradient-to-r from-lime-200 to-lime-100 hover:from-lime-300 hover:to-lime-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 1: Bilangan Cacah sampai 10.000" data-subbab="1.3 Membandingkan dan Mengurutkan Bilangan">
+                            <div class="font-semibold text-lime-800 mb-1">1.3 Membandingkan dan Mengurutkan Bilangan</div>
+                            <div class="text-sm text-lime-700">Menentukan bilangan yang lebih besar/kecil dan mengurutkan bilangan.</div>
+                        </button>
+                        <button class="w-full text-left bg-gradient-to-r from-lime-200 to-lime-100 hover:from-lime-300 hover:to-lime-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 1: Bilangan Cacah sampai 10.000" data-subbab="1.4 Komposisi dan Dekomposisi Bilangan">
+                            <div class="font-semibold text-lime-800 mb-1">1.4 Komposisi dan Dekomposisi Bilangan</div>
+                            <div class="text-sm text-lime-700">Menyusun dan menguraikan bilangan menjadi ribuan, ratusan, puluhan, dan satuan.</div>
+                        </button>
+                        <button class="w-full text-left bg-gradient-to-r from-lime-200 to-lime-100 hover:from-lime-300 hover:to-lime-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 1: Bilangan Cacah sampai 10.000" data-subbab="1.5 Penjumlahan Bilangan Cacah">
+                            <div class="font-semibold text-lime-800 mb-1">1.5 Penjumlahan Bilangan Cacah</div>
+                            <div class="text-sm text-lime-700">Menjumlahkan bilangan sampai 1.000 dengan cara panjang dan pendek.</div>
+                        </button>
+                        <button class="w-full text-left bg-gradient-to-r from-lime-200 to-lime-100 hover:from-lime-300 hover:to-lime-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 1: Bilangan Cacah sampai 10.000" data-subbab="1.6 Pengurangan Bilangan Cacah">
+                            <div class="font-semibold text-lime-800 mb-1">1.6 Pengurangan Bilangan Cacah</div>
+                            <div class="text-sm text-lime-700">Mengurangkan bilangan sampai 1.000 termasuk pengurangan bersusun.</div>
+                        </button>
+                        <button class="w-full text-left bg-gradient-to-r from-lime-200 to-lime-100 hover:from-lime-300 hover:to-lime-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 1: Bilangan Cacah sampai 10.000" data-subbab="1.7 Perkalian Bilangan Cacah">
+                            <div class="font-semibold text-lime-800 mb-1">1.7 Perkalian Bilangan Cacah</div>
+                            <div class="text-sm text-lime-700">Melakukan perkalian bilangan sampai 100 secara bersusun dan panjang.</div>
+                        </button>
+                        <button class="w-full text-left bg-gradient-to-r from-lime-200 to-lime-100 hover:from-lime-300 hover:to-lime-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 1: Bilangan Cacah sampai 10.000" data-subbab="1.8 Pembagian Bilangan Cacah">
+                            <div class="font-semibold text-lime-800 mb-1">1.8 Pembagian Bilangan Cacah</div>
+                            <div class="text-sm text-lime-700">Menyelesaikan pembagian bilangan cacah sampai 100, termasuk pembagian bersusun.</div>
+                        </button>
+                        <button class="w-full text-left bg-gradient-to-r from-lime-200 to-lime-100 hover:from-lime-300 hover:to-lime-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 1: Bilangan Cacah sampai 10.000" data-subbab="1.9 Faktor dan Kelipatan">
+                            <div class="font-semibold text-lime-800 mb-1">1.9 Faktor dan Kelipatan</div>
+                            <div class="text-sm text-lime-700">Mengenali faktor dan kelipatan dari suatu bilangan (misalnya: faktor dari 12 adalah 1,2,3,4,6,12).</div>
+                        </button>
+                    </div>
+                </div>
+                <!-- Bab 2 -->
+                <div>
+                    <h3 class="text-lg sm:text-xl font-bold text-violet-700 mb-2 mt-6">Bab 2: Pecahan</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <button class="w-full text-left bg-gradient-to-r from-violet-200 to-violet-100 hover:from-violet-300 hover:to-violet-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 2: Pecahan" data-subbab="2.1 Pecahan dengan Pembilang Satu">
+                            <div class="font-semibold text-violet-800 mb-1">2.1 Pecahan dengan Pembilang Satu</div>
+                            <div class="text-sm text-violet-700">Memahami pecahan seperti 1/2, 1/3, 1/4 dst.</div>
+                        </button>
+                        <button class="w-full text-left bg-gradient-to-r from-violet-200 to-violet-100 hover:from-violet-300 hover:to-violet-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 2: Pecahan" data-subbab="2.2 Pecahan dengan Penyebut Sama">
+                            <div class="font-semibold text-violet-800 mb-1">2.2 Pecahan dengan Penyebut Sama</div>
+                            <div class="text-sm text-violet-700">Menjumlah dan mengurang pecahan dengan penyebut yang sama.</div>
+                        </button>
+                        <button class="w-full text-left bg-gradient-to-r from-violet-200 to-violet-100 hover:from-violet-300 hover:to-violet-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 2: Pecahan" data-subbab="2.3 Pecahan Senilai">
+                            <div class="font-semibold text-violet-800 mb-1">2.3 Pecahan Senilai</div>
+                            <div class="text-sm text-violet-700">Menyatakan pecahan yang nilainya sama (contoh: 1/2 = 2/4).</div>
+                        </button>
+                        <button class="w-full text-left bg-gradient-to-r from-violet-200 to-violet-100 hover:from-violet-300 hover:to-violet-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 2: Pecahan" data-subbab="2.4 Pecahan Desimal">
+                            <div class="font-semibold text-violet-800 mb-1">2.4 Pecahan Desimal</div>
+                            <div class="text-sm text-violet-700">Mengenal bentuk desimal dari pecahan, seperti 0.1 dan 0.25.</div>
+                        </button>
+                        <button class="w-full text-left bg-gradient-to-r from-violet-200 to-violet-100 hover:from-violet-300 hover:to-violet-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 2: Pecahan" data-subbab="2.5 Hubungan Desimal dan Persen">
+                            <div class="font-semibold text-violet-800 mb-1">2.5 Hubungan Desimal dan Persen</div>
+                            <div class="text-sm text-violet-700">Mengubah desimal ke persen dan sebaliknya.</div>
+                        </button>
+                    </div>
+                </div>
+                <!-- Bab 3 -->
+                <div>
+                    <h3 class="text-lg sm:text-xl font-bold text-coral-700 mb-2 mt-6">Bab 3: Pola Gambar dan Bilangan</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <button class="w-full text-left bg-gradient-to-r from-pink-200 to-pink-100 hover:from-pink-300 hover:to-pink-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 3: Pola Gambar dan Bilangan" data-subbab="3.1 Pola Gambar">
+                            <div class="font-semibold text-pink-800 mb-1">3.1 Pola Gambar</div>
+                            <div class="text-sm text-pink-700">Mengidentifikasi dan melanjutkan pola dalam bentuk gambar.</div>
+                        </button>
+                        <button class="w-full text-left bg-gradient-to-r from-pink-200 to-pink-100 hover:from-pink-300 hover:to-pink-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 3: Pola Gambar dan Bilangan" data-subbab="3.2 Pola Bilangan">
+                            <div class="font-semibold text-pink-800 mb-1">3.2 Pola Bilangan</div>
+                            <div class="text-sm text-pink-700">Menyusun dan melanjutkan pola bilangan seperti deret aritmatika sederhana.</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-white/80 backdrop-blur-sm sticky bottom-0 border-t-2 border-[var(--border-primary)] mt-8">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center">
+                <button id="ringkasanBtn" class="w-full max-w-md bg-gray-300 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full shadow-xl cursor-not-allowed">
+                    <span>Buat Ringkasan Sekarang!</span>
+                </button>
+            </div>
+            <div id="hasilRingkasan" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center text-base sm:text-lg text-[var(--text-primary)]">
+                <!-- Ringkasan akan muncul di sini -->
+            </div>
+        </footer>
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Script translate manual -->
+    <script>
+        let currentLang = 'id';
+
+        function loadLang(lang) {
+            fetch(`lang-${lang}.json`)
+                .then(res => res.json())
+                .then(dict => {
+                    document.querySelectorAll('[data-i18n]').forEach(el => {
+                        const key = el.getAttribute('data-i18n');
+                        if (dict[key]) el.textContent = dict[key];
+                    });
+                    currentLang = lang;
+                });
+        }
+
+        const matematikaSummaries = {
+            "Bab 1: Bilangan Cacah sampai 10.000": {
+                "1.1 Membaca dan Menulis Bilangan Cacah": `🔢 **Petualangan Angka: Membaca dan Menulis Bilangan Cacah** ✍️
+
+Di awal petualangan matematika ini, siswa kelas IV akan diajak berkenalan lebih dekat dengan bilangan cacah, khususnya hingga 10.000. Apa itu bilangan cacah? 
+
+✨ **Bilangan cacah adalah bilangan yang dimulai dari angka nol (0) dan terus bertambah satu per satu, tanpa mengandung bilangan negatif atau bilangan pecahan.** Ini seperti langkah-langkah maju tanpa mundur atau setengah-setengah! 
+
+Contoh bilangan cacah yang akan sering kita temui antara lain: 0, 1, 2, 3, ..., sampai 9.999, bahkan hingga 10.000! 
+
+Siswa akan dilatih untuk:
+
+📖 **Membaca Bilangan:** Mengubah angka menjadi bentuk kata. Contohnya:
+
+*   **Angka:** 2.345 -> dibaca: "dua ribu tiga ratus empat puluh lima"
+
+*   **Angka:** 7.008 -> dibaca: "tujuh ribu delapan"
+
+📝 **Menulis Bilangan:** Mengubah kata menjadi bentuk angka. Contohnya:
+
+*   **Kata:** tiga ribu sembilan ratus delapan belas -> ditulis: 3.918
+
+*   **Kata:** lima ribu dua puluh -> ditulis: 5.020
+
+Dalam memahami bilangan cacah ini, siswa juga akan diperkenalkan dengan konsep penting lainnya, yaitu **nilai tempat**. Mereka akan belajar tentang:
+
+📍 **Satuan:** Posisi paling kanan, nilainya sesuai angka.
+
+🔟 **Puluhan:** Sebelah kiri satuan, nilainya angka dikali sepuluh.
+
+💯 **Ratusan:** Sebelah kiri puluhan, nilainya angka dikali seratus.
+
+thousands **Ribuan:** Sebelah kiri ratusan, nilainya angka dikali seribu.
+
+Memahami nilai tempat ini sangat penting agar siswa tidak hanya tahu angka, tetapi juga dapat menggunakannya dalam kehidupan sehari-hari, seperti saat:
+
+💰 Menghitung uang kembalian.
+
+👧👦 Menghitung jumlah siswa di kelas atau sekolah.
+
+🛒 Memperkirakan harga barang belanjaan.
+
+🗺️ Mengukur jarak perjalanan. 
+
+Jadi, mari kita kuasai angka-angka ini!`,
+                "1.2 Nilai Tempat Bilangan Cacah": `📍 **Rahasia Angka: Memahami Nilai Tempat Bilangan Cacah** 🔢
+
+Setelah mengenal bilangan cacah, sekarang kita akan "membongkar" rahasia di balik setiap angka: **Nilai Tempat**! Nilai tempat ini menunjukkan posisi atau letak suatu angka dalam sebuah bilangan, dan yang terpenting, berfungsi untuk mengetahui besarnya nilai dari angka tersebut.
+
+Dalam bilangan hingga 10.000, ada empat nilai tempat utama yang perlu kita kenali:
+
+1.  **Satuan:** Ini adalah posisi paling kanan dari sebuah bilangan. Nilainya adalah angka itu sendiri (contoh: angka 8 di posisi satuan, nilainya 8).
+
+2.  **Puluhan:** Berada di sebelah kiri posisi satuan. Nilainya adalah angka tersebut dikalikan 10 (contoh: angka 4 di posisi puluhan, nilainya 40).
+
+3.  **Ratusan:** Berada di sebelah kiri posisi puluhan. Nilainya adalah angka tersebut dikalikan 100 (contoh: angka 3 di posisi ratusan, nilainya 300).
+
+4.  **Ribuan:** Berada di sebelah kiri posisi ratusan. Nilainya adalah angka tersebut dikalikan 1.000 (contoh: angka 6 di posisi ribuan, nilainya 6.000).
+
+Mari kita lihat contoh pada bilangan **6.348**:
+
+*   Angka **6** berada di tempat **ribuan** -> nilainya **6.000**
+
+*   Angka **3** berada di tempat **ratusan** -> nilainya **300**
+
+*   Angka **4** berada di tempat **puluhan** -> nilainya **40**
+
+*   Angka **8** berada di tempat **satuan** -> nilainya **8**
+
+Siswa akan dilatih untuk menguraikan (dekomposisi) dan menyusun kembali (komposisi) bilangan berdasarkan nilai tempatnya. Kemampuan ini sangat penting sebagai dasar yang kuat untuk memahami operasi hitung bersusun (penjumlahan, pengurangan, dll).`,
+                "1.3 Membandingkan dan Mengurutkan Bilangan": `⚖️ **Mana yang Lebih Besar? Membandingkan dan Mengurutkan Bilangan** 📏
+
+Pada subbab ini, siswa akan menjadi "hakim" yang menentukan mana bilangan yang lebih besar, lebih kecil, atau sama. Mereka juga akan menjadi "penyusun" yang mengurutkan bilangan dari yang terkecil hingga terbesar, atau sebaliknya! 
+
+Langkah-langkah untuk membandingkan dua bilangan adalah:
+
+1.  **Mulai dari Nilai Tempat Tertinggi:** Bandingkan angka pada nilai tempat terbesar terlebih dahulu (misalnya, ribuan). Jika berbeda, kita langsung tahu mana yang lebih besar atau lebih kecil.
+
+2.  **Jika Sama, Lanjut ke Kanan:** Jika angka di nilai tempat tertinggi sama, lanjutkan perbandingan ke nilai tempat berikutnya di sebelah kanan (ratusan, lalu puluhan, lalu satuan) sampai ditemukan perbedaan.
+
+Contoh mudahnya:
+
+*   Membandingkan **4.321** dan **4.123**:
+    *   Angka ribuan (4) sama.
+    *   Angka ratusan: 3 (pada 4.321) lebih besar dari 1 (pada 4.123).
+    *   Jadi, **4.321 > 4.123** karena 3 lebih besar dari 1 di tempat ratusan.
+
+Selain membandingkan, siswa juga akan belajar mengurutkan bilangan. Ini bisa dilakukan dari:
+
+ ascending **Kecil ke Besar (Menaik):** Menyusun bilangan dari nilai terkecil hingga terbesar. 
+
+ descending **Besar ke Kecil (Menurun):** Menyusun bilangan dari nilai terbesar hingga terkecil.
+
+Misalnya, urutkan bilangan **3.450, 2.891, 4.000** dari yang terkecil:
+
+*   Perhatikan angka ribuan: 3, 2, 4.
+*   Angka terkecil adalah 2, jadi 2.891 adalah yang pertama.
+*   Kemudian 3, jadi 3.450 adalah yang kedua.
+*   Terakhir 4, jadi 4.000 adalah yang ketiga.
+*   Hasilnya: **2.891, 3.450, 4.000**.
+
+Kegiatan ini sangat penting karena mengembangkan kemampuan berpikir logis, memahami urutan, dan menganalisis angka. Keterampilan ini berguna dalam banyak situasi di kehidupan sehari-hari, seperti mengurutkan data atau membandingkan jumlah sesuatu.`,
+                "1.4 Komposisi dan Dekomposisi Bilangan": `🧩 **Membangun dan Membongkar Angka: Komposisi dan Dekomposisi Bilangan** 🏗️
+
+Setelah kita paham nilai tempat, sekarang saatnya bermain dengan angka dengan cara "membangun" dan "membongkar" bilangan! Ini disebut komposisi dan dekomposisi bilangan.
+
+✨ **Komposisi Bilangan:** Ini berarti menyusun sebuah bilangan dari bagian-bagian nilai tempatnya yang terpisah. Ibaratnya, kita punya balok-balok angka, lalu kita susun menjadi satu bangunan bilangan yang utuh.
+
+Contoh:
+
+*   **4.000 + 500 + 30 + 2 = 4.532** (Empat ribu ditambah lima ratus ditambah tiga puluh ditambah dua menjadi empat ribu lima ratus tiga puluh dua).
+
+*   **1.000 + 0 + 70 + 9 = 1.079** (Satu ribu ditambah tujuh puluh ditambah sembilan menjadi seribu tujuh puluh sembilan).
+
+💥 **Dekomposisi Bilangan:** Kebalikan dari komposisi, ini berarti menguraikan atau "membongkar" sebuah bilangan menjadi nilai dari setiap angka berdasarkan nilai tempatnya. Kita melihat berapa nilai sebenarnya dari setiap digit.
+
+Contoh:
+
+*   **6.219 -> 6.000 + 200 + 10 + 9** (Angka 6 di tempat ribuan nilainya 6.000, angka 2 di ratusan nilainya 200, angka 1 di puluhan nilainya 10, dan angka 9 di satuan nilainya 9).
+
+*   **8.054 -> 8.000 + 0 + 50 + 4** (Perhatikan angka 0 di ratusan, nilainya tetap 0).
+
+Materi ini sangat membantu siswa untuk:
+
+🧠 Memahami struktur bilangan secara lebih mendalam, bukan hanya melihat deretan angka.
+
+💪 Memperkuat pemahaman konsep nilai tempat yang sudah dipelajari sebelumnya.
+
+🎯 Menjadi dasar yang kuat untuk operasi hitung yang lebih kompleks. 
+
+Dengan ini, kita bisa lebih mudah "bermain" dengan angka-angka besar!`,
+                "1.5 Penjumlahan Bilangan Cacah": `➕ **Menyatukan Angka: Penjumlahan Bilangan Cacah** 🔢
+
+Saatnya menggabungkan angka-angka! Siswa akan mempelajari cara melakukan penjumlahan bilangan cacah hingga 10.000. Ada dua metode utama yang akan dikuasai:
+
+1.  **Cara Panjang (Menguraikan):** Metode ini mengajarkan kita untuk menguraikan setiap angka berdasarkan nilai tempatnya (ribuan, ratusan, puluhan, satuan) lalu menjumlahkan masing-masing nilai tempat. Setelah itu, hasilnya digabungkan kembali. Cara ini membantu memperkuat pemahaman nilai tempat.
+
+    Contoh:
+    *   **428 + 379**
+        *   428 = 400 + 20 + 8
+        *   379 = 300 + 70 + 9
+        *   Jumlahkan: (400+300) + (20+70) + (8+9) 
+        *   = 700 + 90 + 17
+        *   = 700 + 90 + 10 + 7
+        *   = 700 + 100 + 7
+        *   = 800 + 7 = 807
+
+2.  **Cara Pendek (Bersusun):** Ini adalah metode yang paling umum digunakan dalam penjumlahan sehari-hari. Angka-angka disusun secara vertikal (ke bawah) sesuai nilai tempatnya, lalu dijumlahkan dari kolom paling kanan (satuan) ke kiri (ribuan). Teknik "menyimpan" atau *regrouping* akan diajarkan jika jumlahnya lebih dari 9 di satu kolom.
+
+    Contoh:
+    *   **  428
+        + 379
+        -----
+          807**
+    *   (8 + 9 = 17, tulis 7, simpan 1 di puluhan)
+    *   (1 + 2 + 7 = 10, tulis 0, simpan 1 di ratusan)
+    *   (1 + 4 + 3 = 8, tulis 8)
+
+Latihan penjumlahan ini sangat penting untuk menyelesaikan berbagai masalah sehari-hari, seperti:
+
+🛒 Menjumlahkan total uang belanjaan.
+
+👥 Menghitung jumlah peserta dalam suatu kegiatan.
+
+📊 Menggabungkan data-data angka. 
+
+Ayo, hitung dengan cermat!`,
+                "1.6 Pengurangan Bilangan Cacah": `➖ **Mengurangi Angka: Pengurangan Bilangan Cacah** 🔢
+
+Setelah menambah, sekarang saatnya mengurangi! Siswa akan belajar melakukan pengurangan bilangan cacah hingga 10.000 dengan dua teknik utama:
+
+1.  **Cara Panjang (Menguraikan):** Sama seperti penjumlahan, angka diuraikan berdasarkan nilai tempatnya. Lalu, pengurangan dilakukan per nilai tempat. Jika angka atas lebih kecil dari bawah, siswa akan diajarkan teknik "meminjam" dari nilai tempat di sebelahnya.
+
+    Contoh:
+    *   **743 - 286**
+        *   743 = 700 + 40 + 3
+        *   286 = 200 + 80 + 6
+        *   (3 tidak bisa dikurangi 6, pinjam dari 40 jadi 13. 40 jadi 30)
+        *   (30 tidak bisa dikurangi 80, pinjam dari 700 jadi 130. 700 jadi 600)
+        *   600 + 130 + 13
+        *   - 200 + 80 + 6
+        *   ----------------
+        *   400 + 50 + 7 = 457
+
+2.  **Cara Pendek (Bersusun):** Ini adalah metode paling umum untuk pengurangan. Angka disusun vertikal, lalu dikurangkan dari kolom satuan ke ribuan. Teknik "peminjaman" atau *borrowing* sangat ditekankan di sini.
+
+    Contoh:
+    *   **  743
+        - 286
+        -----
+          457**
+    *   (3 - 6 tidak bisa, pinjam 1 dari 4 (puluhan), jadi 13. Angka 4 jadi 3. Maka, 13 - 6 = 7).
+    *   (Sekarang ada 3 di puluhan, 3 - 8 tidak bisa, pinjam 1 dari 7 (ratusan), jadi 13. Angka 7 jadi 6. Maka, 13 - 8 = 5).
+    *   (Sekarang ada 6 di ratusan, 6 - 2 = 4).
+
+Memahami pengurangan sangat penting untuk memecahkan masalah sehari-hari seperti menghitung sisa uang, selisih jumlah benda, atau menentukan berapa banyak yang tersisa setelah digunakan.`,
+                "1.7 Perkalian Bilangan Cacah": `✖️ **Menggandakan Angka: Perkalian Bilangan Cacah** 🔢
+
+Perkalian itu sebenarnya adalah cara cepat untuk melakukan penjumlahan berulang! Pada subbab ini, siswa akan belajar konsep perkalian dan bagaimana melakukannya untuk bilangan cacah hingga 100.
+
+Konsep dasarnya:
+
+*   **3 x 4 = 4 + 4 + 4 = 12** (Angka 4 dijumlahkan sebanyak 3 kali).
+*   **5 x 2 = 2 + 2 + 2 + 2 + 2 = 10** (Angka 2 dijumlahkan sebanyak 5 kali).
+
+Siswa akan belajar perkalian dengan beberapa cara:
+
+1.  **Dengan Cara Panjang (Menguraikan):** Ini melibatkan menguraikan bilangan ke nilai tempatnya dan mengalikan setiap bagian, lalu menjumlahkan hasilnya. Metode ini sangat membantu dalam memahami proses di balik perkalian.
+
+    Contoh:
+    *   **24 x 3**
+        *   = (20 x 3) + (4 x 3)
+        *   = 60 + 12
+        *   = 72
+
+2.  **Dengan Cara Pendek (Bersusun):** Ini adalah metode yang paling efisien untuk perkalian. Angka disusun vertikal, lalu dikalikan dari kanan ke kiri, dengan teknik menyimpan jika hasilnya lebih dari 9.
+
+    Contoh:
+    *   **  24
+        x  3
+        ----
+          72**
+    *   (4 x 3 = 12, tulis 2, simpan 1)
+    *   (2 x 3 = 6, tambah simpanan 1, jadi 7. Tulis 7).
+
+Perkalian digunakan dalam banyak situasi di kehidupan sehari-hari, seperti:
+
+📦 Menghitung jumlah total benda jika ada beberapa kelompok yang sama.
+
+📐 Menghitung luas suatu area.
+
+💸 Menghitung pengeluaran berulang atau total harga barang yang sama. 
+
+Jadi, ayo berlatih mengalikan dan kuasai jurus cepat berhitung!`,
+                "1.8 Pembagian Bilangan Cacah": `➗ **Membagi Rata: Pembagian Bilangan Cacah** 🔢
+
+Pembagian adalah kebalikan atau "lawan" dari perkalian! Jika perkalian adalah penjumlahan berulang, maka pembagian adalah pengurangan berulang. Pada subbab ini, siswa akan belajar konsep pembagian dan bagaimana menyelesaikannya untuk bilangan cacah hingga 100.
+
+Konsep dasarnya:
+
+*   **48 : 6 = 8** -> karena jika 6 dikalikan 8, hasilnya adalah 48.
+*   Ini juga bisa berarti, angka 48 bisa dikurangi 6 sebanyak 8 kali sampai habis (48 - 6 - 6 - 6 - 6 - 6 - 6 - 6 - 6 = 0).
+
+Siswa akan belajar pembagian dengan beberapa cara:
+
+1.  **Menggunakan Pengurangan Berulang:** Mengurangi bilangan yang dibagi dengan pembagi secara berulang sampai hasilnya nol atau tersisa. Jumlah kali pengurangan adalah hasilnya.
+
+2.  **Cara Panjang (Porogapit):** Ini adalah metode pembagian bersusun yang lebih sistematis, cocok untuk bilangan yang lebih besar. Siswa belajar langkah demi langkah membagi, mengalikan, mengurangkan, dan menurunkan angka.
+
+3.  **Mengenali Pembagian Bersisa:** Tidak semua pembagian menghasilkan bilangan bulat. Kadang ada sisa. Contoh: 7 : 2 = 3 sisa 1. Siswa diajarkan bagaimana mengidentifikasi dan menuliskan sisa pembagian.
+
+Pembagian sering digunakan dalam berbagai situasi nyata, seperti:
+
+🍰 Membagi kue atau makanan secara adil kepada teman-teman.
+
+📚 Membagi buku atau alat tulis kepada kelompok siswa.
+
+📊 Membagi jumlah total sesuatu ke dalam kelompok-kelompok yang sama. 
+
+Ayo, bagikan ilmu dengan adil!`,
+                "1.9 Faktor dan Kelipatan": `🌀 **Menjelajahi Angka: Faktor dan Kelipatan** ✖️➗
+
+Pada subbab ini, kita akan "mengintip" lebih dalam sifat-sifat angka melalui konsep faktor dan kelipatan. Kedua konsep ini sangat mendasar dalam matematika dan akan sering muncul di kelas-kelas selanjutnya!
+
+✨ **Faktor Bilangan:** 
+
+Faktor dari suatu bilangan adalah **bilangan-bilangan yang dapat membagi habis bilangan tersebut tanpa sisa.** Ini seperti mencari "penyusun" atau "pembagi" dari sebuah angka.
+
+Contoh:
+
+*   **Faktor dari 12 adalah 1, 2, 3, 4, 6, 12.** Mengapa? Karena:
+    *   12 : 1 = 12
+    *   12 : 2 = 6
+    *   12 : 3 = 4
+    *   12 : 4 = 3
+    *   12 : 6 = 2
+    *   12 : 12 = 1
+
+*   **Faktor dari 9 adalah 1, 3, 9.**
+
+🌀 **Kelipatan Bilangan:** 
+
+Kelipatan dari suatu bilangan adalah **hasil perkalian bilangan tersebut dengan bilangan asli (1, 2, 3, dst.) secara berurutan.** Ini seperti melompat dengan jumlah yang sama terus-menerus.
+
+Contoh:
+
+*   **Kelipatan 3 adalah 3, 6, 9, 12, 15, 18, ...** (dan seterusnya, tidak terbatas). Mengapa? Karena:
+    *   3 x 1 = 3
+    *   3 x 2 = 6
+    *   3 x 3 = 9
+    *   3 x 4 = 12
+
+*   **Kelipatan 5 adalah 5, 10, 15, 20, ...**
+
+Siswa akan dilatih untuk membuat daftar faktor dan kelipatan dari suatu bilangan. Pemahaman ini sangat penting dan akan digunakan sebagai dasar untuk menyelesaikan soal-soal logika bilangan yang lebih kompleks di kelas atas, seperti mencari KPK (Kelipatan Persekutuan Terkecil) dan FPB (Faktor Persekutuan Terbesar). 
+
+Ayo, jadi ahli angka!`
+            },
+            "Bab 2: Pecahan": {
+                "2.1 Pecahan dengan Pembilang Satu": `🍰 **Mari Berbagi: Pecahan dengan Pembilang Satu** 🔢
+
+Pada subbab ini, kita akan belajar tentang pecahan, sebuah cara untuk menunjukkan bagian dari satu kesatuan! Fokus kita adalah pecahan dengan pembilang satu, seperti 1/2, 1/3, 1/4 dst.
+
+Apa artinya pecahan dengan pembilang satu?
+
+*   **Pembilang (angka di atas):** Menunjukkan berapa banyak bagian yang diambil atau kita miliki (dalam kasus ini, selalu 1).
+*   **Penyebut (angka di bawah):** Menunjukkan berapa banyak bagian keseluruhan dibagi rata.
+
+Contoh yang paling mudah dibayangkan:
+
+*   Jika kita punya **1/2 kue**, itu artinya kue dibagi menjadi 2 bagian yang sama besar, dan kita mengambil 1 bagian dari dua bagian itu.
+
+*   Jika kita punya **1/3 pizza**, itu artinya pizza dibagi menjadi 3 bagian yang sama, dan kita mendapatkan 1 bagiannya.
+
+*   Jika kita punya **1/4 cokelat batangan**, itu artinya cokelat dibagi menjadi 4 bagian yang sama, dan kita makan 1 bagiannya.
+
+Siswa akan belajar konsep pecahan ini melalui media yang konkret dan menyenangkan, seperti:
+
+🖼️ **Gambar:** Menggunakan gambar lingkaran, persegi, atau benda lain yang dibagi-bagi.
+
+✂️ **Potongan Kertas:** Memotong kertas menjadi beberapa bagian yang sama.
+
+🍰 **Kue Mainan atau Buah:** Membagi benda nyata secara visual. 
+
+Melalui pendekatan ini, siswa dapat memahami konsep pecahan sebagai bagian dari keseluruhan secara visual dan logis, sehingga tidak hanya menghafal, tetapi juga benar-benar mengerti maknanya.`,
+                "2.2 Pecahan dengan Penyebut Sama": `➕➖ **Pecahan Bersatu: Penjumlahan dan Pengurangan Pecahan dengan Penyebut Sama** 🔢
+
+Setelah mengenal pecahan dasar, sekarang saatnya melakukan operasi hitung sederhana! Pada subbab ini, siswa akan belajar cara menjumlahkan dan mengurangkan pecahan yang memiliki penyebut (angka di bawah) yang sama. Kabar baiknya, ini sangat mudah!
+
+Jika penyebutnya sudah sama, kita bisa langsung menjumlahkan atau mengurangkan pembilangnya (angka di atas), sementara penyebutnya tetap sama. 
+
+Contoh Penjumlahan:
+
+*   **1/3 + 1/3 = 2/3** (Satu per tiga ditambah satu per tiga sama dengan dua per tiga. Bayangkan dua potong kue berukuran sepertiga).
+
+*   **2/5 + 1/5 = 3/5**
+
+Contoh Pengurangan:
+
+*   **3/4 - 1/4 = 2/4** (Tiga per empat dikurangi satu per empat sama dengan dua per empat, yang bisa disederhanakan menjadi satu per dua. Bayangkan ada tiga potong pizza berukuran seperempat, lalu satu potong dimakan).
+
+*   **5/6 - 1/6 = 4/6**
+
+Siswa diperkenalkan dengan konsep ini melalui:
+
+🖼️ **Gambar Lingkaran atau Persegi:** Objek yang dibagi rata menjadi beberapa bagian, sehingga memudahkan visualisasi dan pemahaman proses penjumlahan atau pengurangan. 
+
+Ini adalah langkah awal yang penting dalam memahami operasi hitung pecahan. Dengan menguasai ini, siswa akan lebih siap untuk materi pecahan yang lebih kompleks ke depannya!`,
+                "2.3 Pecahan Senilai": `⚖️ **Kembar Identik: Mengenal Pecahan Senilai** 👭
+
+Pada subbab ini, siswa akan menemukan "kembaran identik" dalam dunia pecahan! Pecahan senilai adalah pecahan-pecahan yang memiliki nilai yang sama, meskipun angka pembilang dan penyebutnya terlihat berbeda. Ini seperti memiliki kue yang sama besar, tapi dipotong dengan jumlah irisan yang berbeda.
+
+Contoh mudahnya:
+
+*   **1/2 = 2/4 = 4/8**
+
+    *   Bayangkan satu kue dibagi dua, kita ambil 1 bagian (1/2).
+    *   Lalu, kue yang sama dibagi empat, kita ambil 2 bagian (2/4). Jumlahnya sama dengan 1/2!
+    *   Jika kue itu dibagi delapan, kita ambil 4 bagian (4/8). Jumlahnya juga sama dengan 1/2!
+
+Siswa akan belajar cara mencari pecahan senilai dengan dua metode utama:
+
+✖️ **Mengalikan Pembilang dan Penyebut:** Kita bisa mengalikan pembilang (atas) dan penyebut (bawah) dengan angka yang sama (selain nol). Hasilnya adalah pecahan senilai. 
+
+    Contoh: 1/2 x 2/2 = 2/4 ; 2/4 x 2/2 = 4/8
+
+➗ **Membagi Pembilang dan Penyebut:** Kita juga bisa membagi pembilang dan penyebut dengan angka yang sama (faktor persekutuan terbesar) untuk menyederhanakan pecahan menjadi bentuk senilai yang paling sederhana.
+
+    Contoh: 4/8 : 4/4 = 1/2 ; 2/4 : 2/2 = 1/2
+
+Selain itu, siswa juga bisa memahami konsep pecahan senilai melalui:
+
+🖼️ **Gambar Potongan:** Menggunakan gambar benda yang dipotong-potong dengan cara berbeda namun menunjukkan bagian yang sama besar. 
+
+Pemahaman pecahan senilai sangat penting untuk menyederhanakan pecahan, membandingkan pecahan dengan penyebut berbeda, dan mempersiapkan diri untuk operasi hitung pecahan yang lebih maju.`,
+                "2.4 Pecahan Desimal": `⚫ **Angka di Balik Koma: Mengenal Pecahan Desimal** 🔢
+
+Pada subbab ini, siswa akan diperkenalkan pada cara lain untuk menulis pecahan, yaitu dalam bentuk desimal! Bentuk desimal menggunakan tanda koma (,) atau titik (.) untuk memisahkan bilangan bulat dari bagian pecahannya.
+
+Mari kita lihat contoh-contohnya:
+
+*   **1/2 = 0.5** (Setengah, atau lima per sepuluh)
+
+*   **1/4 = 0.25** (Seperempat, atau dua puluh lima per seratus)
+
+*   **3/4 = 0.75** (Tiga per empat, atau tujuh puluh lima per seratus)
+
+Angka di sebelah kanan koma menunjukkan bagian yang kurang dari satu. Setiap posisi setelah koma memiliki nilai tempat tersendiri:
+
+*   Angka pertama setelah koma adalah **persepuluhan**.
+*   Angka kedua setelah koma adalah **perseratusan**.
+
+Siswa akan mulai diperkenalkan pada cara membaca dan menulis pecahan desimal dengan bantuan:
+
+📏 **Garis Bilangan:** Menunjukkan posisi desimal di antara bilangan bulat.
+
+💰 **Konteks Uang:** Ini adalah contoh paling relevan! Misalnya, Rp0.25 (dua puluh lima perak) atau Rp0.50 (lima puluh perak) adalah cara mudah untuk memahami konsep desimal dalam kehidupan nyata. 
+
+Memahami pecahan desimal adalah keterampilan penting yang akan sering digunakan dalam pengukuran, keuangan, dan berbagai perhitungan sehari-hari.`,
+                "2.5 Hubungan Desimal dan Persen": `📈 **Lebih dari Seratus: Hubungan Desimal dan Persen** 📊
+
+Pada subbab ini, siswa akan belajar bagaimana pecahan desimal yang baru dipelajari berhubungan erat dengan **persen (%)**! Kata "persen" sendiri berarti "per seratus" atau "dari seratus". Ini adalah cara yang umum digunakan untuk menyatakan bagian dari keseluruhan dalam konteks persentase.
+
+Siswa akan belajar cara mengubah bentuk bilangan dari satu format ke format lain:
+
+1.  **Mengubah Desimal ke Persen:** Cukup kalikan angka desimal dengan 100 dan tambahkan simbol persen (%). Geser koma dua kali ke kanan.
+
+    Contoh:
+
+    *   **0.25 = 25%** (0.25 dikalikan 100 menjadi 25)
+
+    *   **0.75 = 75%** (0.75 dikalikan 100 menjadi 75)
+
+    *   **0.5 = 50%** (0.5 dikalikan 100 menjadi 50)
+
+2.  **Mengubah Persen ke Desimal:** Cukup bagi angka persen dengan 100 atau geser koma dua kali ke kiri.
+
+    Contoh:
+
+    *   **30% = 0.30** atau **0.3**
+
+    *   **15% = 0.15**
+
+3.  **Mengubah Pecahan Biasa ke Persen:** Pertama, ubah pecahan menjadi desimal, lalu ubah desimal ke persen (atau ubah penyebut menjadi 100).
+
+    Contoh:
+
+    *   **1/2 = 0.5 = 50%**
+
+    *   **1/4 = 0.25 = 25%**
+
+Konsep ini sangat penting dan akan sering ditemui dalam konteks kehidupan nyata, seperti:
+
+🏷️ **Diskon:** "Dapatkan diskon 20%!" Artinya harga akan dikurangi 20% dari total.
+
+💯 **Nilai Ujian:** "Nilai matematikaku 85%." Artinya ia menjawab benar 85 dari 100 soal.
+
+📊 **Statistik Sederhana:** Menunjukkan proporsi atau bagian dari suatu kelompok. 
+
+Dengan ini, siswa akan semakin mahir memahami informasi yang disajikan dalam bentuk persen!`
+            },
+            "Bab 3: Pola Gambar dan Bilangan": {
+                "3.1 Pola Gambar": `🖼️ **Melihat Pola: Mengidentifikasi Pola Gambar** 🧩
+
+Pada subbab ini, siswa akan menjadi "penjelajah pola" yang mengamati dan mengenali urutan gambar atau bentuk yang berulang secara teratur! Ini seperti mencari tahu aturan main dari sebuah susunan gambar yang seru.
+
+Contoh pola gambar yang akan dipelajari:
+
+*   **Segitiga, Lingkaran, Segitiga, Lingkaran, ...** (pola berulang: Segitiga, Lingkaran)
+
+*   **Kotak Merah, Kotak Biru, Kotak Hijau, Kotak Merah, Kotak Biru, Kotak Hijau, ...** (pola berulang: Kotak Merah, Kotak Biru, Kotak Hijau)
+
+*   **Bunga Kecil, Bunga Besar, Bunga Kecil, Bunga Besar, ...** (pola berulang: Bunga Kecil, Bunga Besar)
+
+Tujuan utama dari kegiatan ini adalah melatih kemampuan berpikir logis dan visual siswa. Mereka akan belajar untuk:
+
+👁️ **Mengidentifikasi Aturan Pola:** Menemukan apa yang membuat urutan gambar itu berulang.
+
+🔮 **Memprediksi Bentuk Selanjutnya:** Setelah mengetahui aturannya, mereka bisa menebak atau melanjutkan gambar selanjutnya dalam urutan tersebut.
+
+🎉 Kegiatan ini disajikan secara menyenangkan dengan berbagai gambar dan permainan interaktif yang membuat belajar jadi lebih asyik. Kemampuan mengenali pola adalah dasar penting dalam matematika dan pemecahan masalah!`,
+                "3.2 Pola Bilangan": `🔢 **Melanjutkan Angka: Mengenal Pola Bilangan** 📈
+
+Setelah asyik dengan pola gambar, sekarang kita akan "menari" dengan angka-angka! Pada subbab ini, siswa akan belajar tentang pola bilangan, yaitu urutan angka-angka yang memiliki aturan atau hubungan tertentu antara satu angka dengan angka berikutnya. Ini seperti mencari tahu "lompatan" atau "aturan rahasia" dari deretan angka.
+
+Contoh pola bilangan yang akan dipelajari:
+
+*   **2, 4, 6, 8, 10, ...** (Aturannya: selalu ditambah 2)
+
+*   **5, 10, 15, 20, ...** (Aturannya: selalu ditambah 5, atau kelipatan 5)
+
+*   **20, 18, 16, 14, ...** (Aturannya: selalu dikurangi 2)
+
+*   **3, 6, 12, 24, ...** (Aturannya: selalu dikali 2)
+
+Siswa akan dilatih untuk:
+
+🔎 **Mengenali Pola:** Menemukan aturan atau operasi (penjumlahan, pengurangan, perkalian, pembagian) yang digunakan untuk membentuk urutan angka tersebut.
+
+🔮 **Mencari Angka Selanjutnya:** Setelah pola ditemukan, mereka bisa dengan mudah melanjutkan deretan angka tersebut.
+
+Kegiatan ini sangat penting karena melatih:
+
+🧠 **Keteraturan Berpikir:** Membiasakan siswa untuk mencari hubungan dan aturan dalam suatu data.
+
+💡 **Pemahaman terhadap Operasi Hitung:** Mengaplikasikan penjumlahan, pengurangan, perkalian, dan pembagian dalam konteks yang lebih luas.
+
+🎯 **Kemampuan Memecahkan Masalah:** Banyak masalah matematika yang melibatkan pengenalan pola. 
+
+Ayo, jadi detektif pola angka!`
+            }
+        };
+
+        let selectedSubbab = null;
+        let selectedBab = null;
+
+        // Tambahkan event listener ke semua tombol subbab
+        function setupSubbabRingkasan() {
+            document.querySelectorAll('.subbab-btn').forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    selectedSubbab = btn.getAttribute('data-subbab');
+                    selectedBab = btn.getAttribute('data-bab');
+                    const ringkasanBtn = document.getElementById('ringkasanBtn');
+                    ringkasanBtn.classList.remove('bg-gray-300', 'cursor-not-allowed');
+                    ringkasanBtn.classList.add('bg-gradient-to-r', 'from-green-400', 'to-blue-400', 'hover:from-green-500', 'hover:to-blue-500', 'cursor-pointer');
+                    ringkasanBtn.disabled = false;
+                });
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            setupSubbabRingkasan();
+            const ringkasanBtn = document.getElementById('ringkasanBtn');
+            ringkasanBtn.onclick = async function() {
+                if (!selectedSubbab || !selectedBab) return;
+
+                const summary = matematikaSummaries[selectedBab]?.[selectedSubbab] || null;
+
+                sessionStorage.setItem('ringkasan_k4_matematika', JSON.stringify({
+                    ringkasan: summary,
+                    bab: selectedBab,
+                    subbab: selectedSubbab
+                }));
+                window.location.href = 'ringkasan-result-kelas4-matematika.html';
+            };
+            document.querySelectorAll('.language-toggle-button').forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    var lang = btn.textContent.trim().toLowerCase();
+                    loadLang(lang);
+                    document.querySelectorAll('.language-toggle-button').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                });
+            });
+            loadLang(currentLang);
+        });
+    </script>
+</body>
+</html> 

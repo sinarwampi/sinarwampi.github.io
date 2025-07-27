@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kelas 5 - IPAS</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+:root {
+  --brand-primary: #6366F1;
+  --brand-secondary: #EC4899;
+  --background-primary: #FFFBEB;--background-secondary: #FFFFFF;
+  --text-primary: #374151;--text-secondary: #6B7280;
+  --border-primary: #FBBF24;--action-primary: #34D399;--action-primary-hover: #10B981;--action-secondary: #F3F4F6;
+  --action-secondary-hover: #E5E7EB;
+  --color-sky-blue: #87CEEB;
+  --color-coral: #FF7F50;
+  --color-lime-green: #32CD32;
+  --color-violet: #EE82EE;
+  --color-gold: #FFD700;
+}
+body {
+  font-family: 'Lexend', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Fredoka One', cursive;
+}
+</style>
+</head>
+<body class="bg-[var(--background-primary)] text-[var(--text-primary)]">
+<div class="flex flex-col min-h-screen">
+<header class="bg-white shadow-md">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-[var(--color-sky-blue)] rounded-xl flex items-center justify-center transform -rotate-12">
+        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L9 9.61V16a1 1 0 001 1h2a1 1 0 001-1V9.61l6.394-2.69a1 1 0 000-1.84l-7-3zM10 8L3.394 5.31 10 2.69v5.32z"></path>
+        </svg>
+      </div>
+      <h1 class="text-xl sm:text-2xl text-[var(--text-primary)] font-bold" data-i18n="app_title">SINAR WAMPI</h1>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="language-toggle">
+        <button class="language-toggle-button active">ID</button>
+        <button class="language-toggle-button">EN</button>
+      </div>
+      <div class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfuwgYI-olVKF44AsvP7zsXtut46r76IIIbHOVhQRqZb4rg0KeVqnmfqm7yNrg4IZBmdiJ0SSQQ7JboPBpD_U4j5xrHEM53FeNseG4FQMDPIn3JZmcZju4oFuZS5vQAKyWwRXzlPebWjYVVf9Unqur0XzLipA4qFVYD3vGPv0k7oLTgihTQvseqa0kWkpmZ5z7CpuNmI3dDc9H5SY51ABcBMrMxz2J8eGAwjKxE99K1hNe2Zv6NcsxZhruyFBCOeMrph4SpjSwtO4");'></div>
+    </div>
+  </div>
+</header>
+<div class="w-full flex items-center mt-2 mb-4">
+  <a href="kelas5.html" class="flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-pink-400 to-blue-400 text-white font-medium shadow hover:from-pink-500 hover:to-blue-500 transition-colors ml-2">
+    <span class="text-base">&#8592;</span>
+    <span>Kembali</span>
+  </a>
+</div>
+<main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[var(--color-coral)] mb-4">Kelas 5 - IPAS</h2>
+  <p class="text-center text-base sm:text-lg md:text-xl text-[var(--text-secondary)] mb-10">Pilih subbab untuk melihat ringkasan materi:</p>
+  <div class="space-y-6">
+    <!-- Bab 1 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-green-700 mb-2">Bab 1: Organ Gerak Makhluk Hidup</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.1 Organ Gerak Hewan" data-bab="Bab 1: Organ Gerak Makhluk Hidup">
+          <div class="font-semibold text-green-800 mb-1">1.1 Organ Gerak Hewan</div>
+          <div class="text-sm text-green-700">Hewan memiliki organ gerak yang berbeda sesuai tempat hidupnya. Kaki untuk berjalan/berlari, sirip untuk berenang, sayap untuk terbang, hasil adaptasi lingkungan.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.2 Organ Gerak Manusia" data-bab="Bab 1: Organ Gerak Makhluk Hidup">
+          <div class="font-semibold text-green-800 mb-1">1.2 Organ Gerak Manusia</div>
+          <div class="text-sm text-green-700">Manusia bergerak dengan otot (aktif) dan tulang (pasif). Tulang membentuk rangka, otot menarik tulang, memungkinkan berbagai aktivitas fisik.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.3 Gangguan pada Organ Gerak" data-bab="Bab 1: Organ Gerak Makhluk Hidup">
+          <div class="font-semibold text-green-800 mb-1">1.3 Gangguan pada Organ Gerak</div>
+          <div class="text-sm text-green-700">Organ gerak bisa mengalami gangguan seperti patah tulang, keseleo, atau kelainan bentuk. Penanganan medis bisa dengan gips, fisioterapi, atau operasi.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 2 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-blue-700 mb-2 mt-6">Bab 2: Sumber Daya Alam Indonesia</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.1 Jenis Sumber Daya Alam" data-bab="Bab 2: Sumber Daya Alam Indonesia">
+          <div class="font-semibold text-blue-800 mb-1">2.1 Jenis Sumber Daya Alam</div>
+          <div class="text-sm text-blue-700">SDA adalah segala sesuatu dari alam untuk kebutuhan manusia, dibagi dua: dapat diperbarui (air, tumbuhan) dan tidak dapat diperbarui (minyak, batubara).</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.2 Pemanfaatan SDA" data-bab="Bab 2: Sumber Daya Alam Indonesia">
+          <div class="font-semibold text-blue-800 mb-1">2.2 Pemanfaatan SDA</div>
+          <div class="text-sm text-blue-700">SDA dimanfaatkan dalam berbagai aspek kehidupan seperti sumber makanan, energi, dan bahan bangunan. Penggunaan harus bijak.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.3 Pelestarian SDA" data-bab="Bab 2: Sumber Daya Alam Indonesia">
+          <div class="font-semibold text-blue-800 mb-1">2.3 Pelestarian SDA</div>
+          <div class="text-sm text-blue-700">Pelestarian SDA penting untuk ketersediaan masa depan, meliputi daur ulang, reboisasi, dan hemat energi/air. Edukasi dan regulasi pemerintah juga penting.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 3 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-purple-700 mb-2 mt-6">Bab 3: Perubahan di Lingkungan</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="3.1 Perubahan Lingkungan Alami dan Buatan" data-bab="Bab 3: Perubahan di Lingkungan">
+          <div class="font-semibold text-purple-800 mb-1">3.1 Perubahan Lingkungan Alami dan Buatan</div>
+          <div class="text-sm text-purple-700">Lingkungan dapat berubah karena faktor alam (gempa, letusan gunung) atau manusia (pembangunan, penebangan hutan). Keduanya berdampak besar.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="3.2 Dampak Perubahan Lingkungan" data-bab="Bab 3: Perubahan di Lingkungan">
+          <div class="font-semibold text-purple-800 mb-1">3.2 Dampak Perubahan Lingkungan</div>
+          <div class="text-sm text-purple-700">Perubahan lingkungan dapat menyebabkan dampak negatif seperti kerusakan ekosistem, pencemaran, atau bencana alam.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="3.3 Adaptasi dan Mitigasi" data-bab="Bab 3: Perubahan di Lingkungan">
+          <div class="font-semibold text-purple-800 mb-1">3.3 Adaptasi dan Mitigasi</div>
+          <div class="text-sm text-purple-700">Adaptasi adalah menyesuaikan diri (misal: rumah tahan gempa). Mitigasi adalah mengurangi risiko (misal: menanam pohon). Keduanya penting untuk selaras alam.</div>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="bg-white/80 backdrop-blur-sm sticky bottom-0 border-t-2 border-[var(--border-primary)] mt-8">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center">
+    <button id="ringkasanBtn" class="w-full max-w-md bg-gray-300 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full shadow-xl cursor-not-allowed">
+      <span>Buat Ringkasan Sekarang!</span>
+    </button>
+  </div>
+  <div id="hasilRingkasan" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center text-base sm:text-lg text-[var(--text-primary)]">
+    <!-- Ringkasan akan muncul di sini -->
+  </div>
+</footer>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<!-- Script translate manual -->
+<script>
+let currentLang = 'id';
+function loadLang(lang) {
+  fetch(`lang-${lang}.json`)
+    .then(res => res.json())
+    .then(dict => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) el.textContent = dict[key];
+      });
+      currentLang = lang;
+    });
+}
+
+const ipasSummariesK5 = {
+  "Bab 1: Organ Gerak Makhluk Hidup": {
+    "1.1 Organ Gerak Hewan": `🐾 **Petualangan Gerak Hewan: Kaki, Sirip, dan Sayap!** 🦅🐟
+
+Selamat datang di Bab 1 IPAS Kelas 5! Kita akan memulai perjalanan seru mengenal bagaimana makhluk hidup bergerak, dimulai dari **hewan**. Setiap hewan itu unik, dan cara mereka bergerak sangat disesuaikan dengan tempat tinggal dan cara hidup mereka! Ini disebut **adaptasi**.
+
+Mari kita jelajahi berbagai jenis organ gerak hewan:
+
+1.  **Kaki:** Ini adalah organ gerak paling umum untuk **hewan darat**.
+    *   **Fungsi:** Digunakan untuk berjalan, berlari, melompat, bahkan memanjat!
+    *   **Contoh Hewan:**
+        *   🦁 Singa, 🦓 zebra, 🦒 jerapah menggunakan empat kaki untuk berlari di sabana.
+        *   Kanguru melompat dengan kaki belakangnya yang kuat.
+        *   Monyet menggunakan tangan dan kakinya untuk bergelantungan di pohon.
+
+2.  **Sirip:** Organ khusus untuk **hewan air**, terutama ikan.
+    *   **Fungsi:** Membantu ikan berenang, menjaga keseimbangan, dan mengubah arah dalam air.
+    *   **Contoh Hewan:**
+        *   🐠 Ikan memiliki berbagai jenis sirip (punggung, perut, ekor) yang bekerja sama untuk bergerak lincah di dalam air.
+        *   Lumba-lumba dan paus juga memiliki sirip, meskipun mereka mamalia.
+
+3.  **Sayap:** Digunakan oleh **hewan udara** seperti burung dan serangga.
+    *   **Fungsi:** Memungkinkan mereka untuk terbang, melayang, dan berpindah tempat di udara.
+    *   **Contoh Hewan:**
+        *   🦅 Burung terbang dengan mengepakkan sayapnya yang berbulu.
+        *   🦋 Kupu-kupu dan 🐝 lebah memiliki sayap tipis untuk terbang.
+        *   Beberapa serangga seperti capung memiliki empat sayap untuk bermanuver di udara.
+
+Bentuk dan fungsi organ gerak ini merupakan hasil **adaptasi terhadap lingkungan** mereka. Misalnya, sirip ikan sangat efisien di air yang padat, sementara sayap burung ringan dan aerodinamis untuk udara. Adaptasi ini membantu hewan:
+
+*   **Bertahan hidup:** Menghindari pemangsa atau mencari tempat aman.
+*   **Mencari makan:** Mengejar mangsa atau mencapai sumber makanan.
+*   **Bereproduksi:** Menjangkau pasangan atau mencari tempat bersarang.
+
+Semua ini menunjukkan betapa menakjubkannya alam dan bagaimana setiap makhluk hidup dirancang sempurna untuk lingkungannya! Mari kita terus mengamati dan belajar dari alam! 🌿🌎`,
+    "1.2 Organ Gerak Manusia": `🚶‍♂️ **Mesin Gerak Manusia: Otot dan Tulang** 💪🦴
+
+Setelah menjelajahi organ gerak hewan, kini saatnya kita memahami bagaimana **manusia** bergerak! Tubuh kita adalah mesin yang luar biasa, dan gerakan kita dimungkinkan oleh kerja sama dua jenis alat gerak utama: **otot (alat gerak aktif)** dan **tulang (alat gerak pasif)**.
+
+1.  **Tulang (Alat Gerak Pasif):**
+    *   **Fungsi:**
+        *   **Membentuk Rangka Tubuh:** Memberikan bentuk dan struktur pada tubuh kita, seperti tiang penyangga pada bangunan.
+        *   **Penopang Tubuh:** Menjaga tubuh kita tetap tegak dan tidak ambruk.
+        *   **Melindungi Organ Penting:** Misalnya, tulang tengkorak melindungi otak, dan tulang rusuk melindungi jantung dan paru-paru.
+        *   **Tempat Melekatnya Otot:** Otot-otot kita menempel pada tulang, yang memungkinkan tulang ditarik dan digerakkan.
+    *   **Tulang tidak bisa bergerak sendiri**, makanya disebut alat gerak pasif. Mereka butuh bantuan dari otot.
+
+2.  **Otot (Alat Gerak Aktif):**
+    *   **Fungsi:**
+        *   **Menarik Tulang:** Otot memiliki kemampuan untuk berkontraksi (memendek) dan berelaksasi (memanjang). Saat otot berkontraksi, ia menarik tulang, sehingga tulang pun bergerak.
+        *   **Menghasilkan Gerakan:** Setiap gerakan yang kita lakukan, dari mengedipkan mata hingga berlari maraton, adalah hasil kerja otot yang menarik tulang.
+    *   Otot disebut alat gerak aktif karena **merekalah yang menghasilkan kekuatan untuk bergerak**.
+
+**Bagaimana Otot dan Tulang Bekerja Sama?**
+Ini seperti tim yang kompak! Otot menempel pada tulang di dua tempat atau lebih. Ketika otot berkontraksi, ia memendek dan menarik tulang yang dilekatinya. Sendi (persendian) di antara tulang-tulang memungkinkan gerakan ini terjadi.
+
+**Contoh Kerja Sama Otot dan Tulang:**
+*   **Berjalan/Berlari:** Otot-otot kaki berkontraksi dan berelaksasi secara bergantian untuk menggerakkan tulang-tulang kaki.
+*   **Mengangkat Benda:** Otot lengan dan bahu bekerja sama untuk menarik tulang lengan ke atas.
+*   **Menulis/Menggambar:** Otot-otot kecil di tangan dan jari bergerak presisi untuk menggerakkan tulang jari.
+
+Kerja sama yang harmonis antara otot dan tulang inilah yang memungkinkan manusia melakukan berbagai aktivitas fisik, dari yang sederhana hingga yang kompleks. Mari kita jaga kesehatan tulang dan otot kita agar bisa terus bergerak bebas! 🤸‍♀️🏋️‍♂️`,
+    "1.3 Gangguan pada Organ Gerak": `⚠️ **Waspada Gerak: Gangguan pada Organ Gerak Manusia** 🚑
+
+Tubuh kita itu luar biasa, tapi kadang ada hal yang bisa mengganggu kemampuan kita bergerak dengan nyaman. Pada subbab ini, kita akan membahas beberapa **gangguan atau kelainan yang bisa terjadi pada organ gerak manusia**, yaitu tulang dan otot.
+
+Penting untuk tahu ini agar kita bisa lebih peduli dan menjaga kesehatan tubuh kita!
+
+**Gangguan pada Tulang:**
+
+1.  **Patah Tulang (Fraktur):** Tulang retak atau putus akibat benturan keras, jatuh, atau kecelakaan.
+    *   **Contoh:** Patah tulang kaki karena terjatuh dari sepeda.
+
+2.  **Keseleo:** Terjadi saat ligamen (jaringan yang menghubungkan tulang) meregang atau robek karena gerakan yang tidak wajar pada sendi.
+    *   **Contoh:** Kaki keseleo saat berlari dan salah tumpuan.
+
+3.  **Kelainan Bentuk Tulang Belakang:** Ini adalah kondisi di mana tulang belakang melengkung tidak normal.
+    *   **Skoliosis:** Tulang belakang melengkung ke samping (membentuk huruf S).
+    *   **Lordosis:** Tulang belakang melengkung berlebihan ke depan di bagian pinggang.
+    *   **Kifosis:** Tulang belakang melengkung berlebihan ke belakang di bagian dada (bungkuk).
+    *   **Dampak:** Dapat mengganggu postur tubuh, pernapasan, dan aktivitas fisik.
+
+**Gangguan pada Otot:**
+
+1.  **Kram Otot:** Otot menegang secara tiba-tiba dan terasa nyeri. Biasanya karena kurang pemanasan atau kelelahan.
+2.  **Terkilir (Strain):** Otot atau tendon (jaringan yang menghubungkan otot ke tulang) meregang atau robek akibat penggunaan berlebihan atau gerakan tiba-tiba.
+
+**Penanganan Gangguan Organ Gerak:**
+Jika mengalami gangguan, penting untuk segera mencari bantuan medis. Penanganannya bisa bervariasi, seperti:
+
+*   **Pemasangan Gips:** Untuk patah tulang agar tulang tidak bergerak dan bisa menyatu kembali.
+*   **Fisioterapi:** Latihan khusus untuk mengembalikan kekuatan dan fleksibilitas otot dan sendi setelah cedera.
+*   **Obat-obatan:** Untuk mengurangi nyeri dan peradangan.
+*   **Pembedahan:** Jika cedera sangat parah dan memerlukan perbaikan langsung.
+
+Dengan memahami berbagai gangguan ini, kita bisa lebih berhati-hati dalam beraktivitas dan menjaga kesehatan organ gerak kita. Ingat, lebih baik mencegah daripada mengobati! 🩹👩‍⚕️`
+  },
+  "Bab 2: Sumber Daya Alam Indonesia": {
+    "2.1 Jenis Sumber Daya Alam": `🌱 **Harta Karun Alam: Mengenal Jenis Sumber Daya Alam Indonesia** 💎💧
+
+Selamat datang di Bab 2 IPAS Kelas 5! Indonesia itu negara yang kaya raya, loh! Kita akan belajar tentang **Sumber Daya Alam (SDA)** yang melimpah di negara kita. SDA adalah segala sesuatu yang **berasal dari alam dan dapat dimanfaatkan oleh manusia untuk memenuhi kebutuhan hidup.**
+
+Secara umum, SDA dibagi menjadi dua jenis utama:
+
+1.  **Sumber Daya Alam yang Dapat Diperbarui (Renewable Resources):**
+    *   **Definisi:** SDA yang jumlahnya sangat banyak atau dapat dengan cepat dibentuk kembali oleh alam setelah digunakan. Mereka tidak akan habis jika kita menggunakannya dengan bijak.
+    *   **Contoh:**
+        *   💧 **Air:** Digunakan untuk minum, mandi, irigasi, pembangkit listrik.
+        *   🌬️ **Udara:** Penting untuk bernapas, energi angin.
+        *   🌳 **Tumbuhan:** Sebagai makanan, bahan bangunan, obat-obatan, sandang.
+        *   🐄 **Hewan:** Sebagai makanan (daging, susu, telur), tenaga, bahan baku.
+        *   ☀️ **Sinar Matahari:** Sumber energi utama di bumi, untuk listrik tenaga surya, mengeringkan.
+        *   🌬️ **Angin:** Untuk energi angin, menggerakkan perahu layar.
+    *   **Kunci:** Meskipun dapat diperbarui, kita tetap harus menjaganya agar tetap lestari dan kualitasnya tidak menurun.
+
+2.  **Sumber Daya Alam yang Tidak Dapat Diperbarui (Non-renewable Resources):**
+    *   **Definisi:** SDA yang jumlahnya terbatas di bumi dan membutuhkan waktu yang sangat lama (jutaan tahun) untuk terbentuk kembali. Jika sudah habis, maka tidak bisa kita dapatkan lagi.
+    *   **Contoh:**
+        *   🛢️ **Minyak Bumi:** Digunakan sebagai bahan bakar kendaraan, plastik, aspal.
+        *   🖤 **Batu Bara:** Sumber energi untuk pembangkit listrik dan industri.
+        *   🔥 **Gas Alam:** Bahan bakar rumah tangga dan industri.
+        *   ⛏️ **Logam Mulia (Emas, Perak):** Perhiasan, bahan elektronik.
+        *   🏗️ **Bahan Tambang (Besi, Bauksit, Timah):** Bahan baku industri, konstruksi.
+    *   **Kunci:** Penggunaan SDA jenis ini harus sangat hemat dan efisien, serta kita perlu mencari alternatif energi lain untuk masa depan.
+
+Memahami jenis-jenis SDA ini akan membantu kita menghargai kekayaan alam Indonesia dan mendorong kita untuk menggunakannya secara bertanggung jawab. Mari jaga alam kita untuk generasi mendatang! 🇮🇩💚`,
+    "2.2 Pemanfaatan SDA": `💰 **Berkah Alam: Pemanfaatan Sumber Daya Alam** 🏡💡
+
+Setelah mengenal jenis-jenis Sumber Daya Alam (SDA), kini kita akan membahas bagaimana SDA tersebut **dimanfaatkan dalam berbagai aspek kehidupan manusia**. Alam menyediakan segalanya yang kita butuhkan, asalkan kita menggunakannya dengan bijak!
+
+Mari kita lihat beberapa contoh pemanfaatan SDA:
+
+1.  **Air (SDA Dapat Diperbarui):**
+    *   **Kebutuhan Pokok:** Untuk minum, mandi, mencuci, dan memasak.
+    *   **Pertanian:** Irigasi sawah agar tanaman tumbuh subur.
+    *   **Industri:** Proses produksi di pabrik.
+    *   **Pembangkit Listrik:** Pembangkit Listrik Tenaga Air (PLTA) menghasilkan listrik bersih.
+
+2.  **Tumbuhan (SDA Dapat Diperbarui):**
+    *   **Makanan:** Buah, sayur, padi, gandum adalah sumber makanan utama kita.
+    *   **Bahan Bangunan:** Kayu dari pohon digunakan untuk membuat rumah, perabot, dan kertas.
+    *   **Obat-obatan:** Banyak tanaman yang memiliki khasiat obat.
+    *   **Sandang:** Kapas menjadi benang dan kain untuk pakaian.
+
+3.  **Hewan (SDA Dapat Diperbarui):**
+    *   **Makanan:** Daging, telur, susu adalah sumber protein.
+    *   **Tenaga:** Kerbau atau sapi membantu petani membajak sawah.
+    *   **Transportasi:** Kuda atau unta sebagai alat transportasi tradisional.
+
+4.  **Minyak Bumi dan Gas Alam (SDA Tidak Dapat Diperbarui):**
+    *   **Sumber Energi:** Bensin, solar untuk kendaraan; gas untuk memasak (LPG) dan pembangkit listrik.
+    *   **Bahan Baku Industri:** Produksi plastik, pupuk, cat, dan obat-obatan.
+
+5.  **Batu Bara (SDA Tidak Dapat Diperbarui):**
+    *   **Sumber Energi:** Pembangkit listrik tenaga uap (PLTU).
+    *   **Industri:** Bahan bakar untuk pabrik semen, baja.
+
+6.  **Logam (SDA Tidak Dapat Diperbarui):**
+    *   **Besi:** Konstruksi bangunan, kendaraan, alat rumah tangga.
+    *   **Emas dan Perak:** Perhiasan, investasi, komponen elektronik.
+
+**Kunci penting:** Penggunaan SDA harus dilakukan secara **bijak dan bertanggung jawab** agar ketersediaannya tetap terjaga untuk generasi mendatang. Kita tidak boleh boros atau merusak alam saat mengambil SDA. Mari kita menjadi pengguna SDA yang cerdas dan peduli lingkungan! ♻️🌍`,
+    "2.3 Pelestarian SDA": `🌳 **Jaga Alam Kita: Pelestarian Sumber Daya Alam** 💚🔄
+
+Kita sudah tahu betapa pentingnya Sumber Daya Alam (SDA) bagi kehidupan kita. Sekarang, di subbab terakhir Bab 2 IPAS Kelas 5 ini, kita akan belajar tentang hal yang paling penting: **Pelestarian SDA**! Kenapa penting? Agar anak cucu kita nanti juga bisa menikmati kekayaan alam ini.
+
+Pelestarian SDA adalah **upaya untuk melindungi dan menjaga ketersediaan sumber daya alam agar tidak cepat habis atau rusak, serta tetap bermanfaat untuk masa depan.** Ini adalah tanggung jawab kita bersama!
+
+Berikut adalah beberapa cara yang bisa kita lakukan untuk melestarikan SDA:
+
+1.  **Daur Ulang (Recycling):**
+    *   **Apa itu:** Mengolah kembali barang-barang bekas menjadi produk baru yang berguna.
+    *   **Contoh:** Mengubah botol plastik bekas menjadi kerajinan atau serat kain; kertas bekas menjadi kertas daur ulang; kaleng bekas menjadi barang baru.
+    *   **Manfaat:** Mengurangi sampah, menghemat bahan baku alam, dan mengurangi pencemaran.
+
+2.  **Reboisasi (Penanaman Kembali Hutan Gundul):**
+    *   **Apa itu:** Menanam pohon-pohon kembali di area hutan yang telah ditebang atau rusak.
+    *   **Manfaat:** Mencegah banjir dan tanah longsor, menjaga ketersediaan air tanah, menyediakan habitat bagi hewan, dan menghasilkan oksigen.
+
+3.  **Penggunaan Energi dan Air Secara Hemat:**
+    *   **Energi:** Mematikan lampu jika tidak digunakan, menggunakan transportasi umum, membatasi penggunaan AC, memilih peralatan elektronik hemat energi.
+    *   **Air:** Menutup keran saat tidak digunakan, menyiram tanaman di pagi/sore hari, tidak membuang sampah di sungai.
+    *   **Manfaat:** Mengurangi penggunaan SDA tak terbarukan (minyak, batu bara) dan menjaga ketersediaan air bersih.
+
+4.  **Mengurangi Penggunaan Barang Sekali Pakai (Reduce):**
+    *   **Contoh:** Membawa tas belanja sendiri, menggunakan botol minum isi ulang.
+
+5.  **Memperbaiki dan Menggunakan Kembali (Reuse):**
+    *   **Contoh:** Memperbaiki pakaian yang robek, menggunakan kembali botol kaca.
+
+Selain itu, **edukasi masyarakat** dan **peraturan pemerintah yang ketat** juga berperan penting dalam menjaga kelestarian alam. Kita semua bisa berkontribusi dimulai dari hal kecil di rumah dan sekolah. Mari jadi pahlawan lingkungan! 🦸‍♀️🦸‍♂️`
+  },
+  "Bab 3: Perubahan di Lingkungan": {
+    "3.1 Perubahan Lingkungan Alami dan Buatan": `🌍 **Wajah Bumi Berubah: Perubahan Lingkungan Alami dan Buatan** 🏭⛰️
+
+Selamat datang di Bab 3 IPAS Kelas 5! Di bab ini, kita akan melihat bagaimana **lingkungan di sekitar kita bisa berubah**. Perubahan ini bisa terjadi karena dua sebab utama: **faktor alami** (dari alam sendiri) dan **faktor buatan** (dari aktivitas manusia).
+
+Penting untuk memahami perbedaan ini agar kita tahu bagaimana harus bersikap terhadap lingkungan!
+
+1.  **Perubahan Lingkungan Alami:**
+    *   **Definisi:** Perubahan yang terjadi secara alami, tanpa campur tangan manusia. Ini adalah bagian dari siklus alam dan proses bumi.
+    *   **Contoh:**
+        *   **Gempa Bumi:** Getaran tanah yang bisa mengubah bentuk permukaan bumi, menyebabkan retakan atau longsor.
+        *   **Gunung Meletus:** Erupsi gunung berapi yang mengeluarkan material panas, abu, dan gas, mengubah lanskap sekitarnya.
+        *   **Banjir:** Peningkatan volume air yang merendam daratan. Bisa karena hujan deras alami, atau pencairan es.
+        *   **Tsunami:** Gelombang laut raksasa akibat gempa di dasar laut.
+        *   **Musim Kemarau Panjang:** Kekeringan yang menyebabkan tanah retak dan tanaman mati.
+    *   **Karakteristik:** Sulit diprediksi secara tepat, seringkali menimbulkan dampak besar yang tidak dapat dikendalikan manusia.
+
+2.  **Perubahan Lingkungan Buatan (Antropogenik):**
+    *   **Definisi:** Perubahan yang terjadi karena aktivitas atau campur tangan manusia dalam mengelola lingkungan.
+    *   **Contoh:**
+        *   🏗️ **Pembangunan Gedung/Kota:** Mengubah lahan hijau menjadi area permukiman, industri, atau perkantoran.
+        *   🪵 **Penebangan Hutan (Deforestasi):** Mengubah hutan menjadi lahan pertanian, permukiman, atau diambil kayunya.
+        *   🚜 **Pertanian (Intensifikasi):** Penggunaan pupuk kimia dan pestisida berlebihan yang mengubah kualitas tanah dan air.
+        *   🏭 **Pencemaran:** Pembuangan limbah industri atau rumah tangga ke sungai, udara, atau tanah.
+        *   **Pembangunan Bendungan:** Mengubah aliran sungai dan ekosistem di sekitarnya.
+    *   **Karakteristik:** Bisa direncanakan, tetapi jika tidak hati-hati dapat menimbulkan dampak negatif jangka panjang.
+
+Kedua jenis perubahan ini dapat berdampak besar pada kehidupan makhluk hidup, termasuk manusia. Kita harus belajar bagaimana hidup berdampingan dengan perubahan alami dan bagaimana mengelola perubahan buatan agar dampaknya positif. Mari kita jadi pengelola bumi yang bijak! 🌎✨`,
+    "3.2 Dampak Perubahan Lingkungan": `💔 **Efek Domino: Dampak Perubahan Lingkungan** 🌬️🗑️
+
+Perubahan lingkungan, baik alami maupun buatan, tidak selalu membawa kebaikan. Pada subbab ini, kita akan membahas **dampak negatif dari perubahan lingkungan** yang perlu kita waspadai. Dampak ini bisa seperti efek domino, satu hal buruk bisa memicu hal buruk lainnya.
+
+Mari kita lihat beberapa dampak yang mungkin terjadi:
+
+1.  **Kerusakan Ekosistem:**
+    *   **Apa itu:** Keseimbangan hubungan antara makhluk hidup dan lingkungannya terganggu.
+    *   **Contoh:** Penebangan hutan liar merusak habitat hewan (seperti orangutan yang kehilangan rumah), menyebabkan kepunahan spesies, dan mengurangi keanekaragaman hayati.
+    *   **Dampak:** Hilangnya hutan sebagai "paru-paru dunia" mengurangi produksi oksigen dan meningkatkan suhu bumi.
+
+2.  **Pencemaran (Polusi):**
+    *   **Apa itu:** Masuknya zat-zat berbahaya ke lingkungan yang merusak kualitas udara, air, atau tanah.
+    *   **Contoh:**
+        *   **Pencemaran Udara:** Asap pabrik dan kendaraan menyebabkan kabut asap, gangguan pernapasan, dan pemanasan global.
+        *   **Pencemaran Air:** Sampah dan limbah industri/rumah tangga di sungai/laut membunuh biota air dan menyebabkan penyakit.
+        *   **Pencemaran Tanah:** Sampah plastik dan limbah kimia merusak kesuburan tanah dan mencemari sumber air bawah tanah.
+
+3.  **Bencana Alam yang Diperparah Manusia:**
+    *   Meskipun bencana alami terjadi secara alamiah, aktivitas manusia seringkali memperparah dampaknya.
+    *   **Contoh:**
+        *   **Banjir dan Tanah Longsor:** Penebangan hutan di daerah resapan air mengurangi kemampuan tanah menyerap air, sehingga air meluap dan menyebabkan banjir atau longsor saat hujan deras.
+        *   **Kekeringan:** Pengambilan air tanah berlebihan atau kerusakan hutan bisa memperparah kekeringan di musim kemarau.
+
+4.  **Ancaman Habitat dan Kehidupan:**
+    *   Pembangunan yang tidak memperhatikan keseimbangan lingkungan bisa mengancam tempat tinggal hewan dan tumbuhan, bahkan manusia.
+    *   **Contoh:** Pembangunan kota di area resapan air bisa menyebabkan banjir di daerah lain; pembangunan tanpa drainase yang baik menyebabkan genangan air.
+
+Memahami dampak ini akan membuat kita lebih sadar akan pentingnya menjaga lingkungan. Setiap tindakan kita memiliki konsekuensi. Mari kita bertanggung jawab demi masa depan yang lebih baik! 🏞️⛔`,
+    "3.3 Adaptasi dan Mitigasi": `🛡️ **Berani Berubah: Adaptasi dan Mitigasi Perubahan Lingkungan** 💡🌍
+
+Setelah kita memahami bagaimana lingkungan bisa berubah dan apa dampaknya, sekarang saatnya kita mencari tahu apa yang bisa kita lakukan! Pada subbab ini, kita akan belajar tentang dua strategi penting untuk menghadapi perubahan lingkungan: **adaptasi** dan **mitigasi**.
+
+Ini adalah cara kita untuk hidup selaras dengan alam dan mengurangi risiko bencana.
+
+1.  **Adaptasi:**
+    *   **Definisi:** Upaya **menyesuaikan diri** dengan perubahan lingkungan yang sudah atau sedang terjadi. Kita tidak bisa menghentikan perubahan, tapi kita bisa beradaptasi agar tidak terlalu terkena dampaknya.
+    *   **Contoh Adaptasi Manusia:**
+        *   **Membangun Rumah Tahan Gempa:** Di daerah yang sering terjadi gempa, masyarakat membangun rumah dengan struktur yang lebih kuat dan fleksibel.
+        *   **Membuat Rumah Panggung:** Di daerah rawan banjir, masyarakat membangun rumah dengan lantai yang lebih tinggi dari permukaan tanah agar tidak terendam.
+        *   **Mencari Varietas Tanaman Tahan Kekeringan:** Petani menanam jenis padi atau tanaman lain yang bisa tumbuh subur meski pasokan air terbatas.
+        *   **Menggunakan Pakaian Tebal:** Di daerah dingin, kita beradaptasi dengan memakai pakaian yang lebih tebal.
+
+2.  **Mitigasi:**
+    *   **Definisi:** Upaya **mengurangi risiko atau dampak** dari perubahan lingkungan, atau mencegah terjadinya perubahan yang merugikan. Ini lebih ke arah "mencegah sebelum terjadi" atau "meminimalkan dampak jika terjadi".
+    *   **Contoh Mitigasi Manusia:**
+        *   **Menanam Pohon (Reboisasi/Penghijauan):** Mencegah banjir dan tanah longsor, serta menyerap karbon dioksida.
+        *   **Membuat Saluran Drainase yang Baik:** Mengurangi risiko genangan air dan banjir di perkotaan.
+        *   **Penggunaan Energi Terbarukan:** Mengurangi emisi gas rumah kaca dengan beralih ke energi surya atau angin, bukan bahan bakar fosil.
+        *   **Edukasi dan Sosialisasi:** Memberikan pengetahuan kepada masyarakat tentang risiko bencana dan cara menghadapinya.
+        *   **Pengelolaan Sampah yang Benar:** Mengurangi pencemaran tanah dan air.
+
+**Perbedaan Kunci:**
+*   **Adaptasi:** Menyesuaikan diri dengan apa yang **sudah terjadi**.
+*   **Mitigasi:** Bertindak untuk **mencegah atau mengurangi dampak** di masa depan.
+
+Kedua pendekatan ini penting agar manusia dapat hidup harmonis dan aman di tengah perubahan lingkungan. Mari kita berani beradaptasi dan bertindak untuk mitigasi! 💪🌱`
+  }
+};
+
+let selectedSubbab = null;
+let selectedBab = null;
+
+// Tambahkan event listener ke semua tombol subbab
+function setupSubbabRingkasan() {
+  document.querySelectorAll('.subbab-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      selectedSubbab = btn.getAttribute('data-subbab');
+      selectedBab = btn.getAttribute('data-bab');
+      const ringkasanBtn = document.getElementById('ringkasanBtn');
+      ringkasanBtn.classList.remove('bg-gray-300', 'cursor-not-allowed');
+      ringkasanBtn.classList.add('bg-gradient-to-r', 'from-green-400', 'to-blue-400', 'hover:from-green-500', 'hover:to-blue-500', 'cursor-pointer');
+      ringkasanBtn.disabled = false;
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  setupSubbabRingkasan();
+  const ringkasanBtn = document.getElementById('ringkasanBtn');
+  ringkasanBtn.onclick = async function() {
+    if (!selectedSubbab || !selectedBab) return;
+
+    const summary = ipasSummariesK5[selectedBab]?.[selectedSubbab] || null;
+
+    sessionStorage.setItem('ringkasan_k5_ipas', JSON.stringify({
+      ringkasan: summary,
+      bab: selectedBab,
+      subbab: selectedSubbab
+    }));
+    window.location.href = 'ringkasan-result-kelas5-ipas.html';
+  };
+  document.querySelectorAll('.language-toggle-button').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = btn.textContent.trim().toLowerCase();
+      loadLang(lang);
+      document.querySelectorAll('.language-toggle-button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+  loadLang(currentLang);
+});
+</script>
+</body>
+</html> 

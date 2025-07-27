@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kelas 4 - IPAS</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+:root {
+  --brand-primary: #6366F1;
+  --brand-secondary: #EC4899;
+  --background-primary: #FFFBEB;--background-secondary: #FFFFFF;
+  --text-primary: #374151;--text-secondary: #6B7280;
+  --border-primary: #FBBF24;--action-primary: #34D399;--action-primary-hover: #10B981;--action-secondary: #F3F4F6;
+  --action-secondary-hover: #E5E7EB;
+  --color-sky-blue: #87CEEB;
+  --color-coral: #FF7F50;
+  --color-lime-green: #32CD32;
+  --color-violet: #EE82EE;
+  --color-gold: #FFD700;
+}
+body {
+  font-family: 'Lexend', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Fredoka One', cursive;
+}
+</style>
+</head>
+<body class="bg-[var(--background-primary)] text-[var(--text-primary)]">
+<div class="flex flex-col min-h-screen">
+<header class="bg-white shadow-md">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-[var(--color-sky-blue)] rounded-xl flex items-center justify-center transform -rotate-12">
+        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L9 9.61V16a1 1 0 001 1h2a1 1 0 001-1V9.61l6.394-2.69a1 1 0 000-1.84l-7-3zM10 8L3.394 5.31 10 2.69v5.32z"></path>
+        </svg>
+      </div>
+      <h1 class="text-xl sm:text-2xl text-[var(--text-primary)] font-bold" data-i18n="app_title">SINAR WAMPI</h1>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="language-toggle">
+        <button class="language-toggle-button active">ID</button>
+        <button class="language-toggle-button">EN</button>
+      </div>
+      <div class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfuwgYI-olVKF44AsvP7zsXtut46r76IIIbHOVhQRqZb4rg0KeVqnmfqm7yNrg4IZBmdiJ0SSQQ7JboPBpD_U4j5xrHEM53FeNseG4FQMDPIn3JZmcZju4oFuZS5vQAKyWwRXzlPebWjYVVf9Unqur0XzLipA4qFVYD3vGPv0k7oLTgihTQvseqa0kWkpmZ5z7CpuNmI3dDc9H5SY51ABcBMrMxz2J8eGAwjKxE99K1hNe2Zv6NcsxZhruyFBCOeMrph4SpjSwtO4");'></div>
+    </div>
+  </div>
+</header>
+<div class="w-full flex items-center mt-2 mb-4">
+  <a href="kelas4.html" class="flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-pink-400 to-blue-400 text-white font-medium shadow hover:from-pink-500 hover:to-blue-500 transition-colors ml-2">
+    <span class="text-base">&#8592;</span>
+    <span>Kembali</span>
+  </a>
+</div>
+<main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[var(--color-coral)] mb-4">Kelas 4 - IPAS</h2>
+  <p class="text-center text-base sm:text-lg md:text-xl text-[var(--text-secondary)] mb-10">Pilih subbab untuk melihat ringkasan materi:</p>
+  <div class="space-y-6">
+    <!-- Bab 1 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-green-700 mb-2">Bab 1: Tubuh Sehat dan Terawat</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 1: Tubuh Sehat dan Terawat" data-subbab="1.1 Organ Pernapasan Manusia dan Fungsinya">
+          <div class="font-semibold text-green-800 mb-1">1.1 Organ Pernapasan Manusia dan Fungsinya</div>
+          <div class="text-sm text-green-700">Mengenal organ pernapasan seperti hidung, trakea, paru-paru dan fungsinya dalam proses pernapasan.</div>
+        </button>
+
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 1: Tubuh Sehat dan Terawat" data-subbab="1.2 Cara Merawat Organ Pernapasan">
+          <div class="font-semibold text-green-800 mb-1">1.2 Cara Merawat Organ Pernapasan</div>
+          <div class="text-sm text-green-700">Menjaga kebersihan udara, menghindari polusi, dan olahraga teratur membantu menjaga kesehatan paru-paru.</div>
+        </button>
+
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 1: Tubuh Sehat dan Terawat" data-subbab="1.3 Gangguan pada Pernapasan">
+          <div class="font-semibold text-green-800 mb-1">1.3 Gangguan pada Pernapasan</div>
+          <div class="text-sm text-green-700">Gangguan seperti asma dan batuk terjadi karena polusi, alergi, atau virus.</div>
+        </button>
+
+      </div>
+    </div>
+    <!-- Bab 2 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-blue-700 mb-2 mt-6">Bab 2: Menggali Informasi dari Lingkungan</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 2: Menggali Informasi dari Lingkungan" data-subbab="2.1 Mengamati Cuaca dan Musim">
+          <div class="font-semibold text-blue-800 mb-1">2.1 Mengamati Cuaca dan Musim</div>
+          <div class="text-sm text-blue-700">Mengamati ciri-ciri cuaca (berawan, hujan, panas) serta perbedaan musim kemarau dan hujan.</div>
+        </button>
+
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 2: Menggali Informasi dari Lingkungan" data-subbab="2.2 Pengaruh Cuaca terhadap Kegiatan Manusia">
+          <div class="font-semibold text-blue-800 mb-1">2.2 Pengaruh Cuaca terhadap Kegiatan Manusia</div>
+          <div class="text-sm text-blue-700">Cuaca mempengaruhi kegiatan petani, nelayan, dan aktivitas harian masyarakat.</div>
+        </button>
+
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 2: Menggali Informasi dari Lingkungan" data-subbab="2.3 Perubahan Cuaca dan Iklim">
+          <div class="font-semibold text-blue-800 mb-1">2.3 Perubahan Cuaca dan Iklim</div>
+          <div class="text-sm text-blue-700">Menjelaskan bahwa perubahan cuaca bisa terjadi dalam waktu singkat, sedangkan perubahan iklim berlangsung lama.</div>
+        </button>
+
+      </div>
+    </div>
+    <!-- Bab 3 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-purple-700 mb-2 mt-6">Bab 3: Kenampakan Alam dan Pengaruhnya terhadap Kehidupan</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 3: Kenampakan Alam dan Pengaruhnya terhadap Kehidupan" data-subbab="3.1 Kenampakan Alam Daratan dan Perairan">
+          <div class="font-semibold text-purple-800 mb-1">3.1 Kenampakan Alam Daratan dan Perairan</div>
+          <div class="text-sm text-purple-700">Mengenali pegunungan, dataran, pantai, sungai, danau, dan laut di Indonesia.</div>
+        </button>
+
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 3: Kenampakan Alam dan Pengaruhnya terhadap Kehidupan" data-subbab="3.2 Pengaruh Kenampakan Alam terhadap Mata Pencaharian">
+          <div class="font-semibold text-purple-800 mb-1">3.2 Pengaruh Kenampakan Alam terhadap Mata Pencaharian</div>
+          <div class="text-sm text-purple-700">Jenis mata pencaharian bergantung pada kondisi alam seperti petani di dataran dan nelayan di pesisir.</div>
+        </button>
+
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-bab="Bab 3: Kenampakan Alam dan Pengaruhnya terhadap Kehidupan" data-subbab="3.3 Adaptasi Manusia terhadap Lingkungan">
+          <div class="font-semibold text-purple-800 mb-1">3.3 Adaptasi Manusia terhadap Lingkungan</div>
+          <div class="text-sm text-purple-700">Manusia menyesuaikan cara hidupnya berdasarkan kondisi alam sekitar.</div>
+        </button>
+
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="bg-white/80 backdrop-blur-sm sticky bottom-0 border-t-2 border-[var(--border-primary)] mt-8">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center">
+    <button id="ringkasanBtn" class="w-full max-w-md bg-gray-300 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full shadow-xl cursor-not-allowed">
+      <span>Buat Ringkasan Sekarang!</span>
+    </button>
+  </div>
+  <div id="hasilRingkasan" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center text-base sm:text-lg text-[var(--text-primary)]">
+    <!-- Ringkasan akan muncul di sini -->
+  </div>
+</footer>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<!-- Script translate manual -->
+<script>
+let currentLang = 'id';
+function loadLang(lang) {
+  fetch(`lang-${lang}.json`)
+    .then(res => res.json())
+    .then(dict => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) el.textContent = dict[key];
+      });
+      currentLang = lang;
+    });
+}
+
+const ipasSummaries = {
+  "Bab 1: Tubuh Sehat dan Terawat": {
+    "1.1 Organ Pernapasan Manusia dan Fungsinya": `🌬️ **Petualangan Udara: Mengenal Organ Pernapasan Manusia** 👃🫁
+
+Selamat datang di petualangan seru mengenal tubuh kita sendiri! Pada subbab ini, siswa akan diajak memahami salah satu sistem paling penting di tubuh kita sendiri: sistem pernapasan manusia. 
+
+Kita akan belajar tentang organ-organ luar biasa yang bekerja sama untuk membuat kita bisa bernapas setiap detik, antara lain:
+
+1.  **Hidung:** Pintu gerbang utama udara! Di sini, udara yang kita hirup akan disaring oleh rambut-rambut halus (silia) dan lendir untuk menangkap debu dan kotoran. Ini seperti filter alami tubuh kita!
+
+2.  **Trakea (Batang Tenggorokan):** Saluran berbentuk pipa yang menghubungkan hidung dan mulut ke paru-paru. Udara bersih akan meluncur bebas melalui trakea menuju tujuannya.
+
+3.  **Bronkus:** Percabangan dari trakea yang menuju ke paru-paru kanan dan kiri. Ibaratnya, ini adalah cabang jalan tol menuju dua kota besar.
+
+4.  **Paru-paru:** Ini adalah organ utama pernapasan kita! Letaknya di dalam rongga dada dan terdiri dari jutaan kantung udara kecil (alveoli) tempat pertukaran oksigen dan karbon dioksida terjadi.
+
+Fungsi utama paru-paru sangat menakjubkan: 
+
+💨 Menarik oksigen (O2) dari udara bersih yang kita hirup untuk disebarkan ke seluruh tubuh.
+
+ exhale Membuang karbon dioksida (CO2), yaitu zat sisa dari tubuh kita, saat kita menghembuskan napas.
+
+Pemahaman ini sangat penting karena bernapas adalah proses vital yang terjadi terus-menerus untuk mempertahankan hidup manusia. Bayangkan, tanpa organ-organ ini, kita tidak bisa bertahan hidup!`,
+    "1.2 Cara Merawat Organ Pernapasan": `Care **Merawat Organ Pernapasan: Agar Tetap Prima!** 💪
+
+Setelah kita tahu betapa pentingnya organ pernapasan, sekarang saatnya belajar bagaimana menjaganya tetap sehat dan berfungsi optimal! Merawat organ pernapasan itu mudah dan bisa kita lakukan setiap hari, lho. Beberapa cara penting di antaranya adalah:
+
+🚭 **Menghindari Polusi Udara:** Jauhi asap kendaraan, asap rokok, asap pabrik, dan debu berlebihan. Polusi adalah musuh utama paru-paru kita!
+
+😷 **Menggunakan Masker:** Saat berada di tempat berdebu atau berpolusi, jangan lupa pakai masker ya. Masker bisa menyaring udara kotor sebelum masuk ke saluran napas kita.
+
+🏃‍♀️ **Rutin Berolahraga:** Bergerak aktif, seperti berlari, bersepeda, atau berenang, akan melatih paru-paru kita bekerja lebih efisien dan kuat. Olahraga membuat napas kita lebih panjang dan sehat!
+
+🏡 **Menjaga Kebersihan Rumah dan Lingkungan:** Rumah yang bersih dari debu dan kotoran akan membuat udara di dalamnya lebih segar. Lingkungan yang bersih juga mengurangi risiko infeksi pernapasan.
+
+🍎 **Makan Makanan Bergizi:** Asupan makanan yang seimbang dan kaya vitamin dapat meningkatkan daya tahan tubuh kita, sehingga tidak mudah sakit dan organ pernapasan pun lebih kuat menghadapi serangan penyakit.
+
+Siswa juga diajak menyadari bahwa kesehatan pernapasan sangat dipengaruhi oleh lingkungan tempat tinggal dan kebiasaan hidup sehari-hari. Dengan merawatnya, kita bisa bernapas lega dan menjalani aktivitas dengan lebih semangat!`,
+    "1.3 Gangguan pada Pernapasan": `🤧 **Saat Napas Tersendat: Mengenal Gangguan Pernapasan** 🤒
+
+Walaupun organ pernapasan kita hebat, kadang-kadang bisa juga mengalami gangguan. Pada subbab ini, siswa akan mempelajari beberapa contoh gangguan umum yang bisa menyerang sistem pernapasan, seperti:
+
+💨 **Asma:** Ini adalah kondisi di mana saluran napas menyempit dan membengkak, sehingga menyebabkan penderitanya kesulitan bernapas, batuk, dan mengi (napas berbunyi). Asma bisa dipicu oleh alergi atau iritasi.
+
+Cough **Batuk dan Pilek:** Gangguan umum yang sering kita alami, baik karena flu, iritasi, atau infeksi ringan. Batuk adalah cara tubuh membersihkan saluran napas.
+
+Inflammation **Bronkitis:** Peradangan pada saluran bronkus (cabang tenggorokan) yang bisa menyebabkan batuk berdahak dan sesak napas.
+
+💨 **Penyakit Paru-paru Lainnya:** Ada juga gangguan lain yang lebih serius, seperti pneumonia (radang paru-paru) atau TBC.
+
+Penyebab gangguan pernapasan bisa bermacam-macam, antara lain:
+
+🏭 **Polusi Udara:** Seperti asap kendaraan, asap pabrik, dan asap rokok.
+
+🤧 **Alergi:** Reaksi tubuh terhadap alergen seperti debu, bulu hewan, atau serbuk sari.
+
+🦠 **Infeksi:** Disebabkan oleh virus (seperti flu) atau bakteri.
+
+Pemahaman ini membantu siswa mengenali gejala awal gangguan pernapasan dan yang lebih penting, bagaimana menghindarinya melalui pola hidup sehat dan menjaga kebersihan lingkungan. Ingat, lebih baik mencegah daripada mengobati!`
+  },
+  "Bab 2: Menggali Informasi dari Lingkungan": {
+    "2.1 Mengamati Cuaca dan Musim": `☀️🌧️ **Detektif Cuaca: Mengamati Cuaca dan Musim** 🌍
+
+Pada subbab ini, siswa akan diajak menjadi detektif cuaca yang mengamati perubahan di langit setiap hari! Kita akan belajar membedakan berbagai jenis cuaca yang sering kita alami, seperti:
+
+☀️ **Cerah:** Langit biru bersih, matahari bersinar terang! Cocok untuk bermain di luar.
+
+☁️ **Mendung:** Langit penuh awan gelap, tanda-tanda akan hujan. Udara mulai terasa sejuk.
+
+🌧️ **Hujan:** Air turun dari langit, bisa gerimis atau lebat. Waktunya memakai payung atau jas hujan!
+
+🌬️ **Berangin:** Angin bertiup kencang, kadang membuat daun berguguran.
+
+Selain cuaca harian, siswa juga dikenalkan pada musim di Indonesia. Karena letak geografisnya, Indonesia hanya memiliki dua musim utama, yaitu:
+
+ dry_season **Musim Kemarau:** Biasanya ditandai dengan cuaca yang panas dan terik, langit cerah, dan curah hujan yang sangat sedikit. Di musim ini, tanah bisa menjadi kering.
+
+ rainy_season **Musim Hujan:** Sering turun hujan, udara lebih lembap, dan tanaman tumbuh subur. Sumber air melimpah.
+
+Siswa diajak melakukan pengamatan cuaca secara langsung setiap hari dan membuat catatan cuaca harian. Kegiatan ini sangat seru dan penting untuk:
+
+👁️ Meningkatkan keterampilan observasi mereka terhadap lingkungan sekitar.
+
+📈 Memahami pola-pola alam yang terjadi di sekitar kita.
+
+🎯 Belajar membuat prediksi sederhana berdasarkan tanda-tanda alam. 
+
+Ayo, jadi peramal cuaca masa depan!`,
+    "2.2 Pengaruh Cuaca terhadap Kegiatan Manusia": `🚶‍♀️☔ **Cuaca dan Kita: Pengaruhnya pada Kehidupan Sehari-hari** 🏡
+
+Tahukah kamu, cuaca yang berubah-ubah ternyata sangat memengaruhi kegiatan kita setiap hari, lho! Pada subbab ini, siswa akan mempelajari bagaimana kondisi cuaca dapat berdampak pada berbagai aktivitas manusia, terutama pekerjaan dan kegiatan di luar rumah.
+
+Contoh-contoh menariknya meliputi:
+
+👨‍🌾 **Petani:** Mereka sangat bergantung pada musim. Petani biasanya menanam padi saat musim hujan karena tanaman membutuhkan banyak air. Saat musim kemarau, mereka mungkin menanam palawija atau mengairi sawah dengan cara lain.
+
+🎣 **Nelayan:** Para nelayan akan berhati-hati dan mungkin tidak melaut saat cuaca buruk, seperti badai atau gelombang tinggi, demi keselamatan mereka. Mereka lebih memilih melaut saat cuaca cerah dan tenang.
+
+🛍️ **Masyarakat Umum:** Saat hujan, kita cenderung membawa payung atau jas hujan, dan memilih beraktivitas di dalam ruangan. Saat cuaca cerah, kita jadi lebih semangat bermain di luar atau berjemur.
+
+👕 **Pakaian:** Cuaca juga memengaruhi pakaian yang kita kenakan. Saat panas, kita memakai pakaian tipis, saat dingin/hujan kita memakai jaket atau pakaian tebal.
+
+Tujuannya adalah agar siswa mampu memahami hubungan erat antara kondisi alam (cuaca) dan aktivitas manusia, serta bisa merencanakan kegiatan berdasarkan cuaca yang terjadi. Ini membantu kita menjadi lebih siap dan adaptif terhadap perubahan alam.`,
+    "2.3 Perubahan Cuaca dan Iklim": `🌡️ **Beda Tapi Mirip: Perubahan Cuaca dan Iklim** 🌎
+
+Siswa dikenalkan dengan dua istilah penting yang sering dianggap sama tapi sebenarnya berbeda, yaitu cuaca dan iklim:
+
+⏰ **Cuaca:** Ini adalah kondisi udara yang terjadi dalam waktu singkat dan di wilayah yang sempit. Contohnya, hari ini hujan di kotaku, besok bisa jadi cerah. Cuaca bisa berubah setiap jam, setiap hari, atau setiap minggu. Ini seperti suasana hati bumi dalam jangka pendek!
+
+🗓️ **Iklim:** Nah, kalau iklim ini adalah kondisi rata-rata cuaca dalam jangka waktu yang sangat lama (puluhan hingga ratusan tahun) dan meliputi wilayah yang sangat luas. Misalnya, Indonesia memiliki iklim tropis yang panas dan lembap sepanjang tahun. Iklim ini sifatnya lebih stabil dan tidak mudah berubah.
+
+Siswa belajar bahwa perubahan iklim yang ekstrem (Global Warming) bisa menyebabkan dampak buruk bagi bumi dan kehidupan, seperti:
+
+🔥 Kenaikan suhu global yang menyebabkan es di kutub mencair.
+
+🌊 Kenaikan permukaan air laut yang bisa menenggelamkan pulau-pulau kecil.
+
+🌀 Bencana alam yang semakin sering terjadi, seperti banjir, kekeringan, atau badai.
+
+Ini menekankan pentingnya menjaga lingkungan, mengurangi polusi, dan melakukan kegiatan ramah lingkungan agar perubahan iklim tidak semakin parah dan bumi kita tetap lestari untuk masa depan.`
+  },
+  "Bab 3: Kenampakan Alam dan Pengaruhnya terhadap Kehidupan": {
+    "3.1 Kenampakan Alam Daratan dan Perairan": `🗺️ **Melihat Indonesia: Kenampakan Alam Daratan dan Perairan** 🏞️🌊
+
+Indonesia adalah negara yang sangat kaya dengan keindahan alam! Pada subbab ini, siswa diajak mengenal berbagai bentuk kenampakan alam yang ada di Indonesia, baik yang berupa daratan maupun perairan. 
+
+Kenampakan **Daratan** meliputi:
+
+⛰️ **Gunung dan Pegunungan:** Daerah yang menjulang tinggi, seringkali menjadi sumber mata air dan tempat tinggal bagi beragam flora dan fauna.
+
+🏞️ **Dataran Tinggi:** Wilayah datar di ketinggian, sering dimanfaatkan untuk perkebunan teh atau sayuran, dan udaranya sejuk.
+
+🏡 **Dataran Rendah:** Wilayah datar yang luas di ketinggian rendah, cocok untuk pemukiman padat penduduk, persawahan, dan pusat kota.
+
+Kenampakan **Perairan** meliputi:
+
+💧 **Sungai:** Aliran air alami yang mengalir dari dataran tinggi ke rendah, sering digunakan untuk transportasi, irigasi, atau sumber air.
+
+🔵 **Danau:** Genangan air alami yang luas dan dikelilingi daratan, bisa menjadi tempat wisata atau sumber air tawar.
+
+🏖️ **Pantai:** Batas antara daratan dan laut, sering menjadi objek wisata dan tempat mencari nafkah nelayan.
+
+🌊 **Laut dan Selat:** Laut adalah kumpulan air asin yang luas, sedangkan selat adalah laut sempit di antara dua pulau. Lautan menyimpan kekayaan hayati yang melimpah dan jalur transportasi antar pulau.
+
+Siswa memahami bahwa setiap kenampakan alam memiliki ciri khas, keunikan, dan manfaatnya masing-masing bagi kehidupan manusia dan makhluk hidup lainnya. Ini menunjukkan betapa beragam dan indahnya negeri kita!`,
+    "3.2 Pengaruh Kenampakan Alam terhadap Mata Pencaharian": `🧑‍🌾🎣 **Hidup dari Alam: Kenampakan Alam dan Mata Pencarian** 💼
+
+Tahukah kamu, di mana kita tinggal ternyata bisa memengaruhi pekerjaan orang-orang di sekitar kita, lho! Pada subbab ini, siswa akan memahami bahwa jenis mata pencarian (pekerjaan) masyarakat sangat bergantung pada kondisi alam tempat tinggalnya.
+
+Mari kita lihat contoh-contohnya:
+
+🍚 **Di Dataran Rendah:** Wilayah ini subur dan datar, sehingga banyak masyarakat yang bekerja sebagai petani padi. Mereka mengolah sawah dan menghasilkan beras untuk kebutuhan pangan.
+
+🐟 **Di Daerah Pesisir (Dekat Pantai/Laut):** Sudah pasti banyak yang bekerja sebagai nelayan. Mereka pergi melaut untuk menangkap ikan dan hasil laut lainnya. Ada juga yang menjadi petani tambak garam atau pengrajin kerang.
+
+🥬 **Di Daerah Pegunungan/Dataran Tinggi:** Udara di sana sejuk dan tanahnya cocok untuk menanam sayuran atau teh. Jadi, banyak penduduk yang berprofesi sebagai petani sayur, petani teh, atau peternak.
+
+🏭 **Di Perkotaan:** Karena banyak terdapat gedung dan fasilitas, orang-orang bekerja di perkantoran, pabrik, atau sektor jasa seperti pedagang, guru, dan dokter.
+
+Dengan demikian, siswa bisa memahami bahwa lingkungan tempat tinggal kita sangat menentukan aktivitas ekonomi dan cara hidup masyarakat. Setiap daerah punya keunikan dan sumber daya alam yang berbeda, yang memengaruhi bagaimana orang-orang mencari nafkah.`,
+    "3.3 Adaptasi Manusia terhadap Lingkungan": `🏠👚 **Beradaptasi dengan Alam: Manusia dan Lingkungan** 🌳
+
+Manusia adalah makhluk yang cerdas dan bisa menyesuaikan diri dengan lingkungannya! Pada subbab ini, siswa akan belajar bagaimana manusia beradaptasi atau menyesuaikan cara hidupnya dengan kondisi alam sekitar agar bisa bertahan hidup dengan nyaman. 
+
+Ini dia beberapa contoh menarik adaptasi manusia:
+
+🏔️ **Masyarakat Daerah Dingin:** Mereka membangun rumah dengan dinding tebal dan atap rendah untuk menahan dingin. Pakaian mereka juga tebal dan berlapis-lapis untuk menjaga suhu tubuh.
+
+🏜️ **Masyarakat Daerah Kering:** Di tempat yang jarang air, mereka belajar menghemat air dan menanam tanaman yang tahan kekeringan. Mereka juga mungkin membangun penampungan air hujan.
+
+🌊 **Masyarakat di Daerah Banjir:** Di wilayah yang sering dilanda banjir, rumah-rumah sering dibangun dengan pondasi tinggi (rumah panggung) agar tidak terendam air. Mereka juga mungkin punya perahu untuk transportasi.
+
+👩‍🌾 **Masyarakat Pesisir:** Mereka beradaptasi dengan laut, belajar berenang, membuat perahu, dan memahami cuaca laut untuk mencari ikan. 
+
+Melalui subbab ini, siswa diajak untuk menghargai keberagaman budaya dan cara hidup masyarakat di berbagai wilayah Indonesia. Kita belajar bahwa setiap tempat punya tantangannya sendiri, dan manusia selalu punya cara kreatif untuk menghadapinya!`
+  }
+};
+
+let selectedSubbab = null;
+let selectedBab = null;
+
+// Tambahkan event listener ke semua tombol subbab
+function setupSubbabRingkasan() {
+  document.querySelectorAll('.subbab-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      selectedSubbab = btn.getAttribute('data-subbab');
+      selectedBab = btn.getAttribute('data-bab');
+      const ringkasanBtn = document.getElementById('ringkasanBtn');
+      ringkasanBtn.classList.remove('bg-gray-300', 'cursor-not-allowed');
+      ringkasanBtn.classList.add('bg-gradient-to-r', 'from-green-400', 'to-blue-400', 'hover:from-green-500', 'hover:to-blue-500', 'cursor-pointer');
+      ringkasanBtn.disabled = false;
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  setupSubbabRingkasan();
+  const ringkasanBtn = document.getElementById('ringkasanBtn');
+  ringkasanBtn.onclick = async function() {
+    if (!selectedSubbab || !selectedBab) return;
+
+    const summary = ipasSummaries[selectedBab]?.[selectedSubbab] || null;
+
+    sessionStorage.setItem('ringkasan_k4_ipas', JSON.stringify({
+      ringkasan: summary,
+      bab: selectedBab,
+      subbab: selectedSubbab
+    }));
+    window.location.href = 'ringkasan-result-kelas4-ipas.html';
+  };
+  document.querySelectorAll('.language-toggle-button').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = btn.textContent.trim().toLowerCase();
+      loadLang(lang);
+      document.querySelectorAll('.language-toggle-button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+  loadLang(currentLang);
+});
+</script>
+</body>
+</html>

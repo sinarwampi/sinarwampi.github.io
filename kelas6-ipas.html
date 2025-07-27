@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kelas 6 - IPAS</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+:root {
+  --brand-primary: #6366F1;
+  --brand-secondary: #EC4899;
+  --background-primary: #FFFBEB;--background-secondary: #FFFFFF;
+  --text-primary: #374151;--text-secondary: #6B7280;
+  --border-primary: #FBBF24;--action-primary: #34D399;--action-primary-hover: #10B981;--action-secondary: #F3F4F6;
+  --action-secondary-hover: #E5E7EB;
+  --color-sky-blue: #87CEEB;
+  --color-coral: #FF7F50;
+  --color-lime-green: #32CD32;
+  --color-violet: #EE82EE;
+  --color-gold: #FFD700;
+}
+body {
+  font-family: 'Lexend', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Fredoka One', cursive;
+}
+</style>
+</head>
+<body class="bg-[var(--background-primary)] text-[var(--text-primary)]">
+<div class="flex flex-col min-h-screen">
+<header class="bg-white shadow-md">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-[var(--color-sky-blue)] rounded-xl flex items-center justify-center transform -rotate-12">
+        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L9 9.61V16a1 1 0 001 1h2a1 1 0 001-1V9.61l6.394-2.69a1 1 0 000-1.84l-7-3zM10 8L3.394 5.31 10 2.69v5.32z"></path>
+        </svg>
+      </div>
+      <h1 class="text-xl sm:text-2xl text-[var(--text-primary)] font-bold" data-i18n="app_title">SINAR WAMPI</h1>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="language-toggle">
+        <button class="language-toggle-button active">ID</button>
+        <button class="language-toggle-button">EN</button>
+      </div>
+      <div class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfuwgYI-olVKF44AsvP7zsXtut46r76IIIbHOVhQRqZb4rg0KeVqnmfqm7yNrg4IZBmdiJ0SSQQ7JboPBpD_U4j5xrHEM53FeNseG4FQMDPIn3JZmcZju4oFuZS5vQAKyWwRXzlPebWjYVVf9Unqur0XzLipA4qFVYD3vGPv0k7oLTgihTQvseqa0kWkpmZ5z7CpuNmI3dDc9H5SY51ABcBMrMxz2J8eGAwjKxE99K1hNe2Zv6NcsxZhruyFBCOeMrph4SpjSwtO4");'></div>
+    </div>
+  </div>
+</header>
+<div class="w-full flex items-center mt-2 mb-4">
+  <a href="kelas6.html" class="flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-pink-400 to-blue-400 text-white font-medium shadow hover:from-pink-500 hover:to-blue-500 transition-colors ml-2">
+    <span class="text-base">&#8592;</span>
+    <span>Kembali</span>
+  </a>
+</div>
+<main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[var(--color-coral)] mb-4">Kelas 6 - IPAS</h2>
+  <p class="text-center text-base sm:text-lg md:text-xl text-[var(--text-secondary)] mb-10">Pilih subbab untuk melihat ringkasan materi:</p>
+  <div class="space-y-6">
+    <!-- Bab 1 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-green-700 mb-2">Bab 1: Perkembangan Makhluk Hidup</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.1 Pertumbuhan dan Perkembangan Manusia" data-bab="Bab 1: Perkembangan Makhluk Hidup">
+          <div class="font-semibold text-green-800 mb-1">1.1 Pertumbuhan dan Perkembangan Manusia</div>
+          <div class="text-sm text-green-700">Menjelaskan proses pertumbuhan dan perkembangan manusia dari bayi hingga usia lanjut, mencakup peningkatan fisik, fungsi tubuh, serta kemampuan berpikir dan sosial.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.2 Pertumbuhan dan Perkembangan pada Hewan dan Tumbuhan" data-bab="Bab 1: Perkembangan Makhluk Hidup">
+          <div class="font-semibold text-green-800 mb-1">1.2 Pertumbuhan dan Perkembangan pada Hewan dan Tumbuhan</div>
+          <div class="text-sm text-green-700">Mengamati perbedaan pertumbuhan dan perkembangan pada hewan (termasuk metamorfosis) dan tumbuhan, serta faktor-faktor lingkungan yang mempengaruhinya.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 2 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-blue-700 mb-2 mt-6">Bab 2: Pelestarian Lingkungan</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.1 Sumber Daya Alam" data-bab="Bab 2: Pelestarian Lingkungan">
+          <div class="font-semibold text-blue-800 mb-1">2.1 Sumber Daya Alam</div>
+          <div class="text-sm text-blue-700">Mengenal jenis sumber daya alam (terbarukan dan tak terbarukan), pentingnya pelestarian, dan pemanfaatan yang bijak untuk kebutuhan hidup manusia.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.2 Dampak Kegiatan Manusia terhadap Lingkungan" data-bab="Bab 2: Pelestarian Lingkungan">
+          <div class="font-semibold text-blue-800 mb-1">2.2 Dampak Kegiatan Manusia terhadap Lingkungan</div>
+          <div class="text-sm text-blue-700">Mengidentifikasi dampak positif (reboisasi, pengelolaan sampah) dan negatif (penebangan hutan, polusi, pemanasan global) dari aktivitas manusia terhadap lingkungan.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.3 Usaha Pelestarian Lingkungan" data-bab="Bab 2: Pelestarian Lingkungan">
+          <div class="font-semibold text-blue-800 mb-1">2.3 Usaha Pelestarian Lingkungan</div>
+          <div class="text-sm text-blue-700">Menyebutkan dan menerapkan cara-cara menjaga lingkungan, seperti prinsip 3R (Reduce, Reuse, Recycle), reboisasi, dan memilah sampah, dimulai dari kebiasaan sehari-hari.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 3 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-yellow-700 mb-2 mt-6">Bab 3: Bumi dan Perubahan Iklim</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-yellow-200 to-yellow-100 hover:from-yellow-300 hover:to-yellow-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="3.1 Perubahan Cuaca dan Iklim" data-bab="Bab 3: Bumi dan Perubahan Iklim">
+          <div class="font-semibold text-yellow-800 mb-1">3.1 Perubahan Cuaca dan Iklim</div>
+          <div class="text-sm text-yellow-700">Membedakan cuaca dan iklim, menjelaskan penyebab utama perubahan iklim (aktivitas manusia), serta dampaknya seperti naiknya suhu bumi dan cuaca ekstrem.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-yellow-200 to-yellow-100 hover:from-yellow-300 hover:to-yellow-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="3.2 Bencana Alam dan Kesiapsiagaan" data-bab="Bab 3: Bumi dan Perubahan Iklim">
+          <div class="font-semibold text-yellow-800 mb-1">3.2 Bencana Alam dan Kesiapsiagaan</div>
+          <div class="text-sm text-yellow-700">Mengenali berbagai jenis bencana alam (gempa, banjir, longsor) dan dampaknya, serta pentingnya kesiapsiagaan (mengenali tanda, rencana evakuasi) untuk mengurangi risiko.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 4 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-purple-700 mb-2 mt-6">Bab 4: Perubahan Sosial Budaya</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="4.1 Perubahan Sosial Budaya di Masyarakat" data-bab="Bab 4: Perubahan Sosial Budaya">
+          <div class="font-semibold text-purple-800 mb-1">4.1 Perubahan Sosial Budaya di Masyarakat</div>
+          <div class="text-sm text-purple-700">Menjelaskan perubahan sosial budaya (cara hidup, nilai, norma) akibat teknologi dan globalisasi, serta dampaknya (positif: kemajuan; negatif: konsumerisme, lunturnya nilai tradisional).</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="4.2 Pelestarian Budaya Lokal" data-bab="Bab 4: Perubahan Sosial Budaya">
+          <div class="font-semibold text-purple-800 mb-1">4.2 Pelestarian Budaya Lokal</div>
+          <div class="text-sm text-purple-700">Mengidentifikasi budaya lokal (tarian, bahasa, makanan, teknologi) sebagai identitas bangsa, serta cara melestarikannya (mengenal, membanggakan, memilah pengaruh asing).</div>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="bg-white/80 backdrop-blur-sm sticky bottom-0 border-t-2 border-[var(--border-primary)] mt-8">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col items-center">
+    <button id="ringkasanBtn" class="w-full max-w-md bg-gray-300 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full shadow-xl cursor-not-allowed mb-2">
+      <span>Buat Ringkasan Sekarang!</span>
+    </button>
+    <div id="hasilRingkasan" class="w-full max-w-md text-center text-base sm:text-lg text-[var(--text-primary)] min-h-[60px] hidden">
+      <!-- Ringkasan/pesan loading akan muncul di sini -->
+    </div>
+  </div>
+</footer>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<!-- Script translate manual -->
+<script>
+let currentLang = 'id';
+function loadLang(lang) {
+  fetch(`lang-${lang}.json`)
+    .then(res => res.json())
+    .then(dict => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) el.textContent = dict[key];
+      });
+      currentLang = lang;
+    });
+}
+
+const ipasSummariesK6 = {
+  "Bab 1: Perkembangan Makhluk Hidup": {
+    "1.1 Pertumbuhan dan Perkembangan Manusia": `👶📈 **Perjalanan Hidup: Pertumbuhan dan Perkembangan Manusia** 👴🌱
+
+Selamat datang di Bab 1 IPAS Kelas 6! Di bab ini, kita akan mempelajari sebuah proses menakjubkan yang dialami semua manusia: **pertumbuhan dan perkembangan**. Ini adalah perjalanan yang berlangsung sejak kita bayi mungil hingga menjadi lansia yang bijaksana.
+
+Penting untuk memahami perbedaannya:
+
+1.  **Pertumbuhan:**
+    *   **Definisi:** Mengacu pada **peningkatan ukuran fisik** dan jumlah sel dalam tubuh. Ini adalah perubahan yang bisa diukur dan diamati.
+    *   **Ciri-ciri:**
+        *   **Bertambah Tinggi:** Dari bayi yang kecil, kita menjadi anak-anak, remaja, hingga dewasa dengan tinggi badan yang terus bertambah.
+        *   **Bertambah Berat Badan:** Berat tubuh kita juga akan terus meningkat seiring bertambahnya usia.
+        *   **Ukuran Organ Tubuh Membesar:** Organ-organ seperti jantung, paru-paru, dan otak juga ikut membesar.
+    *   **Batas Waktu:** Pertumbuhan manusia umumnya **berhenti** setelah mencapai usia dewasa (sekitar 18-20 tahun).
+
+2.  **Perkembangan:**
+    *   **Definisi:** Mengacu pada **peningkatan fungsi tubuh**, kemampuan berpikir (kognitif), emosi, dan sosial. Ini adalah perubahan menuju kedewasaan dan kematangan.
+    *   **Ciri-ciri:**
+        *   **Peningkatan Kemampuan Fisik:** Dari merangkak, menjadi berjalan, lalu berlari, dan mampu melakukan gerakan yang lebih kompleks.
+        *   **Peningkatan Kemampuan Berpikir (Kognitif):** Dari hanya menangis, kita mulai berbicara, belajar membaca, menulis, memecahkan masalah, hingga berpikir abstrak.
+        *   **Peningkatan Kemampuan Sosial dan Emosional:** Belajar berinteraksi dengan orang lain, mengendalikan emosi, memahami perasaan orang lain, dan membentuk persahabatan.
+        *   **Kematangan Reproduksi:** Pada masa remaja, tubuh mengalami pubertas yang menandai kematangan organ reproduksi.
+    *   **Batas Waktu:** Perkembangan berlangsung **sepanjang hidup**, bahkan hingga usia lanjut, meskipun dengan kecepatan yang berbeda di setiap fase.
+
+**Tahap-tahap Perkembangan Manusia:**
+
+*   **Bayi:** Hanya bisa menangis, tidur, makan, dan menggenggam.
+*   **Balita (di bawah lima tahun):** Mulai berjalan, berbicara, berlari, dan bermain.
+*   **Anak-anak:** Belajar di sekolah, mengembangkan keterampilan sosial, rasa ingin tahu tinggi.
+*   **Remaja (Pubertas):** Perubahan fisik (suara membesar, tinggi bertambah cepat, tumbuhnya rambut di bagian tertentu), emosi bergejolak, mencari identitas diri.
+*   **Dewasa:** Mencapai kematangan fisik dan mental, mulai bekerja, berkeluarga.
+*   **Lanjut Usia (Lansia):** Penurunan fungsi tubuh, seperti daya ingat, kekuatan fisik, dan kesehatan secara keseluruhan. Namun, pengalaman dan kebijaksanaan bertambah.
+
+Memahami proses ini membantu kita menghargai setiap fase kehidupan dan merawat diri di setiap tahapnya. Mari tumbuh dan berkembang dengan optimal! 🌳🧠`,
+    "1.2 Pertumbuhan dan Perkembangan pada Hewan dan Tumbuhan": `🦋🌳 **Siklus Kehidupan: Pertumbuhan dan Perkembangan Hewan dan Tumbuhan** 🐛🌸
+
+Selain manusia, **hewan dan tumbuhan** juga mengalami proses **pertumbuhan dan perkembangan** yang menakjubkan! Meskipun ada perbedaan, prinsip dasarnya sama: menjadi lebih besar (pertumbuhan) dan lebih kompleks/matang (perkembangan) seiring waktu. Mari kita jelajahi keunikan masing-masing!
+
+**1. Pertumbuhan dan Perkembangan pada Hewan:**
+
+*   **Pertumbuhan:** Ditandai dengan **peningkatan ukuran tubuh**, berat, dan volume.
+    *   **Contoh:** Anak kucing menjadi kucing dewasa, anak ayam menjadi ayam dewasa.
+*   **Perkembangan:** Meliputi **perubahan struktur tubuh dan fungsi organ**. Beberapa hewan mengalami perubahan bentuk yang drastis (metamorfosis), sementara yang lain hanya tumbuh lebih besar.
+    *   **Metamorfosis Sempurna:** Perubahan bentuk yang sangat berbeda antar tahap (telur -> larva -> pupa -> dewasa).
+        *   Contoh: **Kupu-kupu** (telur -> ulat -> kepompong -> kupu-kupu).
+        *   Contoh: **Katak** (telur -> berudu -> katak muda -> katak dewasa).
+    *   **Metamorfosis Tidak Sempurna:** Perubahan bentuk tidak terlalu drastis, hanya ada perbedaan ukuran dan kematangan organ reproduksi (telur -> nimfa -> dewasa).
+        *   Contoh: **Belalang**, **Kecoa**.
+    *   **Non-metamorfosis:** Hewan yang hanya tumbuh membesar tanpa perubahan bentuk yang signifikan (contoh: kucing, ayam, sapi).
+
+**2. Pertumbuhan dan Perkembangan pada Tumbuhan:**
+
+*   **Pertumbuhan:** Ditandai dengan **peningkatan ukuran** (tinggi batang, panjang akar, jumlah daun) dan biomassa (berat kering).
+*   **Perkembangan:** Meliputi **perubahan menuju kematangan dan kemampuan bereproduksi**.
+    *   **Dari Biji Menjadi Tanaman Dewasa:** Proses dimulai dari biji yang berkecambah, tumbuh menjadi bibit, lalu tanaman muda, hingga menjadi tanaman dewasa yang siap berbunga dan berbuah.
+    *   **Bunga dan Buah:** Perkembangan paling terlihat pada tumbuhan adalah kemampuannya menghasilkan bunga (sebagai alat reproduksi) dan buah (yang berisi biji baru).
+
+**3. Faktor-faktor yang Memengaruhi Pertumbuhan dan Perkembangan (Hewan dan Tumbuhan):**
+
+Semua makhluk hidup memerlukan kondisi lingkungan yang mendukung untuk tumbuh dan berkembang optimal. Faktor-faktor utamanya adalah:
+
+*   ☀️ **Cahaya Matahari:** Penting untuk fotosintesis pada tumbuhan; memengaruhi suhu pada hewan.
+*   💧 **Air:** Untuk proses metabolisme, transportasi nutrisi, dan menjaga kelembapan.
+*   💨 **Udara:** Sumber oksigen untuk respirasi, karbon dioksida untuk fotosintesis.
+*   🥗 **Nutrisi (Makanan/Unsur Hara):** Sumber energi dan bahan baku untuk membangun tubuh.
+*   🌡️ **Suhu:** Memengaruhi kecepatan reaksi kimia dalam tubuh makhluk hidup.
+*   🏡 **Lingkungan yang Aman:** Bebas dari hama, penyakit, atau predator.
+
+Setiap makhluk hidup adalah bukti keajaiban alam. Dengan memahami bagaimana mereka tumbuh dan berkembang, kita bisa lebih menghargai keanekaragaman hayati di Bumi ini! 🌍✨`
+  },
+  "Bab 2: Pelestarian Lingkungan": {
+    "2.1 Sumber Daya Alam": `💎💧 **Harta Bumi: Mengenal dan Melestarikan Sumber Daya Alam** 🌳🛢️
+
+Selamat datang di Bab 2 IPAS Kelas 6! Di bab ini, kita akan mendalami tentang **Sumber Daya Alam (SDA)**, yaitu segala "harta karun" yang disediakan alam untuk kita. SDA adalah **segala sesuatu yang berasal dari alam dan dapat dimanfaatkan oleh manusia untuk memenuhi kebutuhan hidup.** Indonesia, negara kita, sangat kaya akan SDA!
+
+SDA dibagi menjadi dua kategori utama, berdasarkan kemampuannya untuk pulih atau terbentuk kembali:
+
+1.  **Sumber Daya Alam yang Dapat Diperbarui (Renewable Resources):**
+    *   **Definisi:** SDA yang jumlahnya sangat melimpah atau dapat dengan cepat pulih/terbentuk kembali setelah digunakan. Kita harus tetap menggunakannya secara bijak agar kualitasnya terjaga.
+    *   **Contoh:**
+        *   💧 **Air:** Digunakan untuk minum, mandi, irigasi sawah, pembangkit listrik (PLTA).
+        *   🌬️ **Udara:** Penting untuk bernapas, energi angin (PLTB).
+        *   ☀️ **Sinar Matahari:** Sumber energi utama di bumi, untuk fotosintesis, energi listrik (PLTS).
+        *   🌳 **Tumbuhan:** Makanan, bahan bangunan (kayu), obat-obatan, serat.
+        *   🐄 **Hewan:** Makanan (daging, susu), tenaga (hewan ternak), bahan baku (kulit, bulu).
+        *   🌱 **Tanah:** Tempat tumbuh tanaman, bahan bangunan (batu bata, genteng).
+
+2.  **Sumber Daya Alam yang Tidak Dapat Diperbarui (Non-renewable Resources):**
+    *   **Definisi:** SDA yang jumlahnya terbatas di bumi dan membutuhkan waktu yang sangat lama (jutaan tahun) untuk terbentuk kembali. Jika sudah habis, maka tidak akan ada lagi. Penggunaannya harus sangat efisien.
+    *   **Contoh:**
+        *   🛢️ **Minyak Bumi:** Bahan bakar kendaraan (bensin, solar), bahan baku plastik, aspal.
+        *   🖤 **Batu Bara:** Bahan bakar pembangkit listrik tenaga uap (PLTU), industri.
+        *   🔥 **Gas Alam:** Bahan bakar untuk memasak (LPG), industri, pembangkit listrik.
+        *   ⛏️ **Logam Mulia (Emas, Perak):** Perhiasan, bahan elektronik, investasi.
+        *   🏗️ **Bahan Tambang Mineral (Besi, Timah, Tembaga, Nikel):** Bahan baku industri, konstruksi, alat rumah tangga.
+
+**Pentingnya Menjaga Kelestarian SDA:**
+
+*   **Ketersediaan untuk Masa Depan:** Agar generasi mendatang juga bisa menikmati dan memanfaatkan SDA.
+*   **Keseimbangan Ekosistem:** Kerusakan SDA bisa mengganggu keseimbangan alam dan menyebabkan bencana.
+*   **Keberlangsungan Hidup Manusia:** SDA adalah penopang kehidupan kita.
+
+**Bagaimana Cara Melestarikan SDA?**
+
+*   **Pemanfaatan Bijak:** Gunakan seperlunya, jangan boros.
+*   **Daur Ulang (Recycle):** Mengolah kembali barang bekas menjadi barang baru.
+*   **Reboisasi:** Menanam kembali pohon di hutan gundul.
+*   **Hemat Energi dan Air:** Mengurangi penggunaan listrik dan air.
+*   **Mencari Energi Alternatif:** Beralih ke energi surya, angin, atau air.
+
+Mari kita jadi penjaga bumi yang cerdas dan bertanggung jawab! 🌏💚`,
+    "2.2 Dampak Kegiatan Manusia terhadap Lingkungan": `🏭💔 **Jejak Manusia: Dampak Kegiatan Manusia terhadap Lingkungan** 🌳🌬️🗑️
+
+Di subbab ini, kita akan belajar bahwa setiap tindakan yang kita lakukan, sekecil apa pun, bisa memiliki **dampak terhadap lingkungan**. Beberapa aktivitas manusia bisa membawa kebaikan, tetapi banyak juga yang tanpa disadari dapat merusak keseimbangan alam. Penting bagi kita untuk mengenali dampak-dampak ini!
+
+**Dampak Negatif Kegiatan Manusia:**
+
+1.  **Penebangan Hutan (Deforestasi) dan Pembakaran Hutan:**
+    *   **Penyebab:** Pembukaan lahan untuk perkebunan, permukiman, atau industri, serta pengambilan kayu berlebihan.
+    *   **Dampak:**
+        *   **Hilangnya Habitat Hewan:** Banyak hewan kehilangan rumah dan terancam punah.
+        *   **Tanah Longsor dan Banjir:** Hutan berfungsi menahan air. Tanpa pohon, tanah mudah longsor dan banjir terjadi saat hujan deras.
+        *   **Peningkatan Suhu Global:** Pohon menyerap karbon dioksida. Tanpa pohon, gas ini meningkat dan mempercepat pemanasan global.
+
+2.  **Polusi (Pencemaran):**
+    *   **Penyebab:** Pembuangan limbah industri, limbah rumah tangga, asap kendaraan, dan penggunaan bahan kimia.
+    *   **Dampak:**
+        *   **Pencemaran Air:** Sungai dan laut kotor, ikan mati, air tidak bisa diminum/digunakan.
+        *   **Pencemaran Udara:** Udara kotor, menyebabkan gangguan pernapasan, hujan asam, dan lubang ozon.
+        *   **Pencemaran Tanah:** Tanah menjadi tidak subur, tanaman sulit tumbuh, racun masuk ke rantai makanan.
+
+3.  **Perburuan Liar dan Perdagangan Satwa Langka:**
+    *   **Penyebab:** Keinginan manusia untuk mendapatkan keuntungan atau hobi yang tidak bertanggung jawab.
+    *   **Dampak:** Mengancam populasi hewan hingga kepunahan, merusak keanekaragaman hayati.
+
+4.  **Pemanasan Global dan Perubahan Iklim:**
+    *   **Penyebab Utama:** Peningkatan gas rumah kaca (karbon dioksida, metana) akibat pembakaran bahan bakar fosil (minyak, batu bara, gas) dari industri, transportasi, dan pembangkit listrik.
+    *   **Dampak:**
+        *   **Naiknya Suhu Bumi:** Menyebabkan gelombang panas dan cuaca ekstrem.
+        *   **Mencairnya Es Kutub:** Menyebabkan naiknya permukaan air laut dan mengancam kota-kota pesisir.
+        *   **Perubahan Iklim:** Pola cuaca tidak menentu, kekeringan berkepanjangan, atau curah hujan sangat tinggi.
+
+**Dampak Positif Kegiatan Manusia (Jika Dilakukan dengan Bijak):**
+
+*   **Reboisasi (Penanaman Kembali Hutan):** Mengembalikan fungsi hutan, mencegah bencana.
+*   **Pengelolaan Sampah:** Daur ulang, kompos, mengurangi volume sampah.
+*   **Penggunaan Energi Terbarukan:** Mengurangi emisi gas rumah kaca.
+*   **Pendidikan Lingkungan:** Meningkatkan kesadaran masyarakat.
+
+Setiap tindakan kita meninggalkan jejak di Bumi. Mari kita pastikan jejak kita adalah jejak kebaikan! 👣🌍`,
+    "2.3 Usaha Pelestarian Lingkungan": `♻️🌱 **Penjaga Bumi: Usaha Pelestarian Lingkungan** 🚮💧
+
+Setelah kita mengetahui dampak dari kegiatan manusia terhadap lingkungan, kini saatnya kita "bergerak"! Pada subbab ini, kita akan mempelajari berbagai **usaha pelestarian lingkungan** yang bisa kita lakukan. Ini adalah tanggung jawab kita bersama untuk menjaga Bumi tetap lestari untuk masa depan.
+
+Usaha pelestarian lingkungan bisa dimulai dari hal-hal kecil dalam kehidupan sehari-hari, hingga program besar. Mari kita lihat caranya:
+
+1.  **Menerapkan Prinsip 3R (Reduce, Reuse, Recycle):**
+    *   **Reduce (Mengurangi):** Mengurangi penggunaan barang-barang yang menghasilkan sampah atau merusak lingkungan.
+        *   **Contoh:** Membawa tas belanja sendiri, menolak sedotan plastik, mengurangi penggunaan tisu.
+    *   **Reuse (Menggunakan Kembali):** Menggunakan kembali barang-barang yang masih layak pakai.
+        *   **Contoh:** Menggunakan kembali botol minum, memakai pakaian bekas yang masih bagus, memberikan mainan lama kepada yang membutuhkan.
+    *   **Recycle (Daur Ulang):** Mengolah kembali sampah atau barang bekas menjadi produk baru yang berguna.
+        *   **Contoh:** Mengubah botol plastik menjadi pot bunga, kertas bekas menjadi kerajinan, sampah organik menjadi kompos.
+
+2.  **Reboisasi (Penanaman Kembali Hutan) dan Penghijauan:**
+    *   **Reboisasi:** Menanam kembali pohon-pohon di hutan yang sudah gundul.
+    *   **Penghijauan:** Menanam pohon di lingkungan sekitar kita (sekolah, rumah, taman kota).
+    *   **Manfaat:** Mencegah banjir dan tanah longsor, menjaga ketersediaan air tanah, menyediakan oksigen, dan menjadi habitat hewan.
+
+3.  **Menjaga Kebersihan Lingkungan:**
+    *   **Membuang Sampah pada Tempatnya:** Pastikan sampah dibuang ke tempat yang benar.
+    *   **Memilah Sampah:** Pisahkan sampah organik (sisa makanan, daun) dan anorganik (plastik, kertas, kaleng). Ini memudahkan proses daur ulang.
+    *   **Membersihkan Lingkungan Sekitar:** Ikut kerja bakti di sekolah atau lingkungan rumah.
+
+4.  **Hemat Energi dan Air:**
+    *   **Energi:** Matikan lampu jika tidak diperlukan, cabut kabel elektronik yang tidak dipakai, gunakan transportasi umum atau sepeda.
+    *   **Air:** Matikan keran saat menyikat gigi atau mencuci, gunakan air bekas cucian beras untuk menyiram tanaman.
+
+5.  **Menggunakan Produk Ramah Lingkungan:**
+    *   **Contoh:** Menggunakan produk yang bisa terurai, tidak mengandung bahan kimia berbahaya, atau produk daur ulang.
+
+6.  **Edukasi dan Kampanye Lingkungan:**
+    *   **Contoh:** Anak-anak diajak membuat poster tentang pentingnya menjaga lingkungan, melakukan presentasi, atau mengadakan "proyek lingkungan" kecil di sekolah.
+
+Setiap langkah kecil yang kita lakukan untuk lingkungan akan memberikan dampak besar jika dilakukan bersama-sama. Mari kita jadi "Penjaga Bumi" yang aktif dan peduli! 🌍💚`
+  },
+  "Bab 3: Bumi dan Perubahan Iklim": {
+    "3.1 Perubahan Cuaca dan Iklim": `🌡️🌬️ **Bumi Kita Berubah: Memahami Cuaca dan Perubahan Iklim** 🌎🔥
+
+Selamat datang di Bab 3 IPAS Kelas 6! Di bab ini, kita akan memahami perbedaan antara **cuaca** dan **iklim**, serta mengapa **perubahan iklim** menjadi isu global yang sangat penting saat ini. Cuaca dan iklim memengaruhi kehidupan kita sehari-hari, dari apa yang kita kenakan hingga bagaimana kita bercocok tanam.
+
+**1. Perbedaan Cuaca dan Iklim:**
+
+*   **Cuaca:**
+    *   **Definisi:** Kondisi atmosfer di suatu tempat dalam **waktu yang singkat dan cakupan wilayah yang sempit**. Cuaca bisa berubah sangat cepat, bahkan dalam hitungan jam.
+    *   **Contoh:** Hari ini panas, besok hujan; pagi berawan, siang cerah.
+    *   **Unsur-unsur:** Suhu udara, kelembapan, tekanan udara, kecepatan angin, curah hujan, tutupan awan.
+
+*   **Iklim:**
+    *   **Definisi:** Kondisi rata-rata cuaca di suatu wilayah dalam **jangka waktu yang sangat lama** (minimal 30 tahun) dan **cakupan wilayah yang luas**.
+    *   **Contoh:** Iklim tropis di Indonesia (panas dan lembap sepanjang tahun), iklim subtropis yang memiliki empat musim.
+
+**2. Perubahan Iklim (Climate Change):**
+
+*   **Definisi:** Perubahan signifikan dan jangka panjang pada pola cuaca global atau regional. Saat ini, yang menjadi perhatian utama adalah **pemanasan global**, yaitu peningkatan suhu rata-rata permukaan Bumi.
+*   **Ciri-ciri Perubahan Iklim:**
+    *   **Kenaikan Suhu Bumi:** Suhu rata-rata global terus meningkat setiap tahun.
+    *   **Mencairnya Es di Kutub:** Gletser dan lapisan es di Arktik dan Antartika mencair dengan cepat.
+    *   **Cuaca Ekstrem:** Terjadinya badai yang lebih kuat, gelombang panas berkepanjangan, kekeringan parah, atau hujan sangat lebat yang menyebabkan banjir.
+
+**3. Penyebab Utama Perubahan Iklim:**
+
+*   **Aktivitas Manusia (Antropogenik):** Ini adalah penyebab utama!
+    *   **Pembakaran Bahan Bakar Fosil:** Dari kendaraan, pabrik, dan pembangkit listrik menghasilkan gas rumah kaca (karbon dioksida, metana) yang memerangkap panas di atmosfer.
+    *   **Deforestasi (Penebangan Hutan):** Hutan menyerap CO2. Jika ditebang, CO2 di atmosfer meningkat.
+    *   **Penggunaan AC dan Kulkas Berlebihan:** Melepaskan gas pendingin yang juga merupakan gas rumah kaca.
+    *   **Sampah Organik:** Membusuk dan menghasilkan gas metana.
+
+**4. Dampak Perubahan Iklim:**
+
+*   **Kenaikan Permukaan Air Laut:** Akibat es mencair, mengancam kota-kota pesisir dan pulau-pulau kecil.
+*   **Punahnya Spesies:** Hewan dan tumbuhan tidak bisa beradaptasi dengan perubahan cepat.
+*   **Krisis Pangan dan Air:** Kekeringan panjang merusak pertanian, sumber air berkurang.
+*   **Penyebaran Penyakit:** Nyamuk pembawa penyakit bisa menyebar ke wilayah baru.
+
+Kesadaran dan tindakan kita untuk mengurangi emisi karbon, menghemat energi, dan menjaga lingkungan sangat penting untuk masa depan Bumi. Mari kita sayangi planet kita! 💚🌍`,
+    "3.2 Bencana Alam dan Kesiapsiagaan": `🚨⛰️ **Siaga Bencana: Mengenali Bencana Alam dan Kesiapsiagaan** 🌊🌪️
+
+Di subbab ini, kita akan belajar tentang **bencana alam**, yaitu peristiwa alam yang bisa berdampak besar pada kehidupan kita. Kita tidak bisa mencegah bencana alam terjadi, tetapi kita bisa **bersiap siaga** untuk mengurangi dampaknya. Kesiapsiagaan adalah kunci keselamatan!
+
+**Apa itu Bencana Alam?**
+
+*   **Definisi:** Peristiwa yang terjadi karena **gejala alam** dan dapat mengakibatkan kerugian besar bagi manusia, baik itu kerusakan fisik, korban jiwa, atau dampak sosial dan ekonomi.
+*   **Jenis-jenis Bencana Alam:**
+    1.  **Gempa Bumi:** Getaran mendadak di permukaan Bumi akibat pelepasan energi dari dalam Bumi.
+        *   **Dampak:** Bangunan roboh, tanah retak, korban jiwa.
+    2.  **Tsunami:** Gelombang laut raksasa yang terjadi akibat gempa bumi di dasar laut atau letusan gunung berapi di bawah laut.
+        *   **Dampak:** Menghancurkan bangunan di pesisir, menyeret benda-benda, korban jiwa.
+    3.  **Gunung Meletus:** Keluarnya magma, abu, dan gas dari perut gunung berapi.
+        *   **Dampak:** Hujan abu, aliran lahar panas/dingin, gangguan pernapasan, kerusakan lahan pertanian.
+    4.  **Banjir:** Meluapnya air dalam volume besar yang menenggelamkan daratan.
+        *   **Penyebab:** Hujan deras berkepanjangan, bendungan jebol, atau karena ulah manusia (sampah menyumbat saluran air, penebangan hutan).
+        *   **Dampak:** Kerusakan rumah, gagal panen, penyakit, korban jiwa.
+    5.  **Tanah Longsor:** Pergerakan massa tanah atau batuan dari lereng bukit/gunung.
+        *   **Penyebab:** Hujan lebat di lereng yang gundul, gempa bumi.
+        *   **Dampak:** Menimbun rumah, jalan, korban jiwa.
+    6.  **Kekeringan:** Kekurangan pasokan air dalam waktu lama.
+        *   **Dampak:** Gagal panen, kekurangan air bersih, kebakaran hutan.
+
+**Pentingnya Kesiapsiagaan Bencana:**
+
+Kesiapsiagaan adalah **serangkaian kegiatan yang dilakukan untuk mengantisipasi bencana** melalui pengorganisasian serta langkah yang tepat guna dan berdaya guna. Artinya, kita tahu apa yang harus dilakukan sebelum, saat, dan sesudah bencana.
+
+*   **Mengenali Tanda-tanda Bencana:** Mengetahui ciri-ciri awal (misal: tanah retak sebelum longsor, air laut surut tiba-tiba sebelum tsunami).
+*   **Membuat Rencana Evakuasi:** Menentukan jalur aman dan titik berkumpul jika terjadi bencana.
+*   **Menyiapkan Tas Siaga Bencana:** Berisi P3K, makanan, air minum, senter, peluit, dokumen penting.
+*   **Melatih Simulasi Bencana:** Mengikuti latihan di sekolah tentang apa yang harus dilakukan saat gempa.
+*   **Menjaga Lingkungan:**
+    *   **Menanam Pohon:** Mencegah longsor dan banjir.
+    *   **Tidak Membuang Sampah Sembarangan:** Mencegah banjir.
+    *   **Tidak Membangun di Daerah Rawan Bencana:** Menghindari risiko.
+
+Dengan kesiapsiagaan, kita bisa menyelamatkan diri sendiri dan orang-orang di sekitar kita. Mari kita jadi generasi yang tangguh dan siaga bencana! 💪🏘️`
+  },
+  "Bab 4: Perubahan Sosial Budaya": {
+    "4.1 Perubahan Sosial Budaya di Masyarakat": `🔄🏙️ **Dinamika Hidup: Perubahan Sosial Budaya di Masyarakat** 💻🌍
+
+Selamat datang di Bab 4 IPAS Kelas 6! Di bab ini, kita akan melihat bagaimana **masyarakat kita terus berubah**, bukan hanya secara fisik, tetapi juga dalam cara kita hidup, berpikir, dan berinteraksi. Ini disebut **perubahan sosial budaya**.
+
+**Apa itu Perubahan Sosial Budaya?**
+
+*   **Definisi:** Perubahan yang terjadi pada struktur sosial masyarakat, nilai-nilai, norma, kebiasaan, serta pola perilaku dan cara pandang. Ini adalah proses alami yang terjadi di semua masyarakat.
+*   **Contoh Sederhana:** Dari bermain permainan tradisional, sekarang lebih sering bermain game online. Dari berkirim surat, sekarang berkomunikasi lewat pesan instan.
+
+**Penyebab Perubahan Sosial Budaya:**
+
+1.  **Perkembangan Teknologi:**
+    *   **Contoh:** Penemuan internet, _smartphone_, transportasi cepat (pesawat, kereta api) mengubah cara kita berkomunikasi, belajar, bekerja, dan bepergian.
+    *   **Dampak:** Munculnya pekerjaan baru, _e-commerce_, pembelajaran _online_.
+
+2.  **Globalisasi:**
+    *   **Definisi:** Proses integrasi internasional yang timbul dari pertukaran pandangan dunia, produk, ide, dan aspek kebudayaan lainnya. Dunia terasa semakin kecil dan saling terhubung.
+    *   **Dampak:** Masuknya budaya asing (musik, _fashion_, makanan), kemudahan mendapatkan informasi dari seluruh dunia.
+
+3.  **Interaksi Antarbudaya:**
+    *   **Contoh:** Perkawinan antar-etnis, migrasi penduduk, pariwisata. Kita belajar budaya lain dan terjadi percampuran.
+
+**Dampak Perubahan Sosial Budaya:**
+
+*   **Dampak Positif:**
+    *   **Kemajuan Pendidikan:** Akses informasi lebih mudah, metode belajar bervariasi.
+    *   **Kemudahan Komunikasi:** Menghubungkan orang dari jarak jauh.
+    *   **Peningkatan Kualitas Hidup:** Akses kesehatan lebih baik, informasi gizi, gaya hidup sehat.
+    *   **Munculnya Inovasi:** Berbagai penemuan baru yang memudahkan hidup.
+    *   **Peningkatan Kesadaran Sosial:** Masyarakat lebih peduli isu lingkungan, hak asasi, dll.
+
+*   **Dampak Negatif:**
+    *   **Lunturnya Nilai-nilai Tradisional:** Permainan tradisional, adat istiadat, atau bahasa daerah bisa terlupakan.
+    *   **Meningkatnya Individualisme:** Orang menjadi lebih fokus pada diri sendiri dan kurang peduli sekitar.
+    *   **Konsumerisme:** Gaya hidup boros dan suka membeli barang yang tidak perlu.
+    *   **Kesenjangan Sosial:** Perbedaan antara yang kaya dan miskin semakin terlihat.
+    *   **Ancaman Budaya Asing:** Budaya lokal bisa tergeser jika tidak dilestarikan.
+
+Penting bagi kita untuk **menyikapi perubahan ini dengan bijak**. Kita harus bisa mengambil hal positifnya dan tetap mempertahankan jati diri serta nilai-nilai luhur bangsa kita. Mari kita jadi agen perubahan yang cerdas! 🧠✨`,
+    "4.2 Pelestarian Budaya Lokal": `🎨🎶 **Harta Bangsa: Pelestarian Budaya Lokal di Era Globalisasi** 🎭🍚
+
+Di tengah derasnya arus globalisasi yang membawa berbagai budaya asing masuk, **pelestarian budaya lokal** menjadi sangat penting! Budaya lokal itu seperti "jati diri" atau "identitas" bangsa kita. Jika budaya lokal hilang, maka identitas bangsa pun akan ikut memudar.
+
+**Apa itu Budaya Lokal?**
+
+*   **Definisi:** Adalah semua kebiasaan, adat istiadat, nilai-nilai, kesenian, bahasa, dan cara hidup yang tumbuh dan berkembang di suatu daerah atau suku bangsa tertentu.
+*   **Contoh:** Tarian tradisional (Tari Saman, Tari Pendet), lagu daerah (Yamko Rambe Yamko, Apuse), bahasa daerah (Bahasa Jawa, Bahasa Sunda), makanan tradisional (rendang, pempek), pakaian adat (Batik, Ulos).
+
+**Mengapa Penting Melestarikan Budaya Lokal?**
+
+1.  **Cermin Identitas Bangsa:** Budaya lokal membedakan kita dari bangsa lain dan menunjukkan kekayaan serta keunikan Indonesia.
+2.  **Warisan Leluhur:** Merupakan peninggalan berharga dari nenek moyang yang harus kita jaga.
+3.  **Daya Tarik Pariwisata:** Budaya lokal menjadi daya tarik utama bagi wisatawan, yang bisa meningkatkan ekonomi daerah.
+4.  **Nilai-nilai Luhur:** Banyak budaya lokal mengandung nilai-nilai moral dan kearifan lokal yang relevan hingga kini.
+
+**Jenis Warisan Budaya (Menurut UNESCO):**
+
+1.  **Budaya Benda (Tangible Cultural Heritage):** Sesuatu yang bisa dilihat dan disentuh.
+    *   **Contoh:** Candi Borobudur, Batik, Keris, Rumah Adat.
+2.  **Budaya Tak Benda (Intangible Cultural Heritage):** Pengetahuan, praktik, keterampilan, atau ekspresi yang tidak berbentuk fisik.
+    *   **Contoh:** Wayang, Gamelan, Tari Saman, tradisi lisan, pengobatan tradisional.
+
+**Cara Pelestarian Budaya Lokal:**
+
+1.  **Mengenal dan Mempelajari:**
+    *   **Contoh:** Belajar bahasa daerah, ikut ekstrakurikuler tari tradisional di sekolah, membaca buku tentang sejarah lokal.
+2.  **Memperkenalkan dan Mempromosikan:**
+    *   **Contoh:** Menggunakan pakaian adat di acara tertentu, menampilkan seni tradisional di pentas seni sekolah, berbagi cerita tentang budaya di media sosial.
+3.  **Membanggakan Budaya Sendiri:**
+    *   **Contoh:** Bangga dengan makanan tradisional, menyanyikan lagu daerah, tidak malu berbicara bahasa daerah.
+4.  **Memilah Pengaruh Budaya Asing:**
+    *   **Contoh:** Mengambil nilai positif dari budaya asing (seperti disiplin), tetapi tidak meniru gaya hidup yang bertentangan dengan nilai luhur bangsa.
+5.  **Memanfaatkan Teknologi:**
+    *   **Contoh:** Membuat konten digital (video, blog) tentang budaya Indonesia, menggunakan media sosial untuk kampanye pelestarian budaya.
+
+Pelestarian budaya lokal adalah tugas kita bersama. Dengan mencintai dan melestarikan budaya sendiri, kita turut menjaga kekayaan dan identitas bangsa Indonesia. Ayo lestarikan budaya kita! 🇮🇩✨`
+  }
+};
+
+let selectedSubbab = null;
+let selectedBab = null;
+
+// Tambahkan event listener ke semua tombol subbab
+function setupSubbabRingkasan() {
+  document.querySelectorAll('.subbab-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      selectedSubbab = btn.getAttribute('data-subbab');
+      selectedBab = btn.getAttribute('data-bab');
+      const ringkasanBtn = document.getElementById('ringkasanBtn');
+      ringkasanBtn.classList.remove('bg-gray-300', 'cursor-not-allowed');
+      ringkasanBtn.classList.add('bg-gradient-to-r', 'from-green-400', 'to-blue-400', 'hover:from-green-500', 'hover:to-blue-500', 'cursor-pointer');
+      ringkasanBtn.disabled = false;
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  setupSubbabRingkasan();
+  const ringkasanBtn = document.getElementById('ringkasanBtn');
+  const hasil = document.getElementById('hasilRingkasan'); // Ambil elemen hasilRingkasan
+  // Pastikan div kosong dan tersembunyi saat dimuat
+  if (hasil) {
+    hasil.innerHTML = '';
+    hasil.classList.add('hidden');
+  }
+
+  ringkasanBtn.onclick = async function() {
+    if (!selectedSubbab || !selectedBab) return;
+
+    const summary = ipasSummariesK6[selectedBab]?.[selectedSubbab] || null;
+
+    sessionStorage.setItem('ringkasan_k6_ipas', JSON.stringify({
+      ringkasan: summary,
+      bab: selectedBab,
+      subbab: selectedSubbab
+    }));
+    window.location.href = 'ringkasan-result-kelas6-ipas.html';
+  };
+  document.querySelectorAll('.language-toggle-button').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = btn.textContent.trim().toLowerCase();
+      loadLang(lang);
+      document.querySelectorAll('.language-toggle-button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+  loadLang(currentLang);
+});
+</script>
+</body>
+</html> 

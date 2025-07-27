@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kelas 6 - PPKN</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+:root {
+  --brand-primary: #6366F1;
+  --brand-secondary: #EC4899;
+  --background-primary: #FFFBEB;--background-secondary: #FFFFFF;
+  --text-primary: #374151;--text-secondary: #6B7280;
+  --border-primary: #FBBF24;--action-primary: #34D399;--action-primary-hover: #10B981;--action-secondary: #F3F4F6;
+  --action-secondary-hover: #E5E7EB;
+  --color-sky-blue: #87CEEB;
+  --color-coral: #FF7F50;
+  --color-lime-green: #32CD32;
+  --color-violet: #EE82EE;
+  --color-gold: #FFD700;
+}
+body {
+  font-family: 'Lexend', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Fredoka One', cursive;
+}
+</style>
+</head>
+<body class="bg-[var(--background-primary)] text-[var(--text-primary)]">
+<div class="flex flex-col min-h-screen">
+<header class="bg-white shadow-md">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-[var(--color-sky-blue)] rounded-xl flex items-center justify-center transform -rotate-12">
+        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L9 9.61V16a1 1 0 001 1h2a1 1 0 001-1V9.61l6.394-2.69a1 1 0 000-1.84l-7-3zM10 8L3.394 5.31 10 2.69v5.32z"></path>
+        </svg>
+      </div>
+      <h1 class="text-xl sm:text-2xl text-[var(--text-primary)] font-bold" data-i18n="app_title">SINAR WAMPI</h1>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="language-toggle">
+        <button class="language-toggle-button active">ID</button>
+        <button class="language-toggle-button">EN</button>
+      </div>
+      <div class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfuwgYI-olVKF44AsvP7zsXtut46r76IIIbHOVhQRqZb4rg0KeVqnmfqm7yNrg4IZBmdiJ0SSQQ7JboPBpD_U4j5xrHEM53FeNseG4FQMDPIn3JZmcZju4oFuZS5vQAKyWwRXzlPebWjYVVf9Unqur0XzLipA4qFVYD3vGPv0k7oLTgihTQvseqa0kWkpmZ5z7CpuNmI3dDc9H5SY51ABcBMrMxz2J8eGAwjKxE99K1hNe2Zv6NcsxZhruyFBCOeMrph4SpjSwtO4");'></div>
+    </div>
+  </div>
+</header>
+<div class="w-full flex items-center mt-2 mb-4">
+  <a href="kelas6.html" class="flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-pink-400 to-blue-400 text-white font-medium shadow hover:from-pink-500 hover:to-blue-500 transition-colors ml-2">
+    <span class="text-base">&#8592;</span>
+    <span>Kembali</span>
+  </a>
+</div>
+<main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[var(--color-coral)] mb-4">Kelas 6 - PPKN</h2>
+  <p class="text-center text-base sm:text-lg md:text-xl text-[var(--text-secondary)] mb-10">Pilih subbab untuk melihat ringkasan materi:</p>
+  <div class="space-y-6">
+    <!-- Bab 1 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-yellow-700 mb-2">Bab 1: Aku Cinta Tanah Air</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-yellow-200 to-yellow-100 hover:from-yellow-300 hover:to-yellow-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.1 Aku dan Tanah Airku" data-bab="Bab 1: Aku Cinta Tanah Air">
+          <div class="font-semibold text-yellow-800 mb-1">1.1 Aku dan Tanah Airku</div>
+          <div class="text-sm text-yellow-700">Mengenalkan simbol-simbol negara (bendera, lambang, lagu kebangsaan) dan keberagaman budaya untuk menanamkan rasa bangga dan cinta terhadap tanah air Indonesia.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-yellow-200 to-yellow-100 hover:from-yellow-300 hover:to-yellow-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.2 Wujud Cinta Tanah Air" data-bab="Bab 1: Aku Cinta Tanah Air">
+          <div class="font-semibold text-yellow-800 mb-1">1.2 Wujud Cinta Tanah Air</div>
+          <div class="text-sm text-yellow-700">Menerapkan rasa cinta tanah air dalam kehidupan sehari-hari melalui rajin belajar, menjaga lingkungan, membeli produk dalam negeri, dan menjaga persatuan di tengah keberagaman.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 2 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-green-700 mb-2 mt-6">Bab 2: Indahnya Hidup Rukun</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.1 Hidup Rukun Itu Indah" data-bab="Bab 2: Indahnya Hidup Rukun">
+          <div class="font-semibold text-green-800 mb-1">2.1 Hidup Rukun Itu Indah</div>
+          <div class="text-sm text-green-700">Menyadari pentingnya hidup damai, saling menghargai, dan tolong-menolong di rumah, sekolah, dan masyarakat untuk menciptakan suasana nyaman dan bahagia.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.2 Membina Hidup Rukun" data-bab="Bab 2: Indahnya Hidup Rukun">
+          <div class="font-semibold text-green-800 mb-1">2.2 Membina Hidup Rukun</div>
+          <div class="text-sm text-green-700">Membangun sikap toleransi, saling menghormati, dan kerja sama yang berkelanjutan, serta memperkenalkan musyawarah sebagai bentuk pengambilan keputusan bersama.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 3 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-blue-700 mb-2 mt-6">Bab 3: Harmoni dalam Perbedaan</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="3.1 Menghargai Perbedaan" data-bab="Bab 3: Harmoni dalam Perbedaan">
+          <div class="font-semibold text-blue-800 mb-1">3.1 Menghargai Perbedaan</div>
+          <div class="text-sm text-blue-700">Mempelajari pentingnya menghargai perbedaan agama, suku, ras, dan budaya, serta menerapkan sikap toleransi untuk menghindari konflik dan diskriminasi.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="3.2 Bekerja Sama dalam Perbedaan" data-bab="Bab 3: Harmoni dalam Perbedaan">
+          <div class="font-semibold text-blue-800 mb-1">3.2 Bekerja Sama dalam Perbedaan</div>
+          <div class="text-sm text-blue-700">Siswa diajak untuk bekerja sama dalam keberagaman (tugas kelompok, piket, kegiatan sosial), menunjukkan bahwa perbedaan tidak menghalangi kerja sama, tetapi memperkaya pengalaman.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 4 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-purple-700 mb-2 mt-6">Bab 4: Menumbuhkan Semangat Kebangsaan</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="4.1 Semangat Kebangsaan Para Tokoh" data-bab="Bab 4: Menumbuhkan Semangat Kebangsaan">
+          <div class="font-semibold text-purple-800 mb-1">4.1 Semangat Kebangsaan Para Tokoh</div>
+          <div class="text-sm text-purple-700">Mengenal tokoh-tokoh nasional (Soekarno, Hatta) dan perjuangan mereka, serta meneladani semangat dan nilai-nilai perjuangan tersebut dalam kehidupan sehari-hari.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="4.2 Aku Cinta Indonesia" data-bab="Bab 4: Menumbuhkan Semangat Kebangsaan">
+          <div class="font-semibold text-purple-800 mb-1">4.2 Aku Cinta Indonesia</div>
+          <div class="text-sm text-purple-700">Memperkuat semangat nasionalisme dengan bangga menjadi bagian dari bangsa Indonesia, diwujudkan dalam tindakan positif seperti menjaga kebersihan dan menghormati simbol negara.</div>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="bg-white/80 backdrop-blur-sm sticky bottom-0 border-t-2 border-[var(--border-primary)] mt-8">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col items-center">
+    <button id="ringkasanBtn" class="w-full max-w-md bg-gray-300 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full shadow-xl cursor-not-allowed mb-2">
+      <span>Buat Ringkasan Sekarang!</span>
+    </button>
+    <div id="hasilRingkasan" class="w-full max-w-md text-center text-base sm:text-lg text-[var(--text-primary)] min-h-[60px] hidden">
+      <!-- Ringkasan/pesan loading akan muncul di sini -->
+    </div>
+  </div>
+</footer>
+<!-- Script translate manual -->
+<script>
+let currentLang = 'id';
+function loadLang(lang) {
+  fetch(`lang-${lang}.json`)
+    .then(res => res.json())
+    .then(dict => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) el.textContent = dict[key];
+      });
+      currentLang = lang;
+    });
+}
+
+const ppknSummariesK6 = {
+  "Bab 1: Aku Cinta Tanah Air": {
+    "1.1 Aku dan Tanah Airku": `🇮🇩⭐ **Simbol Kebanggaan: Aku dan Tanah Airku** 🗣️🎵
+
+Selamat datang di Bab 1 PPKN Kelas 6! Di bab ini, kita akan memperkuat rasa **cinta tanah air** kita. Mencintai tanah air bukan hanya slogan, tetapi sebuah perasaan bangga yang harus kita tanamkan sejak dini. Indonesia adalah rumah kita, dan kita harus mengenal serta mencintai setiap bagiannya!
+
+Mari kita kenali simbol-simbol kebanggaan negara kita:
+
+1.  **Bendera Merah Putih:**
+    *   **Makna:** Merah melambangkan keberanian, Putih melambangkan kesucian. Bendera ini adalah lambang kedaulatan dan kehormatan bangsa kita. Kita harus menghormatinya!
+    *   **Penerapan:** Mengikuti upacara bendera dengan khidmat, tidak merusak bendera, memasang bendera saat hari besar nasional.
+
+2.  **Lambang Negara Garuda Pancasila:**
+    *   **Makna:** Garuda melambangkan kekuatan dan kegagahan. Lima perisai di dada Garuda melambangkan **Pancasila** (dasar negara kita).
+    *   **Semboyan:** "**Bhinneka Tunggal Ika**" yang berarti "Berbeda-beda tetapi tetap satu jua". Ini menunjukkan betapa beragamnya Indonesia, tapi kita tetap bersatu!
+    *   **Penerapan:** Memahami makna setiap sila Pancasila, menerapkan nilai-nilai Pancasila dalam kehidupan sehari-hari.
+
+3.  **Lagu Kebangsaan Indonesia Raya:**
+    *   **Makna:** Mencerminkan semangat perjuangan dan cita-cita luhur bangsa Indonesia untuk merdeka dan bersatu.
+    *   **Penerapan:** Menyanyikan lagu ini dengan penuh semangat dan rasa hormat saat upacara atau acara resmi.
+
+Selain simbol negara, **keberagaman budaya** juga merupakan kekayaan bangsa yang luar biasa! Indonesia memiliki:
+
+*   **Berbagai Suku:** Jawa, Sunda, Batak, Minang, Dayak, Papua, dan ribuan lainnya.
+*   **Beragam Bahasa Daerah:** Setiap suku punya bahasa sendiri.
+*   **Macam-macam Adat Istiadat dan Kesenian:** Tari tradisional, lagu daerah, rumah adat, upacara adat.
+
+**Bagaimana Lagu, Bahasa, dan Simbol Negara Menjadi Sarana Pembelajaran Nilai Kebangsaan?**
+
+*   **Lagu Nasional:** Dengan menyanyikan lagu-lagu seperti "Majulah Tak Gentar" atau "Tanah Airku", kita meresapi semangat perjuangan dan cinta tanah air.
+*   **Bahasa Indonesia:** Sebagai bahasa persatuan, ia menjembatani komunikasi antar suku dan mempersatukan kita.
+*   **Simbol Negara:** Mengajarkan kita tentang sejarah, nilai, dan jati diri bangsa.
+
+Memahami dan mencintai simbol-simbol ini adalah langkah awal untuk menjadi warga negara yang baik. Mari kita tunjukkan rasa bangga kita pada Indonesia! 🇮🇩❤️`,
+    "1.2 Wujud Cinta Tanah Air": `🌟👣 **Aksi Nyata: Wujud Cinta Tanah Air dalam Keseharian** 📚🗑️
+
+Setelah kita mengenal simbol-simbol negara dan memahami pentingnya cinta tanah air, kini saatnya kita "beraksi"! Di subbab ini, kita akan belajar bagaimana caranya **menunjukkan rasa cinta tanah air dalam kehidupan sehari-hari**. Cinta tanah air bukan hanya di hati, tapi harus terlihat dalam perbuatan kita!
+
+Berikut adalah berbagai wujud konkret dari cinta tanah air yang bisa kita praktikkan:
+
+1.  **Rajin Belajar dan Berprestasi:**
+    *   **Kenapa:** Dengan rajin belajar dan meraih prestasi (di sekolah, olahraga, seni, dll), kita tidak hanya membanggakan diri sendiri, tapi juga orang tua, sekolah, dan bahkan mengharumkan nama bangsa.
+    *   **Contoh:** Menyelesaikan tugas tepat waktu, berusaha menjadi juara kelas, mengikuti lomba dan menampilkan yang terbaik.
+
+2.  **Menjaga Lingkungan Sekolah dan Sekitar:**
+    *   **Kenapa:** Lingkungan yang bersih dan sehat adalah cerminan dari masyarakat yang peduli. Menjaga lingkungan berarti menjaga keindahan dan kenyamanan "rumah" kita bersama.
+    *   **Contoh:** Tidak membuang sampah sembarangan, ikut piket kelas, menanam pohon, membersihkan selokan.
+
+3.  **Membeli dan Menggunakan Produk Dalam Negeri:**
+    *   **Kenapa:** Dengan membeli produk lokal, kita mendukung para pengusaha di Indonesia dan membantu menggerakkan roda perekonomian negara. Ini adalah bentuk "gotong royong" ekonomi!
+    *   **Contoh:** Memilih makanan, pakaian, atau kerajinan tangan buatan Indonesia daripada produk impor.
+
+4.  **Menghargai Karya Anak Bangsa:**
+    *   **Kenapa:** Setiap karya dari anak bangsa (misalnya film, musik, penemuan, tulisan) adalah bukti kemampuan dan kreativitas Indonesia. Menghargai mereka adalah bentuk dukungan kita.
+    *   **Contoh:** Menonton film Indonesia, mendengarkan musik dari musisi lokal, mengapresiasi inovasi dari ilmuwan Indonesia.
+
+5.  **Menjaga Persatuan di Tengah Keberagaman:**
+    *   **Kenapa:** Indonesia sangat beragam. Cinta tanah air berarti kita harus mampu hidup rukun dengan siapa saja, meskipun berbeda suku, agama, atau budaya. Persatuan adalah kekuatan utama bangsa kita.
+    *   **Contoh:** Berteman dengan siapa saja, tidak membeda-bedakan, menghormati tradisi dan keyakinan orang lain, menyelesaikan masalah dengan musyawarah.
+
+6.  **Mematuhi Aturan dan Norma:**
+    *   **Kenapa:** Warga negara yang baik adalah yang patuh pada aturan dan norma yang berlaku di masyarakat dan negara. Ini menciptakan ketertiban dan keamanan.
+    *   **Contoh:** Mematuhi peraturan lalu lintas, antre dengan tertib, tidak melanggar hukum.
+
+Dengan melakukan hal-hal ini setiap hari, kita tidak hanya menunjukkan rasa cinta kita pada Indonesia, tetapi juga menjadi contoh bagi orang lain. Mari kita wujudkan cinta tanah air dalam setiap langkah! 👣🇮🇩`
+  },
+  "Bab 2: Indahnya Hidup Rukun": {
+    "2.1 Hidup Rukun Itu Indah": `🤝🏠 **Harmoni Kehidupan: Indahnya Hidup Rukun** 🏫🏘️
+
+Selamat datang di Bab 2 PPKN Kelas 6! Di bab ini, kita akan memahami betapa **indahnya hidup rukun**. Hidup rukun itu seperti sebuah melodi yang indah, di mana semua nada (orang-orang) saling bersahutan dan menciptakan harmoni. Ini adalah kunci kebahagiaan dan kenyamanan dalam hidup bermasyarakat!
+
+**Apa itu Hidup Rukun?**
+
+*   **Definisi:** Hidup rukun berarti hidup **damai, saling menghargai, saling menyayangi, dan tolong-menolong** satu sama lain, tanpa memandang perbedaan yang ada.
+*   **Karakteristik:** Tidak ada pertengkaran, tidak ada permusuhan, saling pengertian, dan suasana yang tenang.
+
+**Di mana Saja Kita Harus Hidup Rukun?**
+
+1.  **Di Rumah:**
+    *   **Contoh:** Saling membantu pekerjaan rumah (membersihkan kamar, mencuci piring), tidak bertengkar dengan saudara, mendengarkan nasihat orang tua, makan bersama keluarga.
+    *   **Manfaat:** Keluarga menjadi harmonis, penuh kasih sayang, dan nyaman untuk ditinggali.
+
+2.  **Di Sekolah:**
+    *   **Contoh:** Bermain dengan semua teman tanpa membeda-bedakan, saling membantu dalam tugas kelompok, tidak mengejek teman, berbagi makanan atau alat tulis.
+    *   **Manfaat:** Suasana belajar menjadi menyenangkan, tidak ada perundungan, dan semua siswa merasa diterima.
+
+3.  **Di Masyarakat:**
+    *   **Contoh:** Ikut gotong royong membersihkan lingkungan, menjenguk tetangga yang sakit, ikut serta dalam kegiatan rukun tetangga, menghormati perbedaan agama dan budaya di lingkungan sekitar.
+    *   **Manfaat:** Lingkungan menjadi aman, nyaman, dan masalah bisa diselesaikan bersama.
+
+**Mengapa Hidup Rukun itu Penting dan Indah?**
+
+*   **Menciptakan Suasana Nyaman dan Bahagia:** Ketika semua orang rukun, tidak ada ketegangan, hati menjadi tenang, dan kita merasa aman.
+*   **Mencegah Konflik dan Pertengkaran:** Perbedaan tidak lagi menjadi alasan untuk bertengkar, melainkan kekayaan yang memperindah.
+*   **Mempermudah Penyelesaian Masalah:** Dengan saling tolong-menolong, masalah yang berat pun bisa terasa ringan.
+*   **Mempererat Persaudaraan:** Hubungan antar sesama menjadi lebih kuat dan akrab.
+*   **Membangun Persatuan:** Pondasi penting bagi negara yang beragam seperti Indonesia.
+
+Mari kita wujudkan hidup rukun di mana pun kita berada, karena hidup rukun itu memang indah dan membawa banyak kebaikan! ✨🏡`,
+    "2.2 Membina Hidup Rukun": `🛠️🤝 **Membangun Harmoni: Membina Hidup Rukun** 🏗️💖
+
+Setelah kita memahami betapa indahnya hidup rukun, kini saatnya kita belajar bagaimana cara **membangun dan membina hidup rukun** agar keharmonisan itu bisa terus terjaga. Hidup rukun itu seperti tanaman, perlu terus dirawat dan disirami dengan sikap-sikap positif.
+
+Berikut adalah cara-cara konkret untuk membina hidup rukun:
+
+1.  **Membangun Sikap Toleransi:**
+    *   **Definisi Toleransi:** Sikap menghargai, menerima, dan membiarkan perbedaan yang ada pada orang lain (baik itu perbedaan agama, suku, pendapat, atau kebiasaan) tanpa merasa terganggu.
+    *   **Contoh:** Jika teman kita punya keyakinan berbeda, kita menghormati keyakinannya. Jika teman punya hobi yang berbeda, kita menghargainya dan tidak mengejek.
+
+2.  **Saling Menghormati dan Menyayangi:**
+    *   **Menghormati:** Berbicara sopan kepada orang yang lebih tua, mendengarkan pendapat orang lain, tidak memotong pembicaraan.
+    *   **Menyayangi:** Menunjukkan kepedulian kepada sesama, seperti menjenguk teman yang sakit, atau menghibur teman yang sedih.
+
+3.  **Meningkatkan Kerja Sama (Gotong Royong):**
+    *   **Definisi Kerja Sama:** Melakukan sesuatu bersama-sama untuk mencapai tujuan yang sama.
+    *   **Contoh:** Membersihkan kelas bersama-sama, membantu orang tua di rumah, ikut kerja bakti di lingkungan masyarakat, membantu teman yang kesulitan belajar.
+    *   **Manfaat:** Pekerjaan menjadi lebih cepat selesai, hasil lebih baik, dan mempererat hubungan.
+
+4.  **Mengutamakan Musyawarah dalam Pengambilan Keputusan:**
+    *   **Definisi Musyawarah:** Cara pengambilan keputusan dengan melibatkan semua pihak untuk mencapai kesepakatan bersama (mufakat).
+    *   **Contoh:** Berdiskusi di kelas untuk menentukan tema kegiatan, membahas masalah keluarga bersama-sama, rapat RT untuk memutuskan suatu program.
+    *   **Manfaat:** Keputusan yang diambil lebih adil dan diterima semua pihak, mencegah perselisihan.
+
+5.  **Berbicara dengan Santun dan Menjaga Perasaan:**
+    *   Pikirkan baik-baik sebelum berbicara. Hindari kata-kata yang bisa menyakiti hati orang lain atau memicu pertengkaran.
+
+6.  **Tidak Mencampuri Urusan Pribadi Orang Lain:**
+    *   Hormati privasi orang lain. Fokus pada diri sendiri dan hal-hal yang menjadi tanggung jawab kita.
+
+**Manfaat Membina Hidup Rukun:**
+
+*   **Menghindari Masalah Sosial:** Pertengkaran, perpecahan, dan konflik bisa dihindari.
+*   **Terciptanya Keharmonisan:** Lingkungan menjadi damai dan nyaman untuk ditinggali.
+*   **Mewujudkan Persatuan dan Kesatuan:** Masyarakat yang rukun adalah masyarakat yang kuat.
+
+Dengan membina hidup rukun, kita menciptakan lingkungan yang positif bagi diri sendiri dan orang lain. Mari kita terus berusaha menjadi pribadi yang rukun! 💖🏡`
+  },
+  "Bab 3: Harmoni dalam Perbedaan": {
+    "3.1 Menghargai Perbedaan": `🌈🤝 **Pelangi Kehidupan: Menghargai Perbedaan** 🎨✨
+
+Selamat datang di Bab 3 PPKN Kelas 6! Di bab ini, kita akan merayakan **keindahan perbedaan** yang ada di sekitar kita. Indonesia itu seperti pelangi, penuh warna dan keunikan! Jika semua warna sama, dunia akan membosankan. Begitu juga dengan manusia, perbedaan itu adalah kekayaan yang membuat hidup lebih berwarna.
+
+**Apa Saja Perbedaan yang Ada di Sekitar Kita?**
+
+Kita hidup di tengah masyarakat yang majemuk. Ada banyak sekali perbedaan, antara lain:
+
+1.  **Perbedaan Agama:** Ada Islam, Kristen, Katolik, Hindu, Buddha, Konghucu, dan kepercayaan lainnya. Setiap orang punya cara beribadah dan keyakinan masing-masing.
+2.  **Perbedaan Suku Bangsa:** Setiap suku punya bahasa, adat istiadat, pakaian adat, makanan khas, dan kebiasaan yang unik.
+3.  **Perbedaan Ras:** Perbedaan fisik seperti warna kulit, bentuk rambut, bentuk mata.
+4.  **Perbedaan Budaya:** Tradisi, kesenian, cara hidup, dan nilai-nilai yang berbeda di setiap daerah.
+5.  **Perbedaan Pendapat:** Setiap orang punya pemikiran dan sudut pandang yang berbeda tentang suatu masalah.
+6.  **Perbedaan Karakter dan Hobi:** Ada yang pendiam, ada yang periang. Ada yang suka olahraga, ada yang suka membaca.
+
+**Mengapa Penting Menghargai Perbedaan?**
+
+Menghargai perbedaan adalah kunci utama untuk hidup rukun dan damai. Ini berarti kita harus memiliki sikap **toleransi**:
+
+*   **Definisi Toleransi:** Sikap menerima, menghormati, dan membiarkan orang lain memiliki atau melakukan hal yang berbeda dengan kita, tanpa merasa terganggu atau mengejek.
+*   **Bukan sebagai Pemisah, tapi Kekayaan:** Perbedaan itu bukan untuk memecah belah, tapi untuk saling melengkapi dan memperkaya pengalaman kita.
+
+**Bagaimana Cara Menghargai Perbedaan?**
+
+1.  **Tidak Mengejek atau Merendahkan:** Jangan pernah menghina atau mengolok-olok teman karena perbedaan apapun.
+2.  **Saling Membantu:** Bantu siapa saja yang membutuhkan, tanpa memandang suku atau agama mereka.
+3.  **Mendengarkan Pendapat Orang Lain:** Walaupun tidak setuju, dengarkan baik-baik apa yang mereka sampaikan.
+4.  **Berbicara Santun:** Gunakan kata-kata yang baik dan tidak menyinggung.
+5.  **Belajar dari Perbedaan:** Setiap perbedaan bisa menjadi sumber pengetahuan baru dan pengalaman yang berharga.
+
+**Dampak Jika Tidak Menghargai Perbedaan:**
+
+*   **Konflik dan Pertengkaran:** Akan sering terjadi perselisihan.
+*   **Diskriminasi:** Memperlakukan orang secara tidak adil karena perbedaannya.
+*   **Perpecahan:** Menghancurkan persatuan dan kesatuan.
+
+Mari kita jadi generasi yang bangga dengan keberagaman dan selalu menghargai setiap perbedaan. Hidup ini akan lebih indah jika kita rukun dalam perbedaan! 💖🌍`,
+    "3.2 Bekerja Sama dalam Perbedaan": `🤝🌐 **Kekuatan Bersama: Bekerja Sama dalam Perbedaan** 🧩💪
+
+Di subbab ini, kita akan belajar bahwa meskipun kita memiliki banyak perbedaan, kita tetap bisa dan bahkan harus **bekerja sama**! Keberagaman itu justru bisa menjadi kekuatan besar jika kita mau menyatukan perbedaan untuk mencapai tujuan bersama. Bekerja sama dalam perbedaan akan menciptakan harmoni dan hasil yang lebih baik.
+
+**Mengapa Bekerja Sama itu Penting, Terutama dalam Perbedaan?**
+
+1.  **Tujuan Lebih Mudah Tercapai:** Pekerjaan yang berat akan terasa ringan jika dikerjakan bersama-sama.
+2.  **Hasil Lebih Baik:** Setiap orang memiliki kelebihan dan kekurangannya. Dengan bekerja sama, kita bisa saling melengkapi dan menghasilkan karya yang lebih sempurna.
+3.  **Memperkaya Pengalaman Sosial:** Kita belajar berinteraksi dengan berbagai karakter dan latar belakang, yang membuat kita lebih dewasa dan pengertian.
+4.  **Mempererat Persaudaraan:** Proses kerja sama membangun ikatan dan rasa kebersamaan yang kuat.
+5.  **Menghilangkan Perpecahan:** Saat bekerja sama, kita fokus pada tujuan, bukan pada perbedaan, sehingga konflik bisa dihindari.
+
+**Contoh Bekerja Sama dalam Keberagaman:**
+
+1.  **Tugas Kelompok di Sekolah:**
+    *   **Contoh:** Saat mengerjakan proyek seni, ada teman yang pandai menggambar, ada yang pandai mewarnai, ada yang pandai menulis teks. Dengan membagi tugas sesuai keahlian, hasilnya akan luar biasa.
+    *   **Pentingnya:** Masing-masing anggota memberikan kontribusi terbaiknya.
+
+2.  **Piket Kelas:**
+    *   **Contoh:** Meskipun berbeda suku atau agama, semua siswa punya tanggung jawab yang sama untuk menjaga kebersihan kelas. Ada yang menyapu, mengepel, membersihkan papan tulis.
+    *   **Pentingnya:** Tanggung jawab bersama untuk lingkungan yang nyaman.
+
+3.  **Kegiatan Sosial di Masyarakat:**
+    *   **Contoh:** Gotong royong membersihkan lingkungan kampung, menyiapkan acara perayaan hari besar, membantu korban bencana.
+    *   **Pentingnya:** Solidaritas sosial tanpa memandang latar belakang.
+
+4.  **Olahraga Tim:**
+    *   **Contoh:** Dalam pertandingan sepak bola, setiap pemain punya posisi dan tugas berbeda (penyerang, gelandang, bek, kiper). Mereka bekerja sama untuk mencetak gol dan mempertahankan gawang.
+    *   **Pentingnya:** Saling mendukung untuk mencapai kemenangan.
+
+**Kunci Sukses Bekerja Sama dalam Perbedaan:**
+
+*   **Saling Percaya:** Yakin bahwa setiap anggota akan melakukan yang terbaik.
+*   **Saling Mendengarkan:** Perhatikan ide dan masukan dari setiap orang.
+*   **Komunikasi Efektif:** Sampaikan ide dan masalah dengan jelas.
+*   **Toleransi dan Empati:** Pahami dan hargai kondisi serta perasaan orang lain.
+
+Keberagaman adalah anugerah. Dengan bekerja sama dalam perbedaan, kita tidak hanya mencapai tujuan, tetapi juga membangun masyarakat yang kuat, harmonis, dan penuh toleransi. Mari bersatu, meskipun berbeda! 💪🌍`
+  },
+  "Bab 4: Menumbuhkan Semangat Kebangsaan": {
+    "4.1 Semangat Kebangsaan Para Tokoh": `🕊️🇮🇩 **Api Perjuangan: Semangat Kebangsaan Para Tokoh Pahlawan** ⭐📜
+
+Selamat datang di Bab 4 PPKN Kelas 6! Di bab ini, kita akan "melihat kembali" ke masa lalu yang penuh inspirasi, yaitu kisah tentang **semangat kebangsaan para tokoh pahlawan** kita. Mereka adalah orang-orang hebat yang berjuang mati-matian demi kemerdekaan dan keutuhan Indonesia. Kisah mereka harus kita ingat dan teladani!
+
+**Apa itu Semangat Kebangsaan?**
+
+*   **Definisi:** Perasaan cinta yang mendalam terhadap bangsa dan negara, kesediaan untuk berkorban, serta semangat persatuan untuk mencapai cita-cita bersama.
+*   **Pentingnya:** Tanpa semangat ini, Indonesia tidak akan pernah merdeka.
+
+**Mengenal Tokoh-tokoh Pejuang Kemerdekaan:**
+
+1.  **Ir. Soekarno (Proklamator dan Presiden Pertama):**
+    *   **Peran:** Membaca teks Proklamasi Kemerdekaan Indonesia pada 17 Agustus 1945, menyatukan berbagai elemen bangsa, dan menjadi pemimpin yang menginspirasi.
+    *   **Semangat:** Berani, visioner, pandai berpidato untuk membakar semangat rakyat.
+
+2.  **Drs. Mohammad Hatta (Proklamator dan Wakil Presiden Pertama):**
+    *   **Peran:** Bersama Soekarno, menyusun teks Proklamasi. Dikenal sebagai Bapak Koperasi Indonesia.
+    *   **Semangat:** Cerdas, jujur, berprinsip, dan berjiwa negarawan.
+
+3.  **Jenderal Soedirman:**
+    *   **Peran:** Panglima Besar Tentara Keamanan Rakyat (TKR) yang memimpin perang gerilya melawan penjajah, meskipun dalam kondisi sakit.
+    *   **Semangat:** Patriotisme tinggi, gigih, pantang menyerah, rela berkorban.
+
+4.  **Cut Nyak Dien:**
+    *   **Peran:** Pahlawan wanita dari Aceh yang memimpin perlawanan terhadap Belanda.
+    *   **Semangat:** Pemberani, pantang menyerah, rela berjuang hingga akhir hayat.
+
+5.  **Pangeran Diponegoro:**
+    *   **Peran:** Pemimpin Perang Jawa melawan Belanda, menunjukkan kegigihan dan kecintaan pada tanah air.
+    *   **Semangat:** Berani, rela berkorban, tidak gentar menghadapi penjajah.
+
+**Nilai-nilai Perjuangan yang Bisa Diteladani:**
+
+*   **Rela Berkorban:** Para pahlawan mengesampingkan kepentingan pribadi demi bangsa dan negara.
+*   **Pantang Menyerah:** Mereka terus berjuang meskipun menghadapi banyak kesulitan dan kekalahan.
+*   **Cinta Tanah Air:** Ini adalah dasar dari semua perjuangan mereka.
+*   **Semangat Persatuan:** Mereka menyadari bahwa hanya dengan bersatu, kemerdekaan bisa diraih.
+*   **Keberanian:** Berani menghadapi penjajah yang lebih kuat.
+
+**Bagaimana Kita Meneladani Semangat Ini dalam Kehidupan Sehari-hari?**
+
+*   **Rajin Belajar:** Belajar dengan giat adalah cara kita mengisi kemerdekaan.
+*   **Disiplin:** Menaati aturan dan tanggung jawab.
+*   **Gotong Royong:** Bekerja sama untuk kebaikan bersama.
+*   **Menjaga Persatuan:** Tidak membeda-bedakan teman, hidup rukun.
+*   **Cinta Produk Indonesia:** Menghargai dan mendukung hasil karya bangsa sendiri.
+
+Mari kita terus kobarkan api semangat kebangsaan dalam diri kita, seperti para pahlawan! 🔥🇮🇩`,
+    "4.2 Aku Cinta Indonesia": `💖🇮🇩 **Jiwa Merah Putih: Aku Cinta Indonesia!** 🌟🌍
+
+Selamat datang di subbab terakhir Bab 4 PPKN Kelas 6! Di sini, kita akan memantapkan kembali perasaan **cinta Indonesia** yang sudah kita miliki. Mencintai Indonesia itu berarti kita merasa bangga menjadi bagian dari bangsa ini, dan kita menunjukkan kebanggaan itu dalam setiap tindakan positif kita. Ini adalah inti dari **semangat nasionalisme**!
+
+**Apa Arti "Aku Cinta Indonesia"?**
+
+*   **Rasa Bangga:** Bangga akan kekayaan alam, budaya, sejarah, dan prestasi bangsa Indonesia.
+*   **Rasa Memiliki:** Merasa bahwa Indonesia adalah "rumah" kita yang harus dijaga dan dilindungi.
+*   **Rasa Tanggung Jawab:** Memiliki keinginan untuk berkontribusi bagi kemajuan dan kesejahteraan bangsa.
+
+**Bagaimana Kita Mewujudkan Cinta Indonesia dalam Tindakan Positif?**
+
+1.  **Menjaga Kebersihan Lingkungan:**
+    *   **Contoh:** Tidak membuang sampah sembarangan di mana pun (sekolah, rumah, tempat wisata), ikut kerja bakti, peduli terhadap kebersihan sungai atau taman. Lingkungan bersih = Indonesia bersih!
+
+2.  **Berpartisipasi Aktif dalam Kegiatan Sekolah:**
+    *   **Contoh:** Mengikuti upacara bendera dengan tertib, aktif dalam kegiatan pramuka, ikut lomba-lomba yang diadakan sekolah, membantu persiapan acara sekolah. Ini adalah bentuk kontribusi kecil yang berarti.
+
+3.  **Menghormati Simbol dan Lagu Kebangsaan:**
+    *   **Contoh:** Berdiri tegak saat lagu "Indonesia Raya" dinyanyikan, tidak mencoret-coret bendera atau lambang negara, memahami makna di balik Pancasila dan Undang-Undang Dasar.
+
+4.  **Belajar dengan Giat:**
+    *   **Contoh:** Rajin belajar, mengerjakan tugas dengan sungguh-sungguh, dan selalu berusaha memberikan yang terbaik. Ilmu yang kita dapatkan akan berguna untuk membangun bangsa.
+
+5.  **Mencintai dan Menggunakan Produk Dalam Negeri:**
+    *   **Contoh:** Memilih untuk membeli jajanan, pakaian, atau kerajinan tangan buatan lokal. Ini membantu memajukan perekonomian UMKM (Usaha Mikro, Kecil, dan Menengah) di Indonesia.
+
+6.  **Melestarikan Budaya Lokal:**
+    *   **Contoh:** Belajar tari daerah, menyanyikan lagu daerah, atau mengenakan pakaian adat di acara tertentu. Memperkenalkan budaya kita kepada teman-teman dari daerah lain atau dari negara lain.
+
+7.  **Menjaga Persatuan dan Kesatuan:**
+    *   **Contoh:** Berteman dengan siapa saja tanpa memandang perbedaan suku, agama, atau warna kulit. Saling tolong-menolong, menghargai pendapat, dan hidup rukun.
+
+**Mengapa Kebanggaan Ini Penting?**
+
+*   **Menjaga Kedaulatan Bangsa:** Bangsa yang bangga akan identitasnya tidak mudah dipecah belah atau terpengaruh negatif dari luar.
+*   **Membangun Semangat Nasionalisme:** Menginspirasi kita untuk terus berbuat baik bagi negara.
+*   **Menjaga Persatuan:** Kebanggaan yang sama akan mempersatukan kita dalam keberagaman.
+
+Mari terus kobarkan semangat "Aku Cinta Indonesia!" dalam diri kita dan tunjukkan dengan tindakan nyata. Indonesia Jaya! 🇮🇩✨`
+  }
+};
+
+let selectedSubbab = null;
+let selectedBab = null;
+
+// Tambahkan event listener ke semua tombol subbab
+function setupSubbabRingkasan() {
+  document.querySelectorAll('.subbab-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      selectedSubbab = btn.getAttribute('data-subbab');
+      selectedBab = btn.getAttribute('data-bab');
+      const ringkasanBtn = document.getElementById('ringkasanBtn');
+      ringkasanBtn.classList.remove('bg-gray-300', 'cursor-not-allowed');
+      ringkasanBtn.classList.add('bg-gradient-to-r', 'from-green-400', 'to-blue-400', 'hover:from-green-500', 'hover:to-blue-500', 'cursor-pointer');
+      ringkasanBtn.disabled = false;
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  setupSubbabRingkasan();
+  const ringkasanBtn = document.getElementById('ringkasanBtn');
+  const hasil = document.getElementById('hasilRingkasan'); // Ambil elemen hasilRingkasan
+  // Pastikan div kosong dan tersembunyi saat dimuat
+  if (hasil) {
+    hasil.innerHTML = '';
+    hasil.classList.add('hidden');
+  }
+
+  ringkasanBtn.onclick = async function() {
+    if (!selectedSubbab || !selectedBab) return;
+
+    const summary = ppknSummariesK6[selectedBab]?.[selectedSubbab] || null;
+
+    sessionStorage.setItem('ringkasan_k6_ppkn', JSON.stringify({
+      ringkasan: summary,
+      bab: selectedBab,
+      subbab: selectedSubbab
+    }));
+    window.location.href = 'ringkasan-result-kelas6-ppkn.html';
+  };
+  document.querySelectorAll('.language-toggle-button').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = btn.textContent.trim().toLowerCase();
+      loadLang(lang);
+      document.querySelectorAll('.language-toggle-button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+  loadLang(currentLang);
+});
+</script>
+</body></html> 

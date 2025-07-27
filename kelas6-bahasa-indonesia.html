@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kelas 6 - Bahasa Indonesia</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+:root {
+  --brand-primary: #6366F1;
+  --brand-secondary: #EC4899;
+  --background-primary: #FFFBEB;--background-secondary: #FFFFFF;
+  --text-primary: #374151;--text-secondary: #6B7280;
+  --border-primary: #FBBF24;--action-primary: #34D399;--action-primary-hover: #10B981;--action-secondary: #F3F4F6;
+  --action-secondary-hover: #E5E7EB;
+  --color-sky-blue: #87CEEB;
+  --color-coral: #FF7F50;
+  --color-lime-green: #32CD32;
+  --color-violet: #EE82EE;
+  --color-gold: #FFD700;
+}
+body {
+  font-family: 'Lexend', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Fredoka One', cursive;
+}
+</style>
+</head>
+<body class="bg-[var(--background-primary)] text-[var(--text-primary)]">
+<div class="flex flex-col min-h-screen">
+<header class="bg-white shadow-md">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-[var(--color-sky-blue)] rounded-xl flex items-center justify-center transform -rotate-12">
+        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L9 9.61V16a1 1 0 001 1h2a1 1 0 001-1V9.61l6.394-2.69a1 1 0 000-1.84l-7-3zM10 8L3.394 5.31 10 2.69v5.32z"></path>
+        </svg>
+      </div>
+      <h1 class="text-xl sm:text-2xl text-[var(--text-primary)] font-bold" data-i18n="app_title">SINAR WAMPI</h1>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="language-toggle">
+        <button class="language-toggle-button active">ID</button>
+        <button class="language-toggle-button">EN</button>
+      </div>
+      <div class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfuwgYI-olVKF44AsvP7zsXtut46r76IIIbHOVhQRqZb4rg0KeVqnmfqm7yNrg4IZBmdiJ0SSQQ7JboPBpD_U4j5xrHEM53FeNseG4FQMDPIn3JZmcZju4oFuZS5vQAKyWwRXzlPebWjYVVf9Unqur0XzLipA4qFVYD3vGPv0k7oLTgihTQvseqa0kWkpmZ5z7CpuNmI3dDc9H5SY51ABcBMrMxz2J8eGAwjKxE99K1hNe2Zv6NcsxZhruyFBCOeMrph4SpjSwtO4");'></div>
+    </div>
+  </div>
+</header>
+<div class="w-full flex items-center mt-2 mb-4">
+  <a href="kelas6.html" class="flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-pink-400 to-blue-400 text-white font-medium shadow hover:from-pink-500 hover:to-blue-500 transition-colors ml-2">
+    <span class="text-base">&#8592;</span>
+    <span>Kembali</span>
+  </a>
+</div>
+<main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[var(--color-coral)] mb-4">Kelas 6 - Bahasa Indonesia</h2>
+  <p class="text-center text-base sm:text-lg md:text-xl text-[var(--text-secondary)] mb-10">Pilih subbab untuk melihat ringkasan materi:</p>
+  <div class="space-y-6">
+    <!-- Bab 1 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-green-700 mb-2">Bab 1: Menyimak Cerita dan Berdiskusi</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.1 Menyimak dan Menceritakan Kembali Cerita" data-bab="Bab 1: Menyimak Cerita dan Berdiskusi">
+          <div class="font-semibold text-green-800 mb-1">1.1 Menyimak dan Menceritakan Kembali Cerita</div>
+          <div class="text-sm text-green-700">Melatih keterampilan menyimak cerita secara saksama, memahami isi dan alur cerita, serta menyampaikan kembali cerita dengan runtut dan jelas.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.2 Berdiskusi dengan Sopan dan Santun" data-bab="Bab 1: Menyimak Cerita dan Berdiskusi">
+          <div class="font-semibold text-green-800 mb-1">1.2 Berdiskusi dengan Sopan dan Santun</div>
+          <div class="text-sm text-green-700">Membangun kemampuan berpikir kritis dan berkomunikasi secara efektif dengan menyampaikan pendapat secara sopan dan menghargai pandangan orang lain.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 2 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-blue-700 mb-2 mt-6">Bab 2: Menyampaikan Pidato</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.1 Menyusun Teks Pidato" data-bab="Bab 2: Menyampaikan Pidato">
+          <div class="font-semibold text-blue-800 mb-1">2.1 Menyusun Teks Pidato</div>
+          <div class="text-sm text-blue-700">Siswa belajar struktur teks pidato (pembukaan, isi, penutup) dan memilih topik yang sesuai, serta menggunakan bahasa baku yang meyakinkan.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.2 Menyampaikan Pidato" data-bab="Bab 2: Menyampaikan Pidato">
+          <div class="font-semibold text-blue-800 mb-1">2.2 Menyampaikan Pidato</div>
+          <div class="text-sm text-blue-700">Melatih keberanian, artikulasi, ekspresi, dan intonasi dalam menyampaikan pidato secara langsung di depan kelas, termasuk penggunaan bahasa tubuh dan alat bantu visual.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 3 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-yellow-700 mb-2 mt-6">Bab 3: Mengidentifikasi Unsur dan Struktur Teks</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-yellow-200 to-yellow-100 hover:from-yellow-300 hover:to-yellow-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="3.1 Mengenal Teks Fiksi dan Nonfiksi" data-bab="Bab 3: Mengidentifikasi Unsur dan Struktur Teks">
+          <div class="font-semibold text-yellow-800 mb-1">3.1 Mengenal Teks Fiksi dan Nonfiksi</div>
+          <div class="text-sm text-yellow-700">Siswa diajak membedakan teks fiksi (hiburan, imajinatif) dan nonfiksi (informasi nyata) dari segi tujuan, struktur, isi, dan nilai-nilai yang terkandung.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-yellow-200 to-yellow-100 hover:from-yellow-300 hover:to-yellow-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="3.2 Mengembangkan Gagasan Pokok" data-bab="Bab 3: Mengidentifikasi Unsur dan Struktur Teks">
+          <div class="font-semibold text-yellow-800 mb-1">3.2 Mengembangkan Gagasan Pokok</div>
+          <div class="text-sm text-yellow-700">Melatih menemukan gagasan pokok (eksplisit/implisit) dan mengembangkannya menjadi paragraf utuh yang koheren dengan kalimat penjelas.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 4 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-purple-700 mb-2 mt-6">Bab 4: Menulis Teks Laporan Hasil Observasi</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="4.1 Mengenal Teks Laporan Hasil Observasi" data-bab="Bab 4: Menulis Teks Laporan Hasil Observasi">
+          <div class="font-semibold text-purple-800 mb-1">4.1 Mengenal Teks Laporan Hasil Observasi</div>
+          <div class="text-sm text-purple-700">Siswa diperkenalkan pada teks laporan berdasarkan pengamatan, memahami struktur (identifikasi, deskripsi, simpulan) untuk menyampaikan informasi objektif dan sistematis.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="4.2 Menulis Teks Laporan" data-bab="Bab 4: Menulis Teks Laporan Hasil Observasi">
+          <div class="font-semibold text-purple-800 mb-1">4.2 Menulis Teks Laporan</div>
+          <div class="text-sm text-purple-700">Setelah observasi, siswa menulis laporan dengan memperhatikan kaidah kebahasaan (baku, efektif) dan menumbuhkan kemampuan menulis berdasarkan fakta dan tanggung jawab informasi.</div>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="bg-white/80 backdrop-blur-sm sticky bottom-0 border-t-2 border-[var(--border-primary)] mt-8">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center">
+    <button id="ringkasanBtn" class="w-full max-w-md bg-gray-300 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full shadow-xl cursor-not-allowed">
+      <span>Buat Ringkasan Sekarang!</span>
+    </button>
+  </div>
+  <div id="hasilRingkasan" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center text-base sm:text-lg text-[var(--text-primary)]">
+    <!-- Ringkasan akan muncul di sini -->
+  </div>
+</footer>
+<!-- Script translate manual -->
+<script>
+let currentLang = 'id';
+function loadLang(lang) {
+  fetch(`lang-${lang}.json`)
+    .then(res => res.json())
+    .then(dict => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) el.textContent = dict[key];
+      });
+      currentLang = lang;
+    });
+}
+
+const bahasaIndonesiaSummariesK6 = {
+  "Bab 1: Menyimak Cerita dan Berdiskusi": {
+    "1.1 Menyimak dan Menceritakan Kembali Cerita": `👂📖 **Petualangan Mendengar dan Bercerita: Menyimak Cerita dan Menceritakan Kembali** 🗣️✨
+
+Selamat datang di Bab 1 Bahasa Indonesia Kelas 6! Di bab ini, kita akan melatih dua keterampilan penting dalam berkomunikasi: **menyimak** dan **menceritakan kembali** cerita. Keterampilan ini sangat berguna dalam kehidupan sehari-hari, bukan hanya di kelas!
+
+1.  **Menyimak Cerita Secara Saksama:**
+
+    Peserta didik akan diajak untuk **menyimak dengan penuh perhatian** cerita yang dibacakan oleh guru, atau bahkan mendengarkan rekaman cerita. Menyimak berbeda dengan mendengar biasa; menyimak berarti:
+
+    *   **Fokus Penuh:** Memusatkan seluruh perhatian pada apa yang diceritakan.
+    *   **Memahami Isi:** Mencoba menangkap semua informasi penting, seperti:
+        *   **Tokoh:** Siapa saja yang ada di cerita? Apa peran mereka?
+        *   **Latar:** Di mana dan kapan cerita itu terjadi?
+        *   **Alur (Jalan Cerita):** Apa yang terjadi di awal, di tengah (masalahnya apa?), dan di akhir cerita (bagaimana penyelesaiannya?).
+        *   **Pesan Moral:** Pelajaran apa yang bisa kita ambil dari cerita itu?
+
+    **Tujuan:** Melatih kemampuan kita untuk menerima informasi dengan akurat dan cepat dari sumber lisan.
+
+2.  **Menceritakan Kembali Cerita:**
+
+    Setelah menyimak, siswa akan dilatih untuk **menyampaikan kembali isi cerita tersebut dengan bahasa mereka sendiri**. Ini harus dilakukan dengan:
+
+    *   **Runtut:** Sesuai urutan kejadian cerita, tidak melompat-lompat.
+    *   **Logis:** Masuk akal dan mudah dipahami.
+    *   **Jelas:** Menggunakan kata-kata yang tepat dan tidak berbelit-belit.
+    *   **Ekspresif:** Menggunakan intonasi dan mimik wajah yang sesuai agar cerita lebih hidup.
+
+    **Manfaat Aktivitas Ini:**
+
+    *   **Meningkatkan Pemahaman Bacaan/Dengar:** Memastikan kita benar-benar mengerti apa yang disampaikan.
+    *   **Mengembangkan Keterampilan Berbicara:** Melatih kita untuk berbicara di depan umum dengan percaya diri dan terstruktur.
+    *   **Melatih Daya Ingat:** Membiasakan kita untuk mengingat detail-detail penting.
+    *   **Membangun Empati:** Memahami perasaan dan pengalaman tokoh dalam cerita.
+
+Mari kita jadi penyimak yang baik dan pencerita yang hebat! 🎤📚`,
+    "1.2 Berdiskusi dengan Sopan dan Santun": `🗣️🤝 **Jembatan Pikiran: Berdiskusi dengan Sopan dan Santun** 💡💬
+
+Di subbab ini, kita akan belajar bagaimana caranya bertukar pikiran dengan orang lain secara **efektif dan menyenangkan**! Yaitu, dengan **berdiskusi secara sopan dan santun**. Diskusi adalah kegiatan bertukar pendapat untuk mencari pemahaman atau kesepakatan mengenai suatu topik.
+
+Topik diskusi bisa bermacam-macam, mulai dari isi cerita yang baru saja disimak, masalah di sekolah, atau isu-isu yang relevan dengan kehidupan sehari-hari kita. Misalnya, "Bagaimana cara mengurangi sampah plastik di sekolah?" atau "Apa yang bisa kita lakukan untuk membantu teman yang kesulitan belajar?"
+
+Penting sekali untuk berdiskusi dengan **sopan dan santun**, karena ini adalah kunci agar diskusi berjalan lancar dan semua orang merasa nyaman:
+
+1.  **Menyampaikan Pendapat dengan Bahasa yang Santun:**
+
+    *   **Gunakan Kata-kata yang Baik:** Hindari kata-kata kasar atau menyinggung. Contoh: Daripada "Idemu jelek!", lebih baik katakan "Menurut saya, ada cara lain yang mungkin lebih efektif."
+    *   **Sampaikan dengan Jelas:** Ungkapkan ide kita dengan kalimat yang mudah dipahami, tidak bertele-tele.
+    *   **Sampaikan dengan Tenang:** Jangan berteriak atau memotong pembicaraan orang lain.
+
+2.  **Menghargai Pendapat Orang Lain:**
+
+    *   **Mendengarkan dengan Aktif:** Fokus saat orang lain berbicara. Jangan sibuk memikirkan apa yang akan kita katakan selanjutnya.
+    *   **Tidak Memotong Pembicaraan:** Biarkan orang lain menyelesaikan kalimatnya sebelum kita berbicara.
+    *   **Menghargai Perbedaan Pandangan:** Setiap orang punya hak untuk punya pendapat berbeda. Kita boleh tidak setuju, tapi harus tetap menghormati.
+    *   **Hindari Serangan Pribadi:** Kritisi idenya, bukan orangnya.
+
+**Manfaat Berdiskusi:**
+
+*   **Membangun Kemampuan Berpikir Kritis:** Kita jadi terbiasa menganalisis masalah dan mencari solusi.
+*   **Meningkatkan Keterampilan Komunikasi:** Belajar bagaimana menyampaikan ide dengan persuasif dan mendengarkan dengan baik.
+*   **Memperluas Wawasan:** Mendapatkan sudut pandang baru dari teman-teman.
+*   **Melatih Kerja Sama:** Mencari solusi bersama untuk masalah.
+*   **Menciptakan Suasana Kelas yang Harmonis:** Belajar menerima perbedaan dan hidup rukun.
+
+Mari kita jadikan diskusi sebagai ajang berbagi ilmu dan mempererat tali persaudaraan! 😊📚`
+  },
+  "Bab 2: Menyampaikan Pidato": {
+    "2.1 Menyusun Teks Pidato": `✍️🎤 **Seni Berbicara: Menyusun Teks Pidato** 📝📣
+
+Di Bab 2 Bahasa Indonesia Kelas 6, kita akan belajar menjadi seorang orator cilik! Kita akan membahas bagaimana caranya **menyusun teks pidato** yang baik dan menarik. Pidato itu seperti bercerita di depan banyak orang dengan tujuan tertentu.
+
+Sebuah teks pidato yang baik harus memiliki **struktur** yang jelas, agar pesan yang ingin disampaikan bisa diterima dengan baik oleh pendengar. Struktur teks pidato umumnya terdiri dari tiga bagian utama:
+
+1.  **Pembukaan (Salam Pembuka dan Sapaan):**
+    *   **Salam:** Mengucapkan salam (misalnya, "Assalamualaikum Wr. Wb.", "Selamat pagi/siang/sore/malam", "Salam sejahtera").
+    *   **Sapaan:** Menyapa hadirin secara berurutan, dimulai dari yang paling dihormati (contoh: "Yang terhormat Bapak/Ibu Guru, teman-teman yang saya cintai").
+    *   **Puji Syukur:** Mengucapkan puji syukur kepada Tuhan YME.
+    *   **Tujuan Pidato:** Memberi tahu secara singkat tentang apa yang akan dibahas dalam pidato.
+
+2.  **Isi Pidato:**
+    *   **Pokok Bahasan:** Bagian paling penting yang berisi inti pesan atau gagasan yang ingin disampaikan. Susun secara logis dan sistematis.
+    *   **Argumentasi/Penjelasan:** Berikan alasan, bukti, atau contoh yang mendukung gagasan kita.
+    *   **Pengembangan Topik:** Jelaskan setiap poin dengan detail agar mudah dipahami.
+
+3.  **Penutup (Kesimpulan dan Salam Penutup):**
+    *   **Kesimpulan:** Ringkasan singkat dari isi pidato atau penekanan kembali pesan utama.
+    *   **Pesan/Ajakan:** Ajak pendengar untuk melakukan sesuatu atau merenungkan pesan yang disampaikan.
+    *   **Permohonan Maaf:** Jika ada kesalahan dalam penyampaian.
+    *   **Salam Penutup:** Mengucapkan salam penutup (misalnya, "Wassalamualaikum Wr. Wb.", "Terima kasih").
+
+**Hal Penting dalam Menyusun Pidato:**
+
+*   **Memilih Topik yang Sesuai:** Pilih topik yang kita kuasai dan menarik bagi audiens. Contoh: pentingnya menjaga kebersihan, dampak positif membaca buku, atau cara mengatasi bullying.
+*   **Penggunaan Bahasa Baku:** Gunakan bahasa Indonesia yang baik dan benar (formal).
+*   **Ekspresi Meyakinkan:** Gunakan pilihan kata yang kuat dan kalimat yang efektif agar pidato kita berkesan.
+
+Menyusun teks pidato melatih kita untuk berpikir terstruktur dan menyampaikan gagasan secara lisan dengan runtut. Mari kita latih diri menjadi pembicara yang handal! 🗣️✨`,
+    "2.2 Menyampaikan Pidato": `🎙️🚶‍♀️ **Aksi Panggung: Menyampaikan Pidato dengan Percaya Diri** 🌟 audience
+
+Setelah kita berhasil menyusun teks pidato yang hebat, sekarang saatnya "naik panggung"! Di subbab ini, kita akan melatih bagaimana caranya **menyampaikan pidato secara langsung di depan kelas** atau di depan umum. Ini adalah kesempatan emas untuk melatih keberanian dan kemampuan berbicara kita!
+
+Menyampaikan pidato bukan hanya tentang membaca teks, tapi juga tentang bagaimana kita "membawakan" pidato tersebut agar menarik dan berkesan bagi pendengar. Ada beberapa hal penting yang perlu kita perhatikan:
+
+1.  **Keberanian dan Percaya Diri:**
+    *   **Jangan Takut Salah:** Semua orang pernah belajar. Anggap ini sebagai latihan.
+    *   **Tatap Audiens:** Lakukan kontak mata dengan pendengar untuk membangun kedekatan dan menunjukkan bahwa kita percaya diri.
+    *   **Tarik Napas Dalam:** Mengurangi gugup sebelum memulai.
+
+2.  **Artikulasi (Pengucapan Kata yang Jelas):**
+    *   **Lafalkan Setiap Kata:** Ucapkan setiap kata dengan jelas dan tidak terburu-buru. Pastikan suara kita terdengar sampai ke belakang.
+    *   **Buka Mulut Secukupnya:** Agar suara tidak tertahan.
+
+3.  **Ekspresi (Mimik Wajah dan Gerakan Tubuh):**
+    *   **Mimik Wajah:** Sesuaikan ekspresi wajah dengan isi pidato (senyum saat menyampaikan hal gembira, serius saat membahas masalah).
+    *   **Bahasa Tubuh (Gestur):** Gunakan gerakan tangan atau tubuh yang natural untuk menekankan poin penting, tapi jangan berlebihan. Ini akan membuat pidato lebih hidup.
+
+4.  **Intonasi (Nada Suara) dan Lafal (Pengucapan Kata):**
+    *   **Variasi Nada:** Jangan monoton! Naik-turunkan nada suara sesuai emosi dan penekanan. Ini membuat pidato tidak membosankan.
+    *   **Jeda:** Beri jeda di tempat yang tepat (setelah kalimat lengkap atau sebelum poin penting) agar pendengar bisa mencerna.
+    *   **Volume Suara:** Pastikan volume suara cukup keras agar semua pendengar bisa mendengar dengan jelas.
+
+5.  **Penggunaan Alat Bantu Visual (Jika Diperlukan):**
+    *   Jika topik pidato membutuhkan, kita bisa menggunakan gambar, poster, atau slide sederhana untuk membantu menjelaskan. Pastikan alat bantu ini mendukung, bukan mengalihkan perhatian.
+
+**Latihan adalah Kunci!** Semakin sering berlatih, semakin baik kemampuan kita berpidato. Mulai dari berlatih di depan cermin, lalu di depan keluarga, hingga akhirnya di depan kelas. Mari jadi pembicara yang menginspirasi! 🌟🎙️`
+  },
+  "Bab 3: Mengidentifikasi Unsur dan Struktur Teks": {
+    "3.1 Mengenal Teks Fiksi dan Nonfiksi": `📚🔍 **Jelajah Kata: Mengenal Teks Fiksi dan Nonfiksi** ✍️📖
+
+Selamat datang di Bab 3 Bahasa Indonesia Kelas 6! Di bab ini, kita akan menjadi "detektif teks" dan belajar membedakan dua jenis bacaan yang sangat berbeda: **teks fiksi** dan **teks nonfiksi**. Keduanya memiliki tujuan, struktur, dan isi yang unik!
+
+Penting untuk memahami perbedaannya agar kita tahu bagaimana cara terbaik membaca dan mendapatkan informasi dari masing-masing teks.
+
+1.  **Teks Fiksi (Dunia Imajinasi):**
+
+    *   **Tujuan:** Umumnya untuk **menghibur pembaca**.
+    *   **Sifat:** Bersifat **imajinatif, karangan, atau khayalan** penulis. Ceritanya tidak nyata, tetapi bisa terasa sangat hidup.
+    *   **Ciri-ciri:**
+        *   **Tokoh:** Bisa manusia, hewan, atau makhluk khayalan.
+        *   **Latar:** Tempat dan waktu yang bisa nyata atau rekaan.
+        *   **Alur:** Urutan kejadian dalam cerita (maju, mundur, atau campuran).
+        *   **Konflik:** Masalah atau tantangan yang dihadapi tokoh.
+        *   **Gaya Bahasa:** Sering menggunakan bahasa kiasan, indah, dan menarik.
+        *   **Pesan Moral/Nilai:** Meskipun fiksi, seringkali mengandung pelajaran hidup atau nilai-nilai luhur yang bisa kita ambil.
+    *   **Contoh:** Cerpen (cerita pendek), novel, dongeng, fabel, legenda, puisi, drama.
+
+2.  **Teks Nonfiksi (Dunia Nyata dan Informasi):**
+
+    *   **Tujuan:** Untuk **menyampaikan informasi, pengetahuan, atau fakta nyata** kepada pembaca.
+    *   **Sifat:** Berdasarkan **fakta, data, dan kejadian nyata**. Apa yang tertulis adalah kebenaran yang bisa dibuktikan.
+    *   **Ciri-ciri:**
+        *   **Isi:** Mengandung informasi yang akurat dan dapat dipertanggungjawabkan.
+        *   **Bahasa:** Menggunakan bahasa baku, lugas, dan jelas (tidak berbelit-belit).
+        *   **Struktur:** Terkadang memiliki struktur seperti pendahuluan, isi, dan penutup, atau dibagi per bab/subbab.
+        *   **Objektif:** Penulis menyampaikan informasi secara objektif, tidak memihak.
+    *   **Contoh:** Berita di koran, artikel ilmiah, buku sejarah, biografi, laporan penelitian, ensiklopedia.
+
+Melalui berbagai contoh bacaan, siswa akan belajar bagaimana mengidentifikasi ciri-ciri teks fiksi (seperti "oh, ini ada naga, berarti fiksi!") dan teks nonfiksi (seperti "oh, ini data tentang gunung berapi, berarti nonfiksi!"). Ini akan membantu kita memilih bacaan yang tepat sesuai kebutuhan dan mendapatkan manfaat maksimal dari setiap teks. Mari kita jelajahi dunia literasi! 🧐🌍`,
+    "3.2 Mengembangkan Gagasan Pokok": `💡📝 **Arsitek Paragraf: Mengembangkan Gagasan Pokok** 🏗️✍️
+
+Di subbab ini, kita akan belajar menjadi "arsitek" kata-kata dengan cara **mengembangkan gagasan pokok** menjadi paragraf yang utuh dan mudah dipahami. Gagasan pokok itu seperti "inti" dari sebuah paragraf, sementara kalimat penjelas adalah "bangunannya" yang membuat inti itu terlihat lengkap.
+
+1.  **Mengenal Gagasan Pokok:**
+
+    *   **Definisi:** Gagasan pokok (ide pokok, pikiran utama) adalah **inti atau ide utama yang dibahas dalam sebuah paragraf**. Semua kalimat lain dalam paragraf itu (kalimat penjelas) akan menjelaskan atau mendukung gagasan pokok ini.
+    *   **Letak Gagasan Pokok:**
+        *   **Eksplisit (Terlihat Jelas):** Gagasan pokok seringkali terletak di awal paragraf (deduktif), di akhir paragraf (induktif), atau di awal dan di akhir paragraf (campuran).
+            *   **Contoh Awal Paragraf:** "**Kesehatan gigi dan mulut sangat penting.** Kita harus rajin menyikat gigi dua kali sehari agar terhindar dari karies. Mengurangi makanan manis juga membantu menjaga gigi tetap kuat. Periksa gigi ke dokter secara berkala adalah langkah yang bijak."
+        *   **Implisit (Tersirat/Tersembunyi):** Gagasan pokok tidak dituliskan secara langsung, tetapi bisa disimpulkan dari keseluruhan isi paragraf.
+
+2.  **Mengembangkan Gagasan Pokok Menjadi Paragraf Utuh:**
+
+    Setelah menemukan gagasan pokok, tugas kita adalah "mengembangkan"-nya. Ini berarti:
+
+    *   **Menambahkan Kalimat Penjelas:** Kalimat penjelas adalah kalimat-kalimat yang berfungsi untuk **mendukung, menjelaskan, atau memperinci** gagasan pokok. Mereka memberikan detail, contoh, atau alasan.
+
+    *   **Paragraf yang Koheren:** Pastikan semua kalimat dalam paragraf saling berkaitan dan membentuk satu kesatuan yang padu. Tidak ada kalimat yang "nyasar" atau tidak relevan.
+
+    **Langkah-langkah Praktis:**
+
+    1.  **Tentukan Gagasan Pokok:** Misalnya, kita ingin menulis tentang "Manfaat Olahraga Teratur."
+    2.  **Tulis Kalimat Gagasan Pokok:** "Olahraga teratur memiliki banyak manfaat bagi tubuh."
+    3.  **Tambahkan Kalimat Penjelas:**
+        *   "Olahraga dapat meningkatkan kesehatan jantung dan paru-paru." (menjelaskan manfaat)
+        *   "Selain itu, olahraga membantu menjaga berat badan ideal dan mencegah obesitas." (menjelaskan manfaat lain)
+        *   "Tubuh yang aktif berolahraga juga memiliki daya tahan tubuh yang lebih kuat terhadap penyakit." (memberi detail)
+
+    **Hasil Paragraf:** "Olahraga teratur memiliki banyak manfaat bagi tubuh. Olahraga dapat meningkatkan kesehatan jantung dan paru-paru. Selain itu, olahraga membantu menjaga berat badan ideal dan mencegah obesitas. Tubuh yang aktif berolahraga juga memiliki daya tahan tubuh yang lebih kuat terhadap penyakit."
+
+Keterampilan ini sangat penting untuk menulis, karena akan membuat tulisan kita lebih jelas, terstruktur, dan mudah dipahami pembaca. Mari kita jadi penulis yang handal! 📝💪`
+  },
+  "Bab 4: Menulis Teks Laporan Hasil Observasi": {
+    "4.1 Mengenal Teks Laporan Hasil Observasi": `📊🔬 **Detektif Pengetahuan: Mengenal Teks Laporan Hasil Observasi** 🌳🏢
+
+Selamat datang di Bab 4 Bahasa Indonesia Kelas 6! Di bab ini, kita akan menjadi "detektif pengetahuan" dengan belajar tentang **teks laporan hasil observasi**. Teks ini adalah cara kita menyampaikan informasi yang jujur dan akurat berdasarkan apa yang sudah kita lihat dan amati secara langsung.
+
+Apa itu **Teks Laporan Hasil Observasi**?
+
+*   **Definisi:** Teks laporan hasil observasi adalah tulisan yang berisi **informasi yang disusun berdasarkan hasil pengamatan atau peninjauan secara langsung** terhadap suatu objek, tempat, atau peristiwa.
+*   **Tujuan:** Untuk **menyampaikan informasi secara objektif dan sistematis**. Artinya, informasi yang diberikan harus sesuai fakta, tidak ditambah atau dikurangi, dan disajikan dengan urutan yang rapi.
+
+Struktur umum dari teks laporan hasil observasi biasanya meliputi:
+
+1.  **Identifikasi Objek (Pembukaan):**
+    *   Berisi informasi umum tentang objek yang diamati. Apa namanya, di mana lokasinya, atau definisi singkatnya.
+    *   **Contoh:** "Bunga Mawar adalah tanaman hias yang populer dari genus Rosa..."
+
+2.  **Deskripsi Bagian-bagian (Isi):**
+    *   Bagian ini menjelaskan secara rinci tentang ciri-ciri fisik objek, fungsi, atau bagaimana objek tersebut bekerja. Bisa dibagi menjadi beberapa paragraf.
+    *   **Contoh:** "Bunga Mawar memiliki kelopak yang tersusun rapi dengan berbagai warna seperti merah, putih, pink, dan kuning. Batangnya berduri, dan daunnya majemuk..."
+
+3.  **Simpulan (Penutup):**
+    *   Berisi ringkasan atau kesimpulan umum dari hasil observasi. Bisa juga berisi manfaat atau keunikan dari objek yang diamati.
+    *   **Contoh:** "Dengan keindahan dan keharumannya, bunga mawar sering digunakan sebagai simbol cinta dan dekorasi di berbagai acara."
+
+**Hal Penting dalam Observasi:**
+
+*   **Pengamatan Langsung:** Kita harus benar-benar melihat dan mengamati objeknya, tidak hanya membaca dari buku.
+*   **Mencatat Fakta:** Catat apa yang kita lihat, dengar, atau rasakan. Hindari opini pribadi.
+*   **Bahasa Baku dan Ilmiah:** Gunakan bahasa yang sesuai untuk laporan.
+
+Dengan belajar menyusun teks laporan hasil observasi, kita akan terbiasa berpikir kritis, teliti, dan bertanggung jawab terhadap informasi yang kita sampaikan. Mari jadi ilmuwan cilik! 🔎📝`,
+    "4.2 Menulis Teks Laporan": `✍️🔬 **Langkah Menulis: Menyusun Teks Laporan Hasil Observasi** 🗒️✅
+
+Setelah kita mengenal apa itu teks laporan hasil observasi, kini saatnya kita "beraksi"! Pada subbab ini, kita akan belajar **langkah-langkah praktis dalam menulis teks laporan hasil observasi** berdasarkan pengamatan yang sudah kita lakukan. Ini adalah kesempatan untuk menunjukkan kemampuan kita mengamati dan menulis secara sistematis.
+
+**Langkah-langkah Menulis Teks Laporan Hasil Observasi:**
+
+1.  **Pilih Objek Observasi:**
+    *   Pilih objek, tempat, atau peristiwa yang mudah diamati di sekitar kita. Contoh:
+        *   **Tumbuhan:** Pohon mangga di halaman, bunga melati di pot.
+        *   **Hewan:** Kucing peliharaan, burung di sangkar.
+        *   **Tempat Umum:** Perpustakaan sekolah, kantin, taman kota.
+        *   **Peristiwa Sederhana:** Proses pertumbuhan kecambah, perubahan cuaca dalam sehari.
+
+2.  **Lakukan Observasi (Pengamatan) Langsung:**
+    *   Pergi ke lokasi objek atau amati objek secara langsung.
+    *   **Catat Detail Penting:** Gunakan buku catatan atau alat perekam. Catat ciri-ciri fisik (warna, ukuran, bentuk), perilaku (jika hewan), fungsi, atau hal-hal menarik lainnya.
+    *   **Gunakan Panca Indra:** Amati dengan mata (visual), dengarkan suara (auditori), cium bau (olfaktori), atau sentuh teksturnya (kinestetik) jika memungkinkan.
+
+3.  **Susun Kerangka Laporan:**
+    *   Buat kerangka atau poin-poin penting sesuai struktur teks laporan:
+        *   **Identifikasi Objek:** Nama objek, lokasi, klasifikasi (jika ada).
+        *   **Deskripsi Bagian-bagian:** Ciri-ciri spesifik, fungsi setiap bagian, kebiasaan.
+        *   **Simpulan:** Ringkasan hasil pengamatan, manfaat, atau keunikan.
+
+4.  **Kembangkan Menjadi Teks Laporan:**
+    *   Tulis laporan berdasarkan kerangka yang sudah dibuat.
+    *   **Perhatikan Kaidah Kebahasaan:**
+        *   **Bahasa Baku:** Gunakan bahasa Indonesia yang formal dan benar.
+        *   **Kalimat Efektif:** Kalimat yang singkat, padat, jelas, dan tidak boros kata.
+        *   **Kata Teknis:** Gunakan istilah yang relevan dengan objek yang diamati (misal: "fotosintesis" untuk tumbuhan).
+        *   **Objektivitas:** Pastikan semua informasi adalah fakta, bukan opini atau perasaan pribadi.
+    *   **Susun Paragraf Runtut:** Setiap paragraf membahas satu ide dan mengalir dengan logis.
+
+5.  **Periksa dan Revisi:**
+    *   Baca kembali laporan kita. Apakah ada kesalahan penulisan, ejaan, atau tata bahasa?
+    *   Apakah informasinya sudah lengkap dan jelas?
+    *   Apakah sudah objektif?
+
+**Manfaat dari Kegiatan Ini:**
+
+*   **Menumbuhkan Kemampuan Menulis Berdasarkan Fakta:** Kita belajar menyampaikan informasi yang benar dan bisa dipertanggungjawabkan.
+*   **Melatih Ketelitian:** Kita jadi lebih cermat dalam mengamati detail.
+*   **Mengembangkan Rasa Tanggung Jawab:** Terhadap informasi yang kita berikan kepada orang lain.
+
+Mari kita jadi penulis laporan yang handal dan akurat! ✍️✅`
+  }
+};
+
+let selectedSubbab = null;
+let selectedBab = null;
+
+// Tambahkan event listener ke semua tombol subbab
+function setupSubbabRingkasan() {
+  document.querySelectorAll('.subbab-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      selectedSubbab = btn.getAttribute('data-subbab');
+      selectedBab = btn.getAttribute('data-bab');
+      const ringkasanBtn = document.getElementById('ringkasanBtn');
+      ringkasanBtn.classList.remove('bg-gray-300', 'cursor-not-allowed');
+      ringkasanBtn.classList.add('bg-gradient-to-r', 'from-green-400', 'to-blue-400', 'hover:from-green-500', 'hover:to-blue-500', 'cursor-pointer');
+      ringkasanBtn.disabled = false;
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  setupSubbabRingkasan();
+  const ringkasanBtn = document.getElementById('ringkasanBtn');
+  ringkasanBtn.onclick = async function() {
+    if (!selectedSubbab || !selectedBab) return;
+
+    const summary = bahasaIndonesiaSummariesK6[selectedBab]?.[selectedSubbab] || null;
+
+    sessionStorage.setItem('ringkasan_k6_bi', JSON.stringify({
+      ringkasan: summary,
+      bab: selectedBab,
+      subbab: selectedSubbab
+    }));
+    window.location.href = 'ringkasan-result-kelas6-bahasa-indonesia.html';
+  };
+  document.querySelectorAll('.language-toggle-button').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = btn.textContent.trim().toLowerCase();
+      loadLang(lang);
+      document.querySelectorAll('.language-toggle-button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+  loadLang(currentLang);
+});
+</script>
+</body></html>

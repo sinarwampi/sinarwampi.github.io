@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kelas 5 - Matematika</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+:root {
+  --brand-primary: #6366F1;
+  --brand-secondary: #EC4899;
+  --background-primary: #FFFBEB;--background-secondary: #FFFFFF;
+  --text-primary: #374151;--text-secondary: #6B7280;
+  --border-primary: #FBBF24;--action-primary: #34D399;--action-primary-hover: #10B981;--action-secondary: #F3F4F6;
+  --action-secondary-hover: #E5E7EB;
+  --color-sky-blue: #87CEEB;
+  --color-coral: #FF7F50;
+  --color-lime-green: #32CD32;
+  --color-violet: #EE82EE;
+  --color-gold: #FFD700;
+}
+body {
+  font-family: 'Lexend', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Fredoka One', cursive;
+}
+</style>
+</head>
+<body class="bg-[var(--background-primary)] text-[var(--text-primary)]">
+<div class="flex flex-col min-h-screen">
+<header class="bg-white shadow-md">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-[var(--color-sky-blue)] rounded-xl flex items-center justify-center transform -rotate-12">
+        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L9 9.61V16a1 1 0 001 1h2a1 1 0 001-1V9.61l6.394-2.69a1 1 0 000-1.84l-7-3zM10 8L3.394 5.31 10 2.69v5.32z"></path>
+        </svg>
+      </div>
+      <h1 class="text-xl sm:text-2xl text-[var(--text-primary)] font-bold" data-i18n="app_title">SINAR WAMPI</h1>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="language-toggle">
+        <button class="language-toggle-button active">ID</button>
+        <button class="language-toggle-button">EN</button>
+      </div>
+      <div class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfuwgYI-olVKF44AsvP7zsXtut46r76IIIbHOVhQRqZb4rg0KeVqnmfqm7yNrg4IZBmdiJ0SSQQ7JboPBpD_U4j5xrHEM53FeNseG4FQMDPIn3JZmcZju4oFuZS5vQAKyWwRXzlPebWjYVVf9Unqur0XzLipA4qFVYD3vGPv0k7oLTgihTQvseqa0kWkpmZ5z7CpuNmI3dDc9H5SY51ABcBMrMxz2J8eGAwjKxE99K1hNe2Zv6NcsxZhruyFBCOeMrph4SpjSwtO4");'></div>
+    </div>
+  </div>
+</header>
+<div class="w-full flex items-center mt-2 mb-4">
+  <a href="kelas5.html" class="flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-pink-400 to-blue-400 text-white font-medium shadow hover:from-pink-500 hover:to-blue-500 transition-colors ml-2">
+    <span class="text-base">&#8592;</span>
+    <span>Kembali</span>
+  </a>
+</div>
+<main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[var(--color-coral)] mb-4">Kelas 5 - Matematika</h2>
+  <p class="text-center text-base sm:text-lg md:text-xl text-[var(--text-secondary)] mb-10">Pilih subbab untuk melihat ringkasan materi:</p>
+  <div class="space-y-6">
+    <!-- Bab 1 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-green-700 mb-2">Bab 1: Operasi Hitung Pecahan</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.1 Penjumlahan dan Pengurangan Pecahan" data-bab="Bab 1: Operasi Hitung Pecahan">
+          <div class="font-semibold text-green-800 mb-1">1.1 Penjumlahan dan Pengurangan Pecahan</div>
+          <div class="text-sm text-green-700">Dalam subbab ini, siswa belajar menjumlahkan dan mengurangkan pecahan biasa, pecahan campuran, dan desimal, baik yang memiliki penyebut sama maupun berbeda.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.2 Perkalian dan Pembagian Pecahan" data-bab="Bab 1: Operasi Hitung Pecahan">
+          <div class="font-semibold text-green-800 mb-1">1.2 Perkalian dan Pembagian Pecahan</div>
+          <div class="text-sm text-green-700">Siswa mempelajari cara mengalikan dua pecahan dan memahami bahwa tidak perlu menyamakan penyebut. Untuk pembagian, siswa diajarkan membalik pecahan kedua dan mengalikan.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 2 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-blue-700 mb-2 mt-6">Bab 2: Kelipatan dan Faktor</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.1 Kelipatan dan Kelipatan Persekutuan Terkecil (KPK)" data-bab="Bab 2: Kelipatan dan Faktor">
+          <div class="font-semibold text-blue-800 mb-1">2.1 Kelipatan dan Kelipatan Persekutuan Terkecil (KPK)</div>
+          <div class="text-sm text-blue-700">Siswa memahami bahwa kelipatan adalah hasil perkalian suatu bilangan. Mereka akan belajar mencari KPK dari bilangan untuk menyelesaikan soal cerita.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.2 Faktor dan Faktor Persekutuan Terbesar (FPB)" data-bab="Bab 2: Kelipatan dan Faktor">
+          <div class="font-semibold text-blue-800 mb-1">2.2 Faktor dan Faktor Persekutuan Terbesar (FPB)</div>
+          <div class="text-sm text-blue-700">Faktor dari suatu bilangan adalah pembagi bilangan tersebut. Siswa belajar mencari FPB dari beberapa bilangan dan penggunaannya dalam berbagai situasi.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 3 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-yellow-700 mb-2 mt-6">Bab 3: Satuan Waktu, Panjang, dan Berat</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-yellow-200 to-yellow-100 hover:from-yellow-300 hover:to-yellow-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="3.1 Hubungan Antar Satuan Waktu" data-bab="Bab 3: Satuan Waktu, Panjang, dan Berat">
+          <div class="font-semibold text-yellow-800 mb-1">3.1 Hubungan Antar Satuan Waktu</div>
+          <div class="text-sm text-yellow-700">Siswa belajar konversi waktu (jam, menit, detik, hari) dan menyelesaikan soal cerita yang melibatkan konversi satuan.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-yellow-200 to-yellow-100 hover:from-yellow-300 hover:to-yellow-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="3.2 Hubungan Antar Satuan Panjang dan Berat" data-bab="Bab 3: Satuan Waktu, Panjang, dan Berat">
+          <div class="font-semibold text-yellow-800 mb-1">3.2 Hubungan Antar Satuan Panjang dan Berat</div>
+          <div class="text-sm text-yellow-700">Siswa mempelajari konversi satuan panjang (km, m, cm) dan satuan berat (kg, g) serta menggunakannya dalam kehidupan sehari-hari.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 4 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-purple-700 mb-2 mt-6">Bab 4: Kecepatan</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="4.1 Kecepatan" data-bab="Bab 4: Kecepatan">
+          <div class="font-semibold text-purple-800 mb-1">4.1 Kecepatan</div>
+          <div class="text-sm text-purple-700">Siswa memahami rumus kecepatan (jarak dibagi waktu) dan menyelesaikan berbagai masalah yang berkaitan dengan kecepatan, jarak, dan waktu.</div>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="bg-white/80 backdrop-blur-sm sticky bottom-0 border-t-2 border-[var(--border-primary)] mt-8">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center">
+    <button id="ringkasanBtn" class="w-full max-w-md bg-gray-300 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full shadow-xl cursor-not-allowed">
+      <span>Buat Ringkasan Sekarang!</span>
+    </button>
+  </div>
+  <div id="hasilRingkasan" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center text-base sm:text-lg text-[var(--text-primary)]">
+    <!-- Ringkasan akan muncul di sini -->
+  </div>
+</footer>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<!-- Script translate manual -->
+<script>
+let currentLang = 'id';
+function loadLang(lang) {
+  fetch(`lang-${lang}.json`)
+    .then(res => res.json())
+    .then(dict => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) el.textContent = dict[key];
+      });
+      currentLang = lang;
+    });
+}
+
+const matematikaSummariesK5 = {
+  "Bab 1: Operasi Hitung Pecahan": {
+    "1.1 Penjumlahan dan Pengurangan Pecahan": `➕➖ **Petualangan Pecahan: Penjumlahan dan Pengurangan** 🧩
+
+Selamat datang di Bab 1 Matematika Kelas 5! Kita akan memulai petualangan seru dengan **pecahan** dan bagaimana cara menjumlahkan serta menguranginya. Pecahan itu seperti potongan kue, kita akan belajar menggabungkan atau memisahkannya.
+
+Pada subbab ini, siswa akan belajar tentang:
+
+1.  **Pecahan Biasa:** Misalnya 1/2, 3/4. Jika penyebutnya sama, langsung jumlahkan atau kurangkan pembilangnya. Jika berbeda, kita harus menyamakan penyebutnya terlebih dahulu dengan mencari **Kelipatan Persekutuan Terkecil (KPK)** dari penyebut-penyebut tersebut.
+    *   **Contoh Penjumlahan:**
+        1/4 + 1/3
+        KPK dari 4 dan 3 adalah 12.
+        (3/12) + (4/12) = **7/12**
+
+    *   **Contoh Pengurangan:**
+        3/4 - 1/2
+        KPK dari 4 dan 2 adalah 4.
+        (3/4) - (2/4) = **1/4**
+
+2.  **Pecahan Campuran:** Pecahan yang terdiri dari bilangan bulat dan pecahan biasa, contoh: 2 1/2.
+    Untuk menjumlahkan atau mengurangkan pecahan campuran, ada dua cara:
+    *   **Mengubah ke Pecahan Biasa:** Ubah dulu pecahan campuran menjadi pecahan biasa, lalu ikuti langkah penjumlahan/pengurangan pecahan biasa.
+        Contoh: 2 1/2 - 1 2/3
+        5/2 - 5/3
+        KPK dari 2 dan 3 adalah 6.
+        (15/6) - (10/6) = **5/6**
+    *   **Memisahkan Bilangan Bulat dan Pecahan:** Jumlahkan/kurangkan bilangan bulatnya, lalu jumlahkan/kurangkan pecahannya.
+
+3.  **Desimal:** Bentuk pecahan persepuluhan, perseratusan, dst., yang ditulis dengan koma.
+    Untuk menjumlahkan atau mengurangkan desimal, sejajarkan koma desimalnya.
+    *   **Contoh Penjumlahan:**
+        2,75 + 1,20 = **3,95**
+
+    *   **Contoh Pengurangan:**
+        5,00 - 2,35 = **2,65**
+
+Melalui latihan soal cerita, seperti menghitung total panjang pita dari dua potong pita berbeda atau sisa belanjaan, siswa akan belajar menerapkan penjumlahan dan pengurangan pecahan dalam kehidupan nyata. Ini akan membuat matematika menjadi lebih menyenangkan dan relevan! 🛒✂️`,
+    "1.2 Perkalian dan Pembagian Pecahan": `✖️➗ **Aksi Pecahan: Perkalian dan Pembagian** 🍕
+
+Lanjut ke subbab seru selanjutnya: **Perkalian dan Pembagian Pecahan**! Di sini, kita akan menemukan bahwa operasi ini ternyata lebih sederhana dibandingkan penjumlahan dan pengurangan, karena kita tidak perlu pusing-pusing menyamakan penyebut.
+
+1.  **Perkalian Pecahan:**
+    Caranya sangat mudah: **Pembilang dikalikan pembilang, penyebut dikalikan penyebut!**
+    *   **Contoh Pecahan Biasa:**
+        2/3 × 4/5 = (2 × 4) / (3 × 5) = **8/15**
+
+    *   **Contoh Pecahan Campuran:**
+        Jika ada pecahan campuran, **ubah dulu menjadi pecahan biasa**, baru kemudian kalikan.
+        1 1/2 × 2/3 = 3/2 × 2/3 = (3 × 2) / (2 × 3) = 6/6 = **1**
+
+2.  **Pembagian Pecahan:**
+    Ini adalah trik yang ajaib! Untuk membagi pecahan, kita hanya perlu **membalik pecahan kedua (pembilang jadi penyebut, penyebut jadi pembilang)**, lalu **ubah operasi pembagian menjadi perkalian**.
+    *   **Contoh Pembagian:**
+        3/4 ÷ 2/5
+        Ubah menjadi: 3/4 × 5/2
+        Lalu kalikan: (3 × 5) / (4 × 2) = 15/8 = **1 7/8**
+
+    *   **Contoh Soal Cerita:**
+        Seorang anak memiliki 2 liter susu yang akan dibagi ke dalam botol berisi 1/4 liter. Berapa banyak botol yang diperlukan?
+        Penyelesaian: 2 ÷ 1/4
+        Ubah: 2 × 4 = **8 botol**
+
+Perkalian dan pembagian pecahan sering kita temui dalam situasi sehari-hari, seperti saat menghitung resep masakan, membagi barang, atau mengukur bahan. Mari kita kuasai operasi ini dan jadi jagoan pecahan! 💪👩‍🍳`
+  },
+  "Bab 2: Kelipatan dan Faktor": {
+    "2.1 Kelipatan dan Kelipatan Persekutuan Terkecil (KPK)": `🌈 **Pola Angka: Kelipatan dan KPK** 🔢
+
+Di Bab 2 Matematika Kelas 5, kita akan bermain dengan **pola angka** yang disebut **kelipatan** dan mencari "titik temu" terkecil mereka yang disebut **KPK (Kelipatan Persekutuan Terkecil)**.
+
+1.  **Kelipatan:**
+    Kelipatan suatu bilangan adalah **hasil perkalian bilangan tersebut dengan bilangan asli (1, 2, 3, dst.) secara berurutan.** Ini seperti melangkah maju dengan jarak yang sama setiap kali.
+    *   **Contoh Kelipatan:**
+        Kelipatan 4 adalah: 4 × 1 = **4**; 4 × 2 = **8**; 4 × 3 = **12**; 4 × 4 = **16**, dst. (4, 8, 12, 16, 20, 24, ...)
+        Kelipatan 6 adalah: 6, 12, 18, 24, 30, 36, ...
+
+2.  **Kelipatan Persekutuan Terkecil (KPK):**
+    KPK adalah **kelipatan terkecil yang sama dari dua atau lebih bilangan.** Ini seperti mencari kapan dua orang yang melangkah dengan panjang berbeda akan bertemu di titik yang sama untuk pertama kalinya.
+    *   **Cara Mencari KPK:**
+        *   **Mendaftar Kelipatan:** Tuliskan kelipatan dari setiap bilangan, lalu cari angka terkecil yang muncul di semua daftar.
+            Contoh: KPK dari 6 dan 8
+            Kelipatan 6 = {6, 12, 18, **24**, 30, 36, ...}
+            Kelipatan 8 = {8, 16, **24**, 32, 40, ...}
+            KPK (6, 8) = **24**
+        *   **Menggunakan Faktorisasi Prima:** Cari faktorisasi prima dari setiap bilangan, lalu kalikan semua faktor prima dengan pangkat tertinggi.
+            6 = 2 × 3
+            8 = 2³
+            KPK (6, 8) = 2³ × 3 = 8 × 3 = **24**
+
+    *   **Contoh Soal Cerita:**
+        Nisa berlatih menari setiap 6 hari sekali, dan Komang setiap 8 hari sekali. Jika mereka berlatih bersama pada 1 Agustus, kapan mereka akan berlatih bersama lagi?
+        Kita mencari KPK dari 6 dan 8, yaitu 24.
+        Artinya, mereka akan berlatih bersama lagi 24 hari setelah 1 Agustus, yaitu tanggal 1 + 24 = **25 Agustus**.
+
+Memahami kelipatan dan KPK sangat berguna dalam berbagai situasi, seperti saat mengatur jadwal, menghitung jumlah barang, atau bahkan dalam pembuatan resep makanan! Mari kita temukan pola-pola ini! 📅🕺`,
+    "2.2 Faktor dan Faktor Persekutuan Terbesar (FPB)": `🔍 **Pencari Pasangan: Faktor dan FPB** 🍎🍊
+
+Setelah belajar kelipatan, kini kita akan mengenal **faktor** dan mencari "pasangan terbesar" mereka yang disebut **FPB (Faktor Persekutuan Terbesar)**. Faktor itu seperti mencari angka-angka yang bisa "membagi habis" suatu bilangan.
+
+1.  **Faktor:**
+    Faktor dari suatu bilangan adalah **bilangan-bilangan yang dapat membagi habis bilangan tersebut tanpa sisa.**
+    *   **Contoh Faktor:**
+        Faktor dari 12 adalah: **1, 2, 3, 4, 6, 12** (Karena 12 dibagi 1, 2, 3, 4, 6, 12 tidak bersisa)
+        Faktor dari 18 adalah: **1, 2, 3, 6, 9, 18**
+
+2.  **Faktor Persekutuan Terbesar (FPB):**
+    FPB adalah **faktor terbesar yang sama dari dua atau lebih bilangan.** Ini sangat berguna saat kita ingin membagi sesuatu ke dalam kelompok-kelompok yang sama besar.
+    *   **Cara Mencari FPB:**
+        *   **Mendaftar Faktor:** Tuliskan semua faktor dari setiap bilangan, lalu cari angka terbesar yang muncul di semua daftar.
+            Contoh: FPB dari 12 dan 18
+            Faktor 12 = {1, 2, 3, **6**, 12}
+            Faktor 18 = {1, 2, 3, **6**, 9, 18}
+            FPB (12, 18) = **6**
+        *   **Menggunakan Faktorisasi Prima:** Cari faktorisasi prima dari setiap bilangan, lalu kalikan faktor prima yang sama dengan pangkat terkecil.
+            12 = 2² × 3
+            18 = 2 × 3²
+            FPB (12, 18) = 2¹ × 3¹ = 2 × 3 = **6**
+
+    *   **Contoh Soal Cerita:**
+        Jika ada 12 jeruk dan 18 apel yang ingin dibagi ke dalam kantong dengan jumlah buah yang sama banyak di setiap kantong, berapa kantong terbanyak yang bisa dibuat dan berapa isi setiap kantong?
+        Kita mencari FPB dari 12 dan 18, yaitu 6.
+        Artinya, bisa dibuat **6 kantong**. Setiap kantong akan berisi:
+        Jeruk: 12 ÷ 6 = **2 jeruk**
+        Apel: 18 ÷ 6 = **3 apel**
+
+Memahami faktor dan FPB membantu kita dalam memecahkan masalah pembagian dan pengelompokan secara efisien. Mari jadi ahli dalam membagi rata! 🎁🧺`
+  },
+  "Bab 3: Satuan Waktu, Panjang, dan Berat": {
+    "3.1 Hubungan Antar Satuan Waktu": `⏰ **Penjelajah Waktu: Hubungan Antar Satuan Waktu** ⏳
+
+Di Bab 3 Matematika Kelas 5, kita akan belajar bagaimana "bermain" dengan **waktu**! Kita akan memahami hubungan antar satuan waktu dan bagaimana cara mengubahnya dari satu bentuk ke bentuk lain. Ini penting agar kita bisa mengatur jadwal, menghitung durasi, dan memahami konsep waktu dalam kehidupan sehari-hari.
+
+Hubungan antar satuan waktu yang akan kita pelajari:
+
+*   **1 jam = 60 menit**
+*   **1 menit = 60 detik**
+*   **1 jam = 3.600 detik** (karena 60 menit × 60 detik/menit)
+*   **1 hari = 24 jam**
+*   **1 minggu = 7 hari**
+*   **1 bulan = 4 minggu** (sekitar 30 hari)
+*   **1 tahun = 12 bulan** (atau 365/366 hari)
+
+*   **Contoh Soal Konversi Waktu:**
+    *   Sebuah film berdurasi 2 jam 30 menit. Berapa total durasi dalam menit?
+        Penyelesaian: (2 jam × 60 menit/jam) + 30 menit = 120 menit + 30 menit = **150 menit**
+
+    *   Jika perjalanan membutuhkan waktu 3.600 detik, berapa lama perjalanan itu dalam jam?
+        Penyelesaian: 3.600 detik ÷ 60 = 60 menit
+        60 menit ÷ 60 = **1 jam**
+
+Dengan memahami hubungan ini, kita bisa lebih mudah menghitung durasi berbagai aktivitas, dari menonton film hingga merencanakan liburan. Waktu itu berharga, jadi mari kita manfaatkan dengan baik! ⏱️🗓️`,
+    "3.2 Hubungan Antar Satuan Panjang dan Berat": `📏⚖️ **Pengukur Dunia: Hubungan Antar Satuan Panjang dan Berat** 🌍
+
+Selain waktu, kita juga akan belajar bagaimana mengukur **panjang** dan **berat** benda di sekitar kita! Pada subbab ini, siswa akan memahami hubungan antar satuan panjang (seperti kilometer, meter, sentimeter) dan satuan berat (kilogram, gram), serta bagaimana mengkonversinya.
+
+**Satuan Panjang:**
+Ini seperti "tangga" di mana setiap langkahnya dikalikan atau dibagi 10.
+*   **km** (kilometer) -> **hm** (hektometer) -> **dam** (dekameter) -> **m** (meter) -> **dm** (desimeter) -> **cm** (sentimeter) -> **mm** (milimeter)
+
+*   **Hubungan Utama:**
+    *   **1 km = 1.000 m** (karena turun 3 tangga)
+    *   **1 m = 100 cm** (karena turun 2 tangga)
+
+*   **Contoh Soal Konversi Panjang:**
+    *   Seorang atlet melompat sejauh 2.300 cm. Berapa meter jarak lompatan atlet tersebut?
+        Penyelesaian: 2.300 cm ÷ 100 = **23 m** (karena naik 2 tangga dari cm ke m)
+
+**Satuan Berat:**
+Mirip dengan satuan panjang, hanya saja nama satuannya berbeda.
+*   **kg** (kilogram) -> **hg/ons** (hektogram) -> **dag** (dekagram) -> **g** (gram) -> **dg** (desigram) -> **cg** (sentigram) -> **mg** (miligram)
+
+*   **Hubungan Utama:**
+    *   **1 kg = 1.000 g**
+    *   **1 ons = 100 g**
+
+*   **Contoh Soal Konversi Berat:**
+    *   Ibu membeli beras 2,5 kg. Jika 1.200 gram beras sudah digunakan, berapa sisa beras yang Ibu miliki dalam gram dan kilogram?
+        Penyelesaian:
+        Ubah 2,5 kg ke gram: 2,5 × 1.000 = 2.500 gram
+        Sisa beras: 2.500 gram - 1.200 gram = **1.300 gram**
+        Ubah kembali ke kilogram: 1.300 gram ÷ 1.000 = **1,3 kg**
+
+Memahami satuan panjang dan berat ini sangat penting dalam kehidupan sehari-hari, seperti saat belanja, mengukur bahan bangunan, atau bahkan saat berolahraga. Mari kita jelajahi dunia pengukuran! 🛍️🏡🏃`
+  },
+  "Bab 4: Kecepatan": {
+    "4.1 Kecepatan": `⚡ **Terbang Melaju: Memahami Konsep Kecepatan** 🚀
+
+Selamat datang di Bab 4 Matematika Kelas 5, di mana kita akan belajar tentang bagaimana cepatnya sesuatu bergerak! Kita akan memahami konsep **kecepatan** dan bagaimana menghitungnya. Ini adalah keterampilan yang sangat praktis dalam kehidupan sehari-hari, dari bepergian hingga menghitung waktu tempuh.
+
+**Kecepatan** adalah perbandingan antara **jarak yang ditempuh** dengan **waktu yang dibutuhkan** untuk menempuh jarak tersebut.
+
+Rumus dasar kecepatan adalah:
+
+**Kecepatan = Jarak / Waktu**
+
+Dari rumus ini, kita juga bisa mencari:
+
+*   **Jarak = Kecepatan × Waktu**
+*   **Waktu = Jarak / Kecepatan**
+
+*   **Contoh Soal Menghitung Kecepatan:**
+    *   Jika jarak rumah ke sekolah adalah 10 km, dan ditempuh dalam 30 menit. Berapa kecepatan rata-rata perjalananmu?
+        Penyelesaian:
+        Ubah waktu ke jam: 30 menit = 0,5 jam
+        Kecepatan = 10 km / 0,5 jam = **20 km/jam**
+
+*   **Contoh Soal Menghitung Jarak:**
+    *   Sebuah mobil melaju dengan kecepatan 60 km/jam selama 2 jam. Berapa jarak yang ditempuh mobil tersebut?
+        Penyelesaian: Jarak = 60 km/jam × 2 jam = **120 km**
+
+*   **Contoh Soal Menghitung Waktu:**
+    *   Jika jarak 90 km ditempuh dengan kecepatan 30 km/jam, berapa waktu yang dibutuhkan untuk perjalanan tersebut?
+        Penyelesaian: Waktu = 90 km / 30 km/jam = **3 jam**
+
+Memahami konsep kecepatan akan membantu kita dalam merencanakan perjalanan, memperkirakan waktu tempuh, dan bahkan dalam pelajaran Fisika di jenjang yang lebih tinggi. Mari kita berhitung secepat kilat! 🏎️💨`
+  }
+};
+
+let selectedSubbab = null;
+let selectedBab = null;
+
+// Tambahkan event listener ke semua tombol subbab
+function setupSubbabRingkasan() {
+  document.querySelectorAll('.subbab-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      selectedSubbab = btn.getAttribute('data-subbab');
+      selectedBab = btn.getAttribute('data-bab');
+      const ringkasanBtn = document.getElementById('ringkasanBtn');
+      ringkasanBtn.classList.remove('bg-gray-300', 'cursor-not-allowed');
+      ringkasanBtn.classList.add('bg-gradient-to-r', 'from-green-400', 'to-blue-400', 'hover:from-green-500', 'hover:to-blue-500', 'cursor-pointer');
+      ringkasanBtn.disabled = false;
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  setupSubbabRingkasan();
+  const ringkasanBtn = document.getElementById('ringkasanBtn');
+  ringkasanBtn.onclick = async function() {
+    if (!selectedSubbab || !selectedBab) return;
+
+    const summary = matematikaSummariesK5[selectedBab]?.[selectedSubbab] || null;
+
+    sessionStorage.setItem('ringkasan_k5_matematika', JSON.stringify({
+      ringkasan: summary,
+      bab: selectedBab,
+      subbab: selectedSubbab
+    }));
+    window.location.href = 'ringkasan-result-kelas5-matematika.html';
+  };
+  document.querySelectorAll('.language-toggle-button').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = btn.textContent.trim().toLowerCase();
+      loadLang(lang);
+      document.querySelectorAll('.language-toggle-button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+  loadLang(currentLang);
+});
+</script>
+</body></html> 

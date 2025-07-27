@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kelas 4 - Bahasa Indonesia</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+:root {
+  --brand-primary: #6366F1;
+  --brand-secondary: #EC4899;
+  --background-primary: #FFFBEB;--background-secondary: #FFFFFF;
+  --text-primary: #374151;--text-secondary: #6B7280;
+  --border-primary: #FBBF24;--action-primary: #34D399;--action-primary-hover: #10B981;--action-secondary: #F3F4F6;
+  --action-secondary-hover: #E5E7EB;
+  --color-sky-blue: #87CEEB;
+  --color-coral: #FF7F50;
+  --color-lime-green: #32CD32;
+  --color-violet: #EE82EE;
+  --color-gold: #FFD700;
+}
+body {
+  font-family: 'Lexend', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Fredoka One', cursive;
+}
+</style>
+</head>
+<body class="bg-[var(--background-primary)] text-[var(--text-primary)]">
+<div class="flex flex-col min-h-screen">
+<header class="bg-white shadow-md">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-[var(--color-sky-blue)] rounded-xl flex items-center justify-center transform -rotate-12">
+        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L9 9.61V16a1 1 0 001 1h2a1 1 0 001-1V9.61l6.394-2.69a1 1 0 000-1.84l-7-3zM10 8L3.394 5.31 10 2.69v5.32z"></path>
+        </svg>
+      </div>
+      <h1 class="text-xl sm:text-2xl text-[var(--text-primary)] font-bold" data-i18n="app_title">SINAR WAMPI</h1>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="language-toggle">
+        <button class="language-toggle-button active">ID</button>
+        <button class="language-toggle-button">EN</button>
+      </div>
+      <div class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfuwgYI-olVKF44AsvP7zsXtut46r76IIIbHOVhQRqZb4rg0KeVqnmfqm7yNrg4IZBmdiJ0SSQQ7JboPBpD_U4j5xrHEM53FeNseG4FQMDPIn3JZmcZju4oFuZS5vQAKyWwRXzlPebWjYVVf9Unqur0XzLipA4qFVYD3vGPv0k7oLTgihTQvseqa0kWkpmZ5z7CpuNmI3dDc9H5SY51ABcBMrMxz2J8eGAwjKxE99K1hNe2Zv6NcsxZhruyFBCOeMrph4SpjSwtO4");'></div>
+    </div>
+  </div>
+</header>
+<div class="w-full flex items-center mt-2 mb-4">
+  <a href="kelas4.html" class="flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-pink-400 to-blue-400 text-white font-medium shadow hover:from-pink-500 hover:to-blue-500 transition-colors ml-2">
+    <span class="text-base">&#8592;</span>
+    <span>Kembali</span>
+  </a>
+</div>
+<main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[var(--color-coral)] mb-4">Kelas 4 - Bahasa Indonesia</h2>
+  <p class="text-center text-base sm:text-lg md:text-xl text-[var(--text-secondary)] mb-10">Pilih subbab untuk melihat ringkasan materi:</p>
+  <div class="space-y-6">
+    <!-- Bab 1 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-green-700 mb-2">Bab 1: Ayo, Kita Peduli Lingkungan!</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.1 Menyimak dan Menceritakan Kembali" data-bab="Bab 1: Ayo, Kita Peduli Lingkungan!">
+          <div class="font-semibold text-green-800 mb-1">1.1 Menyimak dan Menceritakan Kembali</div>
+          <div class="text-sm text-green-700">Menyimak teks cerita tentang lingkungan dan menceritakannya kembali dengan urutan yang tepat.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.2 Membaca Nyaring" data-bab="Bab 1: Ayo, Kita Peduli Lingkungan!">
+          <div class="font-semibold text-green-800 mb-1">1.2 Membaca Nyaring</div>
+          <div class="text-sm text-green-700">Membaca teks narasi secara nyaring dengan intonasi dan lafal yang tepat.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-green-200 to-green-100 hover:from-green-300 hover:to-green-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="1.3 Menulis Kalimat Utama dan Penjelas" data-bab="Bab 1: Ayo, Kita Peduli Lingkungan!">
+          <div class="font-semibold text-green-800 mb-1">1.3 Menulis Kalimat Utama dan Penjelas</div>
+          <div class="text-sm text-green-700">Mengidentifikasi kalimat utama dan menulis paragraf dengan struktur yang runut.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 2 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-blue-700 mb-2 mt-6">Bab 2: Aku dan Teman Baru</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.1 Menceritakan Tokoh dalam Cerita" data-bab="Bab 2: Aku dan Teman Baru">
+          <div class="font-semibold text-blue-800 mb-1">2.1 Menceritakan Tokoh dalam Cerita</div>
+          <div class="text-sm text-blue-700">Menjelaskan tokoh cerita dari segi watak, tindakan, dan peran dalam cerita.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.2 Menyusun Dialog Sederhana" data-bab="Bab 2: Aku dan Teman Baru">
+          <div class="font-semibold text-blue-800 mb-1">2.2 Menyusun Dialog Sederhana</div>
+          <div class="text-sm text-blue-700">Menyusun dan memainkan dialog berdasarkan pengalaman sehari-hari.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-blue-200 to-blue-100 hover:from-blue-300 hover:to-blue-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="2.3 Menulis Teks Deskripsi" data-bab="Bab 2: Aku dan Teman Baru">
+          <div class="font-semibold text-blue-800 mb-1">2.3 Menulis Teks Deskripsi</div>
+          <div class="text-sm text-blue-700">Menulis teks deskripsi tentang teman atau lingkungan sekitar menggunakan kosakata yang tepat.</div>
+        </button>
+      </div>
+    </div>
+    <!-- Bab 3 -->
+    <div>
+      <h3 class="text-lg sm:text-xl font-bold text-purple-700 mb-2 mt-6">Bab 3: Hidup Rukun</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="3.1 Membaca dan Menjawab Pertanyaan" data-bab="Bab 3: Hidup Rukun">
+          <div class="font-semibold text-purple-800 mb-1">3.1 Membaca dan Menjawab Pertanyaan</div>
+          <div class="text-sm text-purple-700">Membaca teks fiksi dan nonfiksi lalu menjawab pertanyaan berdasarkan isi teks.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="3.2 Membandingkan Dua Teks" data-bab="Bab 3: Hidup Rukun">
+          <div class="font-semibold text-purple-800 mb-1">3.2 Membandingkan Dua Teks</div>
+          <div class="text-sm text-purple-700">Mencari perbedaan dan persamaan antara dua teks dengan topik serupa.</div>
+        </button>
+        <button class="w-full text-left bg-gradient-to-r from-purple-200 to-purple-100 hover:from-purple-300 hover:to-purple-200 rounded-xl shadow p-4 transition-all subbab-btn" data-subbab="3.3 Menulis Teks Pendek" data-bab="Bab 3: Hidup Rukun">
+          <div class="font-semibold text-purple-800 mb-1">3.3 Menulis Teks Pendek</div>
+          <div class="text-sm text-purple-700">Menyusun dan menulis teks narasi pendek dengan struktur yang benar.</div>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="bg-white/80 backdrop-blur-sm sticky bottom-0 border-t-2 border-[var(--border-primary)] mt-8">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center">
+    <button id="ringkasanBtn" class="w-full max-w-md bg-gray-300 text-white font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-full shadow-xl cursor-not-allowed">
+      <span>Buat Ringkasan Sekarang!</span>
+    </button>
+  </div>
+  <div id="hasilRingkasan" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center text-base sm:text-lg text-[var(--text-primary)]">
+    <!-- Ringkasan akan muncul di sini -->
+  </div>
+</footer>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<!-- Script translate manual -->
+<script>
+let currentLang = 'id';
+function loadLang(lang) {
+  fetch(`lang-${lang}.json`)
+    .then(res => res.json())
+    .then(dict => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) el.textContent = dict[key];
+      });
+      currentLang = lang;
+    });
+}
+
+const bahasaIndonesiaSummaries = {
+  "Bab 1: Ayo, Kita Peduli Lingkungan!": {
+    "1.1 Menyimak dan Menceritakan Kembali": `📚 **Menyimak dan Menceritakan Kembali** 🗣️
+
+Pada subbab ini, siswa diajak untuk menyimak teks narasi (cerita) yang bertema lingkungan. Cerita-cerita ini bisa tentang berbagai hal menarik, seperti: 
+
+🌳 Pentingnya membuang sampah pada tempatnya untuk menjaga kebersihan lingkungan kita.
+
+💧 Menjaga kebersihan sungai dan danau agar ekosistem tetap lestari.
+
+🐾 Pelestarian hewan dan tumbuhan agar tidak punah dan bumi tetap indah.
+
+Setelah mendengarkan atau membaca teks tersebut, **siswa akan belajar menceritakan kembali isi cerita dengan urutan yang tepat dan runtut**. Ini penting agar ceritanya mudah dipahami orang lain! Alurnya meliputi:
+
+1.  **Bagian Awal:** Mengenalkan tokoh-tokoh yang ada di cerita dan latar tempat serta waktu kejadian.
+
+2.  **Bagian Tengah:** Menjelaskan konflik atau peristiwa utama yang terjadi dalam cerita, apa yang dialami tokoh, dan bagaimana mereka menghadapinya.
+
+3.  **Bagian Akhir:** Menguraikan penyelesaian masalah atau penutup cerita, apa yang terjadi pada akhirnya, dan pesan moral yang bisa diambil.
+
+Tujuan utama dari kegiatan ini adalah melatih siswa agar dapat memahami isi cerita secara mendalam dan menyampaikan kembali dengan kata-kata mereka sendiri. Kemampuan ini sangat penting untuk:
+
+✨ Membangun pemahaman bacaan yang kuat, sehingga mudah menyerap informasi.
+
+💬 Keterampilan berbicara yang baik, agar bisa berkomunikasi efektif.
+
+🎤 Rasa percaya diri saat berbagi cerita atau ide kepada teman-teman dan di depan umum. 
+
+Yuk, jadi pencerita ulung!`,
+    "1.2 Membaca Nyaring": `📢 **Membaca Nyaring: Suara Lantang Penuh Ekspresi!** 🎤
+
+Di bagian ini, siswa berlatih membaca teks narasi secara nyaring (dengan suara yang jelas dan keras) di depan kelas atau teman kelompok. Ini bukan sekadar membaca, lho! Ada beberapa fokus penting yang akan dilatih:
+
+🔊 **Melatih Intonasi:** Bagaimana suara kita naik dan turun saat membaca? Kapan harus menekankan kata tertentu agar maknanya tersampaikan dengan baik?
+
+🚀 **Melatih Laju Bicara:** Tidak terlalu cepat seperti kereta, dan tidak terlalu lambat seperti siput. Membaca dengan kecepatan yang pas agar pendengar nyaman dan bisa mengikuti cerita.
+
+🗣️ **Melatih Lafal:** Cara pengucapan setiap kata harus jelas dan benar. Ini penting agar tidak terjadi salah paham!
+
+Dengan membaca nyaring, siswa tidak hanya belajar mengeja dan mengenali kata, tetapi juga memahami isi teks secara mendalam dan menyampaikannya dengan ekspresi yang sesuai. Bayangkan membaca cerita sedih dengan intonasi gembira, pasti aneh kan? 
+
+Kegiatan ini juga sangat mendukung:
+
+🌟 Keterampilan berbicara di depan umum, melatih keberanian dan kepercayaan diri.
+
+🤝 Membantu teman lain memahami isi bacaan, karena pembacaan yang jelas sangat membantu konsentrasi pendengar.
+
+Jadi, ayo berlatih membaca nyaring dan buat setiap cerita jadi hidup!`,
+    "1.3 Menulis Kalimat Utama dan Penjelas": `✍️ **Menulis Itu Mudah: Kalimat Utama dan Penjelas** 💡
+
+Pada bagian ini, siswa akan dikenalkan pada rahasia di balik struktur paragraf yang baik dan mudah dipahami. Setiap paragraf yang bagus biasanya punya dua jenis kalimat penting:
+
+1.  **Kalimat Utama (Ide Pokok):** Ini adalah kalimat paling penting dalam paragraf! Ia mengandung ide pokok atau gagasan utama yang ingin disampaikan. Posisinya sering di awal atau akhir paragraf, dan menjadi "payung" bagi kalimat lainnya.
+
+2.  **Kalimat Penjelas (Pendukung):** Nah, ini adalah kalimat-kalimat yang mendukung, menjelaskan, atau mengembangkan ide pokok dari kalimat utama. Mereka memberikan detail, contoh, atau alasan yang membuat ide pokok semakin jelas.
+
+Contoh mudahnya:
+
+**Kalimat utama:** “Kita harus menjaga kebersihan lingkungan.” (Ini intinya!)
+
+**Kalimat penjelas:** 
+
+"Dengan menjaga kebersihan, lingkungan menjadi nyaman dan sehat untuk kita tinggali." (Menjelaskan mengapa menjaga kebersihan itu penting).
+
+"Kita bisa mulai dari membuang sampah pada tempatnya, tidak membuang sembarangan di jalan atau sungai." (Memberikan contoh tindakan konkret).
+
+"Selain itu, rajin membersihkan rumah dan halaman juga merupakan bagian dari menjaga kebersihan." (Menambahkan detail lain).
+
+Melalui latihan menulis paragraf seperti ini, siswa diajak untuk:
+
+🎯 Menyampaikan gagasan secara tertib, terstruktur, dan runut.
+
+📚 Membuat tulisan yang mudah dipahami oleh pembaca, sehingga pesan tersampaikan dengan baik.
+
+✨ Mengembangkan kreativitas dalam menyusun kalimat dan merangkai ide. 
+
+Ayo, jadi penulis hebat yang karyanya selalu dimengerti!`
+  },
+  "Bab 2: Aku dan Teman Baru": {
+    "2.1 Menceritakan Tokoh dalam Cerita": `🎭 **Mengenal Lebih Dekat: Menceritakan Tokoh dalam Cerita** 🤝
+
+Dalam subbab ini, petualangan membaca cerita menjadi lebih seru! Siswa tidak hanya membaca atau menyimak, tetapi juga diajak untuk menjadi "detektif" yang menggali karakter tokoh. Setiap cerita pasti melibatkan tokoh utama dan tokoh tambahan, dan kita akan belajar menggambarkan mereka secara lengkap, meliputi:
+
+👤 **Nama dan Peran Tokoh:** Siapa dia? Apa perannya dalam cerita? Apakah dia pahlawan, sahabat, atau mungkin seorang penjahat?
+
+❤️ **Watak Tokoh (Sifat):** Ini yang paling menarik! Apakah tokoh itu baik hati, jujur, ramah, periang, pemarah, penolong, atau punya sifat unik lainnya? Memahami watak membuat kita seolah kenal dekat dengan mereka.
+
+🏃‍♀️ **Tindakan atau Kebiasaan Tokoh:** Apa yang sering dilakukan tokoh ini dalam cerita? Apakah dia suka membantu, rajin belajar, atau selalu datang terlambat? Tindakan ini menunjukkan sifat asli mereka.
+
+Tujuannya adalah agar siswa mampu memahami karakter tokoh dalam cerita secara mendalam dan membedakan sifat masing-masing. Ini juga melatih:
+
+😊 **Empati:** Kita jadi bisa merasakan apa yang dirasakan tokoh, memahami alasan di balik tindakan mereka.
+
+🌍 **Pemahaman terhadap Perbedaan:** Setiap orang punya karakter unik, sama seperti tokoh dalam cerita. Ini mengajarkan kita untuk menghargai perbedaan di dunia nyata.
+
+🕵️‍♀️ Keterampilan analisis cerita, membuat kita lebih kritis dalam membaca. 
+
+Ayo, temukan dan kenali setiap tokoh dalam petualangan membaca Anda!`,
+    "2.2 Menyusun Dialog Sederhana": `🗣️ **Yuk, Berbicara! Menyusun Dialog Sederhana** 💬
+
+Subbab ini mengajak siswa untuk menjadi "penulis naskah" mini! Kita akan belajar menyusun dialog, yaitu percakapan antar tokoh, berdasarkan kehidupan sehari-hari. Ini bisa berupa situasi yang sangat akrab, seperti:
+
+👋 Percakapan saat perkenalan dengan teman baru di sekolah.
+
+❓ Bertanya kabar atau meminta tolong kepada teman atau guru.
+
+💡 Berdiskusi dengan teman tentang tugas sekolah atau rencana bermain.
+
+Siswa akan belajar bagaimana menulis dialog dengan rapi, yaitu dengan menyebutkan siapa yang berbicara diikuti tanda titik dua, lalu apa ucapannya. Contohnya:
+
+**Sani:** “Halo, nama aku Sani. Siapa nama kamu?”
+
+**Lani:** “Hai, aku Lani. Senang sekali berkenalan denganmu, Sani!”
+
+**Sani:** "Sama-sama, Lani. Apa yang sedang kamu lakukan?"
+
+Kegiatan ini melatih siswa dalam berbagai aspek penting:
+
+ polite Menggunakan bahasa sopan dan santun dalam setiap percakapan.
+
+📝 Menyusun kalimat lisan dengan baik dan efektif, agar mudah dipahami.
+
+🤝 Berlatih berbicara dalam situasi sosial yang beragam, meningkatkan kepercayaan diri dalam berinteraksi.
+
+Ini adalah langkah awal menjadi komunikator yang baik, baik dalam tulisan maupun percakapan langsung!`,
+    "2.3 Menulis Teks Deskripsi": `🎨 **Melukis dengan Kata-kata: Menulis Teks Deskripsi** ✍️
+
+Di sini, siswa belajar menjadi "pelukis kata" dengan menulis teks deskripsi, yaitu jenis tulisan yang menggambarkan sesuatu secara detail dan jelas, seolah-olah pembaca bisa melihat, mendengar, atau merasakan objek yang dideskripsikan. Objek yang dideskripsikan bisa sangat beragam, mulai dari:
+
+👧 Teman baru yang punya ciri khas unik.
+
+🏫 Lingkungan kelas atau rumah yang penuh cerita.
+
+🐶 Hewan peliharaan kesayangan dengan tingkah lakunya yang lucu.
+
+Contoh teks deskripsi sederhana:
+
+“Temanku bernama Rina. Ia memiliki rambut panjang terurai berwarna hitam legam dan selalu suka tersenyum manis kepada siapa pun. Rina pandai menari tarian tradisional dan juga balet, serta sangat baik hati dan suka menolong teman-temannya yang kesulitan.”
+
+Siswa juga belajar menggunakan:
+
+✨ Kosakata yang tepat dan kaya untuk memberikan gambaran yang jelas.
+
+👀 Indera pengamatan (melihat, mendengar, meraba, mencium, mengecap) untuk menangkap detail.
+
+📝 Menyusun paragraf secara runtut dan sistematis, agar deskripsi mengalir dan mudah diikuti. 
+
+Dengan kemampuan ini, siswa bisa berbagi pengalamannya dan membuat pembaca merasa seolah berada di tempat kejadian!`
+  },
+  "Bab 3: Hidup Rukun": {
+    "3.1 Membaca dan Menjawab Pertanyaan": `📖 **Detektif Kata: Membaca dan Menjawab Pertanyaan** ❓
+
+Dalam subbab ini, siswa akan menjadi detektif yang mencari tahu isi sebuah teks! Siswa akan membaca teks, baik fiksi (seperti cerita pendek yang penuh imajinasi) atau nonfiksi (seperti artikel sederhana tentang fakta dan pengetahuan), yang bertema:
+
+🤝 Hidup rukun di tengah masyarakat yang beragam.
+
+🏗️ Kerja sama untuk mencapai tujuan bersama.
+
+ toleransi Sikap toleransi terhadap perbedaan yang ada.
+
+Setelah membaca, tugasnya adalah menjawab pertanyaan berdasarkan isi teks. Jenis pertanyaannya bisa bervariasi, seperti:
+
+🤔 Siapa tokoh utama dalam cerita ini? Atau siapa saja tokoh yang terlibat?
+
+🧐 Apa masalah atau konflik utama yang terjadi dalam cerita?
+
+💡 Mengapa tokoh A melakukan hal tersebut? Apa alasannya?
+
+结局 Bagaimana akhir cerita ini? Apakah ada solusi atau pelajaran yang bisa diambil?
+
+Tujuan kegiatan ini adalah melatih kemampuan:
+
+🧠 Memahami bacaan secara komprehensif, bukan hanya sekadar membaca kata per kata.
+
+💡 Berpikir kritis untuk menganalisis informasi dalam teks.
+
+✍️ Menyampaikan jawaban secara tertulis dengan benar, jelas, dan sesuai konteks. 
+
+Dengan ini, siswa akan semakin cerdas dalam menyerap informasi dari berbagai sumber!`,
+    "3.2 Membandingkan Dua Teks": `⚖️ **Pakar Perbandingan: Membandingkan Dua Teks** 🔎
+
+Subbab ini mengajak siswa untuk menjadi pakar perbandingan! Mereka akan membaca dua teks yang memiliki tema serupa, misalnya dua cerita tentang gotong royong, dua artikel tentang lingkungan, atau dua puisi tentang persahabatan. Lalu, tugasnya adalah membandingkan isi, tokoh, alur, dan pesan moralnya. Ini seperti mencari tahu persamaan dan perbedaan antara dua hal!
+
+Beberapa poin yang bisa dibandingkan:
+
+👯‍♀️ **Persamaan:** Apa saja hal-hal yang sama atau mirip dari kedua teks? Mungkin temanya sama, atau ada pesan moral yang serupa.
+
+↔️ **Perbedaan:** Apa saja yang membuat kedua teks itu berbeda? Bisa jadi tokohnya, latar ceritanya, gaya bahasanya, atau cara penyelesaian masalahnya.
+
+Contoh sederhananya:
+
+**Teks 1:** Cerita tentang anak-anak yang bergotong royong membersihkan halaman sekolah.
+
+**Teks 2:** Kisah tentang orang dewasa yang bekerja sama membangun jembatan di desa.
+
+**Persamaan:** Sama-sama bercerita tentang kerja sama dan pentingnya kebersamaan.
+
+**Perbedaan:** Tokohnya berbeda (anak-anak vs. dewasa), latar tempatnya berbeda (sekolah vs. desa), dan jenis kegiatannya berbeda (membersihkan vs. membangun).
+
+Kegiatan ini sangat membantu siswa untuk:
+
+🔍 Mengenali struktur teks yang berbeda.
+
+👀 Memperhatikan detail-detail penting dalam setiap teks.
+
+💡 Menarik kesimpulan dengan logis dan analitis dari informasi yang disajikan.
+
+Jadi, bersiaplah menjadi peneliti teks yang andal!`,
+    "3.3 Menulis Teks Pendek": `📝 **Merangkai Kata: Menulis Teks Narasi Pendek** ✏️
+
+Ini adalah kesempatan bagi siswa untuk menjadi pencerita! Siswa diminta menulis teks narasi pendek yang memiliki struktur lengkap, seperti sebuah cerita mini yang utuh. Struktur cerita yang dimaksud meliputi:
+
+✨ **Awal Cerita (Pengenalan):** Bagian ini memperkenalkan tokoh-tokoh yang akan terlibat, latar tempat di mana cerita terjadi, dan waktu kejadian. Ini adalah "pembukaan" yang menarik pembaca.
+
+🌪️ **Tengah Cerita (Peristiwa/Masalah):** Di sini, cerita mulai berkembang. Ada peristiwa atau masalah yang dihadapi oleh tokoh. Ini adalah inti dari cerita yang membuat pembaca penasaran.
+
+💡 **Akhir Cerita (Penyelesaian):** Bagian ini adalah penyelesaian dari masalah yang ada, atau bagaimana cerita itu berakhir. Apakah bahagia, sedih, atau memberikan pelajaran baru?
+
+Topik cerita bisa disesuaikan dengan pengalaman pribadi yang menarik, seperti:
+
+🎈 Bermain seru dengan teman-teman di taman.
+
+🏡 Membantu orang tua membersihkan rumah pada akhir pekan.
+
+🎒 Kegiatan bersama yang menyenangkan di sekolah.
+
+Penekanan dalam subbab ini ada pada kemampuan:
+
+✍️ Menyusun cerita yang utuh dan memiliki alur yang jelas.
+
+ spelling Menggunakan ejaan dan tanda baca yang benar, agar ceritanya mudah dibaca.
+
+💡 Mengembangkan gagasan dengan runtut, dari awal sampai akhir, sehingga cerita jadi menarik dan bermakna. 
+
+Ayo, keluarkan imajinasi Anda dan buat cerita yang memukau!`
+  }
+};
+
+let selectedSubbab = null;
+let selectedBab = null;
+
+// Tambahkan event listener ke semua tombol subbab
+function setupSubbabRingkasan() {
+  document.querySelectorAll('.subbab-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      selectedSubbab = btn.getAttribute('data-subbab');
+      selectedBab = btn.getAttribute('data-bab');
+      const ringkasanBtn = document.getElementById('ringkasanBtn');
+      ringkasanBtn.classList.remove('bg-gray-300', 'cursor-not-allowed');
+      ringkasanBtn.classList.add('bg-gradient-to-r', 'from-green-400', 'to-blue-400', 'hover:from-green-500', 'hover:to-blue-500', 'cursor-pointer');
+      ringkasanBtn.disabled = false;
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  setupSubbabRingkasan();
+  const ringkasanBtn = document.getElementById('ringkasanBtn');
+  ringkasanBtn.onclick = async function() {
+    if (!selectedSubbab || !selectedBab) return;
+
+    const summary = bahasaIndonesiaSummaries[selectedBab]?.[selectedSubbab] || null;
+
+    sessionStorage.setItem('ringkasan_k4_bi', JSON.stringify({
+      ringkasan: summary,
+      bab: selectedBab,
+      subbab: selectedSubbab
+    }));
+    window.location.href = 'ringkasan-result-kelas4-bahasa-indonesia.html';
+  };
+  document.querySelectorAll('.language-toggle-button').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = btn.textContent.trim().toLowerCase();
+      loadLang(lang);
+      document.querySelectorAll('.language-toggle-button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+  loadLang(currentLang);
+});
+</script>
+</body></html>
