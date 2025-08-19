@@ -46,7 +46,15 @@ h1, h2, h3 {
         <button class="language-toggle-button active">ID</button>
         <button class="language-toggle-button">EN</button>
       </div>
-      <div class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfuwgYI-olVKF44AsvP7zsXtut46r76IIIbHOVhQRqZb4rg0KeVqnmfqm7yNrg4IZBmdiJ0SSQQ7JboPBpD_U4j5xrHEM53FeNseG4FQMDPIn3JZmcZju4oFuZS5vQAKyWwRXzlPebWjYVVf9Unqur0XzLipA4qFVYD3vGPv0k7oLTgihTQvseqa0kWkpmZ5z7CpuNmI3dDc9H5SY51ABcBMrMxz2J8eGAwjKxE99K1hNe2Zv6NcsxZhruyFBCOeMrph4SpjSwtO4");'></div>
+      <div class="relative">
+        <button id="menuButton" class="flex size-10 items-center justify-center rounded-full bg-[var(--brand-primary)] text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--brand-primary)]">
+            <span class="material-symbols-outlined text-2xl">robot</span>
+        </button>
+        <div id="menuDropdown" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-20 hidden">
+            <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About Me</a>
+            <a href="contact.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kontak</a>
+        </div>
+      </div>
     </div>
   </div>
 </header>
@@ -347,6 +355,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }));
     window.location.href = 'ringkasan-result-kelas5-ppkn.html';
   };
+
+  const menuButton = document.getElementById('menuButton');
+  const menuDropdown = document.getElementById('menuDropdown');
+
+  menuButton.addEventListener('click', () => {
+      menuDropdown.classList.toggle('hidden');
+  });
+
+  // Close the dropdown if the user clicks outside of it
+  window.addEventListener('click', (event) => {
+      if (!menuButton.contains(event.target) && !menuDropdown.contains(event.target)) {
+          menuDropdown.classList.add('hidden');
+      }
+  });
+
   document.querySelectorAll('.language-toggle-button').forEach(function(btn) {
     btn.addEventListener('click', function() {
       var lang = btn.textContent.trim().toLowerCase();

@@ -49,8 +49,16 @@
       <button class="language-toggle-button active">ID</button>
       <button class="language-toggle-button">EN</button>
     </div>
-    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA7K28EFJ7mQIEhk4jnix1yhicdTRAokpafkk-eag2NGDKxRGOsYWUxojoD7aPduR2vx3XIg99LLMseDYBfgcjPOrSxi71Qkds-j2TE76fvYXOj7TlpkmNV7QoBsGT_OmyinM-Cla6Tsn7BUILS6pVj8zpbJIlf8lD70GiD7HKOCKJ1SYleK8MJ0Kv080nHVRgYrUYo60CB-kwCIt_kNsMxtAc3FQz2K7ulc4ra8FlwDCM9UqLjG3EMG6k8eHUVplq6bFQt-4f_c54");'></div>
-  </div>
+    <div class="relative">
+        <button id="menuButton" class="flex size-10 items-center justify-center rounded-full bg-[var(--primary-color)] text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary-color)]">
+            <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+        <div id="menuDropdown" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-20 hidden">
+            <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About Me</a>
+            <a href="contact.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kontak</a>
+        </div>
+      </div>
+    </div>
 </header>
 <div class="w-full flex items-center mt-2 mb-4">
   <a href="index.html" class="flex items-center gap-1 px-3 py-1 rounded-full bg-[var(--accent-color)] text-[var(--highlight-color)] hover:bg-[var(--highlight-color)] hover:text-white text-xs font-medium shadow transition-colors ml-2">
@@ -144,6 +152,21 @@ document.addEventListener('DOMContentLoaded', function() {
       loadLang(lang);
     });
   });
+
+  const menuButton = document.getElementById('menuButton');
+  const menuDropdown = document.getElementById('menuDropdown');
+
+  menuButton.addEventListener('click', () => {
+      menuDropdown.classList.toggle('hidden');
+  });
+
+  // Close the dropdown if the user clicks outside of it
+  window.addEventListener('click', (event) => {
+      if (!menuButton.contains(event.target) && !menuDropdown.contains(event.target)) {
+          menuDropdown.classList.add('hidden');
+      }
+  });
+
   loadLang(currentLang); // Initial load
 });
 </script>

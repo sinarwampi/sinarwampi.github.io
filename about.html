@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Sinar Wampi</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+:root {
+  --brand-primary: #6366F1;
+  --brand-secondary: #EC4899;
+  --background-primary: #FFFBEB;--background-secondary: #FFFFFF;
+  --text-primary: #374151;--text-secondary: #6B7280;
+  --border-primary: #FBBF24;--action-primary: #34D399;--action-primary-hover: #10B981;--action-secondary: #F3F4F6;
+  --action-secondary-hover: #E5E7EB;
+  --color-sky-blue: #87CEEB;
+  --color-coral: #FF7F50;
+  --color-lime-green: #32CD32;
+  --color-violet: #EE82EE;
+  --color-gold: #FFD700;
+}
+body {
+  font-family: 'Lexend', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Fredoka One', cursive;
+}
+</style>
+</head>
+<body class="bg-[var(--background-primary)] text-[var(--text-primary)]">
+<div class="flex flex-col min-h-screen">
+<header class="bg-white shadow-md">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-[var(--color-sky-blue)] rounded-xl flex items-center justify-center transform -rotate-12">
+        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L9 9.61V16a1 1 0 001 1h2a1 1 0 001-1V9.61l6.394-2.69a1 1 0 000-1.84l-7-3zM10 8L3.394 5.31 10 2.69v5.32z"></path>
+        </svg>
+      </div>
+      <h1 class="text-xl sm:text-2xl text-[var(--text-primary)] font-bold" data-i18n="app_title">SINAR WAMPI</h1>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="language-toggle">
+        <button class="language-toggle-button active">ID</button>
+        <button class="language-toggle-button">EN</button>
+      </div>
+      <div class="relative">
+        <button id="menuButton" class="flex size-10 items-center justify-center rounded-full bg-[var(--brand-primary)] text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--brand-primary)]">
+            <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+        <div id="menuDropdown" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-20 hidden">
+            <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About Me</a>
+            <a href="contact.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kontak</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="w-full flex items-center mt-2 mb-4">
+  <button onclick="history.back()" class="flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-pink-400 to-blue-400 text-white font-medium shadow hover:from-pink-500 hover:to-blue-500 transition-colors ml-2">
+    <span class="text-base">&#8592;</span>
+    <span>Kembali</span>
+  </button>
+</div>
+<main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[var(--color-coral)] mb-4">About Sinar Wampi</h2>
+  <div class="bg-white rounded-2xl shadow-md p-8 space-y-4 text-base sm:text-lg">
+    <p class="text-gray-800 mb-4">
+      <span class="inline-block mr-2 text-2xl">✨</span> Selamat datang di Sinar Wampi, aplikasi inovatif yang dirancang khusus untuk membantu siswa Sekolah Dasar kelas 4, 5, dan 6 dalam memahami rangkuman materi pelajaran dengan lebih mudah dan menyenangkan. Aplikasi ini menjadi teman belajar yang ideal, menyajikan inti-inti pelajaran dari berbagai mata pelajaran dengan cara yang ringkas, jelas, dan mudah diakses kapan saja dan di mana saja.
+    </p>
+    <p class="text-gray-800 font-semibold mb-2">
+      Sinar Wampi menghadirkan rangkuman materi untuk mata pelajaran utama, meliputi:
+    </p>
+    <ul class="list-none space-y-3 pl-0">
+      <li class="flex items-start">
+        <span class="inline-block size-6 flex-shrink-0 mr-3 rounded-full bg-blue-400 text-white flex items-center justify-center font-bold text-sm">🇧🇮</span>
+        <div>
+          <strong>Bahasa Indonesia:</strong> Memudahkan pemahaman kaidah bahasa, tata bahasa, dan sastra Indonesia.
+        </div>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block size-6 flex-shrink-0 mr-3 rounded-full bg-orange-400 text-white flex items-center justify-center font-bold text-sm">🔢</span>
+        <div>
+          <strong>Matematika:</strong> Menyajikan konsep-konsep dasar matematika dengan penjelasan yang sederhana dan contoh yang relevan.
+        </div>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block size-6 flex-shrink-0 mr-3 rounded-full bg-purple-400 text-white flex items-center justify-center font-bold text-sm">🧪</span>
+        <div>
+          <strong>Ilmu Pengetahuan Alam dan Sosial (IPAS):</strong> Menjelaskan fenomena alam dan sosial di sekitar kita dengan bahasa yang mudah dicerna.
+        </div>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block size-6 flex-shrink-0 mr-3 rounded-full bg-green-400 text-white flex items-center justify-center font-bold text-sm">⚖️</span>
+        <div>
+          <strong>Pendidikan Pancasila dan Kewarganegaraan (PPKn):</strong> Mengajarkan nilai-nilai luhur Pancasila dan pentingnya menjadi warga negara yang baik.
+        </div>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block size-6 flex-shrink-0 mr-3 rounded-full bg-pink-400 text-white flex items-center justify-center font-bold text-sm">🎨</span>
+        <div>
+          <strong>Seni Budaya dan Prakarya (SBdP):</strong> Mengenalkan berbagai bentuk seni dan budaya, serta keterampilan praktis dalam berkarya.
+        </div>
+      </li>
+    </ul>
+    <p class="text-gray-800 font-semibold mb-2 mt-6">
+      Dengan Sinar Wampi, siswa dapat:
+    </p>
+    <ul class="list-none space-y-3 pl-0">
+      <li class="flex items-start">
+        <span class="inline-block size-6 flex-shrink-0 mr-3 rounded-full bg-blue-300 text-white flex items-center justify-center font-bold text-sm">📚</span>
+        <div>
+          Mengulang materi yang telah diajarkan di sekolah.
+        </div>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block size-6 flex-shrink-0 mr-3 rounded-full bg-green-300 text-white flex items-center justify-center font-bold text-sm">📝</span>
+        <div>
+          Mempersiapkan diri untuk ulangan atau ujian dengan lebih efektif.
+        </div>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block size-6 flex-shrink-0 mr-3 rounded-full bg-purple-300 text-white flex items-center justify-center font-bold text-sm">🧠</span>
+        <div>
+          Memperdalam pemahaman tentang topik-topik yang dirasa sulit.
+        </div>
+      </li>
+      <li class="flex items-start">
+        <span class="inline-block size-6 flex-shrink-0 mr-3 rounded-full bg-yellow-300 text-white flex items-center justify-center font-bold text-sm">💡</span>
+        <div>
+          Belajar secara mandiri dengan ritme mereka sendiri.
+        </div>
+      </li>
+    </ul>
+    <p class="text-gray-800 mt-6">
+      <span class="inline-block mr-2 text-2xl">🌟</span> Kami berkomitmen untuk terus mengembangkan Sinar Wampi agar selalu relevan dan bermanfaat bagi pendidikan anak-anak Indonesia. Mari bergabung dengan Sinar Wampi dan rasakan pengalaman belajar yang lebih cerah!
+    </p>
+  </div>
+</main>
+<footer class="bg-white/80 backdrop-blur-sm sticky bottom-0 border-t-2 border-[var(--border-primary)] mt-8">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center">
+    <!-- Footer content can be added here -->
+  </div>
+</footer>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script>
+let currentLang = 'id';
+function loadLang(lang) {
+  fetch(`lang-${lang}.json`)
+    .then(res => res.json())
+    .then(dict => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) el.textContent = dict[key];
+      });
+      currentLang = lang;
+    });
+}
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.language-toggle-button').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = btn.textContent.trim().toLowerCase();
+      loadLang(lang);
+      document.querySelectorAll('.language-toggle-button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+  loadLang(currentLang);
+});
+</script>
+</body>
+</html> 

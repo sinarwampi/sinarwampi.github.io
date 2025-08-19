@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Fredoka+One&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+:root {
+  --brand-primary: #6366F1;
+  --brand-secondary: #EC4899;
+  --background-primary: #FFFBEB;--background-secondary: #FFFFFF;
+  --text-primary: #374151;--text-secondary: #6B7280;
+  --border-primary: #FBBF24;--action-primary: #34D399;--action-primary-hover: #10B981;--action-secondary: #F3F4F6;
+  --action-secondary-hover: #E5E7EB;
+  --color-sky-blue: #87CEEB;
+  --color-coral: #FF7F50;
+  --color-lime-green: #32CD32;
+  --color-violet: #EE82EE;
+  --color-gold: #FFD700;
+}
+body {
+  font-family: 'Lexend', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Fredoka One', cursive;
+}
+</style>
+</head>
+<body class="bg-[var(--background-primary)] text-[var(--text-primary)]">
+<div class="flex flex-col min-h-screen">
+<header class="bg-white shadow-md">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-[var(--color-sky-blue)] rounded-xl flex items-center justify-center transform -rotate-12">
+        <svg class="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L9 9.61V16a1 1 0 001 1h2a1 1 0 001-1V9.61l6.394-2.69a1 1 0 000-1.84l-7-3zM10 8L3.394 5.31 10 2.69v5.32z"></path>
+        </svg>
+      </div>
+      <h1 class="text-xl sm:text-2xl text-[var(--text-primary)] font-bold" data-i18n="app_title">SINAR WAMPI</h1>
+    </div>
+    <div class="flex items-center gap-4">
+      <div class="language-toggle">
+        <button class="language-toggle-button active">ID</button>
+        <button class="language-toggle-button">EN</button>
+      </div>
+      <div class="relative">
+        <button id="menuButton" class="flex size-10 items-center justify-center rounded-full bg-[var(--brand-primary)] text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--brand-primary)]">
+            <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+        <div id="menuDropdown" class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-20 hidden">
+            <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About Me</a>
+            <a href="contact.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Kontak</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="w-full flex items-center mt-2 mb-4">
+  <button onclick="history.back()" class="flex items-center gap-2 px-4 py-1 rounded-full bg-gradient-to-r from-pink-400 to-blue-400 text-white font-medium shadow hover:from-pink-500 hover:to-blue-500 transition-colors ml-2">
+    <span class="text-base">&#8592;</span>
+    <span>Kembali</span>
+  </button>
+</div>
+<main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-[var(--color-coral)] mb-4">Kontak Kami</h2>
+  <div class="bg-white rounded-2xl shadow-md p-8 space-y-4">
+    <p class="text-gray-800 text-sm"><span class="font-semibold">Created by:</span> Fudak Winduko</p>
+    <p class="text-gray-800 text-sm">
+      <span class="font-semibold">Nomor WhatsApp:</span>
+      <a class="text-blue-300 hover:text-blue-500 hover:underline" href="https://api.whatsapp.com/send/?phone=6282142107586&text=Asalamualaikum%20Saya%20Adalah%20Pengguna%20Rumah%20Robot%20Wampi%20Ingin%20mengirimkan%20kritik%20dan%20saran&type=phone_number&app_absent=0" target="_blank" rel="noopener">0821 4210 7586</a>
+    </p>
+    <p class="text-gray-800 text-sm"><span class="font-semibold">Email:</span> fudakwinduko93@guru.sd.belajar.id</p>
+
+    <div class="pt-4">
+      <h3 class="text-sm font-semibold text-gray-900 mb-2">Media Sosial</h3>
+      <div class="flex flex-wrap gap-3">
+        <a href="https://instagram.com/kata_windu" target="_blank" rel="noopener" class="inline-flex items-center justify-center size-11 rounded-full bg-gradient-to-br from-pink-500 to-yellow-500 shadow hover:opacity-90 active:scale-95 transition" aria-label="Instagram">
+          <img src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram" class="h-5 w-5"/>
+        </a>
+        <a href="https://facebook.com/winduka" target="_blank" rel="noopener" class="inline-flex items-center justify-center size-11 rounded-full bg-[#1877F2] shadow hover:opacity-90 active:scale-95 transition" aria-label="Facebook">
+          <img src="https://cdn.simpleicons.org/facebook/ffffff" alt="Facebook" class="h-5 w-5"/>
+        </a>
+        <a href="https://tiktok.com/@winduka" target="_blank" rel="noopener" class="inline-flex items-center justify-center size-11 rounded-full bg-black shadow hover:opacity-90 active:scale-95 transition" aria-label="TikTok">
+          <img src="https://cdn.simpleicons.org/tiktok/ffffff" alt="TikTok" class="h-5 w-5"/>
+        </a>
+        <a href="https://www.youtube.com/SDNNGADIREJO03?sub_confirmation=1" target="_blank" rel="noopener" class="inline-flex items-center justify-center size-11 rounded-full bg-[#FF0000] shadow hover:opacity-90 active:scale-95 transition" aria-label="YouTube">
+          <img src="https://cdn.simpleicons.org/youtube/ffffff" alt="YouTube" class="h-5 w-5"/>
+        </a>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="bg-white/80 backdrop-blur-sm sticky bottom-0 border-t-2 border-[var(--border-primary)] mt-8">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-center">
+    <!-- Footer content can be added here -->
+  </div>
+</footer>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script>
+let currentLang = 'id';
+function loadLang(lang) {
+  fetch(`lang-${lang}.json`)
+    .then(res => res.json())
+    .then(dict => {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (dict[key]) el.textContent = dict[key];
+      });
+      currentLang = lang;
+    });
+}
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.language-toggle-button').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var lang = btn.textContent.trim().toLowerCase();
+      loadLang(lang);
+      document.querySelectorAll('.language-toggle-button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+  loadLang(currentLang);
+});
+</script>
+</body>
+</html> 
